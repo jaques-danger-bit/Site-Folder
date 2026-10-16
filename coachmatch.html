@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Coach | Strikeline Training Group</title>
+<meta name="description" content="Get a Strikeline coach suggestion as a starting point, meet the full team, and explore free intro calls. Beaufort SC and online.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Strikeline Training Group">
+<meta property="og:title" content="Find Your Coach | Strikeline Training Group">
+<meta property="og:description" content="Get a coach suggestion as a starting point, then meet the full Strikeline team and explore free intro calls.">
+<meta property="og:url" content="https://strikelinetraining.com/coachmatch">
+<meta property="og:image" content="https://strikelinetraining.com/assets/social/strikeline-gym-hype-20260908.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Coached sled training on the turf at Strikeline Gym in Beaufort, SC, with the Strikeline Training Group logo.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://strikelinetraining.com/assets/social/strikeline-gym-hype-20260908.jpg">
+<meta name="twitter:image:alt" content="Coached sled training on the turf at Strikeline Gym in Beaufort, SC, with the Strikeline Training Group logo.">
+<link rel="canonical" href="https://strikelinetraining.com/coachmatch">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="theme-color" content="#1C1C1E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/shell.css?v=mobile-tour-icons-20260908">
+<link rel="stylesheet" href="css/pages.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<div id="cursorDot"></div><div id="cursorRing"></div>
+<div id="curtain" aria-hidden="true"></div>
+
+<nav id="nav" aria-label="Main navigation">
+  <a class="logo" href="index.html"><span class="mark"><img src="assets/media/logos/brand/logo-shield.svg" alt="Strikeline shield"></span>STRIKELINE TRAINING GROUP</a>
+  <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Memberships</a>
+        <a href="about.html">Our Team</a>
+        <a href="partner-services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html" class="nav-contact">Contact Us</a>
+      </div>
+  <div class="nav-actions">
+    <a class="nav-call" href="tel:+17708628942" aria-label="Call Us">
+      <img src="assets/media/icons/phone.svg" width="18" height="18" alt="" aria-hidden="true" />
+      <span>Call Us</span>
+    </a>
+    <a class="nav-cta" href="https://training.strikelinetraining.com/packages/83983/purchase/" data-cta-intent="purchase" data-cta-product="membership">Join the Gym</a>
+  </div>
+  <button class="nav-burger" aria-label="Menu" aria-controls="mobile-navigation" aria-expanded="false"><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-navigation" data-lenis-prevent>
+      <a class="mm-link" href="index.html">Home</a>
+      <a class="mm-link" href="services.html">Memberships</a>
+      <a class="mm-link" href="about.html">Our Team</a>
+      <a class="mm-link" href="partner-services.html">Services</a>
+      <a class="mm-link" href="events.html">Events</a>
+      <a class="mm-link" href="contact.html">Contact Us</a>
+      <a class="btn solid mm-cta" href="https://training.strikelinetraining.com/packages/83983/purchase/" data-cta-intent="purchase" data-cta-product="membership"><span>Join the Gym</span><i></i></a>
+    </div>
+
+<!-- COACH MATCH -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="sec-tag" data-reveal>Coach Matching</div>
+    <h1 data-split-scroll>Find your coach.</h1>
+    <p data-reveal>Answer a few questions for a coach suggestion as a starting point. Explore the full team and talk through your goals. Beaufort, SC and online.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;padding-bottom:clamp(64px,8vw,120px)">
+  <div class="wrap">
+
+    <!-- ============================================================= -->
+    <!-- STG COACH MATCH : rebuilt on the premium design system.        -->
+    <!-- Formspree endpoint, field names, and quiz logic unchanged.     -->
+    <!-- Layout is tile-based (checkin pattern); styles scoped to       -->
+    <!-- #stg-coach and .cm-steps.                                      -->
+    <!-- ============================================================= -->
+
+    <div class="cm-steps" data-reveal-group>
+      <div class="cm-step">
+        <h3>Answer</h3>
+        <p>Name, email, and your primary goal. About 45 seconds, no commitment.</p>
+      </div>
+      <div class="cm-step">
+        <h3>Match</h3>
+        <p>Get a coach suggestion, then explore the full team if you want more options.</p>
+      </div>
+      <div class="cm-step">
+        <h3>Book</h3>
+        <p>Start with a free 15-minute intro call to discuss your goals and coaching options.</p>
+      </div>
+    </div>
+
+    <div id="stg-coach" data-phase="intake" data-reveal>
+
+      <div class="sc-progress" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" aria-label="Progress" hidden>
+        <div class="sc-progress-fill"></div>
+      </div>
+      <p class="sc-step-label" aria-live="polite" hidden></p>
+
+      <!-- ===================== INTAKE ===================== -->
+      <section class="sc-card sc-screen" data-screen="intake" aria-labelledby="sc-intake-h">
+        <div class="sc-intake-head">
+          <p class="sc-eyebrow">Beaufort, SC&nbsp;&nbsp;|&nbsp;&nbsp;Coach Matching</p>
+          <h2 id="sc-intake-h" class="sc-h1">Find Your Coach</h2>
+          <p class="sc-sub">A few questions suggest a starting point for a conversation with a Strikeline coach.</p>
+          <noscript><p class="sc-sub"><a class="sc-btn sc-btn-ghost" href="about.html#coaches">Meet All Six Coaches</a></p></noscript>
+        </div>
+
+        <div class="sc-intake-grid">
+          <figure class="sc-intake-media">
+            <img src="https://lhbncexgdxfgghlmnosv.supabase.co/storage/v1/object/public/site-photos/photo-08.jpg" alt="Strikeline coaching">
+            <figcaption class="sc-proof">Marine-led coaching for competitors, tactical athletes, and serious clients.</figcaption>
+          </figure>
+
+          <form id="sc-intake-form" action="https://formspree.io/f/xykvredg" method="POST">
+            <div hidden aria-hidden="true"><input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+            <input type="hidden" name="tag" value="coach_started">
+            <input type="hidden" name="source" value="Website Coach Match">
+            <noscript><p>The interactive match needs JavaScript. You can send your contact details here, or call <a href="tel:+17708628942">(770) 862-8942</a>.</p></noscript>
+            <div class="sc-fields c2">
+              <div class="sc-field">
+                <label for="sc-name">First name</label>
+                <input id="sc-name" name="firstName" type="text" autocomplete="given-name" placeholder="What do we call you?" required minlength="2" maxlength="160">
+                <p class="sc-error" data-error-for="sc-name" hidden>Enter your first name (2+ characters).</p>
+              </div>
+              <div class="sc-field">
+                <label for="sc-email">Email</label>
+                <input id="sc-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" required maxlength="254">
+                <p class="sc-micro">No spam. Your coach match, nothing else.</p>
+                <p class="sc-error" data-error-for="sc-email" hidden>Enter a valid email address.</p>
+              </div>
+            </div>
+            <fieldset class="sc-field sc-goal">
+              <legend>What is your primary goal?</legend>
+              <div class="sc-options" role="radiogroup" aria-label="Primary goal">
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="aesthetics">Build muscle &amp; physique</button>
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="tactical">Tactical &amp; performance</button>
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="firearms">Firearms training</button>
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="recomp">Fat loss &amp; recomposition</button>
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="lifestyle">General fitness &amp; lifestyle</button>
+                <button type="button" class="sc-opt" role="radio" aria-checked="false" data-goal="endurance">Endurance &amp; events</button>
+              </div>
+              <p class="sc-error" data-error-for="sc-goal" hidden>Pick the goal closest to yours.</p>
+            </fieldset>
+            <button type="submit" class="sc-btn sc-btn-primary">Match Me With A Coach</button>
+            <p class="sc-subcopy">Takes about 45 seconds.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="sc-card sc-screen" data-screen="quiz" aria-live="polite" hidden></section>
+
+      <section class="sc-card sc-screen sc-loading" data-screen="loading" hidden>
+        <div class="sc-spinner" aria-hidden="true"></div>
+        <p class="sc-loading-copy">Matching your coach&hellip;</p>
+      </section>
+
+      <section class="sc-card sc-screen sc-results" data-screen="results" aria-labelledby="sc-result-h" hidden></section>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* coach match unit — tile layout on the premium design system, scoped to
+   #stg-coach and .cm-steps. Tokens only, sharp corners, Bebas headings. */
+
+/* --- how-it-works step tiles (checkin-card pattern) --- */
+.cm-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:clamp(28px,4vw,44px)}
+@media(max-width:800px){.cm-steps{grid-template-columns:1fr}}
+.cm-step{border:1px solid var(--line);background:var(--bg-2);padding:clamp(22px,3vw,32px);transition:border-color .4s}
+.cm-step:hover{border-color:rgba(244,242,238,.3)}
+.cm-step h3{font-size:1.5rem;text-transform:uppercase;margin:0 0 10px}
+.cm-step p{font-size:.85rem;color:var(--ink-dim);line-height:1.6;font-weight:300}
+
+/* --- unit shell --- */
+#stg-coach{
+  box-sizing:border-box; max-width:1120px; margin:0 auto;
+  font-family:var(--body); color:var(--ink); -webkit-font-smoothing:antialiased;
+}
+#stg-coach *,#stg-coach *::before,#stg-coach *::after{box-sizing:border-box;}
+#stg-coach .sc-progress{height:2px;width:100%;background:var(--line);overflow:hidden;margin-bottom:12px;}
+#stg-coach .sc-progress-fill{height:100%;width:0;background:var(--red);transition:width .4s var(--ease-out);}
+#stg-coach .sc-step-label{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 20px;font-weight:600;}
+#stg-coach .sc-card{padding:0;}
+#stg-coach .sc-screen[hidden]{display:none;}
+#stg-coach .sc-screen{animation:sc-in .28s var(--ease-out) both;}
+@keyframes sc-in{from{opacity:0;transform:translateX(24px);}to{opacity:1;transform:translateX(0);}}
+@media (prefers-reduced-motion:reduce){#stg-coach .sc-screen{animation:none;}#stg-coach .sc-progress-fill{transition:none;}}
+
+/* --- shared type --- */
+#stg-coach .sc-eyebrow{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tan);margin:0 0 14px;font-weight:600;}
+#stg-coach .sc-h1{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.92;font-size:clamp(2.2rem,6vw,3.4rem);margin:0 0 14px;}
+#stg-coach .sc-sub{font-size:.95rem;color:var(--ink-dim);margin:0;line-height:1.7;font-weight:300;max-width:520px;}
+#stg-coach .sc-q{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.8rem,5vw,2.6rem);line-height:.95;margin:0 0 12px;}
+#stg-coach .sc-q-sub{font-size:.92rem;color:var(--ink-dim);margin:0;line-height:1.7;font-weight:300;}
+
+/* --- intake: head + 2-col media/form grid --- */
+#stg-coach .sc-intake-head{margin:0 0 clamp(28px,4vw,44px);}
+#stg-coach .sc-intake-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:start;}
+@media(max-width:900px){#stg-coach .sc-intake-grid{grid-template-columns:1fr;}}
+/* photo tile: programs-card background pattern (image fills card, gradient, caption on top) */
+#stg-coach .sc-intake-media{position:relative;margin:0;border:1px solid var(--line);background:var(--bg-2);overflow:hidden;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;}
+#stg-coach .sc-intake-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.72) contrast(1.06);transform:scale(1.02);transition:transform .9s var(--ease-out);}
+#stg-coach .sc-intake-media::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(28,28,30,.25) 0%,rgba(28,28,30,0) 30%,rgba(28,28,30,.55) 62%,var(--bg) 96%);}
+#stg-coach .sc-intake-media:hover img{transform:scale(1.07);}
+#stg-coach .sc-proof{position:relative;z-index:2;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);padding:0 18px 16px;margin:0;line-height:1.5;}
+
+/* --- fields: name/email side by side --- */
+#stg-coach .sc-fields{display:grid;gap:0 clamp(20px,3vw,36px);}
+#stg-coach .sc-fields.c2{grid-template-columns:1fr 1fr;}
+@media(max-width:640px){#stg-coach .sc-fields.c2{grid-template-columns:1fr;}}
+#stg-coach .sc-field{margin:0 0 24px;border:0;padding:0;}
+#stg-coach .sc-field label,#stg-coach .sc-field legend{display:block;font-weight:600;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 12px;padding:0;}
+#stg-coach input{width:100%;font-family:var(--body);font-size:.95rem;color:var(--ink);background:transparent;border:none;border-bottom:1px solid var(--ink-faint);padding:12px 0;outline:none;border-radius:0;transition:border-color .35s;}
+#stg-coach input:focus{border-color:var(--red);}
+#stg-coach input::placeholder{color:var(--ink-faint);}
+#stg-coach .sc-micro{font-size:.78rem;color:var(--ink-dim);margin:12px 0 0;}
+#stg-coach .sc-error{font-size:.78rem;color:var(--tan);margin:12px 0 0;font-weight:500;}
+
+/* --- option tiles (goal = 3 cols, quiz n4 = 2 cols, n2 = 1 col) --- */
+#stg-coach .sc-options{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+#stg-coach .sc-goal .sc-options{grid-template-columns:repeat(3,1fr);}
+#stg-coach .sc-options.n4{grid-template-columns:repeat(2,1fr);}
+@media(max-width:900px){#stg-coach .sc-goal .sc-options{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){#stg-coach .sc-goal .sc-options,#stg-coach .sc-options.n4{grid-template-columns:1fr;}}
+#stg-coach .sc-opt{position:relative;display:flex;flex-direction:column;justify-content:center;width:100%;min-height:96px;text-align:left;cursor:pointer;font-family:var(--body);font-size:.9rem;font-weight:400;color:var(--ink);background:var(--bg);border:none;padding:20px 18px;line-height:1.5;transition:background .3s,color .3s;}
+#stg-coach .sc-opt:hover{background:var(--bg-2);color:var(--ink);}
+#stg-coach .sc-opt[aria-checked="true"]{background:var(--red);color:var(--ink);font-weight:500;}
+#stg-coach .sc-opt:focus-visible{outline:1px solid var(--red);outline-offset:3px;}
+
+/* --- quiz screen: question left, option tiles right --- */
+#stg-coach .sc-quiz-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,4vw,56px);align-items:start;}
+@media(max-width:800px){#stg-coach .sc-quiz-grid{grid-template-columns:1fr;}}
+#stg-coach .sc-validate{font-family:var(--display);font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--tan);margin:18px 0 0;opacity:0;transition:opacity .2s;min-height:24px;}
+#stg-coach .sc-validate.show{opacity:1;}
+
+/* --- buttons --- */
+#stg-coach .sc-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:54px;cursor:pointer;font-family:var(--body);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid transparent;padding:16px 30px;transition:background .35s,color .35s,transform .1s;text-decoration:none;}
+#stg-coach .sc-btn:active{transform:scale(.98);}
+#stg-coach .sc-btn-primary{background:var(--red);border-color:var(--red);color:var(--ink);}
+#stg-coach .sc-btn-primary:hover{background:var(--ink);border-color:var(--ink);color:var(--bg);}
+#stg-coach .sc-btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink-faint);}
+#stg-coach .sc-btn-ghost:hover{background:rgba(194,48,38,.12);}
+#stg-coach .sc-subcopy{text-align:center;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin:14px 0 0;}
+
+/* --- loading --- */
+#stg-coach .sc-loading{text-align:center;padding:80px 22px;}
+#stg-coach .sc-spinner{width:42px;height:42px;margin:0 auto 20px;border:2px solid var(--line);border-top-color:var(--red);border-radius:50%;animation:sc-spin 1s linear infinite;}
+@keyframes sc-spin{to{transform:rotate(360deg);}}
+#stg-coach .sc-loading-copy{font-family:var(--display);font-size:1.4rem;letter-spacing:.08em;text-transform:uppercase;margin:0;}
+@media (prefers-reduced-motion:reduce){#stg-coach .sc-spinner{animation:none;}}
+
+/* --- results: horizontal coach card + side-by-side CTA --- */
+#stg-coach .sc-result-card{display:grid;grid-template-columns:.85fr 1.15fr;border:1px solid var(--line);background:var(--bg-2);margin:0 0 18px;}
+@media(max-width:800px){#stg-coach .sc-result-card{grid-template-columns:1fr;}}
+#stg-coach .sc-result-media{position:relative;overflow:hidden;border-right:1px solid var(--line);}
+@media(max-width:800px){#stg-coach .sc-result-media{border-right:none;border-bottom:1px solid var(--line);aspect-ratio:4/3;}}
+#stg-coach .sc-result-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.72) contrast(1.06);}
+#stg-coach .sc-result-media::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(28,28,30,.25) 0%,rgba(28,28,30,0) 30%,rgba(28,28,30,.55) 62%,var(--bg) 96%);}
+#stg-coach .sc-result-info{padding:clamp(24px,4vw,40px);}
+#stg-coach .sc-badge{display:inline-block;font-weight:600;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);background:var(--red);padding:8px 14px;margin:0 0 18px;}
+#stg-coach .sc-result-h{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(2.2rem,6vw,3.4rem);line-height:.92;margin:0 0 10px;}
+#stg-coach .sc-result-role{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--tan);margin:0 0 20px;}
+#stg-coach .sc-result-desc{font-size:.92rem;color:var(--ink-dim);line-height:1.7;font-weight:300;margin:0 0 24px;}
+#stg-coach .sc-why{font-size:.85rem;color:var(--ink-dim);background:var(--bg);border-left:2px solid var(--red);padding:16px 18px;margin:0;line-height:1.7;}
+#stg-coach .sc-cta{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,3vw,40px);align-items:center;background:var(--bg-2);border:1px solid var(--line);padding:clamp(24px,4vw,32px);margin:0 0 18px;}
+@media(max-width:800px){#stg-coach .sc-cta{grid-template-columns:1fr;}}
+#stg-coach .sc-cta h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:1.6rem;line-height:1;margin:0 0 12px;}
+#stg-coach .sc-cta p{font-size:.88rem;color:var(--ink-dim);line-height:1.7;font-weight:300;margin:0;}
+#stg-coach .sc-cta-action{display:grid;gap:12px;}
+#stg-coach .sc-restart{display:block;background:none;border:0;color:var(--ink-faint);font-family:var(--body);font-size:.78rem;text-decoration:underline;cursor:pointer;margin:28px auto 0;}
+#stg-coach .sc-restart:hover{color:var(--ink);}
+</style>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <a class="logo" href="index.html"><span class="mark"><img src="assets/media/logos/brand/logo-shield.svg" alt="Strikeline shield"></span>STRIKELINE TRAINING GROUP</a>
+    <div class="foot-badges">
+      <a class="store-badge" href="https://apps.apple.com/us/app/strikeline-training/id6790442227" data-ph="app-store"><span class="sb-top">Download on the</span><span class="sb-name">App Store</span></a>
+      <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.strikelinetraining.training.own" data-ph="google-play"><span class="sb-top">Get it on</span><span class="sb-name">Google Play</span></a>
+    </div>
+  </div>
+  <div class="foot-aux">
+    <div class="aux-col aux-cta">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">Our Team</a>
+      <a href="index.html#app">The App</a>
+      <a href="index.html#assessment">Assessment</a>
+      <a href="contact.html">Contact</a>
+      <a href="intake.html">Intake</a>
+      <a href="7dayprotocol.html">7 Day Protocol</a>
+      <a href="coachmatch.html">Coach Match</a>
+    </div>
+    <div class="aux-col">
+      <a href="privacy-policy.html" data-ph="privacy-policy">Privacy Policy</a>
+      <a href="terms-and-conditions.html" data-ph="terms">Terms &amp; Conditions</a>
+      <a href="mailto:billing@strikelinetraining.com" data-ph="billing-email">Billing</a>
+    </div>
+    <div class="aux-col">
+      <div class="clients-drop">
+        <button class="clients-btn" type="button" aria-haspopup="true">Clients <span class="cd-caret">▾</span></button>
+        <div class="clients-menu">
+          <!-- bridge placeholders until exercise.com intake is live -->
+          <a href="checkin.html">Submit Check-In</a>
+          <a href="contact.html#contactForm" data-ph="client-book-call">Contact a Coach</a>
+        </div>
+      </div>
+      <a href="events.html">Class &amp; Event Schedule</a>
+      <a href="#" data-ph="blog" hidden>Blog</a>
+    </div>
+  </div>
+  <div class="foot-word">STRIKELINE</div>
+  <div class="foot-app">
+    <a class="app-tile" href="https://training.strikelinetraining.com" target="_blank" rel="noopener">
+      <span class="at-img"><img src="assets/media/photos/app/app-screen-4.jpg" alt="Strikeline app login screen" loading="lazy" decoding="async"></span>
+      <span><b>The Athlete App</b><span class="at-sub">Athlete Login <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></span></span>
+    </a>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Strikeline Training Group. All Rights Reserved.</span>
+    <span>Human Performance, Amplified.</span>
+    <span>Beaufort, South Carolina · <a href="sponsors.html">Sponsors</a></span>
+  </div>
+</footer>
+
+<script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script type="application/x-stg-script" data-site-script data-src="js/core.js?v=final-cleanup-20260908"></script>
+<script type="application/x-stg-script" data-site-script data-src="js/form-delivery.js"></script>
+<script type="application/x-stg-script" data-site-script>
+(function(){
+  "use strict";
+
+  /* ===================== OPERATOR CONFIG ===================== */
+  var CONFIG = {
+    webhookUrl:     "https://formspree.io/f/xykvredg", // coach match Formspree form
+    utmSource:      "coach-match"
+  };
+  /* ========================================================== */
+
+  var root = document.getElementById("stg-coach");
+  if(!root) return;
+  var reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  var state = { firstName:"", email:"", goal:"", sex:"", budget:"", commitment:"", leadScore:0, coach:null, currentQ:0, answers:{} };
+  var COACH_PHOTO_BASE = "https://lhbncexgdxfgghlmnosv.supabase.co/storage/v1/object/public/site-photos/";
+
+  // Existing four-coach recommendation policy remains below. The complete six-coach
+  // roster is available on about.html; intro-call URLs match its verified native links.
+  var COACHES = {
+    ainsley:{ name:"Ainsley Pennock", role:"Head Coach & Founder", photo:"coach-ainsley.jpg",
+      bookingUrl:"https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3051112",
+      desc:"Founder of Strikeline Training Group and a certified personal trainer. Ainsley is an active-duty U.S. Marine with 10 years of service.",
+      why:"Ainsley's experience as Strikeline's head coach is a starting point for discussing your goals." },
+    justin:{ name:"Justin Poole", role:"Coach : Bodybuilding", photo:"coach-justin.jpg",
+      bookingUrl:"https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3017439",
+      desc:"Certified Bodybuilding Coach and Marine Corps Infantry Veteran. Justin runs high-intensity, in-person training focused on building size, strength, and physical dominance.",
+      why:"Justin's bodybuilding background is a starting point for discussing your physique goals." },
+    zach:{ name:"Zach Vazquez", role:"Coach : Tactical & Firearms", photo:"coach-zach.jpg",
+      bookingUrl:"https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3017453",
+      desc:"Active-duty U.S. Marine, Bodybuilding Coach, and Sig Sauer Master Rifle and Pistol Instructor. Zach brings 9 years of military discipline and tactical athletics to every session.",
+      why:"Zach's tactical and firearms background is a starting point for discussing your readiness goals." },
+    tyler:{ name:"Tyler", role:"Coach : Physique & Tactical", photo:"coach-tyler.jpg",
+      bookingUrl:"https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3036056",
+      desc:"Marine Corps veteran: 10 years as a Motor-T Operator, EOD Tech, and Combat Marksmanship Coach. Classic Physique competitor now pursuing a degree in Exercise Science with a minor in Strength and Conditioning. Tyler coaches physique, tactical readiness, and marksmanship.",
+      why:"Tyler's strength and conditioning background is a starting point for discussing your training goals." }
+  };
+
+  function matchCoach(){
+    if(state.budget === "premium") return "ainsley";   // top investment tier always pulls the owner
+    if(state.sex === "female") return "ainsley";        // all female clients route to Ainsley
+    if(state.goal === "aesthetics") return "justin";
+    if(state.goal === "tactical" || state.goal === "firearms") return "zach";
+    return "tyler"; // recomp, lifestyle, endurance
+  }
+
+  var QUESTIONS = [
+    { key:"sex", headline:"A quick question about your training.", sub:"This helps inform your coach suggestion.",
+      validate:null,
+      options:[ {label:"I am training as a man", tag:"male"}, {label:"I am training as a woman", tag:"female"} ] },
+    { key:"budget", headline:"Where are you on investing in coaching?", sub:"Be honest. It helps inform your starting point.",
+      validate:"Understood. That tells us a lot.",
+      options:[
+        {label:"I want the best, cost is not the question, and I'm ready to start now", tag:"premium"},
+        {label:"I'm ready to invest seriously in my training", tag:"high"},
+        {label:"I want quality coaching at a fair price", tag:"mid"},
+        {label:"I'm exploring and comparing options", tag:"low"}
+      ] },
+    { key:"commitment", headline:"When do you want to start?", sub:"This is calibration, not a commitment.",
+      validate:null,
+      options:[
+        {label:"I'm ready to start immediately", tag:"hot", score:3},
+        {label:"Within the next 30 days", tag:"warm", score:2},
+        {label:"I'm comparing options", tag:"cool", score:1},
+        {label:"Not sure yet", tag:"cold", score:0}
+      ] }
+  ];
+
+  function screen(n){ return root.querySelector('[data-screen="'+n+'"]'); }
+  function show(n){ root.setAttribute("data-phase",n); ["intake","quiz","loading","results"].forEach(function(s){ var el=screen(s); if(el) el.hidden=(s!==n); }); }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function setProgress(step){
+    var bar=root.querySelector(".sc-progress"),fill=root.querySelector(".sc-progress-fill"),label=root.querySelector(".sc-step-label"),total=3;
+    if(step<=0){ bar.hidden=true; label.hidden=true; return; }
+    bar.hidden=false; label.hidden=false; fill.style.width=(Math.min(step,total)/total*100)+"%"; bar.setAttribute("aria-valuenow",String(step));
+    label.textContent = step<total ? ("Step "+step+" of "+total) : "Final step";
+  }
+  function wireRadios(c,onPick){
+    var opts=Array.prototype.slice.call(c.querySelectorAll('.sc-opt'));
+    opts.forEach(function(opt){
+      opt.addEventListener("click",function(){ opts.forEach(function(o){o.setAttribute("aria-checked","false");}); opt.setAttribute("aria-checked","true"); onPick(opt); });
+      opt.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); opt.click(); }});
+    });
+  }
+  function showError(k){ var e=root.querySelector('[data-error-for="'+k+'"]'); if(e) e.hidden=false; }
+  function hideError(k){ var e=root.querySelector('[data-error-for="'+k+'"]'); if(e) e.hidden=true; }
+
+  var goalChoice="";
+  wireRadios(root.querySelector(".sc-goal .sc-options"),function(opt){ goalChoice=opt.getAttribute("data-goal"); hideError("sc-goal"); });
+
+  root.querySelector("#sc-intake-form").addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=root.querySelector("#sc-name").value.trim(), email=root.querySelector("#sc-email").value.trim(), ok=true;
+    if(name.length<2){ showError("sc-name"); ok=false; } else hideError("sc-name");
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ showError("sc-email"); ok=false; } else hideError("sc-email");
+    if(!goalChoice){ showError("sc-goal"); ok=false; }
+    if(!ok) return;
+    state.firstName=name; state.email=email; state.goal=goalChoice;
+    state.currentQ=0; show("quiz"); renderQuestion();
+  });
+
+  function renderQuestion(){
+    var q=QUESTIONS[state.currentQ];
+    setProgress(state.currentQ+1);
+    var host=screen("quiz");
+    host.innerHTML='<div class="sc-quiz-grid">'+
+      '<div class="sc-quiz-head"><h2 class="sc-q">'+esc(q.headline)+'</h2><p class="sc-q-sub">'+esc(q.sub)+'</p></div>'+
+      '<div class="sc-quiz-body">'+
+      '<div class="sc-options n'+q.options.length+'" role="radiogroup" aria-label="'+esc(q.headline)+'">'+
+      q.options.map(function(o,i){return '<button type="button" class="sc-opt" role="radio" aria-checked="false" data-i="'+i+'">'+esc(o.label)+'</button>';}).join('')+
+      '</div><p class="sc-validate" aria-live="polite"></p></div></div>';
+    host.classList.remove("sc-screen"); void host.offsetWidth; host.classList.add("sc-screen");
+    var heading=host.querySelector(".sc-q"); if(heading){ heading.setAttribute("tabindex","-1"); heading.focus({preventScroll:false}); }
+    var advancing = false;
+    wireRadios(host.querySelector(".sc-options"),function(opt){
+      if (advancing) return;
+      advancing = true;
+      host.querySelectorAll('.sc-opt').forEach(function(button){ button.disabled = true; });
+      var i=parseInt(opt.getAttribute("data-i"),10), chosen=q.options[i];
+      state.answers[q.key]=chosen.tag;
+      if(q.key==="sex") state.sex=chosen.tag;
+      if(q.key==="budget") state.budget=chosen.tag;
+      if(q.key==="commitment"){ state.commitment=chosen.tag; state.leadScore=chosen.score; }
+      var advance=function(){ if(state.currentQ<QUESTIONS.length-1){ state.currentQ++; renderQuestion(); } else { goLoading(); } };
+      if(q.validate){ var v=host.querySelector(".sc-validate"); v.textContent=q.validate; v.classList.add("show"); if(reduce) advance(); else setTimeout(advance,800); }
+      else advance();
+    });
+  }
+
+  function goLoading(){ setProgress(3); show("loading"); state.coach=matchCoach(); setTimeout(renderResults, reduce?200:1800); }
+
+  function renderResults(){
+    var host=screen("results"), c=COACHES[state.coach]||COACHES.tyler, cold=state.commitment==="cold";
+    var primaryHead=cold?"Explore coaching with "+c.name.split(" ")[0]+".":"Your suggested starting point.";
+    host.innerHTML=
+      '<div class="sc-result-card">'+
+        '<div class="sc-result-media">'+
+          // PHOTO PLACEHOLDER (coach). Replace with the matched coach's photo.
+          '<img src="'+COACH_PHOTO_BASE+c.photo+'" alt="'+esc(c.name)+'">'+
+        '</div>'+
+        '<div class="sc-result-info">'+
+          '<span class="sc-badge">Coach Recommendation</span>'+
+          '<h2 class="sc-result-h" id="sc-result-h" tabindex="-1">'+esc(c.name)+'</h2>'+
+          '<p class="sc-result-role">'+esc(c.role)+'</p>'+
+          '<p class="sc-result-desc">'+esc(c.desc)+'</p>'+
+          '<p class="sc-why">'+esc(c.why)+'</p>'+
+        '</div>'+
+      '</div>'+
+      '<div class="sc-cta">'+
+        '<div class="sc-cta-copy">'+
+          '<h3>'+esc(primaryHead)+'</h3>'+
+          '<p>Book a free 15-minute intro call with '+esc(c.name.split(" ")[0])+'. Discuss your goals and coaching options, or meet the full team before choosing. Complete the booking steps to confirm your appointment.</p>'+
+        '</div>'+
+        '<div class="sc-cta-action">'+
+          '<a class="sc-btn sc-btn-primary" href="'+esc(c.bookingUrl)+'">Book My Intro Call <span class="ui-arrow" aria-hidden="true"></span></a>'+
+          '<a class="sc-btn sc-btn-ghost" href="about.html#coaches">Meet All Six Coaches</a>'+
+        '</div>'+
+      '</div>'+
+      '<button type="button" class="sc-restart">Start over</button>';
+    show("results"); setProgress(0);
+    var h=host.querySelector(".sc-result-h"); if(h) h.focus();
+    host.querySelector(".sc-restart").addEventListener("click",function(){ location.reload(); });
+    postLead("coach_matched");
+  }
+
+  function postLead(tag){
+    if(!CONFIG.webhookUrl || CONFIG.webhookUrl.indexOf("REPLACE_WITH")===0){ console.warn("[STG coach] webhookUrl not set, "+tag+" not sent."); return; }
+    var params=new URLSearchParams(window.location.search);
+    var payload={ tag:tag, firstName:state.firstName, email:state.email, goal:state.goal,
+      source:params.get("utm_source")||CONFIG.utmSource, timestamp:new Date().toISOString() };
+    if(tag==="coach_matched"){
+      payload.sex=state.sex; payload.budget=state.budget; payload.commitment=state.commitment;
+      payload.matched_coach=state.coach; payload.leadScore=state.leadScore;
+      if(state.leadScore===3) payload.hot_lead="yes";
+    }
+    payload._gotcha = root.querySelector('[name="_gotcha"]').value;
+    window.STGForms.submitQuiz(screen('results'), CONFIG.webhookUrl, payload);
+  }
+
+  show("intake"); setProgress(0);
+})();
+</script>
+
+<script src="js/motion-bootstrap.js"></script>
+</body>
+</html>

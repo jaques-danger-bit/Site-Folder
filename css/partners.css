@@ -1,0 +1,101 @@
+/* Partner roster and homepage logo marquee.
+   Load after the page stylesheet. Shared brand tokens come from tokens.css. */
+
+.partner-logo {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  width: 100%;
+  height: 190px;
+  padding: 24px;
+  background: var(--ink);
+}
+.partner-logo--dark { background: var(--bg-2); }
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+.sponsor-roster { padding-top: 0; }
+.sponsor-roster h2,
+.partner-band h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1;
+}
+.sponsor-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+  list-style: none;
+}
+.sponsor-strip li,
+.sponsor-strip figure { min-width: 0; }
+.sponsor-strip figcaption {
+  padding-top: 14px;
+  color: var(--ink);
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+.partner-band {
+  padding-top: clamp(44px, 6vw, 80px);
+  padding-bottom: clamp(44px, 6vw, 80px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.partner-band-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.partner-band-head .btn { text-align: center; }
+.partner-marquee { overflow: hidden; }
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+.partner-logos li { min-width: 0; }
+.partner-logos .partner-logo { height: 112px; padding: 16px; }
+.partner-logos--duplicate { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .partner-band.is-animated .partner-track {
+    display: flex;
+    width: max-content;
+    animation: partner-drift 55s linear infinite;
+    animation-play-state: paused;
+  }
+  .partner-band.is-animated .partner-logos {
+    display: flex;
+    flex: none;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .partner-band.is-animated .partner-logos li { width: 180px; flex: none; }
+  .partner-band.is-animated.is-in-view:not(:focus-within):not(.is-hovered) .partner-track {
+    animation-play-state: running;
+  }
+}
+@keyframes partner-drift {
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 800px) {
+  .sponsor-strip { gap: 24px 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sponsor-strip .partner-logo { height: 170px; padding: 20px; }
+  .partner-band-head { align-items: flex-start; flex-direction: column; }
+  .partner-logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .sponsor-strip .partner-logo { height: 140px; padding: 14px; }
+  .partner-band-head .btn { width: 100%; justify-content: center; padding: 18px 14px; }
+  .partner-band-head .btn span { white-space: normal; line-height: 1.5; }
+  .partner-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

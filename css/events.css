@@ -1,0 +1,21 @@
+/* STRIKELINE — calendar-only Events page. Load after tokens.css and shell.css.
+   Native Exercise.com owns calendar controls and registration. No custom motion. */
+.events-page{padding:calc(var(--nav-h) + 38px) var(--pad-x) 36px}
+.events-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px}
+.events-heading h1{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1;text-transform:uppercase}
+.events-heading p,.events-note{font-size:.85rem;line-height:1.7;color:var(--ink-dim)}
+.events-heading p{margin-top:12px}
+.events-calendar-link{flex-shrink:0;display:inline-flex;align-items:center;gap:12px;min-height:44px;font-size:.72rem;line-height:1.6;color:var(--tan)}
+.events-calendar-link span{color:var(--red)}
+.events-calendar{border:1px solid var(--line);background:var(--bg-2);min-width:0}
+.events-calendar iframe{display:block;width:100%;height:max(720px,calc(100svh - 260px));border:0;background:#fff}
+.events-note{margin-top:16px}
+.events-note a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+.events-page :focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.events-footer{padding-top:0}
+@media(max-width:768px){
+  .events-page{padding-top:calc(var(--nav-h) + 28px)}
+  .events-heading{display:block;margin-bottom:16px}
+  .events-calendar-link{margin-top:8px}
+  .events-calendar iframe{height:800px}
+}

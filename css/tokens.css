@@ -1,0 +1,62 @@
+/* ============================================================
+   STRIKELINE — tokens.css
+   Design tokens + reset + base elements. Load first.
+   Source of truth: Final Design Spec §5 (brand law).
+   ============================================================ */
+
+:root{
+  /* color — Brand Book v1.0. Red/orange are accents; charcoal and bone carry the work. */
+  --bg:#1C1C1E;            /* Charcoal — primary dark base */
+  --bg-2:#232326;          /* elevated surface */
+  --ink:#F4F2EE;           /* Bone White — primary text on dark */
+  --ink-dim:rgba(244,242,238,.55);
+  --ink-faint:rgba(244,242,238,.26);
+  --red:#C23026;           /* MAIN ACCENT (owner, July 2026) — CTAs, interactive moments, highlights */
+  --red-deep:#8B1E2E;      /* Tactical Red — monograms, logo mark */
+  --orange:#E5742B;        /* brand orange — retained for reference; site accent is red */
+  --tan:#D6BA8C;           /* Dry Tan — eyebrows, labels, dividers */
+  --line:rgba(244,242,238,.12);
+
+  /* layout */
+  --maxw:1440px;
+  --pad-x:clamp(20px,4vw,56px);
+  --nav-h:72px;
+  --section-pad:clamp(90px,12vw,170px);
+
+  /* spacing scale 4 → 68 */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px;
+  --s-5:24px; --s-6:32px; --s-7:44px; --s-8:56px; --s-9:68px;
+
+  /* type */
+  --display:'Bebas Neue',sans-serif;
+  --body:'Inter',sans-serif;
+
+  /* motion — signature curve mined from coffee-tech.com */
+  --ease-out:cubic-bezier(.2,.8,.2,1);
+}
+
+/* reset */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scrollbar-width:thin;scrollbar-color:#3a3a3e var(--bg)}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--body);font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--red);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:none;text-align:left}
+h1,h2,h3,.display{font-family:var(--display);font-weight:400;letter-spacing:.01em}
+:focus-visible{outline:1px solid var(--red);outline-offset:3px}
+@media(pointer:fine){html.js body,html.js a,html.js button,html.js input,html.js select,html.js textarea,html.js label{cursor:none}}
+html.reduced,html.reduced body,html.reduced a,html.reduced button,html.reduced input,html.reduced select,html.reduced textarea,html.reduced label{cursor:auto}
+
+/* utilities */
+.wrap{max-width:var(--maxw);margin:0 auto}
+section{padding:var(--section-pad) var(--pad-x);position:relative}
+section[id]{scroll-margin-top:var(--nav-h)}

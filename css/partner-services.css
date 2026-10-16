@@ -1,0 +1,39 @@
+/* STRIKELINE — partner pop-up services and inquiry form.
+   Load after tokens.css, shell.css, and pages.css. No image or motion dependencies. */
+.popup-hero{padding-top:calc(var(--nav-h) + clamp(48px,6vw,88px))}
+.popup-hero p{max-width:600px}
+.popup-offers{padding-top:48px;padding-bottom:48px}
+.popup-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.popup-card{display:flex;flex-direction:column;min-width:0;padding:clamp(24px,3vw,40px);background:var(--bg-2);border-top:2px solid var(--red)}
+.popup-card h2{font-size:clamp(2.2rem,3.7vw,3.5rem);line-height:1;text-transform:uppercase}
+.popup-card p{font-size:.9rem;line-height:1.7;color:var(--ink-dim);margin-top:20px}
+.popup-card .popup-provider{margin-top:28px;margin-bottom:0}
+.popup-provider strong{display:block;color:var(--ink);font-weight:500;font-size:1rem}
+.popup-card .btn{margin-top:auto;align-self:flex-start;max-width:100%;padding:16px 20px;font-size:.7rem;letter-spacing:.12em}
+.popup-card p:last-of-type{margin-bottom:32px}
+.popup-note{font-size:.78rem;line-height:1.7;color:var(--ink-dim);padding-top:24px}
+.popup-inquiry{border-top:1px solid var(--line);padding-top:clamp(48px,7vw,90px);padding-bottom:clamp(48px,7vw,90px)}
+.popup-inquiry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,7vw,100px)}
+.popup-inquiry-copy h2{font-size:clamp(2.6rem,5vw,4.5rem);line-height:1}
+.popup-inquiry-copy p{font-size:.9rem;line-height:1.7;color:var(--ink-dim);margin-top:24px;max-width:440px}
+.popup-inquiry-copy>a{display:block;width:fit-content;max-width:100%;overflow-wrap:anywhere;margin-top:20px;text-decoration:underline;text-underline-offset:4px}
+.popup-form{min-width:0;scroll-margin-top:calc(var(--nav-h) + 24px)}
+.popup-form .field select{appearance:auto;white-space:normal}
+.popup-form .field input,.popup-form .field select{font-size:16px}
+.popup-form-note{font-size:.78rem;line-height:1.7;color:var(--ink-dim);margin-bottom:24px}
+.popup-form-note a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.popup-form .popup-honeypot{display:none}
+.popup-form button:disabled{opacity:.65;cursor:default}
+.popup-form .contact-status{font-size:.9rem;line-height:1.7;overflow-wrap:anywhere}
+.popup-form .contact-status:not(:empty){margin-top:20px;padding:16px;border-left:2px solid var(--tan);background:var(--bg-2)}
+.popup-form .contact-status[data-state="error"]{border-left-color:var(--red)}
+.popup-footer{padding-top:0}
+.popup-form :focus-visible,.popup-offers a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+@media(max-width:900px){
+  .popup-grid{grid-template-columns:1fr}
+  .popup-card h2{font-size:2.8rem}
+  .popup-inquiry-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .popup-form>.btn{width:100%;justify-content:center}
+}

@@ -1,0 +1,15 @@
+# Preserve the old GoDaddy Terms URL; Pages did not match the literal %26 rule.
+# The 26 suffix keeps the encoded-path splat from matching the canonical route.
+/terms-*26-conditions /terms-and-conditions 301
+/terms-&-conditions /terms-and-conditions 301
+
+# Preserve existing gym, intake and coaching entry points when GoDaddy is retired.
+/book-a-strategy-call /about#coaches 301
+/get-started /intake 301
+/client-check-in-1 /checkin 301
+/who-we-are /about 301
+/our-team /about 301
+/memberships /services 301
+/m/login https://training.strikelinetraining.com/ 301
+/m/create-account https://training.strikelinetraining.com/ 301
+/m/account https://training.strikelinetraining.com/ 301

@@ -1,0 +1,86 @@
+/* ============================================================
+   STRIKELINE — classes.css
+   Shared Home / Services class marketing and the Services schedule
+   embed slot. Load after the page stylesheet. No JS required.
+   ============================================================ */
+
+.group-classes{border-top:1px solid var(--line)}
+.group-classes .sec-head{margin-bottom:var(--s-7)}
+.group-classes .sec-tag,.class-type{color:var(--tan)}
+.group-classes .sec-head h2{font-size:clamp(2.6rem,5.8vw,5.5rem)}
+.class-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-5)}
+.class-card{
+  display:flex;flex-direction:column;align-items:flex-start;
+  padding:clamp(24px,3vw,44px);background:var(--bg-2);
+  border:1px solid var(--line);border-top:2px solid var(--red);min-width:0;
+}
+.class-type{font-size:.68rem;line-height:1.6;letter-spacing:.18em;text-transform:uppercase}
+.class-card h3{font-size:clamp(3.2rem,5vw,4.8rem);line-height:.95;text-transform:uppercase;margin:30px 0 22px}
+.class-card h3 span{display:block;font-size:1.3rem;letter-spacing:.12em;margin-bottom:10px;color:var(--tan)}
+.class-card p{color:var(--ink-dim);max-width:440px;font-size:.93rem;line-height:1.7;margin-bottom:var(--s-6)}
+.class-card .btn{margin-top:auto;max-width:100%;padding:16px 22px;font-size:.7rem;letter-spacing:.12em;justify-content:space-between}
+.class-card .btn i{flex-shrink:0}
+.class-terms{display:flex;align-items:center;justify-content:space-between;gap:var(--s-6);padding:30px 0;border-bottom:1px solid var(--line)}
+.class-terms h3{font-size:1.7rem;line-height:1.1;text-transform:uppercase}
+.class-terms p{color:var(--ink-dim);font-size:.86rem;line-height:1.7;margin-top:8px}
+.class-schedule-link{display:inline-flex;align-items:center;gap:14px;min-height:44px;color:var(--tan);font-size:.7rem;line-height:1.6;letter-spacing:.12em;text-transform:uppercase}
+.class-schedule-link span{color:var(--red);font-size:1.2rem}
+.booking-note{margin-top:20px;color:var(--ink-dim);font-size:.85rem;line-height:1.7}
+.booking-note a{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.facility-exit{flex-wrap:wrap}
+.facility-exit .booking-note{flex-basis:100%;margin-top:0}
+.group-classes :focus-visible,.class-schedule :focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+.service-jumps{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:var(--s-6)}
+.service-jumps a{display:inline-flex;align-items:center;min-height:44px;border-bottom:1px solid var(--line);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tan)}
+.service-jumps a:hover{border-color:var(--red);color:var(--ink)}
+.service-jumps a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+.membership-hero{padding-top:calc(var(--nav-h) + 56px)}
+.membership-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.membership-hero h1{font-size:clamp(3.2rem,6vw,6rem)}
+.membership-offer{padding:clamp(24px,3vw,40px);background:var(--bg-2);border:1px solid var(--line);border-top:2px solid var(--red);min-width:0}
+.membership-offer h2{font-size:clamp(2rem,3.2vw,3rem);line-height:1;text-transform:uppercase}
+.membership-offer .membership-price{font:400 3.5rem/1 var(--display);color:var(--ink);margin-top:22px}
+.membership-price small{font:400 .9rem/1.5 var(--body)}
+.membership-offer p:not(.membership-price){font-size:.85rem;line-height:1.7;margin-top:20px}
+.membership-offer .btn{margin-top:24px;max-width:100%}
+.membership-offer :focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+.class-schedule{border-top:1px solid var(--line)}
+.class-schedule .sec-head{margin-bottom:var(--s-7)}
+.schedule-frame{border:1px solid var(--line);background:var(--bg-2);min-width:0}
+.schedule-frame-head{display:flex;justify-content:space-between;gap:20px;padding:18px 26px;border-bottom:1px solid var(--line);font-size:.65rem;line-height:1.6;text-transform:uppercase;letter-spacing:.15em;color:var(--tan)}
+.schedule-empty{padding:clamp(40px,5vw,68px) clamp(22px,4vw,56px);text-align:center}
+.schedule-empty h3{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.05;text-transform:uppercase}
+.schedule-empty p{color:var(--ink-dim);max-width:470px;margin:18px auto 0;font-size:.9rem;line-height:1.7}
+.schedule-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:var(--s-6)}
+.schedule-actions .btn{max-width:100%;padding:16px 22px;font-size:.7rem;letter-spacing:.12em}
+.schedule-frame iframe{display:block;width:100%;min-height:600px;border:0}
+.exercise-booking{padding:clamp(20px,3vw,36px);border-top:1px solid var(--line);scroll-margin-top:calc(var(--nav-h) + 20px)}
+.exercise-booking[hidden]{display:none}
+.exercise-booking-head{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.exercise-booking-head h3{font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;line-height:1.1}
+.exercise-booking-head .btn{padding:14px 18px;font-size:.65rem;letter-spacing:.1em;flex-shrink:0}
+.exercise-booking .class-schedule-link{margin:12px 0 20px}
+.exercise-booking iframe{min-height:760px;background:#fff}
+
+@media(max-width:800px){
+  .membership-hero{padding-top:calc(var(--nav-h) + 36px)}
+  .membership-entry{grid-template-columns:1fr;gap:32px}
+  .exercise-booking-head{align-items:flex-start;flex-direction:column}
+  .group-classes .sec-head,.class-schedule .sec-head{display:block}
+  .group-classes .sec-head>p,.class-schedule .sec-head>p{margin-top:var(--s-5);max-width:none}
+  .class-grid{grid-template-columns:1fr}
+  .class-terms{align-items:flex-start;flex-direction:column;gap:18px}
+}
+@media(max-width:480px){
+  .class-card .btn{width:100%}
+  .schedule-frame-head{flex-direction:column;gap:6px;padding:18px 22px}
+  .schedule-actions{flex-direction:column}
+  .schedule-actions .btn{width:100%;justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){
+  .group-classes .btn,.group-classes .btn::before,
+  .class-schedule .btn,.class-schedule .btn::before{transition:none}
+}

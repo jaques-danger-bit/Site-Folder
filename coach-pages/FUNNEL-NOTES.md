@@ -1,6 +1,6 @@
 # Coach landing-page funnel handoff
 
-Prepared October 30, 2026. This records the recommended flow and later integration work; it does not activate payments, messaging, or production form changes.
+Prepared October 30, 2026. This records the page flow, supplied payment embeds and later integration work. No transaction, Stripe dashboard change, messaging activation or production form change is part of this review.
 
 ## Current two-path flow
 
@@ -21,19 +21,21 @@ Read-only booking findings are recorded in `evidence/booking-verification.json`.
 
 ## Separate Stripe purchase page
 
-The user has requested a prominent direct-purchase path and will send the embed links after the redesign. Three separate coach purchase pages and their self-contained blocks are prepared for that integration. They currently show an honest pending-enrollment state plus a same-coach call fallback. No product, price, certification, result or functioning payment flow is invented.
+The user approved the v2 full-bleed landing design with orange CTA and rejected the earlier purchase treatment. Preserve the landing pages and use that visual direction for the separate purchase pages: full-bleed portrait → offer comparison → **Choose** → native dialog containing the selected actual Stripe Buy Button. Load only the selected embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. Retain the same-coach call path.
 
-The generator reads optional trusted public embed markup from `purchase-embeds/{slug}.html`; missing, empty or comment-only files retain the pending state. After the user supplies links/embeds, match each to the correct coach, actual offer and success destination. Keep API secrets out of HTML.
+Public Stripe GETs confirm online coaching at $350/month and Foundation coaching at $475/month. Foundation specifies full programming, one session/week and 30-day cancellation notice. The user confirmed the $175 one-time Nutrition + Training Assessment as the entry offer. This resolves the earlier mismatch by choosing the assessment; the website's separate Standalone Program and its $30 updates are not part of this checkout set. Do not call the assessment a program or assign it the website contact form's 30-minute duration. See `evidence/services-20261030/RESEARCH-NOTES.md` for sources, scope and concise card copy.
 
-For cold buyers, a direct-purchase page is most useful when the outcome, deliverables, fit, price, duration/access, billing terms, cancellation/refund terms and fulfillment are clear. Preserve the call route for visitors who want help deciding. This is a conversion hypothesis to test, not evidence of improved sales.
+For cold buyers, compare the level of support, relevant fit, actual inclusions and price/cadence in plain language. The purchase page is a conversion hypothesis to test, not evidence of improved sales. Do not invent client proof, check-in frequency, response times or a commitment term to fill gaps in the product descriptions.
 
-The simplest first integration is an existing Stripe Payment Link with its copy-paste Buy Button/card. Fully embedded Checkout is also available through Checkout Sessions and entails more integration work. Decide from the actual offer and buyer experience; an embed alone is not evidence of better cold-traffic conversion.
+Each coach/offer uses static `client-reference-id="stg_{coach}_{offer}"`. That reference provides attribution for a future verified backend; it does not itself assign the coach, grant app access or deliver programming. All three actual Stripe widgets and product metadata were inspected read-only, including six widget renders at 1440px and 320px. Evidence is in `evidence/stripe-public-render.json`; no checkout was completed. Stripe connector reauthentication was unavailable, so no dashboard settings or live webhook configuration were inspected or changed.
+
+A bounded local read found `stg-portal/netlify/functions/founders-webhook.js` explicitly ignores non-founders coaching purchases; `stripe-payouts.js` reads product metadata, and no `client_reference_id` consumer was found in the functions searched. This describes the local checkout, not the deployed backend. Verify actual coach assignment and fulfillment before launch. The page/embed request does not authorize building an assumed onboarding backend; public copy must not promise automatic onboarding or a delivery deadline.
 
 - [Stripe Buy Button documentation](https://docs.stripe.com/payment-links/buy-button)
 - [Stripe Checkout options](https://docs.stripe.com/payments/checkout)
 - [Stripe post-payment events, fulfillment, redirects and metrics](https://docs.stripe.com/payment-links/post-payment)
 
-Before activation, select the real product/price and configure the correct success destination and fulfillment. Count purchases from verified Stripe events, with appropriate handling for delayed payment methods; a thank-you-page visit alone is not proof of payment. Payment configuration, live purchases and Stripe account changes remain future work.
+Count purchases from verified Stripe events, with appropriate handling for delayed payment methods; a thank-you-page visit alone is not proof of payment. Confirm the real success destination and fulfillment before launch. Live purchases and Stripe account configuration remain separate from read-only embed verification.
 
 Measure page views, intake starts, accepted intakes, booking-link clicks, confirmed bookings, attended calls, sales, refunds and revenue by coach and acquisition source. Keep clicks separate from actual bookings. For the purchase page, compare qualified purchases and net revenue against traffic cost, not just checkout starts. Judge the direct-purchase hypothesis with observed results; no conversion lift is promised.
 

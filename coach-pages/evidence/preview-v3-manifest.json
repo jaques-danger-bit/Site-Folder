@@ -1,0 +1,90 @@
+{
+  "created_at_utc": "2026-10-30T12:58:59.325145+00:00",
+  "method": "Browser screenshots of local generated pages. No image/photo modification. Preview boards are HTML renderings of those screenshots. No external requests or transactions.",
+  "captures": [
+    {
+      "coach": "justin",
+      "source": "http://127.0.0.1:8795/coach-pages/start-justin.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-purchase-hero",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/justin-mobile-hero.png"
+    },
+    {
+      "coach": "zach",
+      "source": "http://127.0.0.1:8795/coach-pages/start-zach.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-purchase-hero",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/zach-mobile-hero.png"
+    },
+    {
+      "coach": "rhylie",
+      "source": "http://127.0.0.1:8795/coach-pages/start-rhylie.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-purchase-hero",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/rhylie-mobile-hero.png"
+    },
+    {
+      "coach": "rhylie",
+      "source": "http://127.0.0.1:8795/coach-pages/start-rhylie.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-offer:nth(0)",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/rhylie-mobile-assessment.png"
+    },
+    {
+      "coach": "rhylie",
+      "source": "http://127.0.0.1:8795/coach-pages/start-rhylie.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-offer:nth(1)",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/rhylie-mobile-online.png"
+    },
+    {
+      "coach": "rhylie",
+      "source": "http://127.0.0.1:8795/coach-pages/start-rhylie.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "selector": ".stg-offer:nth(2)",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/preview-v3-assets/rhylie-mobile-inperson.png"
+    },
+    {
+      "coach": "justin",
+      "source": "http://127.0.0.1:8795/coach-pages/start-justin.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "selector": ".stg-enrollment",
+      "file": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/landing-pages/purchase-options-preview-v3.png"
+    }
+  ],
+  "source_sha256": {
+    "assets/purchase.css": "767e6f979f9c1a5e1858d2063475dfc0f42c906246fb68e63b9ddab89831bec6",
+    "assets/coach.css": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb",
+    "offers.json": "2a241fd456ca49d497dc2f5cf2618489c3f7538307e59521bb74a349fe012ccb",
+    "start-justin.html": "e24f440039b0e4fffa7d228393ac7a31ea8aaae21bbbf255620f7d5748d5f316",
+    "start-zach.html": "918e3d0cac70dd439d3587ab46627ad851ea895e5eb25f6ca1965668df032ea8",
+    "start-rhylie.html": "e42743d9ef042ab5036e467d30ed0d93bcfb5a5e86a662357133c67961303e3c"
+  },
+  "approved_landing_preview": {
+    "file": "coach-page-preview-v3.png",
+    "copied_from": "coach-page-preview-v2.png",
+    "note": "Byte-preserved approved v2 landing preview. Approved landing design remains unchanged.",
+    "sha256": "d90c4454d20ba99ad5d74d829aac6b960e3ebb15a3258f3acd6a99e55cb5d944"
+  }
+}

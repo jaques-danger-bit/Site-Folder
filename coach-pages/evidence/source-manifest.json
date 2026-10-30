@@ -56,5 +56,10 @@
     "primary_cta": "I\u2019m ready to start training",
     "destination": "Separate coach-specific purchase page",
     "payment_state": "Awaiting owner-supplied embed links after redesign; no checkout activated"
-  }
+  },
+  "checkout_revision_at_utc": "2026-10-30T12:57:33.774155+00:00",
+  "selected_design": "User approved v2 landing full-bleed photo design and rejected previous cream purchase-card design. Landing pages retained unchanged.",
+  "offer_evidence": "services-20261030/stripe-offers-verified.json and services-20261030/RESEARCH-NOTES.md",
+  "offer_selection": "User confirmed Use the $175 assessment; assessment one-time, online coaching $350/month, Foundation in-person $475/month.",
+  "payment_integration": "All three owner-supplied Buy Buttons configured on three coach-specific pages with client_reference_id. No payment transaction or backend fulfillment verified; draft not published."
 }

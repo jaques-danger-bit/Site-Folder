@@ -1,4 +1,4 @@
-"""Build photo-led coach purchase pages from verified offers.json data.
+"""Build comparison-first coach purchase pages from verified offers.json data.
 
 Does not create products, payments or subscriptions. The pending design's
 optional external-HTML mechanism is retired; only configured public IDs are used.
@@ -84,13 +84,6 @@ def _markup(coach, logo_uri, offers_data, badge_uri):
     talk = back + '#' + slug + '-intake'
     offers = offers_data['offers']
     cards = ''.join(_offer_card(offer, slug, index + 1) for index, offer in enumerate(offers))
-    descriptions = {
-        'justin': 'Build muscle. Get stronger. Give your effort a clear direction. Choose the coaching support that fits how you want to train.',
-        'zach': 'Get stronger and feel more confident in your training. Choose the support that helps you understand the work and keep moving forward.',
-        'rhylie': 'Build your physique and grow your confidence. Choose support that helps you turn the version of yourself you imagine into work you can do.'
-    }
-    specialty_question = 'Can we talk about tactical training?' if slug == 'zach' else 'Can we talk about bodybuilding competition prep?'
-    specialty_answer = ('Yes. Talk with Zach about your experience and tactical training goals before choosing a service. The coaching options above describe their fitness programming and support.' if slug == 'zach' else f'Yes. Talk with {name} about your experience, the competition you’re considering, and your timeline before choosing a service. Use the call to confirm the support your prep would need.')
     config = {
         'coach': slug, 'publishableKey': offers_data['publishableKey'],
         'offers': [{
@@ -104,27 +97,17 @@ def _markup(coach, logo_uri, offers_data, badge_uri):
     dialog = ''
     if config['offers']:
         first = config['offers'][0]
-        dialog = f'''<dialog class="stg-checkout-dialog" data-checkout-dialog aria-labelledby="{slug}-checkout-title" aria-describedby="{slug}-checkout-details"><button type="button" class="stg-checkout-close" data-checkout-close aria-label="Close checkout">×</button><p class="stg-kicker">Your next step</p><h2 id="{slug}-checkout-title" data-checkout-title>{esc(first['name'])}</h2><p class="stg-checkout-details" id="{slug}-checkout-details" data-checkout-details>{esc(first['price'] + ' ' + first['cadence'])}</p><p class="stg-checkout-terms" data-checkout-terms>{esc(first['terms'])}</p><p class="stg-checkout-status" data-checkout-status role="status" aria-live="polite"></p><div class="stg-stripe-mount" data-purchase-embed="{slug}"></div><a class="stg-checkout-fallback" data-checkout-fallback href="{esc(first['checkoutUrl'], quote=True)}" target="_top">Open secure checkout directly ↗</a><p class="stg-checkout-note">Payments are handled by Stripe.</p></dialog>'''
+        dialog = f'''<dialog class="stg-checkout-dialog" data-checkout-dialog aria-labelledby="{slug}-checkout-title" aria-describedby="{slug}-checkout-details"><button type="button" class="stg-checkout-close" data-checkout-close aria-label="Close checkout">×</button><p class="stg-kicker">Your next step</p><h2 id="{slug}-checkout-title" data-checkout-title>{esc(first['name'])}</h2><p class="stg-checkout-details" id="{slug}-checkout-details" data-checkout-details>{esc(first['price'] + ' ' + first['cadence'])}</p><p class="stg-checkout-terms" data-checkout-terms>{esc(first['terms'])}</p><p class="stg-checkout-status" data-checkout-status role="status" aria-live="polite"></p><div class="stg-stripe-mount" data-purchase-embed="{slug}"></div><a class="stg-checkout-fallback" data-checkout-fallback href="{esc(first['checkoutUrl'], quote=True)}" target="_top">Open secure checkout directly</a><p class="stg-checkout-note">Payments are handled by Stripe.</p></dialog>'''
     return f'''<div class="stg-coach-page stg-purchase-page" data-coach="{esc(name)}" data-purchase-page="{slug}">
 <a class="stg-skip" href="#{slug}-enrollment">Skip to training options</a>
+<header class="stg-purchase-header"><div class="stg-shell stg-purchase-header-inner"><a class="stg-brand" href="{back}" target="_top" aria-label="Back to {esc(name)}"><img class="stg-brand-logo" data-brand-logo src="{logo_uri}" alt="Strikeline Training Group"></a><nav class="stg-purchase-links" aria-label="Coach navigation"><a href="{back}" target="_top">Back to {esc(name)}</a></nav></div></header>
 <main>
-<section class="stg-hero stg-purchase-hero" aria-labelledby="{slug}-purchase-title" style="--photo-position:{esc(coach.get('photoPosition', '50% 30%'), quote=True)}">
-<img class="stg-hero-photo" src="assets/{slug}.jpg" alt="{esc(coach['fullName'])} at Strikeline" fetchpriority="high" decoding="async">
-<header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="https://strikelinetraining.com/" target="_top" aria-label="Strikeline Training Group home"><img class="stg-brand-logo" data-brand-logo src="{logo_uri}" alt="Strikeline Training Group"></a><a class="stg-nav-call" href="{back}" target="_top">← Back to {esc(name)}</a></div></header>
-<div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-kicker">{esc(name)} · {esc(coach['specialty'])}</p><h1 id="{slug}-purchase-title"><span>Start training</span><span>with {esc(name)}.</span></h1><p class="stg-hero-description">{descriptions[slug]}</p><div class="stg-hero-actions"><a class="stg-button" href="#{slug}-enrollment">View training options</a><a class="stg-button stg-button-secondary" href="{talk}" target="_top">Book a call with {esc(name)}</a></div><p class="stg-helper">A clear plan. The right level of support. Your next step.</p></div></div>
-<div class="stg-hero-bottom"><div class="stg-shell stg-hero-meta"><div><strong>Your work. Your progress.</strong>STRIKELINE TRAINING GROUP</div><a href="#{slug}-enrollment">Explore your options ↓</a></div></div>
-</section>
 <section class="stg-enrollment" id="{slug}-enrollment" aria-labelledby="{slug}-enrollment-title"><div class="stg-shell">
-<div class="stg-purchase-section-heading"><p class="stg-kicker">Choose your support</p><div><h2 id="{slug}-enrollment-title">Your goal.<br><span>Your way forward.</span></h2><p>Find the option that fits the way you want to train and the support you want along the way.</p></div></div>
+<div class="stg-purchase-section-heading"><p class="stg-kicker">Training with {esc(name)}</p><div><h1 id="{slug}-enrollment-title">Your goal.<br><span>Your way forward.</span></h1><p>Find the option that fits the way you want to train and the support you want along the way.</p></div></div>
 <div class="stg-offers" style="--offer-count:{min(len(offers), 3)}">{cards}</div>
 <noscript><p class="stg-purchase-help">Choose an option above to continue directly to secure Stripe checkout.</p></noscript>
 <div class="stg-purchase-talk"><div><p class="stg-kicker">Let’s find your fit</p><h3>Not sure where to start?</h3><p>Tell {esc(name)} what you want to work toward. Talk through the options before you choose.</p></div><a class="stg-button stg-button-secondary" href="{talk}" target="_top">Talk with {esc(name)}</a></div>
 </div></section>
-<section class="stg-purchase-faqs" aria-labelledby="{slug}-purchase-faq-title"><div class="stg-shell stg-purchase-faq-layout"><h2 id="{slug}-purchase-faq-title">Before you begin.</h2><div>
-<details><summary>Can I talk with {esc(name)} before choosing?</summary><p>Yes. Share your goal in the short intake, then continue to {esc(name)}’s call-booking page. <a href="{talk}" target="_top">Start the conversation</a>.</p></details>
-<details><summary>{specialty_question}</summary><p>{specialty_answer} <a href="{talk}" target="_top">Talk it through with {esc(name)}</a>.</p></details>
-<details><summary>Where can I review the payment details?</summary><p>Each option shows its price, billing schedule and service details above. Choose an option to review the matching Stripe checkout before you pay. The in-person Foundation subscription requires a 30-day cancellation notice.</p></details>
-</div></div></section>
 </main><footer class="stg-footer"><div class="stg-shell stg-footer-inner"><div class="stg-purchase-footer-brand"><img class="stg-footer-badge" src="{badge_uri}" alt="Strikeline Training Group"><p>BEAUFORT, SOUTH CAROLINA</p></div><div class="stg-footer-links"><a href="https://strikelinetraining.com/privacy-policy" target="_top">Privacy</a><a href="https://strikelinetraining.com/terms-and-conditions" target="_top">Terms</a><a href="mailto:info@strikelinetraining.com">Contact</a></div></div></footer>
 {dialog}<script type="application/json" data-purchase-config>{config_json}</script>
 </div>'''
@@ -152,11 +135,9 @@ def build_purchase_pages(root, coaches, embedded_fonts, shared_css, logo_svg):
         page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Choose training and coaching support with {html.escape(coach['fullName'],quote=True)} at Strikeline. View pricing and enroll securely with Stripe."><meta name="color-scheme" content="dark"><title>Start training with {html.escape(name)} | Strikeline</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/coach.css"><link rel="stylesheet" href="assets/purchase.css"><style>body{{margin:0;background:#101312}}</style></head><body>{body}<script src="assets/purchase.js"></script></body></html>'''
         filename = 'start-' + slug + '.html'
         (root / filename).write_text(page, encoding='utf-8')
-        image_uri = _data_uri('image/jpeg', (root / 'assets' / (slug + '.jpg')).read_bytes())
-        embedded_body = body.replace('assets/' + slug + '.jpg', image_uri)
-        block = ('<!-- Strikeline ' + name + ' purchase page. Paste once into a full-width HTML section. Original photos, fonts and SVG logo are embedded. Stripe loads once when a ready option is chosen. -->\n'
+        block = ('<!-- Strikeline ' + name + ' purchase page. Paste once into a full-width HTML section. Fonts and actual SVG logos are embedded. Stripe loads once when a ready option is chosen. -->\n'
                  + '<style>' + embedded_fonts + '\n' + shared_css + '\n' + purchase_css + '</style>\n'
-                 + embedded_body + '\n<script>' + purchase_js + '</script>\n')
+                 + body + '\n<script>' + purchase_js + '</script>\n')
         blockname = 'blocks/start-' + slug + '-copy-paste.html'
         (root / blockname).write_text(block, encoding='utf-8')
         outputs.extend([filename, blockname])

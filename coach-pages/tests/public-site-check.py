@@ -35,12 +35,15 @@ class Page(HTMLParser):
     def __init__(self, raw):
         super().__init__()
         self.nodes, self.links, self.ids, self.config = [], [], set(), None
+        self.stack, self.hero_actions = [], []
         self.script_config = False
         self.config_text = ""
         self.feed(raw.decode())
     def handle_starttag(self, tag, attrs):
         node = dict(attrs)
         self.nodes.append((tag,node))
+        if tag == "a" and any("stg-hero-actions" in parent.get("class", "").split() for _,parent in self.stack):
+            self.hero_actions.append(node)
         if node.get("id"):
             self.ids.add(node["id"])
         for key in ("href","src","action"):
@@ -48,6 +51,8 @@ class Page(HTMLParser):
                 self.links.append((tag,key,node[key]))
         if tag == "script" and "data-purchase-config" in node:
             self.script_config = True
+        if tag not in {"area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"}:
+            self.stack.append((tag,node))
     def handle_data(self, data):
         if self.script_config:
             self.config_text += data
@@ -55,6 +60,10 @@ class Page(HTMLParser):
         if tag == "script" and self.script_config:
             self.script_config = False
             self.config = json.loads(self.config_text)
+        for index in range(len(self.stack)-1,-1,-1):
+            if self.stack[index][0] == tag:
+                self.stack = self.stack[:index]
+                break
     def matching(self, tag, attribute):
         return [node for name,node in self.nodes if name == tag and attribute in node]
 
@@ -114,11 +123,18 @@ def static_check():
                 assert node["href"] == "/"
     for coach,staff in COACHES.items():
         page = pages[f"/{coach}/"]
+        assert len(page.hero_actions) == 2, "Landing must have exactly two hero actions"
+        assert {node["href"] for node in page.hero_actions} == {f"/{coach}/start/",f"#{coach}-intake"}
+        forbidden_classes = {"stg-intro","stg-process","stg-faq","stg-faqs","stg-sticky"}
+        assert not any(forbidden_classes.intersection(node.get("class", "").split()) for _,node in page.nodes)
+        assert len(page.matching("dialog","data-intake-dialog")) == 1
         forms = page.matching("form","data-coach-intake")
         assert len(forms) == 1 and forms[0]["action"] == ENDPOINT and forms[0]["method"].upper() == "POST"
         phones = [n for tag,n in page.nodes if tag == "input" and n.get("name") == "phone"]
         assert len(phones) == 1 and "required" in phones[0] and phones[0]["pattern"] == r".*\S.*"
-        for node in page.matching("a","data-purchase-link"):
+        purchase_links = page.matching("a","data-purchase-link")
+        assert len(purchase_links) == 1
+        for node in purchase_links:
             assert node["href"] == f"/{coach}/start/"
         booking = page.matching("a","data-booking-link")
         assert len(booking) == 1
@@ -127,6 +143,8 @@ def static_check():
         query = parse_qs(target.query)
         assert query["staffId"] == [staff] and query["serviceId"] == ["38920"]
         purchase = pages[f"/{coach}/start/"]
+        assert not any("stg-hero" in node.get("class", "").split() for _,node in purchase.nodes)
+        assert not any(tag == "details" for tag,_ in purchase.nodes), "Extra purchase FAQ remains"
         assert purchase.config["coach"] == coach
         offers = {offer["slug"]:offer for offer in purchase.config["offers"]}
         assert set(offers) == set(OFFERS)
@@ -151,6 +169,7 @@ def static_check():
             assert FORBIDDEN.encode() not in (PUBLISH/path).read_bytes().lower(), path
     return routes, redirects, {"publish_file_count":len(actual),"local_links_checked":link_count,
                               "original_assets_preserved":15,"required_phone_pages":3,"matching_booking_routes":3,
+                              "minimal_landing_shapes":3,"pricing_without_hero":3,
                               "attributed_stripe_options":9,"external_link_hosts":sorted(external),
                               "internal_portal_references":0,"legacy_rules":len(redirects)}
 

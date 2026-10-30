@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T14:37:10.911695+00:00",
+  "base_url": "http://127.0.0.1:8797",
+  "responsive_flow_views": [
+    {
+      "coach": "justin",
+      "width": 1440,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "justin",
+      "width": 390,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "justin",
+      "width": 320,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "zach",
+      "width": 1440,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "zach",
+      "width": 390,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "zach",
+      "width": 320,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "rhylie",
+      "width": 1440,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "rhylie",
+      "width": 390,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    },
+    {
+      "coach": "rhylie",
+      "width": 320,
+      "landing_and_pricing": true,
+      "two_hero_actions": true,
+      "no_extra_sections": true,
+      "dark_surfaces": true,
+      "no_arrow_text_or_pseudo_content": true,
+      "cta_and_direct_hash": true,
+      "focus_restored": true,
+      "no_overflow": true
+    }
+  ],
+  "synthetic_intakes": [
+    {
+      "coach": "justin",
+      "required_phone": true,
+      "synthetic_receipt": true,
+      "correct_public_booking": true
+    },
+    {
+      "coach": "zach",
+      "required_phone": true,
+      "synthetic_receipt": true,
+      "correct_public_booking": true
+    },
+    {
+      "coach": "rhylie",
+      "required_phone": true,
+      "synthetic_receipt": true,
+      "correct_public_booking": true
+    }
+  ],
+  "pricing_to_intake": [
+    {
+      "coach": "justin",
+      "pricing_to_intake_hash": true
+    },
+    {
+      "coach": "zach",
+      "pricing_to_intake_hash": true
+    },
+    {
+      "coach": "rhylie",
+      "pricing_to_intake_hash": true
+    }
+  ],
+  "stripe_smoke_checks": [
+    {
+      "coach": "justin",
+      "service": "assessment",
+      "attribution": true,
+      "direct_fallback": true
+    },
+    {
+      "coach": "zach",
+      "service": "online",
+      "attribution": true,
+      "direct_fallback": true
+    },
+    {
+      "coach": "rhylie",
+      "service": "inperson",
+      "attribution": true,
+      "direct_fallback": true
+    }
+  ],
+  "no_javascript_fallbacks": [
+    {
+      "coach": "justin",
+      "javascript_disabled": true,
+      "dark_intake_available": true,
+      "close_works": true
+    },
+    {
+      "coach": "zach",
+      "javascript_disabled": true,
+      "dark_intake_available": true,
+      "close_works": true
+    },
+    {
+      "coach": "rhylie",
+      "javascript_disabled": true,
+      "dark_intake_available": true,
+      "close_works": true
+    }
+  ],
+  "live_mutations": 0,
+  "scope": "Local/browser render checks with synthetic Formspree receipts and a Stripe custom-element stub. Other external requests and mutations blocked. No real leads, bookings, checkout sessions, or payments."
+}

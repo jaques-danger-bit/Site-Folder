@@ -14,8 +14,58 @@
       + '-' + Math.random().toString(36).slice(2);
   }
 
+  function bindDialog(root) {
+    const dialog = root.querySelector('[data-intake-dialog]');
+    if (!dialog || typeof dialog.showModal !== 'function' || dialog.dataset.dialogReady) return;
+    dialog.dataset.dialogReady = 'true';
+    let trigger = null;
+    let previousOverflow = '';
+    const fallbackTrigger = root.querySelector('[data-open-intake]');
+
+    function open(source) {
+      if (dialog.open) return;
+      trigger = source || fallbackTrigger;
+      previousOverflow = document.documentElement.style.overflow;
+      dialog.showModal();
+      document.documentElement.style.overflow = 'hidden';
+      dialog.scrollTop = 0;
+      dialog.querySelector('h2').focus({ preventScroll: true });
+    }
+
+    root.querySelectorAll('a[href="#' + dialog.id + '"]').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        open(link);
+      });
+    });
+    const closeControl = dialog.querySelector('[data-intake-close]');
+    closeControl.addEventListener('click', event => {
+      event.preventDefault();
+      dialog.close();
+    });
+    closeControl.addEventListener('keydown', event => {
+      if (event.key === ' ') {
+        event.preventDefault();
+        dialog.close();
+      }
+    });
+    dialog.addEventListener('close', () => {
+      document.documentElement.style.overflow = previousOverflow;
+      if (window.location.hash === '#' + dialog.id) {
+        window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+      }
+      if (trigger && trigger.isConnected) trigger.focus({ preventScroll: true });
+    });
+    const openFromHash = () => {
+      if (window.location.hash === '#' + dialog.id) open();
+    };
+    window.addEventListener('hashchange', openFromHash);
+    openFromHash();
+  }
+
   function initialize() {
     document.querySelectorAll('.stg-coach-page').forEach(root => {
+      bindDialog(root);
       const coach = root.dataset.coach;
       const form = root.querySelector('form[data-coach-intake]');
       const success = root.querySelector('[data-intake-success]');

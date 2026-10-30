@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-30T13:57:26.481128+00:00",
+  "builtAt": "2026-10-30T14:36:13.729786+00:00",
   "outputDirectory": "/home/jaquesdanger/Projects/coach-landing-pages-20261030/coach-pages/publish",
   "routes": [
     "/",
@@ -22,17 +22,17 @@
     "assets/barlowcondensed-OFL.txt": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
     "assets/manrope-OFL.txt": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
     "assets/fonts.css": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a",
-    "assets/coach.css": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb",
-    "assets/intake.js": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4",
-    "assets/purchase.css": "767e6f979f9c1a5e1858d2063475dfc0f42c906246fb68e63b9ddab89831bec6",
+    "assets/coach.css": "35741328f14ad8151f11f0dcc1fd42b747174e1d7fb2bcd4b2b1366d3e723358",
+    "assets/intake.js": "914d80cbaed070026a05474a871c53a2f7cc8eaded45f015d21848c8e3b1f524",
+    "assets/purchase.css": "a4563340daf87d5ce15ec094f860b178f43165bd4b5da5b1034e4ad06ff29147",
     "assets/purchase.js": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
-    "public/index.html": "c4345a683da2c23403b3b3f65efa2168836505a1af6f473b1a8ef4177b0ece78",
-    "justin.html": "ee98ac4918dec11551f99ead17f1ba733d080643acb3efcd66fc3247fb5d2565",
-    "zach.html": "328a84f11a17cbfffbd22700ae6bdfbe9910511d3c8d972cb9b7bee21199f73c",
-    "rhylie.html": "476c529af246021df626dff07d4645b95a4d672a2fd89398b0f71b1ba68596a7",
-    "start-justin.html": "e24f440039b0e4fffa7d228393ac7a31ea8aaae21bbbf255620f7d5748d5f316",
-    "start-zach.html": "918e3d0cac70dd439d3587ab46627ad851ea895e5eb25f6ca1965668df032ea8",
-    "start-rhylie.html": "e42743d9ef042ab5036e467d30ed0d93bcfb5a5e86a662357133c67961303e3c"
+    "public/index.html": "946ddf8551f9e7af2353613c9b7d366c9dc04ed18a303b1a9d8a0cd8bbc6074f",
+    "justin.html": "3a6dc9cb00936c7692a17433e5629945ced89c3d92532f142557efea3a865b06",
+    "zach.html": "a1ee13171825cee92dcbc517e055080c7fdd33a65227f54d3206f3dd526c5a17",
+    "rhylie.html": "430f7ec07d58b5c7ace8a2b0a2b928f0cea6ae4d130d3f44794c5bfd4edabd88",
+    "start-justin.html": "abe8a1a294c5fd2eb09f16ae2baf4f3cf29d76a89bb42e4640a4acafc8833f96",
+    "start-zach.html": "d80ed657f700e3e544f584e79949ea5563038d489670a0562973823ea5ceb240",
+    "start-rhylie.html": "239b948adcebd08a1254b9842d510e9798833cad6df0fbd6f681558725a78a97"
   },
   "files": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "assets/coach.css",
-      "bytes": 16059,
-      "sha256": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb"
+      "bytes": 14466,
+      "sha256": "35741328f14ad8151f11f0dcc1fd42b747174e1d7fb2bcd4b2b1366d3e723358"
     },
     {
       "path": "assets/fonts.css",
@@ -62,8 +62,8 @@
     },
     {
       "path": "assets/intake.js",
-      "bytes": 6283,
-      "sha256": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4"
+      "bytes": 8112,
+      "sha256": "914d80cbaed070026a05474a871c53a2f7cc8eaded45f015d21848c8e3b1f524"
     },
     {
       "path": "assets/justin.jpg",
@@ -87,8 +87,8 @@
     },
     {
       "path": "assets/purchase.css",
-      "bytes": 9453,
-      "sha256": "767e6f979f9c1a5e1858d2063475dfc0f42c906246fb68e63b9ddab89831bec6"
+      "bytes": 9186,
+      "sha256": "a4563340daf87d5ce15ec094f860b178f43165bd4b5da5b1034e4ad06ff29147"
     },
     {
       "path": "assets/purchase.js",
@@ -117,38 +117,38 @@
     },
     {
       "path": "index.html",
-      "bytes": 7648,
-      "sha256": "c4345a683da2c23403b3b3f65efa2168836505a1af6f473b1a8ef4177b0ece78"
+      "bytes": 7593,
+      "sha256": "946ddf8551f9e7af2353613c9b7d366c9dc04ed18a303b1a9d8a0cd8bbc6074f"
     },
     {
       "path": "justin/index.html",
-      "bytes": 9776,
-      "sha256": "fcbc487723d55200fac46683eb7ee29a54642f79ccf4d0477195a841be96ead1"
+      "bytes": 6104,
+      "sha256": "936918125bc6e6f5f84a7e4cbe980ed9f53d0cf712f13d81a91eccf05ebe1a68"
     },
     {
       "path": "justin/start/index.html",
-      "bytes": 34635,
-      "sha256": "8664560ede1337aebf121b4b0308961ac3d7e545a87150ead797af9529d08241"
+      "bytes": 32386,
+      "sha256": "616d2bdbfdf2e8b8a0196899e34b567baa108f04d9c1e23c1212836b093d2a39"
     },
     {
       "path": "rhylie/index.html",
-      "bytes": 9908,
-      "sha256": "bddab6c256564eaeffa7c66a8b0eda6c244402f627becd9175c7f975fc90fd82"
+      "bytes": 6152,
+      "sha256": "df7c62cdc5c5109e5616059bb58ea21e911518dd1bdf5d2202b7dd87fe3aa5fb"
     },
     {
       "path": "rhylie/start/index.html",
-      "bytes": 34663,
-      "sha256": "46073204f057867009d08a5574f9d52659f76b2ba53c7dc0b53b8f679c7a0ef0"
+      "bytes": 32388,
+      "sha256": "d6a54919c00609e4e79e62bfbe26e03ccefdb6e3680f4ae83a31c3e7b1cd7da2"
     },
     {
       "path": "zach/index.html",
-      "bytes": 9460,
-      "sha256": "104b4baef368f8ee1fd890b2a70d3c319f67da35611a525b4dfa2503689ae2d3"
+      "bytes": 5888,
+      "sha256": "5c3e362cfc26d95a659a1b6aab257aa8ddc15a9cb0fd3ff6acdc0728b8adb56f"
     },
     {
       "path": "zach/start/index.html",
-      "bytes": 34507,
-      "sha256": "b2eb9012cf8c5368b799a3e5aa51a07b48ff1139058ce48be0243a9bef820fca"
+      "bytes": 32310,
+      "sha256": "7f485ab5f797fcc33a527410b64e7022a247f7d167b09b0a33e89a82fe04d02c"
     }
   ],
   "publicHostsOrSchemes": [

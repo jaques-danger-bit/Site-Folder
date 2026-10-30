@@ -9,8 +9,6 @@ esc = html.escape
 def markup(c):
     slug, name = c['slug'], c['name']
     intake = f'{slug}-intake'
-    reasons = ''.join(f'<article class="stg-reason"><div class="stg-number">0{i+1}</div><h3>{esc(r["title"])}</h3><p>{esc(r["text"])}</p></article>' for i,r in enumerate(c['reasons']))
-    faqs = ''.join(f'<details><summary>{esc(f["question"])}</summary><p>{esc(f["answer"])}</p></details>' for f in c['faqs'])
     opts = ''.join(f'<option value="{esc(g["value"],quote=True)}">{esc(g["label"])}</option>' for g in c['goals'])
     lines = ''.join(f'<span>{esc(line)}</span>' for line in c['heroLines'])
     photo = f'assets/{slug}.jpg'
@@ -19,16 +17,17 @@ def markup(c):
 <main>
 <section class="stg-hero" aria-labelledby="{slug}-title">
  <img class="stg-hero-photo" src="{photo}" alt="{esc(c['fullName'])} at Strikeline" fetchpriority="high" decoding="async" width="853" height="1280">
- <header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="https://strikelinetraining.com/" aria-label="Strikeline Training Group home"><img class="stg-brand-logo" data-brand-logo src="assets/strikeline-logo-white.svg" alt="Strikeline Training Group" width="200" height="50"></a><a class="stg-nav-call" href="#{intake}">Talk with {name} ↗</a></div></header>
- <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-kicker">{name} · {esc(c['specialty'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" href="#{intake}">Book a call with {name}</a></div><p class="stg-helper">Ready to begin? Explore training options. Have questions? Let’s talk first.</p></div></div>
- <div class="stg-hero-bottom"><div class="stg-shell stg-hero-meta"><div><strong>{esc(c['fullName'])}</strong>Your next step starts with a conversation.</div><a href="#{slug}-approach">Get to know the approach ↓</a></div></div>
+ <header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="#{slug}-title" aria-label="Strikeline Training Group"><img class="stg-brand-logo" data-brand-logo src="assets/strikeline-logo-white.svg" alt="Strikeline Training Group" width="200" height="50"></a></div></header>
+ <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-kicker">{name} · {esc(c['specialty'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" data-open-intake href="#{intake}">Book a call with {name}</a></div><p class="stg-helper">Ready to begin? Explore training options. Have questions? Let’s talk first.</p></div></div>
+ <div class="stg-hero-bottom"><div class="stg-shell stg-hero-meta"><div><strong>{esc(c['fullName'])}</strong>Your next step starts with a conversation.</div></div></div>
 </section>
-<section class="stg-intro" id="{slug}-approach" aria-labelledby="{slug}-approach-title"><div class="stg-shell"><div class="stg-section-heading"><p class="stg-kicker">A goal. A starting point. A next step.</p><h2 id="{slug}-approach-title">{esc(c['introHeading'])}</h2></div><div class="stg-reasons">{reasons}</div><div class="stg-ready-row"><div><p class="stg-kicker">Your next move</p><h3>Ready to train with {name}?</h3></div><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a></div></div></section>
-<section class="stg-process" aria-label="How to book a call"><div class="stg-shell stg-process-inner"><p class="stg-kicker">Prefer to talk first?</p><div class="stg-process-step"><b>01</b><p><strong>Share your goal.</strong>A few details about you and what you want to work on.</p></div><div class="stg-process-step"><b>02</b><p><strong>Book your call.</strong>Choose a time on {name}’s booking page.</p></div><div class="stg-process-step"><b>03</b><p><strong>Talk through the fit.</strong>Discuss your starting point, options and next step.</p></div></div></section>
-<section class="stg-intake" id="{intake}" aria-labelledby="{slug}-intake-title"><div class="stg-shell stg-intake-layout"><div class="stg-intake-heading"><p class="stg-kicker">Let’s talk about your goal</p><h2 id="{slug}-intake-title">{esc(c['closingHeading'])}</h2><p>{esc(c['closingText'])}</p><div class="stg-mini-portrait"><img src="{photo}" alt="" loading="lazy" width="68" height="78"><div><strong>{esc(c['fullName'])}</strong><span>{esc(c['specialty'])}</span></div></div></div>
+</main>
+<dialog class="stg-intake-dialog" data-intake-dialog id="{intake}" aria-labelledby="{slug}-intake-title">
+<div class="stg-intake-dialog-top"><p class="stg-kicker">Let’s talk about your goal</p><a href="#{slug}-title" data-intake-close role="button" aria-label="Close mini intake">Close</a></div>
+<h2 id="{slug}-intake-title" tabindex="-1">Talk with {name}.</h2><p class="stg-intake-dialog-intro">A few details to get started. Then choose a time for your call.</p>
 <div class="stg-form-area"><form data-coach-intake action="https://formspree.io/f/mdajqedj" method="POST" aria-label="Short intake for {name}">
 <input type="hidden" name="_subject" value="{name} — Coach landing page mini intake"><input type="hidden" name="coach" value="{name}"><input type="hidden" name="source" value="coach-landing-{slug}"><div hidden aria-hidden="true"><label>Leave this empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div>
-<div data-form-fields><h3 class="stg-form-title">Tell me what you want to work on.</h3><p class="stg-form-intro">Start with the basics. We’ll talk through the details on your call.</p><div class="stg-fields">
+<div data-form-fields><div class="stg-fields">
 <div class="stg-field"><label for="{slug}-name">Your name</label><input id="{slug}-name" name="firstName" autocomplete="name" maxlength="160" placeholder="Your name" required></div>
 <div class="stg-field"><label for="{slug}-email">Email</label><input id="{slug}-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></div>
 <div class="stg-field stg-wide"><label for="{slug}-phone">Phone <small>Required</small></label><input id="{slug}-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="Your phone number" pattern=".*\\S.*" title="Enter your phone number." required></div>
@@ -38,10 +37,8 @@ def markup(c):
 <button class="stg-button" type="submit">Continue to book with {name}</button>
 <noscript><p class="stg-form-note">Your browser will open the form’s confirmation page after sending. Then <a href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">book your call with {name}</a>.</p></noscript></div>
 <p data-form-status role="status" aria-live="polite" aria-atomic="true"></p></form>
-<div class="stg-success" data-intake-success hidden><div class="stg-kicker">Next: choose your time</div><h3 tabindex="-1">Your details are in.<br>Let’s find a time to talk.</h3><p>Finish by choosing a time on {name}’s booking page. Your call is confirmed when you complete that booking.</p><a class="stg-button" data-booking-link href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">Book a call with {name}</a></div></div></div></section>
-<section class="stg-faqs" aria-labelledby="{slug}-faq-title"><div class="stg-shell stg-faq-layout"><h2 id="{slug}-faq-title">Before we talk.</h2><div>{faqs}</div></div></section>
-</main><footer class="stg-footer"><div class="stg-shell stg-footer-inner"><div class="stg-footer-brand"><img class="stg-footer-badge" src="assets/strikeline-badge-white.svg" alt="Strikeline Training Group" width="90" height="65"><p>BEAUFORT, SOUTH CAROLINA</p></div><div class="stg-footer-links"><a href="https://strikelinetraining.com/privacy-policy">Privacy</a><a href="https://strikelinetraining.com/terms-and-conditions">Terms</a><a href="mailto:info@strikelinetraining.com">Contact</a></div></div></footer>
-<div class="stg-sticky" data-sticky-cta><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-sticky-call" href="#{intake}">Prefer to talk? Book a call with {name}</a></div>
+<div class="stg-success" data-intake-success hidden><div class="stg-kicker">Next: choose your time</div><h3 tabindex="-1">Your details are in.<br>Let’s find a time to talk.</h3><p>Finish by choosing a time on {name}’s booking page. Your call is confirmed when you complete that booking.</p><a class="stg-button" data-booking-link href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">Book a call with {name}</a></div></div>
+</dialog>
 </div>'''
 
 def build():

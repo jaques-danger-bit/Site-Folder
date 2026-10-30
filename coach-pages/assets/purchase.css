@@ -1,11 +1,13 @@
-.stg-purchase-page .stg-purchase-hero{overflow:hidden}
-.stg-purchase-page .stg-purchase-hero .stg-hero-copy{max-width:650px}
-.stg-purchase-page .stg-purchase-hero h1{font-size:clamp(72px,7.8vw,112px)}
-.stg-purchase-page .stg-enrollment{padding:102px 0 85px;scroll-margin-top:22px;background:var(--ink)}
-.stg-purchase-page .stg-purchase-section-heading{display:grid;grid-template-columns:1fr 2fr;gap:80px;margin-bottom:62px}
+.stg-purchase-page .stg-purchase-header{background:var(--ink);border-bottom:1px solid var(--line)}
+.stg-purchase-page .stg-purchase-header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.stg-purchase-page .stg-purchase-links{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:700;line-height:1.6}
+.stg-purchase-page .stg-purchase-links a{padding:6px 0;border-bottom:1px solid var(--orange)}
+.stg-purchase-page .stg-button:after{content:none;display:none}
+.stg-purchase-page .stg-enrollment{padding:64px 0 64px;scroll-margin-top:22px;background:var(--ink)}
+.stg-purchase-page .stg-purchase-section-heading{display:grid;grid-template-columns:1fr 2fr;gap:80px;margin-bottom:44px}
 .stg-purchase-page .stg-purchase-section-heading>.stg-kicker{padding-top:10px}
-.stg-purchase-page .stg-purchase-section-heading h2{max-width:740px}
-.stg-purchase-page .stg-purchase-section-heading h2 span{color:var(--orange)}
+.stg-purchase-page .stg-purchase-section-heading h1{max-width:740px;font-size:clamp(48px,5vw,72px);margin:0;line-height:.98}
+.stg-purchase-page .stg-purchase-section-heading h1 span{color:var(--orange)}
 .stg-purchase-page .stg-purchase-section-heading>div>p{max-width:520px;color:var(--muted);font-size:14px;line-height:1.85;margin-top:23px}
 .stg-purchase-page .stg-offers{display:grid;grid-template-columns:repeat(var(--offer-count,3),minmax(0,1fr));gap:22px;align-items:stretch}
 .stg-purchase-page .stg-offer{position:relative;display:flex;flex-direction:column;min-width:0;padding:30px;border:1px solid #454b43;background:#151a17}
@@ -34,12 +36,7 @@
 .stg-purchase-page .stg-purchase-talk>div>p:last-child{font-size:13px;color:var(--muted);line-height:1.85;max-width:500px;margin-top:12px}
 .stg-purchase-page .stg-purchase-talk>.stg-button{flex-shrink:0;font-size:13px}
 .stg-purchase-page .stg-purchase-help{font-size:12px;color:var(--muted);margin-top:22px}
-.stg-purchase-page .stg-purchase-faqs{padding:65px 0 78px;border-top:1px solid var(--line)}
-.stg-purchase-page .stg-purchase-faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:90px}
-.stg-purchase-page .stg-purchase-faqs h2{font-size:48px;max-width:350px}
-.stg-purchase-page .stg-purchase-faqs details:first-child{border-top:1px solid var(--line)}
-.stg-purchase-page .stg-purchase-faqs details a{color:var(--paper);border-bottom:1px solid var(--orange)}
-.stg-purchase-page .stg-footer{padding-bottom:30px}
+.stg-purchase-page .stg-footer{padding:24px 0}
 .stg-purchase-page .stg-purchase-footer-brand{display:flex;align-items:center;gap:22px}
 .stg-purchase-page .stg-checkout-dialog{box-sizing:border-box;width:min(500px,calc(100% - 24px));max-width:none;max-height:calc(100dvh - 32px);margin:auto;padding:30px;border:1px solid var(--orange);background:#111713;color:var(--paper);overflow:auto;overscroll-behavior:contain;font-family:Manrope,sans-serif}
 .stg-purchase-page .stg-checkout-dialog::backdrop{background:rgba(4,8,6,.86);backdrop-filter:blur(4px)}
@@ -57,7 +54,7 @@
 .stg-purchase-page .stg-checkout-fallback{display:block;margin-top:19px;padding:15px 12px;border:1px solid var(--orange);text-align:center;color:var(--paper);font-size:12px;font-weight:700;line-height:1.6}
 .stg-purchase-page .stg-checkout-fallback:hover{background:var(--orange);color:var(--ink)}
 .stg-purchase-page .stg-checkout-note{font-size:10px;color:var(--muted);text-align:center;margin-top:12px}
-@media(max-width:1100px){.stg-purchase-page .stg-offer{padding:24px}.stg-purchase-page .stg-offer h3{font-size:37px;min-height:111px}.stg-purchase-page .stg-offer-price strong{font-size:59px}.stg-purchase-page .stg-purchase-section-heading{gap:40px}.stg-purchase-page .stg-purchase-faq-layout{gap:50px}}
+@media(max-width:1100px){.stg-purchase-page .stg-offer{padding:24px}.stg-purchase-page .stg-offer h3{font-size:37px;min-height:111px}.stg-purchase-page .stg-offer-price strong{font-size:59px}.stg-purchase-page .stg-purchase-section-heading{gap:40px}}
 @media(max-width:850px){.stg-purchase-page .stg-offers{grid-template-columns:1fr}.stg-purchase-page .stg-offer{padding:30px}.stg-purchase-page .stg-offer h3{font-size:45px;min-height:0}.stg-purchase-page .stg-offer-fit{min-height:0;max-width:100%}.stg-purchase-page .stg-offer-promise,.stg-purchase-page .stg-offer-description{max-width:100%}.stg-purchase-page .stg-offer-terms{min-height:0}.stg-purchase-page .stg-offer-price strong{font-size:67px}}
-@media(max-width:700px){.stg-purchase-page .stg-purchase-hero h1{font-size:58px;max-width:370px}.stg-purchase-page .stg-purchase-hero .stg-hero-content{padding-top:345px}.stg-purchase-page .stg-enrollment{padding:60px 0}.stg-purchase-page .stg-purchase-section-heading{display:block;margin-bottom:34px}.stg-purchase-page .stg-purchase-section-heading>.stg-kicker{padding:0;margin-bottom:22px}.stg-purchase-page .stg-purchase-section-heading h2{font-size:49px;max-width:430px}.stg-purchase-page .stg-purchase-section-heading>div>p{font-size:13px;margin-top:19px}.stg-purchase-page .stg-offer{padding:26px 23px}.stg-purchase-page .stg-offer-top{margin-bottom:27px}.stg-purchase-page .stg-offer h3{font-size:42px}.stg-purchase-page .stg-offer-price{margin-top:24px}.stg-purchase-page .stg-offer-price strong{font-size:65px}.stg-purchase-page .stg-purchase-talk{display:block;padding-top:32px;margin-top:36px}.stg-purchase-page .stg-purchase-talk h3{font-size:37px}.stg-purchase-page .stg-purchase-talk>.stg-button{margin-top:24px;width:100%}.stg-purchase-page .stg-purchase-faqs{padding:45px 0 60px}.stg-purchase-page .stg-purchase-faq-layout{display:block}.stg-purchase-page .stg-purchase-faqs h2{font-size:42px;margin-bottom:25px}.stg-purchase-page .stg-checkout-dialog{padding:24px 20px}.stg-purchase-page .stg-checkout-dialog h2{font-size:35px}.stg-purchase-page .stg-footer{padding-bottom:35px}}
-@media(max-width:359px){.stg-purchase-page .stg-brand-logo{width:145px}.stg-purchase-page .stg-purchase-hero h1{font-size:50px}.stg-purchase-page .stg-purchase-section-heading h2{font-size:43px}.stg-purchase-page .stg-offer{padding:25px 19px}.stg-purchase-page .stg-offer h3{font-size:38px}.stg-purchase-page .stg-offer-badge{font-size:9px}.stg-purchase-page .stg-checkout-dialog{width:calc(100% - 8px);padding:23px 5px}.stg-purchase-page .stg-checkout-dialog h2{font-size:32px}}
+@media(max-width:700px){.stg-purchase-page .stg-purchase-header-inner{min-height:78px;gap:18px}.stg-purchase-page .stg-purchase-links{display:grid;gap:2px;font-size:10px;text-align:right}.stg-purchase-page .stg-purchase-links a{padding:3px 0}.stg-purchase-page .stg-enrollment{padding:38px 0 45px}.stg-purchase-page .stg-purchase-section-heading{display:block;margin-bottom:30px}.stg-purchase-page .stg-purchase-section-heading>.stg-kicker{padding:0;margin-bottom:19px}.stg-purchase-page .stg-purchase-section-heading h1{font-size:49px;max-width:430px}.stg-purchase-page .stg-purchase-section-heading>div>p{font-size:13px;margin-top:19px}.stg-purchase-page .stg-offer{padding:26px 23px}.stg-purchase-page .stg-offer-top{margin-bottom:27px}.stg-purchase-page .stg-offer h3{font-size:42px}.stg-purchase-page .stg-offer-price{margin-top:24px}.stg-purchase-page .stg-offer-price strong{font-size:65px}.stg-purchase-page .stg-purchase-talk{display:block;padding-top:32px;margin-top:36px}.stg-purchase-page .stg-purchase-talk h3{font-size:37px}.stg-purchase-page .stg-purchase-talk>.stg-button{margin-top:24px;width:100%}.stg-purchase-page .stg-checkout-dialog{padding:24px 20px}.stg-purchase-page .stg-checkout-dialog h2{font-size:35px}.stg-purchase-page .stg-footer{padding:24px 0}.stg-purchase-page .stg-purchase-footer-brand{gap:18px}}
+@media(max-width:359px){.stg-purchase-page .stg-brand-logo{width:145px}.stg-purchase-page .stg-purchase-section-heading h1{font-size:43px}.stg-purchase-page .stg-offer{padding:25px 19px}.stg-purchase-page .stg-offer h3{font-size:38px}.stg-purchase-page .stg-offer-badge{font-size:9px}.stg-purchase-page .stg-checkout-dialog{width:calc(100% - 8px);padding:23px 5px}.stg-purchase-page .stg-checkout-dialog h2{font-size:32px}}

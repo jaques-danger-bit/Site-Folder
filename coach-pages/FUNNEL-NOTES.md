@@ -1,17 +1,19 @@
 # Coach landing-page funnel handoff
 
-Prepared October 30, 2026. This records the page flow, supplied payment embeds, separate public-site packaging and later integration work. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this review. Phone is now required in the page and block markup.
+Updated October 30, 2026 for the user's minimal-flow correction. The approved full-bleed landing hero and two CTAs are the entire landing page. Pricing opens directly on its own dark page; the mini intake opens in a dark same-page dialog. This correction was published to the existing site as deploy `6ae4abd0bf268214b31794e3` on October 30, 2026 at 14:38 UTC. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
 
 ## Current two-path flow
 
-The user now requires two visible choices on each coach page:
+Each hero has two visible choices:
 
-- **I’m ready to start training** → that coach’s separate `/{slug}/start/` public purchase page. This path does not require submitting the mini intake.
-- **Book a call** → mini intake → successful Formspree acceptance → coach-specific call-booking CTA.
+- **I’m ready to start training** opens that coach's `/{slug}/start/` directly at the dark three-offer comparison. No additional photo hero, FAQ or intake step comes before pricing.
+- **Book a call** opens the dark native mini-intake dialog on the same hero page. After Formspree accepts the form, the visitor can open the coach-specific public booking calendar.
 
-This supersedes the earlier call-only landing-page recommendation. Keep the selected coach consistent through either path. Local sources still use `start-{slug}.html`; the public packager rewrites navigation to clean routes. Builder-hosted blocks need the public destination URLs and permitted top-level iframe navigation.
+Remove the former white intro, process, FAQ and sticky sections from the landing pages. Approval of the hero was not approval of all previous page content. Remove arrow glyphs from the customer controls. Direct intake links use `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same form and native POST remains available. Name, email, phone and goal remain required.
 
-The redesign uses the actual Dropbox SVG files: `strikeline-07.svg` for headers and `strikeline-08.svg` for footers, with provenance in `evidence/dropbox-logo-provenance.json`. Zach’s current landing copy uses tactical training. Justin’s and Rhylie’s pages now explicitly include user-authorized bodybuilding competition prep, alongside their broader strength/physique focus. These categories do not imply additional credentials, outcomes or detailed service terms.
+Keep the selected coach consistent through either path. Local sources use `start-{slug}.html`; the public packager rewrites navigation to clean routes. Builder-hosted blocks need the public destination URLs and permitted top-level iframe navigation.
+
+The original Dropbox SVG assets and portraits remain intact, with logo provenance in `evidence/dropbox-logo-provenance.json`. Zach’s current landing copy uses tactical training. Justin’s and Rhylie’s pages include user-authorized bodybuilding competition prep alongside their broader strength/physique focus. These categories do not imply additional credentials, outcomes or detailed service terms.
 
 The repository discovery identified `Site-Folder` `main/index.html` as the current short-form source and `https://formspree.io/f/mdajqedj` as its endpoint. The existing downstream path is Formspree → sheet → hourly portal import, with daily email deduplication. Current import code does not persist coach selection or UTM fields. Adding fixed coach/source and campaign fields to the new front end therefore does **not** prove they reach the portal. Verify and extend the sheet/import mapping separately before relying on coach attribution or automated routing there.
 
@@ -21,9 +23,9 @@ Read-only booking findings are recorded in `evidence/booking-verification.json`.
 
 ## Separate public site and delivery boundary
 
-The public site is `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. It has seven customer routes: `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for the approved landing pages; and `/justin/start/`, `/zach/start/`, `/rhylie/start/` for purchase options. [The deployment receipt](evidence/hosting-deploy.json) records production deploy `6ae4a3067dc975fa84639d40` on October 30, 2026. Publication and live validation are distinct: use that receipt and the latest [live-check report](evidence/public-site-live-checks.json) for the deployed revision and verified behavior. Site creation and a successful local package build alone do not prove deployment.
+Reuse `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. Its seven routes remain `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for hero-only landing pages; and each coach's `/start/` route for pricing. The corrected production deploy is `6ae4abd0bf268214b31794e3`. The [deployment receipt](evidence/hosting-deploy.json), [focused checks](evidence/minimal-flow-checks.json) and [live-check report](evidence/public-site-live-checks.json) record publication and verification separately. Prior deployment evidence remains under `evidence/history/`.
 
-The user explicitly kept the public booking calendars at `training.strikelinetraining.com/a/booking/`. Keep those destinations, their coach/service identity and the Formspree endpoint intact. Public logo links return to the new coach selector, and customer navigation contains no internal-portal links. Name, email, phone and goal remain required; phone rejects blank and whitespace-only input.
+The user explicitly kept the public booking calendars at `training.strikelinetraining.com/a/booking/`. Keep those destinations, their coach/service identity and the Formspree endpoint intact. Logo/navigation links stay within the selected coach’s landing and pricing flow, and customer navigation contains no internal-portal links. Name, email, phone and goal remain required; phone rejects blank and whitespace-only input.
 
 `scripts/build-public-site.py` packages only seven HTML pages, 15 public assets and a legacy 301 redirect map into ignored `publish/`. It rewrites asset paths and coach/purchase navigation without changing the approved source pages or purchase behavior. Configuration, blocks, documentation, research, evidence, scripts and tests stay outside that 23-file allowlist. Original asset bytes and route/file hashes are recorded in `evidence/public-site-manifest.json`.
 
@@ -37,7 +39,7 @@ Never deploy the whole `coach-pages/` directory or repository root. Hosting veri
 
 ## Separate Stripe purchase page
 
-The user approved the v2 full-bleed landing design with orange CTA and rejected the earlier purchase treatment. Preserve the landing pages and use that visual direction for the separate purchase pages: full-bleed portrait → offer comparison → **Choose** → native dialog containing the selected actual Stripe Buy Button. Load only the selected embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. Retain the same-coach call path.
+The purchase page now starts at the dark three-offer pricing design selected in screenshot two. Remove its redundant photo hero and FAQ. A **Choose** button opens a native dialog containing the selected actual Stripe Buy Button. Load only that embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. The call route links to the same coach's dark intake dialog on the landing page.
 
 Public Stripe GETs confirm online coaching at $350/month and Foundation coaching at $475/month. Foundation specifies full programming, one session/week and 30-day cancellation notice. The user confirmed the $175 one-time Nutrition + Training Assessment as the entry offer. This resolves the earlier mismatch by choosing the assessment; the website's separate Standalone Program and its $30 updates are not part of this checkout set. Do not call the assessment a program or assign it the website contact form's 30-minute duration. See `evidence/services-20261030/RESEARCH-NOTES.md` for sources, scope and concise card copy.
 

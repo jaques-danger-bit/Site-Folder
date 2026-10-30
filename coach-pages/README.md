@@ -1,26 +1,28 @@
 # Coach landing pages
 
-Three landing pages and three separate purchase pages for Justin, Zach and Rhylie, redesigned October 30, 2026. Original supplied portraits, actual Dropbox SVG logos and buyer-informed copy support two visible paths: **I’m ready to start training** opens the selected coach’s purchase page; **Book a call** leads through the mini intake to that coach’s intro-call booking.
+Current corrective scope, October 30, 2026: each coach landing page contains only the approved full-bleed photo hero and two CTAs. **I’m ready to start training** opens `/{coach}/start/` directly at the dark three-offer pricing comparison. **Book a call** opens a dark mini-intake dialog on the same landing page, then provides that coach’s public booking link after acceptance. Phone remains required.
+
+Approval applies to the hero design, not the former full page. Remove the white intro, process, FAQ and sticky sections from the landing page, and omit the redundant photo hero and FAQ from the purchase page. Buttons and links use text without arrow glyphs. This correction is live on the existing public site as deployment `6ae4abd0bf268214b31794e3` (October 30, 2026). See the deployment and validation receipts below.
 
 ## Review and use
 
 - `index.html`: local review index.
-- `justin.html`, `zach.html`, `rhylie.html`: coach landing pages.
+- `justin.html`, `zach.html`, `rhylie.html`: hero-only coach landing pages with same-page intake dialogs.
 - `start-justin.html`, `start-zach.html`, `start-rhylie.html`: separate purchase-page sources. Package them with `scripts/build-public-site.py`; do not publish the whole `coach-pages/` directory.
 - `public/index.html`: customer-facing coach selector. `publish/`: ignored, allowlisted deployment output containing the selector, six routed pages, public assets and legacy redirects.
-- `blocks/*-copy-paste.html`: six self-contained blocks: one landing block and one `start-{slug}-copy-paste.html` purchase block per coach. Each includes the original supplied JPEG, SVG logos and local fonts as data URLs, with scoped styles. Landing blocks also include intake behavior. Paste one per full-width HTML/custom-code section that permits JavaScript. The host controls outer padding and iframe height. A restrictive host may strip inline scripts or data images, so check the actual host before publishing. No remote photo or logo URL is needed.
+- `blocks/*-copy-paste.html`: six self-contained blocks: one landing block and one `start-{slug}-copy-paste.html` purchase block per coach. Landing blocks include the original supplied JPEG, SVG logos, fonts and intake behavior. Purchase blocks contain the dark pricing comparison, SVG logos, fonts and checkout behavior. Assets are embedded as data URLs with scoped styles. Paste one per full-width HTML/custom-code section that permits JavaScript. The host controls outer padding and iframe height. A restrictive host may strip inline scripts or data images, so check the actual host before publishing. No remote photo or logo URL is needed.
 - `coaches.json`: editable coach copy, booking routes and `purchaseUrl`. `offers.json`: the three user-selected, publicly verified offers and Stripe destinations. `assets/coach.css`: shared layout. `assets/intake.js`: shared form behavior. `assets/purchase.css`, `assets/purchase.js` and `scripts/purchase_pages.py`: purchase layout, selected-offer dialog and generation.
 - `FUNNEL-NOTES.md`: the two-path flow, supplied Stripe offers, ManyChat plan and current integration limits.
 
-`purchaseUrl` defaults to `start-{slug}.html` in the local source pages. The public packager rewrites these links to `/{slug}/start/`, return links to `/{slug}/`, assets to `/assets/`, and logo-home links to the public coach selector. Website-builder blocks retain their source-relative links; before using a block elsewhere, set its purchase and return links to the corresponding public URLs below. Purchase/return links use `target="_top"` so navigation can leave an iframe; the host must permit that navigation.
+`purchaseUrl` defaults to `start-{slug}.html` in the local source pages. The public packager rewrites these links to `/{slug}/start/`, return links to `/{slug}/`, assets to `/assets/`, with each coach’s logo/navigation staying in that coach’s two-page flow. Website-builder blocks retain their source-relative links; before using a block elsewhere, set its purchase and return links to the corresponding public URLs below. Purchase/return links use `target="_top"` so navigation can leave an iframe; the host must permit that navigation.
 
 From the repository root, run `python3 -m http.server 8795 --bind 127.0.0.1` and open `http://127.0.0.1:8795/coach-pages/`. These pages point at a real intake endpoint. Automated checks intercept all external requests; previewing does not require submitting test leads.
 
-Rebuild the pages and blocks with `python3 coach-pages/scripts/build.py`. The generator assembles all six pages and six blocks without transforming the portraits or SVG artwork. Header logo: Dropbox `strikeline-07.svg`; footer badge: `strikeline-08.svg`. Original file paths and verified hashes are in `evidence/dropbox-logo-provenance.json`. Font licenses are in `assets/*-OFL.txt`.
+Rebuild the pages and blocks with `python3 coach-pages/scripts/build.py`. The generator assembles all six pages and six blocks without transforming the portraits or SVG artwork. The original Dropbox logo assets are `strikeline-07.svg` and `strikeline-08.svg`; file paths and verified hashes are in `evidence/dropbox-logo-provenance.json`. Font licenses are in `assets/*-OFL.txt`.
 
 ## Separate public hosting
 
-The public site is **https://strikeline-coaching.netlify.app**, Netlify site ID `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. It is separate from the internal portal and the existing marketing-site deployment. [The deployment receipt](evidence/hosting-deploy.json) records production deploy `6ae4a3067dc975fa84639d40` on October 30, 2026. That receipt establishes publication; [The live-check report](evidence/public-site-live-checks.json) is the source for subsequent live-validation results. Consult the latest receipt and checks when determining the current deployed revision and its verified behavior.
+The public site is **https://strikeline-coaching.netlify.app**, Netlify site ID `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. The minimal-flow correction was published as deploy `6ae4abd0bf268214b31794e3` on October 30, 2026 at 14:38 UTC. [Deployment receipt](evidence/hosting-deploy.json), [focused browser checks](evidence/minimal-flow-checks.json), and [live byte/link checks](evidence/public-site-live-checks.json) record the corresponding evidence. The earlier receipt is preserved in `evidence/history/`. This site remains separate from the original marketing-site and internal-portal deployments.
 
 | Page | Public route |
 |---|---|
@@ -47,7 +49,7 @@ Legacy `/{coach}.html`, `/start-{coach}.html` and matching `/coach-pages/` forms
 
 ## Purchase redesign and supplied Stripe offers
 
-The user selected the v2 landing-page design: full-bleed coach portrait, charcoal treatment and orange CTA. Preserve that landing design and carry it into the separate purchase pages, followed by a clear offer comparison. Each **Choose** button opens a native dialog with the actual Stripe Buy Button, loaded only for the selected offer through one shared loader. Keep the verified direct Stripe link visible as a fallback. The call route remains available for visitors who want help deciding.
+The purchase route opens directly at the dark pricing comparison from the user's selected second screenshot. It has no additional photo hero or FAQ. Each **Choose** button opens a native dialog with the actual Stripe Buy Button, loaded only for the selected offer through one shared loader. Keep the verified direct Stripe link visible as a fallback. The call route returns to the selected coach's intake dialog. The approved full-bleed photo hero belongs on the landing page.
 
 Read-only public Stripe responses confirm **Online Coaching — Monthly: $350/month** and **Monthly Coaching — Foundation: $475/month**. Foundation includes full programming and one session/week, with 30-day cancellation notice. The user confirmed **Nutrition + Training Assessment: $175 one-time** as the entry offer. The public website's $175 Standalone Program with $30 updates is a different offer and is excluded from this three-offer checkout set. Do not transfer its update fee or the website contact form's 30-minute description to the paid assessment. Evidence and proposed copy: `evidence/services-20261030/RESEARCH-NOTES.md` and `offer-comparison.json`.
 
@@ -58,6 +60,8 @@ The separate hosting audit did **not** verify Stripe’s post-payment destinatio
 ## Existing mini intake
 
 Verified public gateway: `https://formspree.io/f/mdajqedj`.
+
+The secondary hero CTA opens the dark native intake dialog. Direct links use `/{coach}/#{coach}-intake`, such as `/rhylie/#rhylie-intake`. Without JavaScript, CSS `:target` displays the same intake and native form POST remains available. The form is not a white section below the hero. Closing it returns the visitor to the landing hero.
 
 Source: [Site-Folder index.html at the reviewed commit](https://github.com/jaques-danger-bit/Site-Folder/blob/82a4326a25579020adc6c51022f4a5ebba4f54ba/index.html), form `applyForm`. The matching form was found in the site footer. A bounded search did not find a separate original mini-intake paste block. The newly supplied blocks adapt this verified form contract.
 
@@ -85,10 +89,10 @@ Source snapshots, photo hashes, checks and viewport screenshots are in `evidence
 
 ## Validation
 
-Run the intercepted form suite with `python coach-pages/tests/intake-check.py` in an environment with Playwright and Chromium. Local runner: `/home/jaquesdanger/.cache/raptor-browser-venv/bin/python`. The script accepts `--base-url` and `--chrome` overrides; see the defaults near its entry point. Visual capture: `coach-pages/scripts/check-visual.py`. Checks include successful receipt, all coach routes, required-field validation, duplicate submissions, explicit retries, failures, and complete embedded blocks. See the dated JSON evidence for what was actually run.
+Run the current focused suite with `/home/jaquesdanger/.cache/raptor-browser-venv/bin/python coach-pages/tests/minimal-flow-check.py --base-url http://127.0.0.1:8797 --evidence coach-pages/evidence/minimal-flow-checks.json` while serving `publish/` locally. The source/header documents its browser setup. The older `intake-check.py` and `redesign-check.py` encode the superseded full-page/baseline layout; their saved reports remain historical and are not the current structural acceptance suite.
 
-The final purchase suite passed 36 responsive views (six pages plus six wrapped blocks at 1440, 390 and 320px), 54 checkout dialogs and six landing-to-purchase navigations. Seven loader-failure/timeout views verified 21 attributed fallback offers; six JavaScript-disabled views verified 18 direct links. At that checkout-revision run, ten approved landing files were byte-identical to commit `967e407`; the later required-phone change is documented below. Original portraits are preserved. All external traffic in this suite was intercepted. Evidence: `evidence/redesign-tests.json`. These checks verify rendered behavior, offer selection, keyboard focus, one-loader behavior and references; they do not verify real payment or downstream fulfillment.
+The focused correction checks passed nine responsive coach flows, three synthetic intakes with empty/whitespace phone rejection, three pricing-to-intake hash navigations, three stubbed Stripe dialog smoke checks and three JavaScript-disabled intake fallbacks. Close, Escape, Space, focus restoration, query preservation and absence of overflow, light sections and arrow glyphs were checked. Form submissions and Stripe behavior were intercepted; no real lead, booking or payment was created. See `evidence/minimal-flow-checks.json`.
 
-### Required phone follow-up
+Earlier evidence remains historical: `evidence/redesign-tests.json` passed 36 responsive views, 54 checkout dialogs, six landing-to-purchase navigations, 21 loader-failure fallback offers and 18 JavaScript-disabled direct links. Its ten byte-identical landing files and earlier screenshots describe the previous checkout revision, not the newly reduced page structure. Likewise, the six read-only real Stripe renders establish widget rendering, not payment or fulfillment.
 
-Phone is now visibly required in every coach mini intake and copy-paste block. Native HTML validation rejects empty and whitespace-only values, including without JavaScript; the existing scripted submit handler also checks form validity. This is the sole authorized change to the approved landing markup. The baseline test permits exactly this field/label edit while preserving all other approved bytes. Gateway-side Formspree configuration is unchanged. See the refreshed `evidence/intake-tests.json` for submission checks; earlier screenshot captures may show the prior optional label.
+Phone remains visibly required in every intake and block, including the no-JavaScript fallback. The former phone-only markup exception is superseded by the user's explicit minimal-flow correction; it must not prevent removing the unwanted sections. Gateway-side Formspree configuration is unchanged. `evidence/intake-tests.json` records its own tested revision; older screenshots may show the former optional label.

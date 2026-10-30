@@ -1,0 +1,173 @@
+{
+  "builtAt": "2026-10-30T13:57:26.481128+00:00",
+  "outputDirectory": "/home/jaquesdanger/Projects/coach-landing-pages-20261030/coach-pages/publish",
+  "routes": [
+    "/",
+    "/justin/",
+    "/zach/",
+    "/rhylie/",
+    "/justin/start/",
+    "/zach/start/",
+    "/rhylie/start/"
+  ],
+  "sources": {
+    "assets/justin.jpg": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4",
+    "assets/zach.jpg": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b",
+    "assets/rhylie.jpg": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1",
+    "assets/strikeline-logo-white.svg": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+    "assets/strikeline-badge-white.svg": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+    "assets/barlow-condensed-bold.ttf": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+    "assets/manrope-regular.ttf": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae",
+    "assets/manrope-bold.ttf": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
+    "assets/barlowcondensed-OFL.txt": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
+    "assets/manrope-OFL.txt": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+    "assets/fonts.css": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a",
+    "assets/coach.css": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb",
+    "assets/intake.js": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4",
+    "assets/purchase.css": "767e6f979f9c1a5e1858d2063475dfc0f42c906246fb68e63b9ddab89831bec6",
+    "assets/purchase.js": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
+    "public/index.html": "c4345a683da2c23403b3b3f65efa2168836505a1af6f473b1a8ef4177b0ece78",
+    "justin.html": "ee98ac4918dec11551f99ead17f1ba733d080643acb3efcd66fc3247fb5d2565",
+    "zach.html": "328a84f11a17cbfffbd22700ae6bdfbe9910511d3c8d972cb9b7bee21199f73c",
+    "rhylie.html": "476c529af246021df626dff07d4645b95a4d672a2fd89398b0f71b1ba68596a7",
+    "start-justin.html": "e24f440039b0e4fffa7d228393ac7a31ea8aaae21bbbf255620f7d5748d5f316",
+    "start-zach.html": "918e3d0cac70dd439d3587ab46627ad851ea895e5eb25f6ca1965668df032ea8",
+    "start-rhylie.html": "e42743d9ef042ab5036e467d30ed0d93bcfb5a5e86a662357133c67961303e3c"
+  },
+  "files": [
+    {
+      "path": "_redirects",
+      "bytes": 440,
+      "sha256": "3351d26ed1a9a78cb353231f7231e8e9e4130cc84d0190767c1d1c6aa58b7bd8"
+    },
+    {
+      "path": "assets/barlow-condensed-bold.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "assets/barlowcondensed-OFL.txt",
+      "bytes": 4376,
+      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817"
+    },
+    {
+      "path": "assets/coach.css",
+      "bytes": 16059,
+      "sha256": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb"
+    },
+    {
+      "path": "assets/fonts.css",
+      "bytes": 484,
+      "sha256": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a"
+    },
+    {
+      "path": "assets/intake.js",
+      "bytes": 6283,
+      "sha256": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4"
+    },
+    {
+      "path": "assets/justin.jpg",
+      "bytes": 202405,
+      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4"
+    },
+    {
+      "path": "assets/manrope-OFL.txt",
+      "bytes": 4386,
+      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac"
+    },
+    {
+      "path": "assets/manrope-bold.ttf",
+      "bytes": 96188,
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06"
+    },
+    {
+      "path": "assets/manrope-regular.ttf",
+      "bytes": 96200,
+      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae"
+    },
+    {
+      "path": "assets/purchase.css",
+      "bytes": 9453,
+      "sha256": "767e6f979f9c1a5e1858d2063475dfc0f42c906246fb68e63b9ddab89831bec6"
+    },
+    {
+      "path": "assets/purchase.js",
+      "bytes": 4876,
+      "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d"
+    },
+    {
+      "path": "assets/rhylie.jpg",
+      "bytes": 204455,
+      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1"
+    },
+    {
+      "path": "assets/strikeline-badge-white.svg",
+      "bytes": 10748,
+      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd"
+    },
+    {
+      "path": "assets/strikeline-logo-white.svg",
+      "bytes": 6817,
+      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212"
+    },
+    {
+      "path": "assets/zach.jpg",
+      "bytes": 171749,
+      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7648,
+      "sha256": "c4345a683da2c23403b3b3f65efa2168836505a1af6f473b1a8ef4177b0ece78"
+    },
+    {
+      "path": "justin/index.html",
+      "bytes": 9776,
+      "sha256": "fcbc487723d55200fac46683eb7ee29a54642f79ccf4d0477195a841be96ead1"
+    },
+    {
+      "path": "justin/start/index.html",
+      "bytes": 34635,
+      "sha256": "8664560ede1337aebf121b4b0308961ac3d7e545a87150ead797af9529d08241"
+    },
+    {
+      "path": "rhylie/index.html",
+      "bytes": 9908,
+      "sha256": "bddab6c256564eaeffa7c66a8b0eda6c244402f627becd9175c7f975fc90fd82"
+    },
+    {
+      "path": "rhylie/start/index.html",
+      "bytes": 34663,
+      "sha256": "46073204f057867009d08a5574f9d52659f76b2ba53c7dc0b53b8f679c7a0ef0"
+    },
+    {
+      "path": "zach/index.html",
+      "bytes": 9460,
+      "sha256": "104b4baef368f8ee1fd890b2a70d3c319f67da35611a525b4dfa2503689ae2d3"
+    },
+    {
+      "path": "zach/start/index.html",
+      "bytes": 34507,
+      "sha256": "b2eb9012cf8c5368b799a3e5aa51a07b48ff1139058ce48be0243a9bef820fca"
+    }
+  ],
+  "publicHostsOrSchemes": [
+    "buy.stripe.com",
+    "formspree.io",
+    "mailto",
+    "strikelinetraining.com",
+    "training.strikelinetraining.com"
+  ],
+  "checks": {
+    "allowlistOnly": true,
+    "localLinksAndAnchorsResolve": true,
+    "noInternalPortalLinks": true,
+    "originalAssetsByteIdentical": true
+  },
+  "behavior": {
+    "formEndpointUnchanged": "https://formspree.io/f/mdajqedj",
+    "publicBookingCalendarPreserved": "training.strikelinetraining.com/a/booking/",
+    "legacyRedirectStatus": 301,
+    "noSpaCatchall": true
+  }
+}

@@ -6,16 +6,44 @@ Three landing pages and three separate purchase pages for Justin, Zach and Rhyli
 
 - `index.html`: local review index.
 - `justin.html`, `zach.html`, `rhylie.html`: coach landing pages.
-- `start-justin.html`, `start-zach.html`, `start-rhylie.html`: separate purchase pages. Deploy this directory with its `assets/` folder to serve all six pages.
+- `start-justin.html`, `start-zach.html`, `start-rhylie.html`: separate purchase-page sources. Package them with `scripts/build-public-site.py`; do not publish the whole `coach-pages/` directory.
+- `public/index.html`: customer-facing coach selector. `publish/`: ignored, allowlisted deployment output containing the selector, six routed pages, public assets and legacy redirects.
 - `blocks/*-copy-paste.html`: six self-contained blocks: one landing block and one `start-{slug}-copy-paste.html` purchase block per coach. Each includes the original supplied JPEG, SVG logos and local fonts as data URLs, with scoped styles. Landing blocks also include intake behavior. Paste one per full-width HTML/custom-code section that permits JavaScript. The host controls outer padding and iframe height. A restrictive host may strip inline scripts or data images, so check the actual host before publishing. No remote photo or logo URL is needed.
 - `coaches.json`: editable coach copy, booking routes and `purchaseUrl`. `offers.json`: the three user-selected, publicly verified offers and Stripe destinations. `assets/coach.css`: shared layout. `assets/intake.js`: shared form behavior. `assets/purchase.css`, `assets/purchase.js` and `scripts/purchase_pages.py`: purchase layout, selected-offer dialog and generation.
 - `FUNNEL-NOTES.md`: the two-path flow, supplied Stripe offers, ManyChat plan and current integration limits.
 
-`purchaseUrl` defaults to `start-{slug}.html`, which works when the six files are hosted together. Website-builder embeds must use the actual published purchase-page URL after the host/slugs are chosen. Also update the purchase page’s return-to-coach links when its landing page uses a different published URL. Purchase/return links use `target="_top"` so navigation can leave an iframe; the host must permit that navigation.
+`purchaseUrl` defaults to `start-{slug}.html` in the local source pages. The public packager rewrites these links to `/{slug}/start/`, return links to `/{slug}/`, assets to `/assets/`, and logo-home links to the public coach selector. Website-builder blocks retain their source-relative links; before using a block elsewhere, set its purchase and return links to the corresponding public URLs below. Purchase/return links use `target="_top"` so navigation can leave an iframe; the host must permit that navigation.
 
 From the repository root, run `python3 -m http.server 8795 --bind 127.0.0.1` and open `http://127.0.0.1:8795/coach-pages/`. These pages point at a real intake endpoint. Automated checks intercept all external requests; previewing does not require submitting test leads.
 
 Rebuild the pages and blocks with `python3 coach-pages/scripts/build.py`. The generator assembles all six pages and six blocks without transforming the portraits or SVG artwork. Header logo: Dropbox `strikeline-07.svg`; footer badge: `strikeline-08.svg`. Original file paths and verified hashes are in `evidence/dropbox-logo-provenance.json`. Font licenses are in `assets/*-OFL.txt`.
+
+## Separate public hosting
+
+The public site is **https://strikeline-coaching.netlify.app**, Netlify site ID `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. It is separate from the internal portal and the existing marketing-site deployment. [The deployment receipt](evidence/hosting-deploy.json) records production deploy `6ae4a3067dc975fa84639d40` on October 30, 2026. That receipt establishes publication; [The live-check report](evidence/public-site-live-checks.json) is the source for subsequent live-validation results. Consult the latest receipt and checks when determining the current deployed revision and its verified behavior.
+
+| Page | Public route |
+|---|---|
+| Coach selector | https://strikeline-coaching.netlify.app/ |
+| Justin | https://strikeline-coaching.netlify.app/justin/ |
+| Justin’s training options | https://strikeline-coaching.netlify.app/justin/start/ |
+| Zach | https://strikeline-coaching.netlify.app/zach/ |
+| Zach’s training options | https://strikeline-coaching.netlify.app/zach/start/ |
+| Rhylie | https://strikeline-coaching.netlify.app/rhylie/ |
+| Rhylie’s training options | https://strikeline-coaching.netlify.app/rhylie/start/ |
+
+Build from the repository root, then deploy only the generated public directory:
+
+```sh
+python3 coach-pages/scripts/build.py
+python3 coach-pages/scripts/build-public-site.py
+cd coach-pages
+netlify deploy --prod --no-build --dir publish --site d40f2639-dc6b-4a77-8d46-d297b2cc9b23
+```
+
+The packager allows exactly 23 files: seven customer-facing HTML pages, 15 public assets including font licenses, and `_redirects`. It excludes source configuration, copy-paste blocks, scripts, tests, research, evidence and documentation. It validates local links and anchors, rejects internal portal references, and preserves original asset bytes. `evidence/public-site-manifest.json` records source/output hashes and the file/route inventory. `publish/` and `.netlify/` are ignored. Do not deploy the repository root or all of `coach-pages/`.
+
+Legacy `/{coach}.html`, `/start-{coach}.html` and matching `/coach-pages/` forms receive 301 redirects to the clean routes. There is no SPA catchall. The user explicitly retained the public `training.strikelinetraining.com/a/booking/` calendars; that public calendar remains the post-intake destination. Customer navigation has no internal-portal links. The existing Formspree action and required phone field remain unchanged. The origin-specific OPTIONS result in `evidence/hosting-form-preflight.json` checks CORS only; it does not prove lead acceptance, notifications or downstream import.
 
 ## Purchase redesign and supplied Stripe offers
 
@@ -23,7 +51,9 @@ The user selected the v2 landing-page design: full-bleed coach portrait, charcoa
 
 Read-only public Stripe responses confirm **Online Coaching — Monthly: $350/month** and **Monthly Coaching — Foundation: $475/month**. Foundation includes full programming and one session/week, with 30-day cancellation notice. The user confirmed **Nutrition + Training Assessment: $175 one-time** as the entry offer. The public website's $175 Standalone Program with $30 updates is a different offer and is excluded from this three-offer checkout set. Do not transfer its update fee or the website contact form's 30-minute description to the paid assessment. Evidence and proposed copy: `evidence/services-20261030/RESEARCH-NOTES.md` and `offer-comparison.json`.
 
-Use static `client-reference-id="stg_{coach}_{offer}"` for the selected coach/offer. This is a purchase reference, not proof of backend assignment or fulfillment. All three actual Stripe widgets rendered through read-only public GETs at desktop 1440px and mobile 320px (six views); `evidence/stripe-public-render.json` records the check. No payment was made. Stripe connector reauthentication was unavailable; no dashboard settings were changed and no deployed fulfillment webhook was verified. A bounded local portal-code read found a founders-only webhook that ignores other purchases and no function consuming `client_reference_id`; this is a local-code finding, not deployed-state evidence. Verify live coach assignment and fulfillment before launch. No automatic onboarding or delivery deadline is promised in the public copy.
+Use static `client-reference-id="stg_{coach}_{offer}"` for the selected coach/offer. This is a purchase reference, not proof of backend assignment or fulfillment. All three actual Stripe widgets rendered through read-only public GETs at desktop 1440px and mobile 320px (six views); `evidence/stripe-public-render.json` records the check. No payment was made. Stripe connector reauthentication was unavailable; no dashboard settings were changed and no deployed fulfillment webhook was verified. A bounded local portal-code read found a founders-only webhook that ignores other purchases and no function consuming `client_reference_id`; this is a local-code finding, not deployed-state evidence. Verify live coach assignment and fulfillment before relying on automated assignment or delivery. No automatic onboarding or delivery deadline is promised in the public copy.
+
+The separate hosting audit did **not** verify Stripe’s post-payment destinations. `evidence/stripe-return-audit.json` found no configured completion URL in the accessible public responses or matching local link configuration. Absence of an internal-portal address in those responses does not prove where Stripe sends a buyer after payment. Its read-only browser filter also blocked Stripe’s POST initialization, so the resulting checkout-page error is not evidence that the payment links are broken. No purchase or account setting change was performed; post-payment routing and fulfillment remain separate checks.
 
 ## Existing mini intake
 
@@ -51,7 +81,7 @@ All three links were inspected in the current public booking UI without entering
 
 The supplied JustJump personas inform the copy: specific goals, understandable coaching decisions and a clear next step. These are proposed marketing pages, not measured conversion evidence. No invented testimonials, personal stories awaiting coach approval, prices or support schedules are included. The latest user direction uses **tactical training** in Zach’s landing-page copy and explicitly includes **bodybuilding competition prep** for both Justin and Rhylie. This confirms those marketing service categories and supersedes the prior omission of competition prep; it does not establish certifications, competitive achievements, specific prep inclusions, or client outcomes. Earlier social-profile copy and source records remain preserved.
 
-Source snapshots, photo hashes, checks and viewport screenshots are in `evidence/`. The original site pages, deployment configuration and other funnels are not modified by this additive feature. Publishing and a controlled live form-to-inbox/import check remain separate from the local intercepted tests.
+Source snapshots, photo hashes, checks and viewport screenshots are in `evidence/`; none belongs in the public package. The original marketing-site pages, deployment configuration and other funnels are not modified by this additive feature. Separate-site publication is tracked by its deployment receipt and live checks. A controlled live form-to-inbox/import check remains separate from those hosting checks and the local intercepted tests.
 
 ## Validation
 

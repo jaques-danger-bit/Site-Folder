@@ -1,0 +1,349 @@
+{
+  "checked_at_utc": "2026-10-30T13:57:54.575988+00:00",
+  "scope": "Read-only public checkout/Buy Button inspection and bounded local exact-link search. No secret configuration or keys accessed.",
+  "method": "Public HTTP GETs and browser GET/HEAD/OPTIONS only. All non-read browser requests blocked; no input entered or payment clicked.",
+  "http_checks": [
+    {
+      "offer": "assessment",
+      "kind": "payment_link",
+      "requested_url": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "status": 200,
+      "final_url": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 620540,
+      "sha256": "34ecdefe36225d17445d60146c33b1baf375887ce4891e164aa0d6ab4e1b9e94",
+      "internal_portal_literal_present": false,
+      "return_keyword_counts": {
+        "success_url": 0,
+        "return_url": 2,
+        "after_completion": 0,
+        "redirect_url": 0
+      }
+    },
+    {
+      "offer": "assessment",
+      "kind": "buy_button",
+      "requested_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "offer": "online",
+      "kind": "payment_link",
+      "requested_url": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "status": 200,
+      "final_url": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 620540,
+      "sha256": "34ecdefe36225d17445d60146c33b1baf375887ce4891e164aa0d6ab4e1b9e94",
+      "internal_portal_literal_present": false,
+      "return_keyword_counts": {
+        "success_url": 0,
+        "return_url": 2,
+        "after_completion": 0,
+        "redirect_url": 0
+      }
+    },
+    {
+      "offer": "online",
+      "kind": "buy_button",
+      "requested_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "offer": "inperson",
+      "kind": "payment_link",
+      "requested_url": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "status": 200,
+      "final_url": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 620540,
+      "sha256": "34ecdefe36225d17445d60146c33b1baf375887ce4891e164aa0d6ab4e1b9e94",
+      "internal_portal_literal_present": false,
+      "return_keyword_counts": {
+        "success_url": 0,
+        "return_url": 2,
+        "after_completion": 0,
+        "redirect_url": 0
+      }
+    },
+    {
+      "offer": "inperson",
+      "kind": "buy_button",
+      "requested_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    }
+  ],
+  "browser_checks": [
+    {
+      "offer": "assessment",
+      "url": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "blocked_non_read_requests": [
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/0"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/fZueVf0L480x3sPdAfgQE2z"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/211/store/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/11777/envelope/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/b"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://m.stripe.com/6"
+        }
+      ],
+      "config_responses": [
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/fZueVf0L480x3sPdAfgQE2z",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://checkout-cookies.stripe.com/api/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/link/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://js.stripe.com/v3/.deploy_status_henson.json",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        }
+      ],
+      "status": 200,
+      "final_url_without_query": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "title": "Stripe Checkout",
+      "visible_body_excerpt": "Something went wrong\n\nThe page you were looking for could not be found. Please check the URL or contact the merchant.",
+      "internal_portal_literal_present_in_dom": false
+    },
+    {
+      "offer": "online",
+      "url": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "blocked_non_read_requests": [
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/0"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/fZucN70L4fsZgfB0NtgQE2A"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/211/store/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/11777/envelope/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/b"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://m.stripe.com/6"
+        }
+      ],
+      "config_responses": [
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/fZucN70L4fsZgfB0NtgQE2A",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://checkout-cookies.stripe.com/api/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/link/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://js.stripe.com/v3/.deploy_status_henson.json",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        }
+      ],
+      "status": 200,
+      "final_url_without_query": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "title": "Stripe Checkout",
+      "visible_body_excerpt": "Something went wrong\n\nThe page you were looking for could not be found. Please check the URL or contact the merchant.",
+      "internal_portal_literal_present_in_dom": false
+    },
+    {
+      "offer": "inperson",
+      "url": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "blocked_non_read_requests": [
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/0"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/dRmcN765o94B5AXao3gQE2B"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/211/store/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://errors.stripe.com/api/11777/envelope/"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://r.stripe.com/b"
+        },
+        {
+          "method": "POST",
+          "url_without_query": "https://m.stripe.com/6"
+        }
+      ],
+      "config_responses": [
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/payment-links/dRmcN765o94B5AXao3gQE2B",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://checkout-cookies.stripe.com/api/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://merchant-ui-api.stripe.com/link/get-cookie",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        },
+        {
+          "url_without_query": "https://js.stripe.com/v3/.deploy_status_henson.json",
+          "status": 200,
+          "return_fields": [],
+          "internal_portal_literal_present": false
+        }
+      ],
+      "status": 200,
+      "final_url_without_query": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "title": "Stripe Checkout",
+      "visible_body_excerpt": "Something went wrong\n\nThe page you were looking for could not be found. Please check the URL or contact the merchant.",
+      "internal_portal_literal_present_in_dom": false
+    }
+  ],
+  "local_search": {
+    "roots": [
+      "/home/jaquesdanger/Projects/stg-portal",
+      "/home/jaquesdanger/Projects/coach-landing-pages-20261030"
+    ],
+    "patterns": [
+      "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp"
+    ],
+    "included_extensions": [
+      ".js",
+      ".ts",
+      ".md",
+      ".json",
+      ".html"
+    ],
+    "excluded": "feature coach-pages (new generated references), dependency/build/git directories and lockfiles; no .env or credential files read",
+    "matches_outside_new_feature": []
+  },
+  "conclusion": "Post-payment destinations are not verified. Public responses inspected did not establish a configured after-payment URL, and bounded local exact-link search found no legacy matching configuration. Absence of the internal portal literal in accessible data does not prove Stripe will not redirect there after payment. Stop at this evidence boundary; do not claim verified fulfillment.",
+  "payments_attempted": 0,
+  "account_mutations": 0,
+  "previous_public_buy_button_responses": [
+    {
+      "url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "status": 200,
+      "return_fields": []
+    },
+    {
+      "url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "status": 200,
+      "return_fields": []
+    },
+    {
+      "url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "status": 200,
+      "return_fields": []
+    }
+  ],
+  "observed_public_config_endpoint_checks": [
+    {
+      "offer": "assessment",
+      "url": "https://merchant-ui-api.stripe.com/payment-links/fZueVf0L480x3sPdAfgQE2z",
+      "status": 200,
+      "top_level_keys": [
+        "key",
+        "stripe_account",
+        "merchant",
+        "id",
+        "branding"
+      ],
+      "return_related_fields": [],
+      "internal_portal_literal_present": false
+    },
+    {
+      "offer": "online",
+      "url": "https://merchant-ui-api.stripe.com/payment-links/fZucN70L4fsZgfB0NtgQE2A",
+      "status": 200,
+      "top_level_keys": [
+        "key",
+        "stripe_account",
+        "merchant",
+        "id",
+        "branding"
+      ],
+      "return_related_fields": [],
+      "internal_portal_literal_present": false
+    },
+    {
+      "offer": "inperson",
+      "url": "https://merchant-ui-api.stripe.com/payment-links/dRmcN765o94B5AXao3gQE2B",
+      "status": 200,
+      "top_level_keys": [
+        "key",
+        "stripe_account",
+        "merchant",
+        "id",
+        "branding"
+      ],
+      "return_related_fields": [],
+      "internal_portal_literal_present": false
+    }
+  ],
+  "browser_limit": "The read-only browser filter blocked the payment-link POST initialization request; resulting page error is not evidence that the live payment link is broken. No POST was allowed to continue."
+}

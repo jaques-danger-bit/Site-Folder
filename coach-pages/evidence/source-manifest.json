@@ -1,0 +1,50 @@
+{
+  "prepared_at_utc": "2026-10-30T11:52:58.683325+00:00",
+  "repository": "jaques-danger-bit/Site-Folder",
+  "base_commit": "82a4326a25579020adc6c51022f4a5ebba4f54ba",
+  "intake_source": {
+    "path": "index.html",
+    "blob": "5b0ad3a4ddaf861d7ced419e3a6b1cf8d304c2e4",
+    "form": "applyForm",
+    "endpoint": "https://formspree.io/f/mdajqedj",
+    "separate_original_paste_block_found": false
+  },
+  "booking_source": {
+    "path": "about.html",
+    "blob": "5560881defbee3e705b48b1ffef066ba43b99ffd",
+    "serviceId": "38920",
+    "verification": "booking-verification.json"
+  },
+  "portal_contract": {
+    "repository": "jaques-danger-bit/stg-portal",
+    "commit": "1754854dbca904066e1302abb5157ad759fa07e8",
+    "file": "netlify/functions/sync-lite-intake.js",
+    "blob": "155416d6a9266766f9fdfa45e8ce5f64b4804595"
+  },
+  "messaging_source": "/home/jaquesdanger/.codex/skills/coach-social-media-persona/references/buyer-personas-and-ladders.md",
+  "messaging_status": "Proposed landing copy from user-authorized working ladders based on Jenna JustJump decks; not customer-validated outcomes.",
+  "photos": [
+    {
+      "coach": "Justin",
+      "source": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/sources/Justin-highlight-source-photo.jpg",
+      "output": "coach-pages/assets/justin.jpg",
+      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4",
+      "original_bytes_preserved": true
+    },
+    {
+      "coach": "Zach",
+      "source": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/sources/Zach-highlight-source-photo.jpg",
+      "output": "coach-pages/assets/zach.jpg",
+      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b",
+      "original_bytes_preserved": true
+    },
+    {
+      "coach": "Rhylie",
+      "source": "/home/jaquesdanger/Strikeline-data/coach-social-personas/2026-10-30/sources/Rhylie-highlight-source-photo.jpg",
+      "output": "coach-pages/assets/rhylie.jpg",
+      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1",
+      "original_bytes_preserved": true
+    }
+  ],
+  "delivery_status": "Prepared and tested locally; not published or live-submission tested."
+}

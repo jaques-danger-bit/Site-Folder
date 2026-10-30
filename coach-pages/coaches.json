@@ -1,0 +1,187 @@
+[
+  {
+    "slug": "justin",
+    "name": "Justin",
+    "fullName": "Justin Poole",
+    "specialty": "Strength & Physique Coach",
+    "heroLines": [
+      "BUILD MUSCLE.",
+      "TRAIN WITH",
+      "PURPOSE."
+    ],
+    "subhead": "You’re ready to take your training seriously. Let’s talk about the strength and physique you want to build, where you are now, and what needs to move forward.",
+    "introHeading": "Give your effort a clear direction.",
+    "reasons": [
+      {
+        "title": "A goal worth working toward",
+        "text": "Put words to the muscle, strength, or physique progress you want."
+      },
+      {
+        "title": "A closer look at your training",
+        "text": "Bring your training history, what is going well, and where you feel stuck."
+      },
+      {
+        "title": "A next step you understand",
+        "text": "Discuss what coaching would involve and whether it fits the way you want to train."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need to be an experienced lifter?",
+        "answer": "Tell me where you are starting. Your experience, goals, and questions will help shape the conversation."
+      },
+      {
+        "question": "Can we talk about a plateau?",
+        "answer": "Yes. Bring the details of your current training and what you have noticed, so we can discuss the problem you want help solving."
+      },
+      {
+        "question": "What does coaching include?",
+        "answer": "Use the call to discuss the coaching options, support, and cost before deciding whether to begin."
+      }
+    ],
+    "closingHeading": "Let’s see how strong you can get.",
+    "closingText": "Start with your goal. We’ll take the conversation from there.",
+    "goals": [
+      {
+        "value": "Muscle Building",
+        "label": "Build muscle"
+      },
+      {
+        "value": "Strength",
+        "label": "Get stronger"
+      },
+      {
+        "value": "Aesthetics & Physique Development",
+        "label": "Develop my physique"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017439&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%"
+  },
+  {
+    "slug": "zach",
+    "name": "Zach",
+    "fullName": "Zach Vazquez",
+    "specialty": "Strength Coach & Firearms Instructor",
+    "heroLines": [
+      "BUILD STRENGTH.",
+      "BUILD SKILLS."
+    ],
+    "subhead": "Want to build muscle, feel more capable in the gym, or explore firearms instruction? Tell me what you want to learn. Let’s talk about the right place to start.",
+    "introHeading": "You don’t need every answer before you start.",
+    "reasons": [
+      {
+        "title": "Make your goal specific",
+        "text": "Tell me whether you want strength coaching, firearms instruction, or to learn more about either."
+      },
+      {
+        "title": "Ask the questions you have",
+        "text": "Bring your experience, uncertainties, and the skills you want to develop."
+      },
+      {
+        "title": "Understand the next step",
+        "text": "Discuss the relevant training options and what working together would involve."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I ask about strength coaching or firearms instruction?",
+        "answer": "Yes. Tell me which area interests you so our conversation stays focused on what you need."
+      },
+      {
+        "question": "What if I’m new to training?",
+        "answer": "Start with your experience and your questions. You do not need to know all the terminology to explain what you want to learn."
+      },
+      {
+        "question": "Do I need to choose a program before the call?",
+        "answer": "No. Use the conversation to discuss your goal, the available options, and their costs before choosing a next step."
+      }
+    ],
+    "closingHeading": "Come train with me.",
+    "closingText": "Bring your goals and your questions. Let’s work out where to start.",
+    "goals": [
+      {
+        "value": "Strength & Muscle Building",
+        "label": "Build strength and muscle"
+      },
+      {
+        "value": "Firearms Instruction",
+        "label": "Explore firearms instruction"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017453&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%"
+  },
+  {
+    "slug": "rhylie",
+    "name": "Rhylie",
+    "fullName": "Rhylie Erdmann",
+    "specialty": "Women’s Strength & Physique Coach",
+    "heroLines": [
+      "BUILD YOUR",
+      "PHYSIQUE.",
+      "GROW YOUR",
+      "CONFIDENCE."
+    ],
+    "subhead": "Your goal can be about how you look, how strong you feel, or both. Let’s talk about what you want to build and how training can fit into your life.",
+    "introHeading": "Your goal deserves a clear next step.",
+    "reasons": [
+      {
+        "title": "Make it your goal",
+        "text": "Talk about the muscle, strength, or physique changes that matter to you."
+      },
+      {
+        "title": "Start from your real life",
+        "text": "Bring your training experience, available time, and what has made consistency difficult."
+      },
+      {
+        "title": "Know what progress means to you",
+        "text": "Discuss the milestones and coaching support that would help you move forward."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need to feel confident in the gym already?",
+        "answer": "No. Share your starting point and what you want help understanding. That is useful information for the conversation."
+      },
+      {
+        "question": "Does my goal have to be about appearance?",
+        "answer": "Your goal can include strength, skill, consistency, physique, or a combination. Tell me what matters to you."
+      },
+      {
+        "question": "What if I’m unsure what coaching would involve?",
+        "answer": "That is a good reason to talk. Use the call to discuss the options, support, and cost before deciding whether to begin."
+      }
+    ],
+    "closingHeading": "Let’s build something you feel good about.",
+    "closingText": "Start with what you want for yourself. We’ll talk about the next step.",
+    "goals": [
+      {
+        "value": "Muscle Building",
+        "label": "Build muscle"
+      },
+      {
+        "value": "Aesthetics & Physique Development",
+        "label": "Develop my physique"
+      },
+      {
+        "value": "Strength & Confidence",
+        "label": "Build strength and confidence"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%"
+  }
+]

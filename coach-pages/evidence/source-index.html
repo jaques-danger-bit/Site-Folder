@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strikeline Training Group | Human Performance, Amplified.</title>
+    <meta
+      name="description"
+      content="An open-membership strength gym in Beaufort, SC. Arsenal Strength equipment, coaching, programming, and group classes: Strikeline Beat and Strikeline Glute Lab."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Strikeline Training Group" />
+    <meta property="og:title" content="Strikeline Gym | Beaufort, SC" />
+    <meta
+      property="og:description"
+      content="Open gym, personal training, small-group workouts, and classes in Beaufort, SC. Fitness. Coaching. Community."
+    />
+    <meta property="og:url" content="https://strikelinetraining.com/" />
+    <meta property="og:image" content="https://strikelinetraining.com/assets/social/strikeline-gym-hype-20260908.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Coached sled training on the turf at Strikeline Gym in Beaufort, SC, with the Strikeline Training Group logo." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://strikelinetraining.com/assets/social/strikeline-gym-hype-20260908.jpg" />
+    <meta name="twitter:image:alt" content="Coached sled training on the turf at Strikeline Gym in Beaufort, SC, with the Strikeline Training Group logo." />
+    <link rel="canonical" href="https://strikelinetraining.com/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta name="theme-color" content="#1C1C1E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/shell.css?v=mobile-tour-icons-20260908" />
+    <link rel="stylesheet" href="css/home.css?v=clean-motion-20260908" />
+    <link rel="stylesheet" href="css/visit.css" />
+    <link rel="stylesheet" href="css/partners.css?v=clean-motion-20260908" />
+    <link rel="stylesheet" href="css/classes.css?v=classes-20260907" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <div id="cursorDot"></div>
+    <div id="cursorRing"></div>
+    <div id="curtain" aria-hidden="true"></div>
+
+    <!-- S0 PRELOADER: one mark, one controlled movement -->
+    <div id="preloader" aria-hidden="true">
+      <div class="loader-scene">
+        <div class="loader-shield">
+          <canvas id="shieldCanvas" aria-hidden="true"></canvas>
+          <img class="loader-fallback" src="assets/media/logos/brand/logo-shield.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV (canonical — copied to every page) -->
+    <nav id="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html"
+        ><span class="mark"
+          ><img src="assets/media/logos/brand/logo-shield.svg" alt="Strikeline shield" /></span
+        >STRIKELINE TRAINING GROUP</a
+      >
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Memberships</a>
+        <a href="about.html">Our Team</a>
+        <a href="partner-services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html" class="nav-contact">Contact Us</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-call" href="tel:+17708628942" aria-label="Call Us">
+          <img src="assets/media/icons/phone.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Call Us</span>
+        </a>
+        <a class="nav-cta" href="https://training.strikelinetraining.com/packages/83983/purchase/" data-cta-intent="purchase" data-cta-product="membership">Join the Gym</a>
+      </div>
+      <button class="nav-burger" aria-label="Menu" aria-controls="mobile-navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-navigation" data-lenis-prevent>
+      <a class="mm-link" href="index.html" aria-current="page">Home</a>
+      <a class="mm-link" href="services.html">Memberships</a>
+      <a class="mm-link" href="about.html">Our Team</a>
+      <a class="mm-link" href="partner-services.html">Services</a>
+      <a class="mm-link" href="events.html">Events</a>
+      <a class="mm-link" href="contact.html">Contact Us</a>
+      <a class="btn solid mm-cta" href="https://training.strikelinetraining.com/packages/83983/purchase/" data-cta-intent="purchase" data-cta-product="membership"><span>Join the Gym</span><i></i></a>
+    </div>
+
+    <!-- S1 HERO -->
+    <header class="hero" id="top">
+      <div class="hero-media">
+        <img
+          id="heroImg"
+          fetchpriority="high"
+          src="assets/media/photos/home/equipment-hero.webp"
+          alt="Strikeline strength floor with Arsenal equipment and the American flag"
+        />
+        <video
+          id="heroVideo"
+          data-hero-video
+          data-src="assets/media/videos/hero/hype-horizontal-bw.mp4"
+          muted
+          loop
+          playsinline
+          preload="none"
+          aria-hidden="true"
+          tabindex="-1"
+        ></video>
+      </div>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Strength &amp; Performance Gym · Beaufort, SC</p>
+        <h1 id="heroTitle">
+          <span class="line" data-split>Strikeline Gym.</span>
+          <span class="line" data-split>Built For You<span class="red">.</span></span>
+        </h1>
+        <div class="hero-sub">
+          <p>
+            Premium Arsenal Strength equipment, assessment-led coaching, and programming built for
+            measurable progress.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn solid magnetic" href="services.html#gym-membership"><span>Explore Memberships</span><i></i></a>
+            <a class="btn glass-btn magnetic" href="services.html#menu"
+              ><span>Explore Coaching</span><i></i
+            ></a>
+          </div>
+          <div class="hero-meta">
+            <span>Fitness</span><i></i><span>Coaching</span><i></i
+            ><span>Community</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- A priced membership decision precedes the optional gym walkthrough. -->
+    <section class="membership-start" id="membership-start" aria-labelledby="membership-start-title">
+      <div class="membership-start-inner wrap">
+        <div class="membership-start-copy">
+          <div class="sec-tag">Gym Membership</div>
+          <h2 id="membership-start-title">Standard Monthly<br />Membership.</h2>
+          <p>Train on your own at Strikeline. Coaching and classes are booked separately.</p>
+        </div>
+        <div class="membership-start-price">
+          <p class="membership-amount">$59.99 <small>/month</small></p>
+          <p id="membership-start-terms">Plus a $50 one-time Basic Gym Use fee.</p>
+          <p>Access during open-gym hours. 24/7 access is coming soon.</p>
+        </div>
+        <div class="membership-start-actions">
+          <a class="btn solid" href="https://training.strikelinetraining.com/packages/83983/purchase/"
+            data-cta-intent="purchase" data-cta-product="membership"
+            aria-describedby="membership-start-terms"><span>Join the Gym</span><i></i></a>
+          <a class="membership-details" href="services.html#gym-membership">View membership details
+            <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2 MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track" id="marquee">
+        <span>
+          24/7 Access · Coming Soon
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" />
+          <em>Arsenal Strength</em>
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" /> Coach-Built
+          Programs
+          <img
+            class="mq-shield"
+            src="assets/media/logos/brand/logo-shield.svg"
+            alt=""
+          />
+          <em>Group Classes</em>
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" /> Beaufort, SC
+          <img
+            class="mq-shield"
+            src="assets/media/logos/brand/logo-shield.svg"
+            alt=""
+          />&nbsp;</span
+        >
+        <span
+          >24/7 Access · Coming Soon
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" />
+          <em>Arsenal Strength</em>
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" /> Coach-Built
+          Programs
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" />
+          <em>Group Classes</em>
+          <img class="mq-shield" src="assets/media/logos/brand/logo-shield.svg" alt="" /> Beaufort, SC
+          <img
+            class="mq-shield"
+            src="assets/media/logos/brand/logo-shield.svg"
+            alt=""
+          />&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <!-- FACILITY: Option B, owner-selected horizontal walkthrough -->
+    <section class="facility-tour" id="facility" aria-labelledby="facility-title">
+      <div class="facility-intro wrap">
+        <div>
+          <div class="sec-tag">Inside Strikeline</div>
+          <h2 id="facility-title">Your local<br /><em>strength gym.</em></h2>
+        </div>
+        <div class="facility-intro-copy">
+          <p>Join the gym, train on your own, or work with a coach.</p>
+          <a class="facility-skip" href="#membership-options" data-facility-skip>
+            Skip tour <span class="ui-arrow ui-arrow--down" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="facility-stage" data-facility-pin>
+        <div class="facility-progress" aria-hidden="true">
+          <span data-facility-progress></span>
+        </div>
+        <div class="facility-track" data-facility-track>
+          <article class="facility-panel" data-facility-panel aria-labelledby="facility-strength">
+            <div class="facility-panel-inner wrap">
+              <div class="facility-copy">
+                <div class="facility-kicker">The strength floor</div>
+                <h3 id="facility-strength">Strength<br /><em>equipment.</em></h3>
+                <p>
+                  Premium strength equipment to help you build muscle, get stronger, and hit new PRs.
+                </p>
+                <ul class="facility-features">
+                  <li>Arsenal Strength</li>
+                  <li>Troy Fitness Pro Style dumbbells</li>
+                  <li>Rubber flooring</li>
+                </ul>
+              </div>
+              <div class="facility-visual" data-facility-photo="equipment">
+                <img src="assets/media/photos/facility/arsenal-closeup.jpg"
+                  alt="Close-up of the Arsenal Strength logo on equipment inside Strikeline"
+                  width="1125" height="1245" loading="lazy" decoding="async" />
+              </div>
+            </div>
+          </article>
+
+          <article class="facility-panel" data-facility-panel aria-labelledby="facility-turf">
+            <div class="facility-panel-inner wrap">
+              <div class="facility-copy">
+                <div class="facility-kicker">Conditioning and cardio</div>
+                <h3 id="facility-turf">Turf &amp;<br /><em>cardio.</em></h3>
+                <p>
+                  Train on the turf or head outside for a run. We're right on the Spanish Moss Trail.
+                </p>
+                <ul class="facility-features">
+                  <li>Indoor turf area</li>
+                  <li>Spanish Moss Trail access for running</li>
+                  <li>StairMaster, bikes, rower, treadmills &amp; ellipticals</li>
+                </ul>
+              </div>
+              <div class="facility-visual" data-facility-photo="turf">
+                <img src="assets/media/photos/facility/conditioning-turf.jpg"
+                  alt="Strikeline-branded indoor turf with a sled and surrounding strength equipment"
+                  width="1800" height="1350" loading="lazy" decoding="async" />
+              </div>
+            </div>
+          </article>
+
+          <article class="facility-panel" data-facility-panel aria-labelledby="facility-access">
+            <div class="facility-panel-inner wrap">
+              <div class="facility-copy">
+                <div class="facility-kicker">Your training options</div>
+                <h3 id="facility-access">Train<br /><em>your way.</em></h3>
+                <p>
+                  Train on your own or with a coach. Find the option that works for you.
+                </p>
+                <ul class="facility-features">
+                  <li>Open gym: train on your own</li>
+                  <li>1-on-1 with a coach</li>
+                  <li>Small group workouts</li>
+                  <li>Group classes</li>
+                </ul>
+              </div>
+              <div class="facility-visual" data-facility-photo="overview">
+                <img src="assets/media/photos/facility/member-support.jpg"
+                  alt="Strikeline training floor with Arsenal Strength equipment and an American flag"
+                  width="1125" height="1074" loading="lazy" decoding="async" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="facility-exit wrap" id="membership-options" tabindex="-1"
+        role="region" aria-label="Membership, programming, and classes">
+        <p class="facility-address">46 Robert Smalls Pkwy, Beaufort, SC 29906</p>
+        <div class="facility-next">
+          <span>Choose your next step</span>
+          <div class="facility-links">
+            <a href="https://training.strikelinetraining.com/packages/83983/purchase/" data-ph="exercise-membership-checkout" aria-describedby="membership-terms" data-cta-intent="purchase" data-cta-product="membership">Join the Gym</a>
+            <a href="services.html#menu" data-ph="exercise-programming-checkout">Explore Programming</a>
+            <a href="services.html#group-classes" data-ph="exercise-classes-checkout">Explore Classes</a>
+          </div>
+        </div>
+        <p class="booking-note" id="membership-terms">Standard membership: $59.99/month plus a $50 one-time Basic Gym Use fee. Access during open-gym hours. 24/7 access is coming soon. Coaching, classes and small-group workouts are purchased separately. <a href="#visit">View gym hours and directions.</a></p>
+      </div>
+    </section>
+
+    <!-- Partner childcare: direct booking with Palmetto Playhouse -->
+    <section class="childcare" id="childcare" aria-labelledby="childcare-title">
+      <div class="childcare-inner wrap">
+        <div>
+          <div class="sec-tag">Palmetto Playhouse Partnership</div>
+          <h2 id="childcare-title">Childcare<br />while you train.</h2>
+        </div>
+        <div class="childcare-copy">
+          <p>
+            We've partnered with Palmetto Playhouse to offer childcare drop-off play sessions
+            while you train.
+          </p>
+          <a class="btn solid"
+            href="https://www.palmettoplayhousebeaufort.com/booking-calendar/training-child-watch?referral=service_list_widget"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Book Childcare with Palmetto Playhouse (opens in a new tab)">
+            <span>Book Childcare</span><span class="ui-arrow ui-arrow--out" aria-hidden="true"></span>
+          </a>
+          <p class="childcare-note">Booked separately with Palmetto Playhouse. View availability and session details.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3 DOCTRINE -->
+    <section class="doctrine" id="doctrine">
+      <div class="doc-bg" aria-hidden="true">
+        <img src="assets/media/photos/programs/slideshow-01.jpg" alt="" class="on" />
+        <img
+          src="assets/media/photos/programs/slideshow-02.jpg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src="assets/media/photos/programs/slideshow-03.jpg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          src="assets/media/photos/programs/slideshow-04.jpg"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="wrap">
+        <div class="sec-tag" data-reveal>Human Performance</div>
+        <p class="big" id="manifestoText" style="margin-top: 36px">
+          We use exercise science to build your training plan, track your progress, and make
+          adjustments along the way.
+        </p>
+        <div class="doctrine-foot">
+          <div class="stat" data-reveal>
+            <div class="num" data-count="4">4</div>
+            <div class="lbl">Training Programs</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="num" data-count="100">100<sup>%</sup></div>
+            <div class="lbl">Custom Programming</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="num" data-count="24">24<sup>/7</sup></div>
+            <div class="lbl">Member Access · Coming Soon</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="num">OPEN</div>
+            <div class="lbl">Gym Now Open</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S5 PROGRAMS (pinned horizontal, in-card drawers) -->
+    <section id="programsPin">
+      <span id="programs" style="position: absolute; top: 0"></span>
+      <div class="h-intro">
+        <div class="sec-tag" data-reveal>Training Programs</div>
+        <h2 data-split-scroll>Train for <em>your goals.</em></h2>
+      </div>
+      <div class="h-track" id="hTrack">
+        <article class="prog-card" tabindex="0">
+          <div class="prog-img" data-clip data-rotate>
+            <img
+              src="assets/media/photos/programs/tactical/01.jpg"
+              alt="Tactical athlete in Strikeline shirt and kit at an outdoor range"
+              class="on"
+            />
+            <img
+              src="assets/media/photos/programs/tactical/02.jpg"
+              alt="Two operators in kit on a ridge"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/media/photos/programs/tactical/03.jpg"
+              alt="Handler with working dog in tactical kit"
+              loading="lazy"
+              decoding="async"
+            />
+            <video tabindex="-1"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/media/photos/programs/tactical/01.jpg"
+              aria-hidden="true"
+            >
+              <source src="assets/media/videos/programs/arsenal-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="prog-body">
+            <span class="words">Military and first responders</span>
+            <h3>Tactical Fitness</h3>
+            <p>
+              Strength and conditioning for military, law enforcement, and first responders.
+              Prepare for fitness tests, selection, and the demands of your job.
+            </p>
+            <span class="prog-toggle"><i></i>Program Details<span class="plus">+</span></span>
+            <div class="prog-drawer">
+              <div>
+                <div class="step">
+                  <b>Starting Point</b
+                  ><span>Review your fitness, test requirements, and timeline with a coach.</span>
+                </div>
+                <div class="step">
+                  <b>Training Plan</b
+                  ><span
+                    >Build strength and endurance with a plan for your test or selection date.</span
+                  >
+                </div>
+                <div class="step">
+                  <b>Progress Checks</b
+                  ><span
+                    >Track your test scores and adjust your training as you progress.</span
+                  >
+                </div>
+                <a class="btn solid magnetic" href="#assessment"
+                  ><span>Talk to a Coach</span><i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="prog-card" tabindex="0">
+          <div class="prog-img" data-clip data-rotate>
+            <img
+              src="assets/media/photos/programs/endurance/01.jpg"
+              alt="Cyclist racing on a rural road"
+              class="on"
+            />
+            <img
+              src="assets/media/photos/programs/endurance/02.jpg"
+              alt="Cyclist on a country climb"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/media/photos/programs/endurance/03.jpg"
+              alt="Runner crossing a bridge mid-race"
+              loading="lazy"
+              decoding="async"
+            />
+            <video tabindex="-1"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/media/photos/programs/endurance/01.jpg"
+              aria-hidden="true"
+            >
+              <source src="assets/media/videos/programs/endurance-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="prog-body">
+            <span class="words">Running and race prep</span>
+            <h3>Endurance Training</h3>
+            <p>
+              Build endurance with a plan for your race or event. Training fits your current
+              fitness, schedule, and race date.
+            </p>
+            <span class="prog-toggle"><i></i>Program Details<span class="plus">+</span></span>
+            <div class="prog-drawer">
+              <div>
+                <div class="step">
+                  <b>Starting Point</b
+                  ><span>Review your current training, pace, and event date.</span>
+                </div>
+                <div class="step">
+                  <b>Training Plan</b
+                  ><span
+                    >Balance endurance sessions, strength work, and recovery.</span
+                  >
+                </div>
+                <div class="step">
+                  <b>Progress Checks</b
+                  ><span
+                    >Review your pace and recovery with your coach as training progresses.</span
+                  >
+                </div>
+                <a class="btn solid magnetic" href="#assessment"
+                  ><span>Talk to a Coach</span><i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="prog-card" tabindex="0">
+          <div class="prog-img" data-clip data-rotate>
+            <img
+              src="assets/media/photos/programs/aesthetics/01.jpg"
+              alt="Bodybuilder silhouette in low light"
+              class="on"
+            />
+            <img
+              src="assets/media/photos/programs/aesthetics/02.jpg"
+              alt="Classic physique front pose"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/media/photos/programs/aesthetics/03.jpg"
+              alt="Back double biceps in a dark gym"
+              loading="lazy"
+              decoding="async"
+            />
+            <video tabindex="-1"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/media/photos/programs/aesthetics/01.jpg"
+              aria-hidden="true"
+            >
+              <source src="assets/media/videos/programs/machine-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="prog-body">
+            <span class="words">Muscle growth and competition prep</span>
+            <h3>Muscle &amp; Physique</h3>
+            <p>
+              Build muscle or work toward your body composition goals with training and nutrition
+              guidance. Competition prep and posing support are also available.
+            </p>
+            <span class="prog-toggle"><i></i>Program Details<span class="plus">+</span></span>
+            <div class="prog-drawer">
+              <div>
+                <div class="step">
+                  <b>Starting Point</b
+                  ><span>Talk through your training experience and physique goals.</span>
+                </div>
+                <div class="step">
+                  <b>Training Plan</b
+                  ><span
+                    >Follow a muscle-building program with nutrition guidance for your goals.</span
+                  >
+                </div>
+                <div class="step">
+                  <b>Progress Checks</b
+                  ><span
+                    >Review your progress at check-ins and update your plan with your coach.</span
+                  >
+                </div>
+                <a class="btn solid magnetic" href="#assessment"
+                  ><span>Talk to a Coach</span><i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="prog-card" tabindex="0">
+          <div class="prog-img" data-clip data-rotate>
+            <img
+              src="assets/media/photos/programs/shooting/01.jpg"
+              alt="Marksman behind a scoped rifle at sunset"
+              class="on"
+            />
+            <img
+              src="assets/media/photos/programs/shooting/02.jpg"
+              alt="Shooter with rifle at an outdoor range"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/media/photos/programs/shooting/03.jpg"
+              alt="Carbine live-fire at the range"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/media/photos/programs/shooting/04.jpg"
+              alt="Suppressed rifle close-up"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="prog-body">
+            <span class="words">Rifle and pistol training</span>
+            <h3>Shooting Programs</h3>
+            <p>
+              Rifle and pistol programs from a certified Sig Sauer Master Instructor.
+              Combine skills practice with physical training and track your progress.
+            </p>
+            <span class="prog-toggle"><i></i>Program Details<span class="plus">+</span></span>
+            <div class="prog-drawer">
+              <div>
+                <div class="step">
+                  <b>Starting Point</b
+                  ><span>Review your shooting experience, fitness, and goals.</span>
+                </div>
+                <div class="step">
+                  <b>Training Plan</b
+                  ><span
+                    >Follow an instructor-built program with skills practice and physical training.</span
+                  >
+                </div>
+                <div class="step">
+                  <b>Progress Checks</b
+                  ><span>Review your results with your instructor.</span>
+                </div>
+                <a class="btn solid magnetic" href="#assessment"
+                  ><span>Ask About This Program</span><i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="h-progress"><i id="hBar"></i></div>
+    </section>
+
+    <!-- S6 IMAGE BREAK -->
+    <section class="image-break">
+      <img
+        id="ibImg"
+        loading="lazy"
+        decoding="async"
+        src="assets/media/photos/image-break/image-break-01.jpg"
+        alt="Strikeline athletes silhouetted on a hill at dusk"
+      />
+      <div class="ib-text">
+        <h2 data-reveal>Build strength.<br /><em>For everyday life.</em></h2>
+      </div>
+    </section>
+
+    <!-- S7 THE METHOD -->
+    <section class="method" id="method">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="sec-tag" data-reveal>How Coaching Works</div>
+            <h2 data-split-scroll>
+              A plan for<br /><em>your progress.</em>
+            </h2>
+          </div>
+          <p data-reveal>
+            Your coach uses your assessment and progress to guide your training.
+          </p>
+        </div>
+        <a class="method-row" data-reveal href="#assessment">
+          <h3>Assess</h3>
+          <p>
+            Tell us about your goals, training history, and schedule.
+          </p>
+          <span class="arr"><span class="ui-arrow" aria-hidden="true"></span></span>
+        </a>
+        <a class="method-row" data-reveal href="services.html">
+          <h3>Plan</h3>
+          <p>Work with a coach to set priorities and build your training plan.</p>
+          <span class="arr"><span class="ui-arrow" aria-hidden="true"></span></span>
+        </a>
+        <a class="method-row" data-reveal href="#programs">
+          <h3>Train</h3>
+          <p>Follow a program matched to your fitness level and goals.</p>
+          <span class="arr"><span class="ui-arrow" aria-hidden="true"></span></span>
+        </a>
+        <a class="method-row" data-reveal href="services.html#menu">
+          <h3>Adjust</h3>
+          <p>Review your progress and update your program when needed.</p>
+          <span class="arr"><span class="ui-arrow" aria-hidden="true"></span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CLASSES, COACHING AND PARTNER SERVICES -->
+    <section class="home-offers" id="servicesTeaser" aria-labelledby="home-offers-heading">
+      <div class="wrap">
+        <div class="home-offers-head">
+          <div data-reveal>
+            <h2 id="home-offers-heading">Classes &amp; <em>services.</em></h2>
+            <p>Book a workout, work with a coach, or explore our wellness pop-ups.</p>
+          </div>
+          <a class="btn solid" href="https://training.strikelinetraining.com/packages/83983/purchase/"
+            data-ph="exercise-membership-checkout" aria-describedby="membership-terms" data-cta-intent="purchase" data-cta-product="membership">
+            <span>Join the Gym</span><i></i>
+          </a>
+        </div>
+        <div class="home-offers-grid" data-reveal-group>
+          <article class="home-offer" id="group-classes" aria-labelledby="home-classes-heading" data-reveal>
+            <h3 id="home-classes-heading">Classes &amp; Workouts</h3>
+            <p>Strikeline Beat, Glute Lab, and coach-led small-group workouts.</p>
+            <div class="home-offer-links">
+              <a href="services.html#group-classes">Book a Class <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+              <a href="services.html#small-group-training">Small-Group Workouts <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+            </div>
+          </article>
+          <article class="home-offer" aria-labelledby="home-coaching-heading" data-reveal>
+            <h3 id="home-coaching-heading">Coaching &amp; Programs</h3>
+            <p>1-on-1 coaching, online coaching, and standalone training programs.</p>
+            <div class="home-offer-links">
+              <a href="services.html#menu">View Coaching &amp; Programs <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+              <a href="about.html#coaches">Book a Coach <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+            </div>
+          </article>
+          <article class="home-offer" aria-labelledby="home-wellness-heading" data-reveal>
+            <h3 id="home-wellness-heading">Health &amp; Wellness</h3>
+            <p>Beauty, health, and wellness pop-ups with our local partners.</p>
+            <div class="home-offer-links">
+              <a href="partner-services.html">Explore Wellness Services <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+              <a href="partner-services.html#contactForm">Contact to Book <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+            </div>
+          </article>
+        </div>
+        <div class="home-offers-foot">
+          <p>Classes, coaching, and partner services are booked separately.</p>
+          <div>
+            <a href="services.html#gym-membership">View Memberships <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+            <a href="services.html#schedule">View Schedule <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT THE GYM -->
+    <section class="visit-gym" id="visit" aria-labelledby="visit-heading">
+      <div class="visit-grid">
+        <div class="visit-copy">
+          <h2 id="visit-heading">Visit the gym.</h2>
+          <address>46 Robert Smalls Pkwy<br>Beaufort, SC 29906</address>
+          <dl class="gym-hours" aria-label="Gym opening hours, Eastern time">
+            <div><dt>Monday–Friday</dt><dd>5 AM–9 PM</dd></div>
+            <div><dt>Saturday–Sunday</dt><dd>8 AM–9 PM</dd></div>
+          </dl>
+          <p class="visit-note">All hours Eastern. 24/7 access is coming soon.</p>
+          <div class="visit-actions">
+            <a class="btn solid" href="https://training.strikelinetraining.com/packages/83983/purchase/" data-cta-intent="purchase" data-cta-product="membership"><span>Join the Gym</span><i></i></a>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=46%20Robert%20Smalls%20Pkwy%2C%20Beaufort%2C%20SC%2029906" target="_blank" rel="noopener">Get Directions <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="visit-map">
+          <iframe title="Strikeline Gym location on Google Maps" width="600" height="340" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.298596702769!2d-80.7079909!3d32.4379414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc0d268e87cb7b%3A0x70fb65193e14bb95!2sStrikeline%20Training%20Group!5e0!3m2!1sen!2sus!4v1788893304020!5m2!1sen!2sus" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <p><a href="https://maps.app.goo.gl/Hfo2hujqvU2R6PKZ6" target="_blank" rel="noopener">View hours and reviews on Google <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCAL PARTNERS -->
+    <section class="partner-band" id="partners" aria-labelledby="partners-heading" data-partner-marquee>
+      <div class="wrap">
+        <div class="partner-band-head">
+          <h2 id="partners-heading">Our partners.</h2>
+          <a class="btn solid" href="sponsors.html"><span>Become a Strikeline Partner</span><i></i></a>
+        </div>
+        <div class="partner-marquee" id="partner-logos">
+          <div class="partner-track" data-partner-track>
+            <ul class="partner-logos" role="list" data-partner-logos>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/mach-1-hot-sauce.png" alt="Mach 1 Hot Sauce" width="3498" height="3525" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/holy-city-wellness-center.png" alt="Holy City Wellness Center" width="290" height="299" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo partner-logo--dark"><img src="assets/media/logos/sponsors/united-dance-plex.png" alt="United Dance Plex" width="1419" height="243" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/insulation-of-the-lowcountry.png" alt="Insulation of the Lowcountry" width="408" height="191" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/heavenly-slayed.png" alt="Heavenly Slayed" width="260" height="166" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/palmetto-playhouse.png" alt="Palmetto Playhouse" width="198" height="250" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/doctor-auto.png" alt="Doctor Auto" width="542" height="541" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/fusion-grappling-club.png" alt="Fusion Grappling Club" width="448" height="447" loading="lazy" decoding="async"></div></li>
+            <li><div class="partner-logo"><img src="assets/media/logos/sponsors/colonel-clean.png" alt="Colonel Clean" width="215" height="302" loading="lazy" decoding="async"></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S15 UTILITY FOOTER: assessment + app -->
+    <footer id="siteFooter">
+      <div class="footer-conversion" id="assessment">
+        <div class="assessment-intro" data-reveal>
+          <div class="sec-tag">Start Training</div>
+          <h2>Let's talk<br /><em>about your goals.</em></h2>
+          <p>Tell us what you'd like to work on. We'll help you choose a program.</p>
+          <div class="assessment-contact">
+            <a href="mailto:info@strikelinetraining.com">info@strikelinetraining.com</a>
+            <a href="tel:+17708628942">(770) 862-8942</a>
+          </div>
+        </div>
+        <form class="footer-form" id="applyForm" action="https://formspree.io/f/mdajqedj" method="POST" data-reveal data-form-delivery>
+          <input type="hidden" name="_subject" value="Strikeline Assessment Application" />
+          <div hidden aria-hidden="true"><input name="_gotcha" type="text" tabindex="-1" autocomplete="off" /></div>
+          <input type="hidden" name="source" value="Strikeline Website Footer Form" />
+          <div class="footer-form-grid">
+            <div class="field">
+              <label for="af-name">Full Name</label>
+              <input id="af-name" name="firstName" type="text" placeholder="Your name" autocomplete="name" maxlength="160" required />
+            </div>
+            <div class="field">
+              <label for="af-email">Email Address</label>
+              <input id="af-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="field">
+              <label for="af-phone">Phone Number</label>
+              <input id="af-phone" name="phone" type="tel" placeholder="Your phone number" autocomplete="tel" maxlength="40" required />
+            </div>
+            <div class="field">
+              <label for="af-program">Training Goal</label>
+              <select id="af-program" name="goal">
+                <option value="Tactical &amp; Hybrid Athlete Training">Tactical Fitness</option>
+                <option value="Endurance &amp; Race Preparation">Endurance Training</option>
+                <option value="Aesthetics &amp; Physique Development">Muscle &amp; Physique</option>
+                <option value="Dynamic Shooting Drills (Launch List)">Shooting Programs</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="af-baseline">Tell Us About Your Goals</label>
+              <input id="af-baseline" name="goalNotes" type="text" placeholder="What would you like help with?" maxlength="2000" />
+            </div>
+          </div>
+          <div class="footer-form-action">
+            <p>Send your details to our coaching team.</p>
+            <button class="btn solid magnetic" type="submit">
+              <span>Send to a Coach</span><i></i>
+            </button>
+          </div>
+          <p class="form-status" data-form-status role="status" aria-live="polite" aria-atomic="true"></p>
+        </form>
+      </div>
+
+      <div class="footer-utility" id="app">
+        <div class="footer-app-preview" data-reveal>
+          <div class="app-phone-stack" aria-hidden="true">
+            <img
+              class="app-phone app-phone-back"
+              src="assets/media/photos/app/app-screen-2.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="app-phone app-phone-front"
+              src="assets/media/photos/app/app-screen-4.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="footer-app-copy">
+            <div class="sec-tag">The Strikeline App</div>
+            <h3>Your training in one place.</h3>
+            <div class="app-utility-actions">
+              <a
+                class="app-login"
+                href="https://training.strikelinetraining.com"
+                target="_blank"
+                rel="noopener"
+                >Member Login <span class="ui-arrow ui-arrow--out" aria-hidden="true"></span></a
+              >
+              <a class="store-badge" href="https://apps.apple.com/us/app/strikeline-training/id6790442227" data-ph="app-store"
+                ><span class="sb-top">Download on the</span
+                ><span class="sb-name">App Store</span></a
+              >
+              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.strikelinetraining.training.own" data-ph="google-play"
+                ><span class="sb-top">Get it on</span><span class="sb-name">Google Play</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-directory" id="footer-links">
+          <div class="footer-brand-lockup">
+            <a class="logo" href="index.html"
+              ><span class="mark"
+                ><img src="assets/media/logos/brand/logo-shield.svg" alt="Strikeline shield" /></span
+              >STRIKELINE TRAINING GROUP</a
+            >
+          </div>
+          <div class="aux-col aux-cta">
+            <a href="#top">Home</a>
+            <a href="services.html">Memberships</a>
+            <a href="about.html">Our Team</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="intake.html">Intake</a>
+            <a href="7dayprotocol.html">7 Day Protocol</a>
+            <a href="coachmatch.html">Coach Match</a>
+          </div>
+          <div class="aux-col">
+            <a href="privacy-policy.html" data-ph="privacy-policy">Privacy Policy</a>
+            <a href="terms-and-conditions.html" data-ph="terms">Terms &amp; Conditions</a>
+            <a href="mailto:billing@strikelinetraining.com" data-ph="billing-email">Billing</a>
+          </div>
+          <div class="aux-col">
+            <div class="clients-drop">
+              <button class="clients-btn" type="button" aria-haspopup="true">
+                Clients <span class="cd-caret">▾</span>
+              </button>
+              <div class="clients-menu">
+                <a href="checkin.html">Submit Check-In</a>
+                <a href="contact.html#contactForm" data-ph="client-book-call">Contact a Coach</a>
+              </div>
+            </div>
+            <a href="events.html">Class &amp; Event Schedule</a>
+            <a href="#" data-ph="blog" hidden>Blog</a>
+            <a href="sponsors.html">Sponsors</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-word">STRIKELINE</div>
+      <div class="foot-bottom">
+        <span>© 2026 Strikeline Training Group. All Rights Reserved.</span>
+        <span>Human Performance, Amplified.</span>
+        <span>46 Robert Smalls Pkwy · Beaufort, South Carolina</span>
+      </div>
+    </footer>
+
+    <script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="application/x-stg-script" data-motion-library data-src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script type="application/x-stg-script" data-shield-library data-src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script type="application/x-stg-script" data-shield-library data-src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/SVGLoader.js"></script>
+    <!-- Create the facility pin before core/home downstream scroll triggers. -->
+    <script type="application/x-stg-script" data-site-script data-src="js/facility.js?v=mobile-tour-20260908"></script>
+    <script type="application/x-stg-script" data-site-script data-src="js/hero-video.js?v=clean-motion-20260908"></script>
+    <script type="application/x-stg-script" data-site-script data-src="js/core.js?v=final-cleanup-20260908"></script>
+    <script type="application/x-stg-script" data-site-script data-src="js/form-delivery.js"></script>
+    <script type="application/x-stg-script" data-site-script data-src="js/home.js"></script>
+    <script type="application/x-stg-script" data-site-script data-src="js/partners.js?v=clean-motion-20260908"></script>
+      <script src="js/motion-bootstrap.js"></script>
+  </body>
+</html>
+

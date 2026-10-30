@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "live_submissions": 0,
+  "checks": [
+    "Justin: payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "Zach: payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "Rhylie: payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "422: preserve answers, no false success, explicit retry keeps ID",
+    "429: preserve answers, no false success, explicit retry keeps ID",
+    "malformed: preserve answers, no false success, explicit retry keeps ID",
+    "false-ok: preserve answers, no false success, explicit retry keeps ID",
+    "network: preserve answers, no false success, explicit retry keeps ID",
+    "timeout: preserve answers, no false success, explicit retry keeps ID",
+    "Native required-field and email validation blocks network",
+    "Justin paste block: wrapped-host receipt, correct coach booking, optional phone, embedded assets",
+    "Zach paste block: wrapped-host receipt, correct coach booking, optional phone, embedded assets",
+    "Rhylie paste block: wrapped-host receipt, correct coach booking, optional phone, embedded assets"
+  ],
+  "check_count": 13,
+  "checked_at_utc": "2026-10-30T11:51:15.952793+00:00",
+  "network_policy": "All requests intercepted by Playwright: local assets continued; Formspree POSTs received synthetic responses; all other external requests aborted. No live Formspree, booking, payment, or DM submissions.",
+  "verification_scope": "Browser integration and rendered copy-paste blocks, not live gateway acceptance, CRM import, calendar availability, or DM delivery."
+}

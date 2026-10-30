@@ -6,6 +6,7 @@ scroll dimensions. External services are blocked or rendered with a local
 Stripe stub. No form POST, booking, checkout session or payment is performed.
 """
 import argparse
+import hashlib
 import importlib.util
 import json
 from datetime import datetime, timezone
@@ -123,13 +124,34 @@ def smoke(page, coach, kind, state):
     return {"stripe_service":service,"reference":reference,"fallback_correct":True,"focus_restored":True,"real_widget_loaded":False}
 
 
-def run(base, output, screenshots):
+def pricing_baseline_check(browser, base, baseline_path):
+    baseline = json.loads(baseline_path.read_text())
+    files,views = [],[]
+    for item in baseline["files"]:
+        current = (ROOT/item["path"]).read_bytes()
+        assert len(current) == item["bytes"] and hashlib.sha256(current).hexdigest() == item["sha256"], "Pricing/shared baseline changed: "+item["path"]
+        files.append({"path":item["path"],"sha256":item["sha256"],"unchanged":True})
+    for expected in baseline["style_views"]:
+        context = browser.new_context(viewport=expected["viewport"])
+        page = context.new_page()
+        state = intercept(page,base)
+        page.goto(base.rstrip("/")+"/"+expected["coach"]+"/start/",wait_until="networkidle")
+        page.evaluate("document.fonts.ready")
+        current = page.evaluate("""selectors=>Object.fromEntries(selectors.map(selector=>[selector,[...document.querySelectorAll(selector)].map(n=>{const s=getComputedStyle(n),r=n.getBoundingClientRect(),props=['display','position','fontFamily','fontSize','fontWeight','lineHeight','letterSpacing','color','backgroundColor','padding','margin','border','gap','gridTemplateColumns','gridTemplateRows','alignItems','justifyContent'];return {rect:{x:r.x,y:r.y,width:r.width,height:r.height},styles:Object.fromEntries(props.map(k=>[k,s[k]]))};})]))""",list(expected["selectors"]))
+        assert current == expected["selectors"], {"pricing_style_changed":expected["coach"],"viewport":expected["viewport"],"selectors":[key for key in current if current[key] != expected["selectors"][key]]}
+        assert not state["blocked"] and not state["errors"],state
+        views.append({"coach":expected["coach"],"viewport":expected["viewport"],"computed_styles_and_bounds_unchanged":True})
+        context.close()
+    return {"baseline":str(baseline_path),"files":files,"computed_style_views":views,"status":"passed"}
+
+
+def run(base, output, screenshots, landing_only=False, pricing_baseline=None):
     results, failures = [], []
     screenshots.mkdir(parents=True,exist_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=minimal.CHROME,headless=True,args=["--no-sandbox"])
         for coach in COACHES:
-            for kind in ("landing","pricing"):
+            for kind in (("landing",) if landing_only else ("landing","pricing")):
                 route = f"/{coach}/"+("start/" if kind == "pricing" else "")
                 for width,height in VIEWPORTS:
                     context = browser.new_context(viewport={"width":width,"height":height})
@@ -141,6 +163,12 @@ def run(base, output, screenshots):
                         assert not page.locator(".stg-offer-number,.stg-offer-badge,.stg-offer-top,hr,[role=separator],[class*=divider]").count(), "Number, badge or decorative divider remains"
                         if kind == "landing":
                             assert page.locator(".stg-hero-actions a").count() == 2
+                            if landing_only:
+                                # Restored screenshot design intentionally includes the
+                                # header Talk link, specialty line and bottom full name.
+                                for selector in (".stg-nav-call",".stg-hero .stg-kicker",".stg-hero-meta strong"):
+                                    assert_visible_bounds(page.locator(selector),width,height)
+                                assert not page.locator(".stg-helper,.stg-intro,.stg-process,.stg-faqs,.stg-sticky").count()
                             for selector in ("h1",".stg-hero-description","[data-purchase-link]","[data-open-intake]"):
                                 assert_visible_bounds(page.locator(selector),width,height)
                         else:
@@ -163,12 +191,19 @@ def run(base, output, screenshots):
                         assert report["scrollWidth"] <= width and report["scrollHeight"] <= height+2, {"width":width,"height":height,"scrollWidth":report["scrollWidth"],"scrollHeight":report["scrollHeight"]}
                         assert not report["problems"], report["problems"]
                         evidence = {"coach":coach,"page":kind,"viewport":{"width":width,"height":height},"measurement":report}
-                        if (width,height) in {(320,568),(1440,900)}:
+                        if (width,height) in {(320,568),(390,844),(1440,900)}:
                             shot = screenshots/f"{coach}-{kind}-{width}x{height}.png"
                             page.screenshot(path=str(shot),full_page=False)
                             evidence["screenshot"] = str(shot)
                         if (width,height) == (390,844):
                             evidence["smoke"] = smoke(page,coach,kind,state)
+                            if landing_only:
+                                header = page.locator(".stg-nav-call")
+                                header.click()
+                                dialog = page.locator("dialog[data-intake-dialog]")
+                                dialog.wait_for(state="visible")
+                                minimal.close_intake(page,dialog,header,"escape")
+                                evidence["header_talk_smoke"] = {"opens_intake":True,"focus_restored":True}
                         assert not state["blocked"] and not state["errors"], state
                         results.append(evidence)
                     except Exception as error:
@@ -179,11 +214,12 @@ def run(base, output, screenshots):
                         print(json.dumps({"status":"failed","coach":coach,"page":kind,"width":width,"height":height,"error":str(error)}),flush=True)
                     context.close()
             print(json.dumps({"coach":coach,"finished":True}),flush=True)
+        preservation = pricing_baseline_check(browser,base,pricing_baseline) if pricing_baseline else None
         browser.close()
     receipt = {"status":"failed" if failures else "passed","checked_at_utc":datetime.now(timezone.utc).isoformat(),
                "base_url":base,"viewport_sizes":VIEWPORTS,"passed_page_views":len(results),"failed_page_views":len(failures),
-               "results":results,"failures":failures,"live_mutations":0,
-               "scope":"Actual rendered text/control bounds, ancestor clipping and document dimensions for all6pages at9sizes.3intake validations and3Stripe render stubs; no form POST, booking, checkout session or payment."}
+               "results":results,"failures":failures,"pricing_preservation":preservation,"live_mutations":0,
+               "scope":"Actual rendered text/control bounds, ancestor clipping and document dimensions at9sizes. Restored-hero mode checks27landings and compares pricing files/styles to its pre-edit baseline. Intake validity/focus checks and optional Stripe stubs only; no form POST, booking, checkout session or payment."}
     output.write_text(json.dumps(receipt,indent=2)+"\n")
     print(json.dumps({"status":receipt["status"],"passed_page_views":len(results),"failed_page_views":len(failures),"evidence":str(output)}))
     if failures:
@@ -195,5 +231,7 @@ if __name__ == "__main__":
     parser.add_argument("--base-url",default="http://127.0.0.1:8797")
     parser.add_argument("--evidence",type=Path,default=ROOT/"evidence/viewport-fit-checks.json")
     parser.add_argument("--screenshots",type=Path,default=ROOT/"evidence/screenshots/viewport-fit")
+    parser.add_argument("--landing-only",action="store_true")
+    parser.add_argument("--pricing-baseline",type=Path)
     args = parser.parse_args()
-    run(args.base_url,args.evidence,args.screenshots)
+    run(args.base_url,args.evidence,args.screenshots,args.landing_only,args.pricing_baseline)

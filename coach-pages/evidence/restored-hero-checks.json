@@ -1,0 +1,5798 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T15:25:20.312449+00:00",
+  "base_url": "http://127.0.0.1:8797",
+  "viewport_sizes": [
+    [
+      320,
+      568
+    ],
+    [
+      375,
+      667
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1366,
+      768
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "passed_page_views": 27,
+  "failed_page_views": 0,
+  "results": [
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "measurement": {
+        "width": 320,
+        "height": 568,
+        "scrollWidth": 320,
+        "scrollHeight": 568,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 225.203125,
+              "y": 24,
+              "width": 74.796875,
+              "height": 14,
+              "right": 300,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 185.15625,
+              "width": 255.203125,
+              "height": 12,
+              "right": 275.203125,
+              "bottom": 197.15625
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 20,
+              "y": 204.75,
+              "width": 185.65625,
+              "height": 43,
+              "right": 205.65625,
+              "bottom": 247.75
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 20,
+              "y": 240.375,
+              "width": 148.546875,
+              "height": 43,
+              "right": 168.546875,
+              "bottom": 283.375
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 20,
+              "y": 276,
+              "width": 121.21875,
+              "height": 43,
+              "right": 141.21875,
+              "bottom": 319
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 329.625,
+              "width": 232.625,
+              "height": 17,
+              "right": 252.625,
+              "bottom": 346.625
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 348.21875,
+              "width": 257.578125,
+              "height": 17,
+              "right": 277.578125,
+              "bottom": 365.21875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 366.8125,
+              "width": 271.171875,
+              "height": 17,
+              "right": 291.171875,
+              "bottom": 383.8125
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 385.40625,
+              "width": 91.640625,
+              "height": 17,
+              "right": 111.640625,
+              "bottom": 402.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 432.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 449.59375
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 37,
+              "y": 484.59375,
+              "width": 127.609375,
+              "height": 17,
+              "right": 164.609375,
+              "bottom": 501.59375
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 20,
+              "y": 528.203125,
+              "width": 91.015625,
+              "height": 22,
+              "right": 111.015625,
+              "bottom": 550.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 225.203125,
+              "y": 13,
+              "width": 74.796875,
+              "height": 36,
+              "right": 300,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 420,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 464
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 20,
+              "y": 472,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 516
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/justin-landing-320x568.png"
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "measurement": {
+        "width": 375,
+        "height": 667,
+        "scrollWidth": 375,
+        "scrollHeight": 667,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 280.203125,
+              "y": 24,
+              "width": 74.796875,
+              "height": 14,
+              "right": 355,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 286.15625,
+              "width": 255.203125,
+              "height": 12,
+              "right": 275.203125,
+              "bottom": 298.15625
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 20,
+              "y": 304.75,
+              "width": 214.546875,
+              "height": 50,
+              "right": 234.546875,
+              "bottom": 354.75
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 20,
+              "y": 345.90625,
+              "width": 171.65625,
+              "height": 50,
+              "right": 191.65625,
+              "bottom": 395.90625
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 20,
+              "y": 387.0625,
+              "width": 140.078125,
+              "height": 50,
+              "right": 160.078125,
+              "bottom": 437.0625
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 447.21875,
+              "width": 306.65625,
+              "height": 17,
+              "right": 326.65625,
+              "bottom": 464.21875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 465.8125,
+              "width": 327.015625,
+              "height": 17,
+              "right": 347.015625,
+              "bottom": 482.8125
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 484.40625,
+              "width": 221.75,
+              "height": 17,
+              "right": 241.75,
+              "bottom": 501.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 531.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 548.59375
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 37,
+              "y": 583.59375,
+              "width": 127.609375,
+              "height": 17,
+              "right": 164.609375,
+              "bottom": 600.59375
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 20,
+              "y": 627.203125,
+              "width": 91.015625,
+              "height": 22,
+              "right": 111.015625,
+              "bottom": 649.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 280.203125,
+              "y": 13,
+              "width": 74.796875,
+              "height": 36,
+              "right": 355,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 519,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 563
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 20,
+              "y": 571,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 615
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "measurement": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 295.203125,
+              "y": 29,
+              "width": 74.796875,
+              "height": 14,
+              "right": 370,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 377.546875,
+              "width": 270.203125,
+              "height": 13,
+              "right": 290.203125,
+              "bottom": 390.546875
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 20,
+              "y": 403.734375,
+              "width": 245.1875,
+              "height": 58,
+              "right": 265.1875,
+              "bottom": 461.734375
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 20,
+              "y": 450.765625,
+              "width": 196.1875,
+              "height": 58,
+              "right": 216.1875,
+              "bottom": 508.765625
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 20,
+              "y": 497.796875,
+              "width": 160.09375,
+              "height": 58,
+              "right": 180.09375,
+              "bottom": 555.796875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 572.828125,
+              "width": 332.203125,
+              "height": 18,
+              "right": 352.203125,
+              "bottom": 590.828125
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 596.21875,
+              "width": 315.75,
+              "height": 18,
+              "right": 335.75,
+              "bottom": 614.21875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 619.609375,
+              "width": 278.734375,
+              "height": 18,
+              "right": 298.734375,
+              "bottom": 637.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 681.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 699.90625
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 41,
+              "y": 743.90625,
+              "width": 138.234375,
+              "height": 18,
+              "right": 179.234375,
+              "bottom": 761.90625
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 20,
+              "y": 799,
+              "width": 101.125,
+              "height": 24,
+              "right": 121.125,
+              "bottom": 823
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 295.203125,
+              "y": 18,
+              "width": 74.796875,
+              "height": 36,
+              "right": 370,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 665,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 717
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 20,
+              "y": 727,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 779
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/justin-landing-390x844.png",
+      "smoke": {
+        "intake_modal": true,
+        "phone_required": true,
+        "empty_and_whitespace_invalid": true,
+        "focus_restored": true,
+        "form_submitted": false
+      },
+      "header_talk_smoke": {
+        "opens_intake": true,
+        "focus_restored": true
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "measurement": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 932,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 335.203125,
+              "y": 29,
+              "width": 74.796875,
+              "height": 14,
+              "right": 410,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 465.546875,
+              "width": 270.203125,
+              "height": 13,
+              "right": 290.203125,
+              "bottom": 478.546875
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 20,
+              "y": 491.734375,
+              "width": 245.1875,
+              "height": 58,
+              "right": 265.1875,
+              "bottom": 549.734375
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 20,
+              "y": 538.765625,
+              "width": 196.1875,
+              "height": 58,
+              "right": 216.1875,
+              "bottom": 596.765625
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 20,
+              "y": 585.796875,
+              "width": 160.09375,
+              "height": 58,
+              "right": 180.09375,
+              "bottom": 643.796875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 660.828125,
+              "width": 332.203125,
+              "height": 18,
+              "right": 352.203125,
+              "bottom": 678.828125
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 684.21875,
+              "width": 354.265625,
+              "height": 18,
+              "right": 374.265625,
+              "bottom": 702.21875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 20,
+              "y": 707.609375,
+              "width": 240.21875,
+              "height": 18,
+              "right": 260.21875,
+              "bottom": 725.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 769.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 787.90625
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 41,
+              "y": 831.90625,
+              "width": 138.234375,
+              "height": 18,
+              "right": 179.234375,
+              "bottom": 849.90625
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 20,
+              "y": 887,
+              "width": 101.125,
+              "height": 24,
+              "right": 121.125,
+              "bottom": 911
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 335.203125,
+              "y": 18,
+              "width": 74.796875,
+              "height": 36,
+              "right": 410,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 753,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 805
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 20,
+              "y": 815,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 867
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "measurement": {
+        "width": 768,
+        "height": 1024,
+        "scrollWidth": 768,
+        "scrollHeight": 1024,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 646.25,
+              "y": 37.40625,
+              "width": 89.75,
+              "height": 17,
+              "right": 736,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 32,
+              "y": 307.59375,
+              "width": 375.796875,
+              "height": 15,
+              "right": 407.796875,
+              "bottom": 322.59375
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 32,
+              "y": 341.09375,
+              "width": 398.4375,
+              "height": 94,
+              "right": 430.4375,
+              "bottom": 435.09375
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 32,
+              "y": 417.53125,
+              "width": 318.796875,
+              "height": 94,
+              "right": 350.796875,
+              "bottom": 511.53125
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 32,
+              "y": 493.96875,
+              "width": 260.140625,
+              "height": 94,
+              "right": 292.140625,
+              "bottom": 587.96875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 32,
+              "y": 608.40625,
+              "width": 383.3125,
+              "height": 21,
+              "right": 415.3125,
+              "bottom": 629.40625
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 32,
+              "y": 635.40625,
+              "width": 408.765625,
+              "height": 21,
+              "right": 440.765625,
+              "bottom": 656.40625
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 32,
+              "y": 662.40625,
+              "width": 277.171875,
+              "height": 21,
+              "right": 309.171875,
+              "bottom": 683.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 53,
+              "y": 736.3125,
+              "width": 158.953125,
+              "height": 18,
+              "right": 211.953125,
+              "bottom": 754.3125
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 265.953125,
+              "y": 736.3125,
+              "width": 138.234375,
+              "height": 18,
+              "right": 404.1875,
+              "bottom": 754.3125
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 32,
+              "y": 963.40625,
+              "width": 131.46875,
+              "height": 31,
+              "right": 163.46875,
+              "bottom": 994.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 646.25,
+              "y": 26.40625,
+              "width": 89.75,
+              "height": 39.1875,
+              "right": 736,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 716.40625,
+              "width": 200.953125,
+              "height": 58,
+              "right": 232.953125,
+              "bottom": 774.40625
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 244.953125,
+              "y": 716.40625,
+              "width": 180.234375,
+              "height": 58,
+              "right": 425.1875,
+              "bottom": 774.40625
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "measurement": {
+        "width": 1280,
+        "height": 720,
+        "scrollWidth": 1280,
+        "scrollHeight": 720,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1134.25,
+              "y": 37.40625,
+              "width": 89.75,
+              "height": 17,
+              "right": 1224,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 56,
+              "y": 174.5,
+              "width": 375.796875,
+              "height": 15,
+              "right": 431.796875,
+              "bottom": 189.5
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 56,
+              "y": 201,
+              "width": 330.984375,
+              "height": 78,
+              "right": 386.984375,
+              "bottom": 279
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 56,
+              "y": 264.5,
+              "width": 264.828125,
+              "height": 78,
+              "right": 320.828125,
+              "bottom": 342.5
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 56,
+              "y": 328,
+              "width": 216.109375,
+              "height": 78,
+              "right": 272.109375,
+              "bottom": 406
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 56,
+              "y": 422.5,
+              "width": 383.3125,
+              "height": 21,
+              "right": 439.3125,
+              "bottom": 443.5
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 56,
+              "y": 449.5,
+              "width": 437.84375,
+              "height": 21,
+              "right": 493.84375,
+              "bottom": 470.5
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 56,
+              "y": 476.5,
+              "width": 248.09375,
+              "height": 21,
+              "right": 304.09375,
+              "bottom": 497.5
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 77,
+              "y": 542.40625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 235.953125,
+              "bottom": 560.40625
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 289.953125,
+              "y": 542.40625,
+              "width": 138.234375,
+              "height": 18,
+              "right": 428.1875,
+              "bottom": 560.40625
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 56,
+              "y": 659.40625,
+              "width": 131.46875,
+              "height": 31,
+              "right": 187.46875,
+              "bottom": 690.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1134.25,
+              "y": 26.40625,
+              "width": 89.75,
+              "height": 39.1875,
+              "right": 1224,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 56,
+              "y": 522.5,
+              "width": 200.953125,
+              "height": 58,
+              "right": 256.953125,
+              "bottom": 580.5
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 268.953125,
+              "y": 522.5,
+              "width": 180.234375,
+              "height": 58,
+              "right": 449.1875,
+              "bottom": 580.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "measurement": {
+        "width": 1366,
+        "height": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1213.25,
+              "y": 37.40625,
+              "width": 89.75,
+              "height": 17,
+              "right": 1303,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 63,
+              "y": 192.140625,
+              "width": 375.796875,
+              "height": 15,
+              "right": 438.796875,
+              "bottom": 207.140625
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 63,
+              "y": 218.640625,
+              "width": 353.015625,
+              "height": 83,
+              "right": 416.015625,
+              "bottom": 301.640625
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 63,
+              "y": 286.375,
+              "width": 282.453125,
+              "height": 83,
+              "right": 345.453125,
+              "bottom": 369.375
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 63,
+              "y": 354.109375,
+              "width": 230.484375,
+              "height": 83,
+              "right": 293.484375,
+              "bottom": 437.109375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 63,
+              "y": 452.84375,
+              "width": 383.3125,
+              "height": 21,
+              "right": 446.3125,
+              "bottom": 473.84375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 63,
+              "y": 479.84375,
+              "width": 437.84375,
+              "height": 21,
+              "right": 500.84375,
+              "bottom": 500.84375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 63,
+              "y": 506.84375,
+              "width": 248.09375,
+              "height": 21,
+              "right": 311.09375,
+              "bottom": 527.84375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 84,
+              "y": 572.75,
+              "width": 158.953125,
+              "height": 18,
+              "right": 242.953125,
+              "bottom": 590.75
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 296.953125,
+              "y": 572.75,
+              "width": 138.234375,
+              "height": 18,
+              "right": 435.1875,
+              "bottom": 590.75
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 63,
+              "y": 707.40625,
+              "width": 131.46875,
+              "height": 31,
+              "right": 194.46875,
+              "bottom": 738.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1213.25,
+              "y": 26.40625,
+              "width": 89.75,
+              "height": 39.1875,
+              "right": 1303,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 63,
+              "y": 552.84375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 263.953125,
+              "bottom": 610.84375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 275.953125,
+              "y": 552.84375,
+              "width": 180.234375,
+              "height": 58,
+              "right": 456.1875,
+              "bottom": 610.84375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "measurement": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1250.25,
+              "y": 37.40625,
+              "width": 89.75,
+              "height": 17,
+              "right": 1340,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 100,
+              "y": 195.625,
+              "width": 375.796875,
+              "height": 15,
+              "right": 475.796875,
+              "bottom": 210.625
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 100,
+              "y": 225.125,
+              "width": 572.109375,
+              "height": 134,
+              "right": 672.109375,
+              "bottom": 359.125
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 100,
+              "y": 334.875,
+              "width": 457.75,
+              "height": 134,
+              "right": 557.75,
+              "bottom": 468.875
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 100,
+              "y": 444.625,
+              "width": 373.53125,
+              "height": 134,
+              "right": 473.53125,
+              "bottom": 578.625
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 100,
+              "y": 596.375,
+              "width": 383.3125,
+              "height": 21,
+              "right": 483.3125,
+              "bottom": 617.375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 100,
+              "y": 623.375,
+              "width": 437.84375,
+              "height": 21,
+              "right": 537.84375,
+              "bottom": 644.375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 100,
+              "y": 650.375,
+              "width": 248.09375,
+              "height": 21,
+              "right": 348.09375,
+              "bottom": 671.375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 121,
+              "y": 724.28125,
+              "width": 158.953125,
+              "height": 18,
+              "right": 279.953125,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 333.953125,
+              "y": 724.28125,
+              "width": 138.234375,
+              "height": 18,
+              "right": 472.1875,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 100,
+              "y": 839.40625,
+              "width": 131.46875,
+              "height": 31,
+              "right": 231.46875,
+              "bottom": 870.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 1250.25,
+              "y": 26.40625,
+              "width": 89.75,
+              "height": 39.1875,
+              "right": 1340,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 100,
+              "y": 704.375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 300.953125,
+              "bottom": 762.375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 312.953125,
+              "y": 704.375,
+              "width": 180.234375,
+              "height": 58,
+              "right": 493.1875,
+              "bottom": 762.375
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/justin-landing-1440x900.png"
+    },
+    {
+      "coach": "justin",
+      "page": "landing",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "measurement": {
+        "width": 844,
+        "height": 390,
+        "scrollWidth": 844,
+        "scrollHeight": 390,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 722.25,
+              "y": 20.40625,
+              "width": 89.75,
+              "height": 17,
+              "right": 812,
+              "bottom": 37.40625
+            }
+          },
+          {
+            "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 32,
+              "y": 93.5,
+              "width": 273.3125,
+              "height": 11,
+              "right": 305.3125,
+              "bottom": 104.5
+            }
+          },
+          {
+            "text": "BUILD MUSCLE.",
+            "rect": {
+              "x": 32,
+              "y": 108.6875,
+              "width": 183.890625,
+              "height": 43,
+              "right": 215.890625,
+              "bottom": 151.6875
+            }
+          },
+          {
+            "text": "TRAIN WITH",
+            "rect": {
+              "x": 32,
+              "y": 143.953125,
+              "width": 147.140625,
+              "height": 43,
+              "right": 179.140625,
+              "bottom": 186.953125
+            }
+          },
+          {
+            "text": "PURPOSE.",
+            "rect": {
+              "x": 32,
+              "y": 179.21875,
+              "width": 120.0625,
+              "height": 43,
+              "right": 152.0625,
+              "bottom": 222.21875
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 32,
+              "y": 230.484375,
+              "width": 430.359375,
+              "height": 17,
+              "right": 462.359375,
+              "bottom": 247.484375
+            }
+          },
+          {
+            "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+            "rect": {
+              "x": 32,
+              "y": 248.484375,
+              "width": 427.453125,
+              "height": 17,
+              "right": 459.453125,
+              "bottom": 265.484375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 47,
+              "y": 290.78125,
+              "width": 134.5,
+              "height": 15,
+              "right": 181.5,
+              "bottom": 305.78125
+            }
+          },
+          {
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 223.5,
+              "y": 290.78125,
+              "width": 116.96875,
+              "height": 15,
+              "right": 340.46875,
+              "bottom": 305.78125
+            }
+          },
+          {
+            "text": "Justin Poole",
+            "rect": {
+              "x": 32,
+              "y": 356.203125,
+              "width": 91.015625,
+              "height": 22,
+              "right": 123.015625,
+              "bottom": 378.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Justin",
+            "rect": {
+              "x": 722.25,
+              "y": 9.40625,
+              "width": 89.75,
+              "height": 39.1875,
+              "right": 812,
+              "bottom": 48.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 278.484375,
+              "width": 164.5,
+              "height": 40,
+              "right": 196.5,
+              "bottom": 318.484375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Justin",
+            "rect": {
+              "x": 208.5,
+              "y": 278.484375,
+              "width": 146.96875,
+              "height": 40,
+              "right": 355.46875,
+              "bottom": 318.484375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "measurement": {
+        "width": 320,
+        "height": 568,
+        "scrollWidth": 320,
+        "scrollHeight": 568,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 230.859375,
+              "y": 24,
+              "width": 69.140625,
+              "height": 14,
+              "right": 300,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 20,
+              "y": 220.78125,
+              "width": 231.6875,
+              "height": 12,
+              "right": 251.6875,
+              "bottom": 232.78125
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 20,
+              "y": 240.375,
+              "width": 218.90625,
+              "height": 43,
+              "right": 238.90625,
+              "bottom": 283.375
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 20,
+              "y": 276,
+              "width": 173.1875,
+              "height": 43,
+              "right": 193.1875,
+              "bottom": 319
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 329.625,
+              "width": 252.0625,
+              "height": 17,
+              "right": 272.0625,
+              "bottom": 346.625
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 348.21875,
+              "width": 273.4375,
+              "height": 17,
+              "right": 293.4375,
+              "bottom": 365.21875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 366.8125,
+              "width": 250.046875,
+              "height": 17,
+              "right": 270.046875,
+              "bottom": 383.8125
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 385.40625,
+              "width": 76.46875,
+              "height": 17,
+              "right": 96.46875,
+              "bottom": 402.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 432.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 449.59375
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 37,
+              "y": 484.59375,
+              "width": 120.8125,
+              "height": 17,
+              "right": 157.8125,
+              "bottom": 501.59375
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 20,
+              "y": 528.203125,
+              "width": 91.984375,
+              "height": 22,
+              "right": 111.984375,
+              "bottom": 550.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 230.859375,
+              "y": 13,
+              "width": 69.140625,
+              "height": 36,
+              "right": 300,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 420,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 464
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 20,
+              "y": 472,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 516
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/zach-landing-320x568.png"
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "measurement": {
+        "width": 375,
+        "height": 667,
+        "scrollWidth": 375,
+        "scrollHeight": 667,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 285.859375,
+              "y": 24,
+              "width": 69.140625,
+              "height": 14,
+              "right": 355,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 20,
+              "y": 327.3125,
+              "width": 231.6875,
+              "height": 12,
+              "right": 251.6875,
+              "bottom": 339.3125
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 20,
+              "y": 345.90625,
+              "width": 252.96875,
+              "height": 50,
+              "right": 272.96875,
+              "bottom": 395.90625
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 20,
+              "y": 387.0625,
+              "width": 200.140625,
+              "height": 50,
+              "right": 220.140625,
+              "bottom": 437.0625
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 447.21875,
+              "width": 295.078125,
+              "height": 17,
+              "right": 315.078125,
+              "bottom": 464.21875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 465.8125,
+              "width": 303.078125,
+              "height": 17,
+              "right": 323.078125,
+              "bottom": 482.8125
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 484.40625,
+              "width": 256.25,
+              "height": 17,
+              "right": 276.25,
+              "bottom": 501.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 531.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 548.59375
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 37,
+              "y": 583.59375,
+              "width": 120.8125,
+              "height": 17,
+              "right": 157.8125,
+              "bottom": 600.59375
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 20,
+              "y": 627.203125,
+              "width": 91.984375,
+              "height": 22,
+              "right": 111.984375,
+              "bottom": 649.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 285.859375,
+              "y": 13,
+              "width": 69.140625,
+              "height": 36,
+              "right": 355,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 519,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 563
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 20,
+              "y": 571,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 615
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "measurement": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 300.859375,
+              "y": 29,
+              "width": 69.140625,
+              "height": 14,
+              "right": 370,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 20,
+              "y": 424.578125,
+              "width": 245.296875,
+              "height": 13,
+              "right": 265.296875,
+              "bottom": 437.578125
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 20,
+              "y": 450.765625,
+              "width": 289.109375,
+              "height": 58,
+              "right": 309.109375,
+              "bottom": 508.765625
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 20,
+              "y": 497.796875,
+              "width": 228.734375,
+              "height": 58,
+              "right": 248.734375,
+              "bottom": 555.796875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 572.828125,
+              "width": 319.671875,
+              "height": 18,
+              "right": 339.671875,
+              "bottom": 590.828125
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 596.21875,
+              "width": 328.328125,
+              "height": 18,
+              "right": 348.328125,
+              "bottom": 614.21875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 619.609375,
+              "width": 277.609375,
+              "height": 18,
+              "right": 297.609375,
+              "bottom": 637.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 681.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 699.90625
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 41,
+              "y": 743.90625,
+              "width": 130.875,
+              "height": 18,
+              "right": 171.875,
+              "bottom": 761.90625
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 20,
+              "y": 799,
+              "width": 102.203125,
+              "height": 24,
+              "right": 122.203125,
+              "bottom": 823
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 300.859375,
+              "y": 18,
+              "width": 69.140625,
+              "height": 36,
+              "right": 370,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 665,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 717
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 20,
+              "y": 727,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 779
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/zach-landing-390x844.png",
+      "smoke": {
+        "intake_modal": true,
+        "phone_required": true,
+        "empty_and_whitespace_invalid": true,
+        "focus_restored": true,
+        "form_submitted": false
+      },
+      "header_talk_smoke": {
+        "opens_intake": true,
+        "focus_restored": true
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "measurement": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 932,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 340.859375,
+              "y": 29,
+              "width": 69.140625,
+              "height": 14,
+              "right": 410,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 20,
+              "y": 512.578125,
+              "width": 245.296875,
+              "height": 13,
+              "right": 265.296875,
+              "bottom": 525.578125
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 20,
+              "y": 538.765625,
+              "width": 289.109375,
+              "height": 58,
+              "right": 309.109375,
+              "bottom": 596.765625
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 20,
+              "y": 585.796875,
+              "width": 228.734375,
+              "height": 58,
+              "right": 248.734375,
+              "bottom": 643.796875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 660.828125,
+              "width": 367.03125,
+              "height": 18,
+              "right": 387.03125,
+              "bottom": 678.828125
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 684.21875,
+              "width": 359.015625,
+              "height": 18,
+              "right": 379.015625,
+              "bottom": 702.21875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 20,
+              "y": 707.609375,
+              "width": 199.5625,
+              "height": 18,
+              "right": 219.5625,
+              "bottom": 725.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 769.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 787.90625
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 41,
+              "y": 831.90625,
+              "width": 130.875,
+              "height": 18,
+              "right": 171.875,
+              "bottom": 849.90625
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 20,
+              "y": 887,
+              "width": 102.203125,
+              "height": 24,
+              "right": 122.203125,
+              "bottom": 911
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 340.859375,
+              "y": 18,
+              "width": 69.140625,
+              "height": 36,
+              "right": 410,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 753,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 805
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 20,
+              "y": 815,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 867
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "measurement": {
+        "width": 768,
+        "height": 1024,
+        "scrollWidth": 768,
+        "scrollHeight": 1024,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 653.03125,
+              "y": 37.40625,
+              "width": 82.96875,
+              "height": 17,
+              "right": 736,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 32,
+              "y": 307.59375,
+              "width": 340.40625,
+              "height": 15,
+              "right": 372.40625,
+              "bottom": 322.59375
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 32,
+              "y": 341.09375,
+              "width": 156.46875,
+              "height": 94,
+              "right": 188.46875,
+              "bottom": 435.09375
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 32,
+              "y": 417.53125,
+              "width": 298.90625,
+              "height": 94,
+              "right": 330.90625,
+              "bottom": 511.53125
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 32,
+              "y": 493.96875,
+              "width": 371.671875,
+              "height": 94,
+              "right": 403.671875,
+              "bottom": 587.96875
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 32,
+              "y": 608.40625,
+              "width": 368.84375,
+              "height": 21,
+              "right": 400.84375,
+              "bottom": 629.40625
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 32,
+              "y": 635.40625,
+              "width": 378.84375,
+              "height": 21,
+              "right": 410.84375,
+              "bottom": 656.40625
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 32,
+              "y": 662.40625,
+              "width": 320.3125,
+              "height": 21,
+              "right": 352.3125,
+              "bottom": 683.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 53,
+              "y": 736.3125,
+              "width": 158.953125,
+              "height": 18,
+              "right": 211.953125,
+              "bottom": 754.3125
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 265.953125,
+              "y": 736.3125,
+              "width": 130.875,
+              "height": 18,
+              "right": 396.828125,
+              "bottom": 754.3125
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 32,
+              "y": 963.40625,
+              "width": 132.875,
+              "height": 31,
+              "right": 164.875,
+              "bottom": 994.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 653.03125,
+              "y": 26.40625,
+              "width": 82.96875,
+              "height": 39.1875,
+              "right": 736,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 716.40625,
+              "width": 200.953125,
+              "height": 58,
+              "right": 232.953125,
+              "bottom": 774.40625
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 244.953125,
+              "y": 716.40625,
+              "width": 172.875,
+              "height": 58,
+              "right": 417.828125,
+              "bottom": 774.40625
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "measurement": {
+        "width": 1280,
+        "height": 720,
+        "scrollWidth": 1280,
+        "scrollHeight": 720,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1141.03125,
+              "y": 37.40625,
+              "width": 82.96875,
+              "height": 17,
+              "right": 1224,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 56,
+              "y": 206.25,
+              "width": 340.40625,
+              "height": 15,
+              "right": 396.40625,
+              "bottom": 221.25
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 56,
+              "y": 232.75,
+              "width": 390.28125,
+              "height": 78,
+              "right": 446.28125,
+              "bottom": 310.75
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 56,
+              "y": 296.25,
+              "width": 308.765625,
+              "height": 78,
+              "right": 364.765625,
+              "bottom": 374.25
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 56,
+              "y": 390.75,
+              "width": 423.5,
+              "height": 21,
+              "right": 479.5,
+              "bottom": 411.75
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 56,
+              "y": 417.75,
+              "width": 442.515625,
+              "height": 21,
+              "right": 498.515625,
+              "bottom": 438.75
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 56,
+              "y": 444.75,
+              "width": 201.96875,
+              "height": 21,
+              "right": 257.96875,
+              "bottom": 465.75
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 77,
+              "y": 510.65625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 235.953125,
+              "bottom": 528.65625
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 289.953125,
+              "y": 510.65625,
+              "width": 130.875,
+              "height": 18,
+              "right": 420.828125,
+              "bottom": 528.65625
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 56,
+              "y": 659.40625,
+              "width": 132.875,
+              "height": 31,
+              "right": 188.875,
+              "bottom": 690.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1141.03125,
+              "y": 26.40625,
+              "width": 82.96875,
+              "height": 39.1875,
+              "right": 1224,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 56,
+              "y": 490.75,
+              "width": 200.953125,
+              "height": 58,
+              "right": 256.953125,
+              "bottom": 548.75
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 268.953125,
+              "y": 490.75,
+              "width": 172.875,
+              "height": 58,
+              "right": 441.828125,
+              "bottom": 548.75
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "measurement": {
+        "width": 1366,
+        "height": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1220.03125,
+              "y": 37.40625,
+              "width": 82.96875,
+              "height": 17,
+              "right": 1303,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 63,
+              "y": 226.015625,
+              "width": 340.40625,
+              "height": 15,
+              "right": 403.40625,
+              "bottom": 241.015625
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 63,
+              "y": 252.515625,
+              "width": 416.25,
+              "height": 83,
+              "right": 479.25,
+              "bottom": 335.515625
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 63,
+              "y": 320.25,
+              "width": 329.3125,
+              "height": 83,
+              "right": 392.3125,
+              "bottom": 403.25
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 63,
+              "y": 418.984375,
+              "width": 423.5,
+              "height": 21,
+              "right": 486.5,
+              "bottom": 439.984375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 63,
+              "y": 445.984375,
+              "width": 442.515625,
+              "height": 21,
+              "right": 505.515625,
+              "bottom": 466.984375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 63,
+              "y": 472.984375,
+              "width": 201.96875,
+              "height": 21,
+              "right": 264.96875,
+              "bottom": 493.984375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 84,
+              "y": 538.890625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 242.953125,
+              "bottom": 556.890625
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 296.953125,
+              "y": 538.890625,
+              "width": 130.875,
+              "height": 18,
+              "right": 427.828125,
+              "bottom": 556.890625
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 63,
+              "y": 707.40625,
+              "width": 132.875,
+              "height": 31,
+              "right": 195.875,
+              "bottom": 738.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1220.03125,
+              "y": 26.40625,
+              "width": 82.96875,
+              "height": 39.1875,
+              "right": 1303,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 63,
+              "y": 518.984375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 263.953125,
+              "bottom": 576.984375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 275.953125,
+              "y": 518.984375,
+              "width": 172.875,
+              "height": 58,
+              "right": 448.828125,
+              "bottom": 576.984375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "measurement": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1257.03125,
+              "y": 37.40625,
+              "width": 82.96875,
+              "height": 17,
+              "right": 1340,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 100,
+              "y": 195.625,
+              "width": 340.40625,
+              "height": 15,
+              "right": 440.40625,
+              "bottom": 210.625
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 100,
+              "y": 225.125,
+              "width": 224.6875,
+              "height": 134,
+              "right": 324.6875,
+              "bottom": 359.125
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 100,
+              "y": 334.875,
+              "width": 429.1875,
+              "height": 134,
+              "right": 529.1875,
+              "bottom": 468.875
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 100,
+              "y": 444.625,
+              "width": 533.6875,
+              "height": 134,
+              "right": 633.6875,
+              "bottom": 578.625
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 100,
+              "y": 596.375,
+              "width": 423.5,
+              "height": 21,
+              "right": 523.5,
+              "bottom": 617.375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 100,
+              "y": 623.375,
+              "width": 442.515625,
+              "height": 21,
+              "right": 542.515625,
+              "bottom": 644.375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 100,
+              "y": 650.375,
+              "width": 201.96875,
+              "height": 21,
+              "right": 301.96875,
+              "bottom": 671.375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 121,
+              "y": 724.28125,
+              "width": 158.953125,
+              "height": 18,
+              "right": 279.953125,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 333.953125,
+              "y": 724.28125,
+              "width": 130.875,
+              "height": 18,
+              "right": 464.828125,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 100,
+              "y": 839.40625,
+              "width": 132.875,
+              "height": 31,
+              "right": 232.875,
+              "bottom": 870.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 1257.03125,
+              "y": 26.40625,
+              "width": 82.96875,
+              "height": 39.1875,
+              "right": 1340,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 100,
+              "y": 704.375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 300.953125,
+              "bottom": 762.375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 312.953125,
+              "y": 704.375,
+              "width": 172.875,
+              "height": 58,
+              "right": 485.828125,
+              "bottom": 762.375
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/zach-landing-1440x900.png"
+    },
+    {
+      "coach": "zach",
+      "page": "landing",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "measurement": {
+        "width": 844,
+        "height": 390,
+        "scrollWidth": 844,
+        "scrollHeight": 390,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 729.03125,
+              "y": 20.40625,
+              "width": 82.96875,
+              "height": 17,
+              "right": 812,
+              "bottom": 37.40625
+            }
+          },
+          {
+            "text": "Zach \u00b7 Strength & Tactical Training Coach",
+            "rect": {
+              "x": 32,
+              "y": 111.140625,
+              "width": 247.5625,
+              "height": 11,
+              "right": 279.5625,
+              "bottom": 122.140625
+            }
+          },
+          {
+            "text": "BUILD STRENGTH.",
+            "rect": {
+              "x": 32,
+              "y": 126.328125,
+              "width": 216.84375,
+              "height": 43,
+              "right": 248.84375,
+              "bottom": 169.328125
+            }
+          },
+          {
+            "text": "BUILD SKILLS.",
+            "rect": {
+              "x": 32,
+              "y": 161.59375,
+              "width": 171.546875,
+              "height": 43,
+              "right": 203.546875,
+              "bottom": 204.59375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 32,
+              "y": 212.859375,
+              "width": 434.203125,
+              "height": 17,
+              "right": 466.203125,
+              "bottom": 229.859375
+            }
+          },
+          {
+            "text": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me ",
+            "rect": {
+              "x": 32,
+              "y": 230.859375,
+              "width": 422.609375,
+              "height": 17,
+              "right": 454.609375,
+              "bottom": 247.859375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 47,
+              "y": 273.15625,
+              "width": 134.5,
+              "height": 15,
+              "right": 181.5,
+              "bottom": 288.15625
+            }
+          },
+          {
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 223.5,
+              "y": 273.15625,
+              "width": 110.75,
+              "height": 15,
+              "right": 334.25,
+              "bottom": 288.15625
+            }
+          },
+          {
+            "text": "Zach Vazquez",
+            "rect": {
+              "x": 32,
+              "y": 356.203125,
+              "width": 91.984375,
+              "height": 22,
+              "right": 123.984375,
+              "bottom": 378.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Zach",
+            "rect": {
+              "x": 729.03125,
+              "y": 9.40625,
+              "width": 82.96875,
+              "height": 39.1875,
+              "right": 812,
+              "bottom": 48.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 260.859375,
+              "width": 164.5,
+              "height": 40,
+              "right": 196.5,
+              "bottom": 300.859375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Zach",
+            "rect": {
+              "x": 208.5,
+              "y": 260.859375,
+              "width": 140.75,
+              "height": 40,
+              "right": 349.25,
+              "bottom": 300.859375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "measurement": {
+        "width": 320,
+        "height": 568,
+        "scrollWidth": 320,
+        "scrollHeight": 568,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 225.1875,
+              "y": 24,
+              "width": 74.8125,
+              "height": 14,
+              "right": 300,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 171.5625,
+              "width": 276.203125,
+              "height": 12,
+              "right": 296.203125,
+              "bottom": 183.5625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 185.15625,
+              "width": 24.84375,
+              "height": 12,
+              "right": 44.84375,
+              "bottom": 197.15625
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 20,
+              "y": 204.75,
+              "width": 145.5625,
+              "height": 43,
+              "right": 165.5625,
+              "bottom": 247.75
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 20,
+              "y": 240.375,
+              "width": 148.6875,
+              "height": 43,
+              "right": 168.6875,
+              "bottom": 283.375
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 20,
+              "y": 276,
+              "width": 163.078125,
+              "height": 43,
+              "right": 183.078125,
+              "bottom": 319
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 329.625,
+              "width": 278.21875,
+              "height": 17,
+              "right": 298.21875,
+              "bottom": 346.625
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 348.21875,
+              "width": 260.953125,
+              "height": 17,
+              "right": 280.953125,
+              "bottom": 365.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 366.8125,
+              "width": 270.578125,
+              "height": 17,
+              "right": 290.578125,
+              "bottom": 383.8125
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 385.40625,
+              "width": 65.234375,
+              "height": 17,
+              "right": 85.234375,
+              "bottom": 402.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 432.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 449.59375
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 37,
+              "y": 484.59375,
+              "width": 127.625,
+              "height": 17,
+              "right": 164.625,
+              "bottom": 501.59375
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 20,
+              "y": 528.203125,
+              "width": 110.875,
+              "height": 22,
+              "right": 130.875,
+              "bottom": 550.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 225.1875,
+              "y": 13,
+              "width": 74.8125,
+              "height": 36,
+              "right": 300,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 420,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 464
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 20,
+              "y": 472,
+              "width": 280,
+              "height": 44,
+              "right": 300,
+              "bottom": 516
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/rhylie-landing-320x568.png"
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "measurement": {
+        "width": 375,
+        "height": 667,
+        "scrollWidth": 375,
+        "scrollHeight": 667,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 280.1875,
+              "y": 24,
+              "width": 74.8125,
+              "height": 14,
+              "right": 355,
+              "bottom": 38
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 286.15625,
+              "width": 303.59375,
+              "height": 12,
+              "right": 323.59375,
+              "bottom": 298.15625
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 20,
+              "y": 304.75,
+              "width": 168.21875,
+              "height": 50,
+              "right": 188.21875,
+              "bottom": 354.75
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 20,
+              "y": 345.90625,
+              "width": 171.828125,
+              "height": 50,
+              "right": 191.828125,
+              "bottom": 395.90625
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 20,
+              "y": 387.0625,
+              "width": 188.46875,
+              "height": 50,
+              "right": 208.46875,
+              "bottom": 437.0625
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 447.21875,
+              "width": 287.28125,
+              "height": 17,
+              "right": 307.28125,
+              "bottom": 464.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 465.8125,
+              "width": 326.34375,
+              "height": 17,
+              "right": 346.34375,
+              "bottom": 482.8125
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 484.40625,
+              "width": 263.765625,
+              "height": 17,
+              "right": 283.765625,
+              "bottom": 501.40625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 37,
+              "y": 531.59375,
+              "width": 146.734375,
+              "height": 17,
+              "right": 183.734375,
+              "bottom": 548.59375
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 37,
+              "y": 583.59375,
+              "width": 127.625,
+              "height": 17,
+              "right": 164.625,
+              "bottom": 600.59375
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 20,
+              "y": 627.203125,
+              "width": 110.875,
+              "height": 22,
+              "right": 130.875,
+              "bottom": 649.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 12,
+              "width": 150,
+              "height": 38,
+              "right": 170,
+              "bottom": 50
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 280.1875,
+              "y": 13,
+              "width": 74.8125,
+              "height": 36,
+              "right": 355,
+              "bottom": 49
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 519,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 563
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 20,
+              "y": 571,
+              "width": 335,
+              "height": 44,
+              "right": 355,
+              "bottom": 615
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "measurement": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 295.1875,
+              "y": 29,
+              "width": 74.8125,
+              "height": 14,
+              "right": 370,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 377.546875,
+              "width": 321.453125,
+              "height": 13,
+              "right": 341.453125,
+              "bottom": 390.546875
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 20,
+              "y": 403.734375,
+              "width": 192.25,
+              "height": 58,
+              "right": 212.25,
+              "bottom": 461.734375
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 20,
+              "y": 450.765625,
+              "width": 196.375,
+              "height": 58,
+              "right": 216.375,
+              "bottom": 508.765625
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 20,
+              "y": 497.796875,
+              "width": 215.390625,
+              "height": 58,
+              "right": 235.390625,
+              "bottom": 555.796875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 572.828125,
+              "width": 311.21875,
+              "height": 18,
+              "right": 331.21875,
+              "bottom": 590.828125
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 596.21875,
+              "width": 328.921875,
+              "height": 18,
+              "right": 348.921875,
+              "bottom": 614.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 619.609375,
+              "width": 310.359375,
+              "height": 18,
+              "right": 330.359375,
+              "bottom": 637.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 681.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 699.90625
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 41,
+              "y": 743.90625,
+              "width": 138.25,
+              "height": 18,
+              "right": 179.25,
+              "bottom": 761.90625
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 20,
+              "y": 799,
+              "width": 123.1875,
+              "height": 24,
+              "right": 143.1875,
+              "bottom": 823
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 295.1875,
+              "y": 18,
+              "width": 74.8125,
+              "height": 36,
+              "right": 370,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 665,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 717
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 20,
+              "y": 727,
+              "width": 350,
+              "height": 52,
+              "right": 370,
+              "bottom": 779
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/rhylie-landing-390x844.png",
+      "smoke": {
+        "intake_modal": true,
+        "phone_required": true,
+        "empty_and_whitespace_invalid": true,
+        "focus_restored": true,
+        "form_submitted": false
+      },
+      "header_talk_smoke": {
+        "opens_intake": true,
+        "focus_restored": true
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "measurement": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 932,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 335.1875,
+              "y": 29,
+              "width": 74.8125,
+              "height": 14,
+              "right": 410,
+              "bottom": 43
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 20,
+              "y": 465.546875,
+              "width": 321.453125,
+              "height": 13,
+              "right": 341.453125,
+              "bottom": 478.546875
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 20,
+              "y": 491.734375,
+              "width": 192.25,
+              "height": 58,
+              "right": 212.25,
+              "bottom": 549.734375
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 20,
+              "y": 538.765625,
+              "width": 196.375,
+              "height": 58,
+              "right": 216.375,
+              "bottom": 596.765625
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 20,
+              "y": 585.796875,
+              "width": 215.390625,
+              "height": 58,
+              "right": 235.390625,
+              "bottom": 643.796875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 660.828125,
+              "width": 311.21875,
+              "height": 18,
+              "right": 331.21875,
+              "bottom": 678.828125
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 684.21875,
+              "width": 353.53125,
+              "height": 18,
+              "right": 373.53125,
+              "bottom": 702.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 20,
+              "y": 707.609375,
+              "width": 285.75,
+              "height": 18,
+              "right": 305.75,
+              "bottom": 725.609375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 41,
+              "y": 769.90625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 199.953125,
+              "bottom": 787.90625
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 41,
+              "y": 831.90625,
+              "width": 138.25,
+              "height": 18,
+              "right": 179.25,
+              "bottom": 849.90625
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 20,
+              "y": 887,
+              "width": 123.1875,
+              "height": 24,
+              "right": 143.1875,
+              "bottom": 911
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 20,
+              "y": 15.5,
+              "width": 165,
+              "height": 41,
+              "right": 185,
+              "bottom": 56.5
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 335.1875,
+              "y": 18,
+              "width": 74.8125,
+              "height": 36,
+              "right": 410,
+              "bottom": 54
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 20,
+              "y": 753,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 805
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 20,
+              "y": 815,
+              "width": 390,
+              "height": 52,
+              "right": 410,
+              "bottom": 867
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "measurement": {
+        "width": 768,
+        "height": 1024,
+        "scrollWidth": 768,
+        "scrollHeight": 1024,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 646.21875,
+              "y": 37.40625,
+              "width": 89.78125,
+              "height": 17,
+              "right": 736,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 32,
+              "y": 299.34375,
+              "width": 405.953125,
+              "height": 15,
+              "right": 437.953125,
+              "bottom": 314.34375
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 32,
+              "y": 315.84375,
+              "width": 36.109375,
+              "height": 15,
+              "right": 68.109375,
+              "bottom": 330.84375
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 32,
+              "y": 349.34375,
+              "width": 312.390625,
+              "height": 94,
+              "right": 344.390625,
+              "bottom": 443.34375
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 32,
+              "y": 425.78125,
+              "width": 319.109375,
+              "height": 94,
+              "right": 351.109375,
+              "bottom": 519.78125
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 32,
+              "y": 502.21875,
+              "width": 350,
+              "height": 94,
+              "right": 382,
+              "bottom": 596.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 32,
+              "y": 616.65625,
+              "width": 359.09375,
+              "height": 21,
+              "right": 391.09375,
+              "bottom": 637.65625
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 32,
+              "y": 643.65625,
+              "width": 407.921875,
+              "height": 21,
+              "right": 439.921875,
+              "bottom": 664.65625
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 32,
+              "y": 670.65625,
+              "width": 329.703125,
+              "height": 21,
+              "right": 361.703125,
+              "bottom": 691.65625
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 53,
+              "y": 744.5625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 211.953125,
+              "bottom": 762.5625
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 265.953125,
+              "y": 744.5625,
+              "width": 138.25,
+              "height": 18,
+              "right": 404.203125,
+              "bottom": 762.5625
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 32,
+              "y": 963.40625,
+              "width": 160.140625,
+              "height": 31,
+              "right": 192.140625,
+              "bottom": 994.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 232,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 646.21875,
+              "y": 26.40625,
+              "width": 89.78125,
+              "height": 39.1875,
+              "right": 736,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 724.65625,
+              "width": 200.953125,
+              "height": 58,
+              "right": 232.953125,
+              "bottom": 782.65625
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 244.953125,
+              "y": 724.65625,
+              "width": 180.25,
+              "height": 58,
+              "right": 425.203125,
+              "bottom": 782.65625
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "measurement": {
+        "width": 1280,
+        "height": 720,
+        "scrollWidth": 1280,
+        "scrollHeight": 720,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1134.21875,
+              "y": 37.40625,
+              "width": 89.78125,
+              "height": 17,
+              "right": 1224,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 56,
+              "y": 174.5,
+              "width": 446.34375,
+              "height": 15,
+              "right": 502.34375,
+              "bottom": 189.5
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 56,
+              "y": 201,
+              "width": 259.515625,
+              "height": 78,
+              "right": 315.515625,
+              "bottom": 279
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 56,
+              "y": 264.5,
+              "width": 265.09375,
+              "height": 78,
+              "right": 321.09375,
+              "bottom": 342.5
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 56,
+              "y": 328,
+              "width": 290.75,
+              "height": 78,
+              "right": 346.75,
+              "bottom": 406
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 56,
+              "y": 422.5,
+              "width": 359.09375,
+              "height": 21,
+              "right": 415.09375,
+              "bottom": 443.5
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 56,
+              "y": 449.5,
+              "width": 445.21875,
+              "height": 21,
+              "right": 501.21875,
+              "bottom": 470.5
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 56,
+              "y": 476.5,
+              "width": 292.390625,
+              "height": 21,
+              "right": 348.390625,
+              "bottom": 497.5
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 77,
+              "y": 542.40625,
+              "width": 158.953125,
+              "height": 18,
+              "right": 235.953125,
+              "bottom": 560.40625
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 289.953125,
+              "y": 542.40625,
+              "width": 138.25,
+              "height": 18,
+              "right": 428.203125,
+              "bottom": 560.40625
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 56,
+              "y": 659.40625,
+              "width": 160.140625,
+              "height": 31,
+              "right": 216.140625,
+              "bottom": 690.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 56,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 256,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1134.21875,
+              "y": 26.40625,
+              "width": 89.78125,
+              "height": 39.1875,
+              "right": 1224,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 56,
+              "y": 522.5,
+              "width": 200.953125,
+              "height": 58,
+              "right": 256.953125,
+              "bottom": 580.5
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 268.953125,
+              "y": 522.5,
+              "width": 180.25,
+              "height": 58,
+              "right": 449.203125,
+              "bottom": 580.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "measurement": {
+        "width": 1366,
+        "height": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1213.21875,
+              "y": 37.40625,
+              "width": 89.78125,
+              "height": 17,
+              "right": 1303,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 63,
+              "y": 192.140625,
+              "width": 446.34375,
+              "height": 15,
+              "right": 509.34375,
+              "bottom": 207.140625
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 63,
+              "y": 218.640625,
+              "width": 276.796875,
+              "height": 83,
+              "right": 339.796875,
+              "bottom": 301.640625
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 63,
+              "y": 286.375,
+              "width": 282.734375,
+              "height": 83,
+              "right": 345.734375,
+              "bottom": 369.375
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 63,
+              "y": 354.109375,
+              "width": 310.09375,
+              "height": 83,
+              "right": 373.09375,
+              "bottom": 437.109375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 63,
+              "y": 452.84375,
+              "width": 359.09375,
+              "height": 21,
+              "right": 422.09375,
+              "bottom": 473.84375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 63,
+              "y": 479.84375,
+              "width": 445.21875,
+              "height": 21,
+              "right": 508.21875,
+              "bottom": 500.84375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 63,
+              "y": 506.84375,
+              "width": 292.390625,
+              "height": 21,
+              "right": 355.390625,
+              "bottom": 527.84375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 84,
+              "y": 572.75,
+              "width": 158.953125,
+              "height": 18,
+              "right": 242.953125,
+              "bottom": 590.75
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 296.953125,
+              "y": 572.75,
+              "width": 138.25,
+              "height": 18,
+              "right": 435.203125,
+              "bottom": 590.75
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 63,
+              "y": 707.40625,
+              "width": 160.140625,
+              "height": 31,
+              "right": 223.140625,
+              "bottom": 738.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 63,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 263,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1213.21875,
+              "y": 26.40625,
+              "width": 89.78125,
+              "height": 39.1875,
+              "right": 1303,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 63,
+              "y": 552.84375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 263.953125,
+              "bottom": 610.84375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 275.953125,
+              "y": 552.84375,
+              "width": 180.25,
+              "height": 58,
+              "right": 456.203125,
+              "bottom": 610.84375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "measurement": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1250.21875,
+              "y": 37.40625,
+              "width": 89.78125,
+              "height": 17,
+              "right": 1340,
+              "bottom": 54.40625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 100,
+              "y": 195.625,
+              "width": 446.34375,
+              "height": 15,
+              "right": 546.34375,
+              "bottom": 210.625
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 100,
+              "y": 225.125,
+              "width": 448.5625,
+              "height": 134,
+              "right": 548.5625,
+              "bottom": 359.125
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 100,
+              "y": 334.875,
+              "width": 458.203125,
+              "height": 134,
+              "right": 558.203125,
+              "bottom": 468.875
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 100,
+              "y": 444.625,
+              "width": 502.546875,
+              "height": 134,
+              "right": 602.546875,
+              "bottom": 578.625
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 100,
+              "y": 596.375,
+              "width": 359.09375,
+              "height": 21,
+              "right": 459.09375,
+              "bottom": 617.375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 100,
+              "y": 623.375,
+              "width": 445.21875,
+              "height": 21,
+              "right": 545.21875,
+              "bottom": 644.375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 100,
+              "y": 650.375,
+              "width": 292.390625,
+              "height": 21,
+              "right": 392.390625,
+              "bottom": 671.375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 121,
+              "y": 724.28125,
+              "width": 158.953125,
+              "height": 18,
+              "right": 279.953125,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 333.953125,
+              "y": 724.28125,
+              "width": 138.25,
+              "height": 18,
+              "right": 472.203125,
+              "bottom": 742.28125
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 100,
+              "y": 839.40625,
+              "width": 160.140625,
+              "height": 31,
+              "right": 260.140625,
+              "bottom": 870.40625
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 100,
+              "y": 21,
+              "width": 200,
+              "height": 50,
+              "right": 300,
+              "bottom": 71
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 1250.21875,
+              "y": 26.40625,
+              "width": 89.78125,
+              "height": 39.1875,
+              "right": 1340,
+              "bottom": 65.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 100,
+              "y": 704.375,
+              "width": 200.953125,
+              "height": 58,
+              "right": 300.953125,
+              "bottom": 762.375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 312.953125,
+              "y": 704.375,
+              "width": 180.25,
+              "height": 58,
+              "right": 493.203125,
+              "bottom": 762.375
+            }
+          }
+        ]
+      },
+      "screenshot": "evidence/screenshots/restored-hero/rhylie-landing-1440x900.png"
+    },
+    {
+      "coach": "rhylie",
+      "page": "landing",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "measurement": {
+        "width": 844,
+        "height": 390,
+        "scrollWidth": 844,
+        "scrollHeight": 390,
+        "problems": [],
+        "textBoxes": [
+          {
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 722.21875,
+              "y": 20.40625,
+              "width": 89.78125,
+              "height": 17,
+              "right": 812,
+              "bottom": 37.40625
+            }
+          },
+          {
+            "text": "Rhylie \u00b7 Women\u2019s Strength, Physique & Competition Prep",
+            "rect": {
+              "x": 32,
+              "y": 93.5,
+              "width": 324.609375,
+              "height": 11,
+              "right": 356.609375,
+              "bottom": 104.5
+            }
+          },
+          {
+            "text": "BUILD YOUR",
+            "rect": {
+              "x": 32,
+              "y": 108.6875,
+              "width": 144.1875,
+              "height": 43,
+              "right": 176.1875,
+              "bottom": 151.6875
+            }
+          },
+          {
+            "text": "PHYSIQUE &",
+            "rect": {
+              "x": 32,
+              "y": 143.953125,
+              "width": 147.28125,
+              "height": 43,
+              "right": 179.28125,
+              "bottom": 186.953125
+            }
+          },
+          {
+            "text": "CONFIDENCE.",
+            "rect": {
+              "x": 32,
+              "y": 179.21875,
+              "width": 161.546875,
+              "height": 43,
+              "right": 193.546875,
+              "bottom": 222.21875
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 32,
+              "y": 230.484375,
+              "width": 434.046875,
+              "height": 17,
+              "right": 466.046875,
+              "bottom": 247.484375
+            }
+          },
+          {
+            "text": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk",
+            "rect": {
+              "x": 32,
+              "y": 248.484375,
+              "width": 445.734375,
+              "height": 17,
+              "right": 477.734375,
+              "bottom": 265.484375
+            }
+          },
+          {
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 47,
+              "y": 290.78125,
+              "width": 134.5,
+              "height": 15,
+              "right": 181.5,
+              "bottom": 305.78125
+            }
+          },
+          {
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 223.5,
+              "y": 290.78125,
+              "width": 116.984375,
+              "height": 15,
+              "right": 340.484375,
+              "bottom": 305.78125
+            }
+          },
+          {
+            "text": "Rhylie Erdmann",
+            "rect": {
+              "x": 32,
+              "y": 356.203125,
+              "width": 110.875,
+              "height": 22,
+              "right": 142.875,
+              "bottom": 378.203125
+            }
+          }
+        ],
+        "controls": [
+          {
+            "node": "a.stg-brand",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "img.stg-brand-logo",
+            "text": "",
+            "rect": {
+              "x": 32,
+              "y": 10,
+              "width": 150,
+              "height": 38,
+              "right": 182,
+              "bottom": 48
+            }
+          },
+          {
+            "node": "a.stg-nav-call",
+            "text": "Talk with Rhylie",
+            "rect": {
+              "x": 722.21875,
+              "y": 9.40625,
+              "width": 89.78125,
+              "height": 39.1875,
+              "right": 812,
+              "bottom": 48.59375
+            }
+          },
+          {
+            "node": "a.stg-button",
+            "text": "I\u2019m ready to start training",
+            "rect": {
+              "x": 32,
+              "y": 278.484375,
+              "width": 164.5,
+              "height": 40,
+              "right": 196.5,
+              "bottom": 318.484375
+            }
+          },
+          {
+            "node": "a.stg-button.stg-button-secondary",
+            "text": "Book a call with Rhylie",
+            "rect": {
+              "x": 208.5,
+              "y": 278.484375,
+              "width": 146.984375,
+              "height": 40,
+              "right": 355.484375,
+              "bottom": 318.484375
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "pricing_preservation": {
+    "baseline": "evidence/restored-hero-pricing-baseline.json",
+    "files": [
+      {
+        "path": "start-justin.html",
+        "sha256": "efbd191268e2fc10a5f31a465739062ed256b22eb4c94f80806440c12f863f18",
+        "unchanged": true
+      },
+      {
+        "path": "start-zach.html",
+        "sha256": "06ea90cba6a7aa7f0b9f8bb37d4a8db6e080299fd73ac5172397963b749d5cdc",
+        "unchanged": true
+      },
+      {
+        "path": "start-rhylie.html",
+        "sha256": "b257fd88ce93fa5d9ef07037fc81d95a4b42e1225c8efcc4bee361a15e50d61d",
+        "unchanged": true
+      },
+      {
+        "path": "assets/purchase.css",
+        "sha256": "e502680e1b1e1ba87d7393d283470fcac24b19956ae298aacefb621765199ce1",
+        "unchanged": true
+      },
+      {
+        "path": "assets/purchase.js",
+        "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
+        "unchanged": true
+      },
+      {
+        "path": "offers.json",
+        "sha256": "2a241fd456ca49d497dc2f5cf2618489c3f7538307e59521bb74a349fe012ccb",
+        "unchanged": true
+      },
+      {
+        "path": "assets/coach.css",
+        "sha256": "b63e6856a644dfa6c92e81d545824d4c39eaad4d4dbc8112b8beb207940d7c69",
+        "unchanged": true
+      },
+      {
+        "path": "assets/intake.js",
+        "sha256": "914d80cbaed070026a05474a871c53a2f7cc8eaded45f015d21848c8e3b1f524",
+        "unchanged": true
+      },
+      {
+        "path": "publish/justin/start/index.html",
+        "sha256": "24c20a9892a01e9462e5cc4647a809e74e22fc9d644f90f54e71a6db04a26fcb",
+        "unchanged": true
+      },
+      {
+        "path": "publish/zach/start/index.html",
+        "sha256": "a15708e2d3e449d3c5ca39cb1186321dc426cd2d31995fc3099133c0bb033f15",
+        "unchanged": true
+      },
+      {
+        "path": "publish/rhylie/start/index.html",
+        "sha256": "06e5da4658ea15de8b88071bdbfd879a209833c7a9995dc88ed3e80c6c7b92b6",
+        "unchanged": true
+      }
+    ],
+    "computed_style_views": [
+      {
+        "coach": "justin",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "justin",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "justin",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "zach",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "zach",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "zach",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "rhylie",
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "rhylie",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "computed_styles_and_bounds_unchanged": true
+      },
+      {
+        "coach": "rhylie",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "computed_styles_and_bounds_unchanged": true
+      }
+    ],
+    "status": "passed"
+  },
+  "live_mutations": 0,
+  "scope": "Actual rendered text/control bounds, ancestor clipping and document dimensions at9sizes. Restored-hero mode checks27landings and compares pricing files/styles to its pre-edit baseline. Intake validity/focus checks and optional Stripe stubs only; no form POST, booking, checkout session or payment.",
+  "original_screenshot_design_comparison": {
+    "checked_at_utc": "2026-10-30T15:27:59.262532+00:00",
+    "reference_commit": "967e407",
+    "method": "Historic HTML/CSS/intakeJS rendered locally at390x844 using unchanged photo/font assets. Exact full subheads and requested style properties compared. Actual button heights separately recorded. External requests blocked.",
+    "checks": [
+      {
+        "coach": "justin",
+        "subhead_exact_to_967e407": true,
+        "subhead": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about your starting point, your goals, and the work it will take to move forward.",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "original": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            57,
+            57
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "none"
+          }
+        },
+        "restored": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            52,
+            52
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "none"
+          }
+        },
+        "requested_computed_styles_match": true,
+        "actual_button_height_note": "Original renders57px; restored renders52px. Both declare52px minimum. Actual height equality is not claimed; prior approved removal of arrow decoration and targeted viewport sizing retained."
+      },
+      {
+        "coach": "zach",
+        "subhead_exact_to_967e407": true,
+        "subhead": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me what you want to work toward. Let\u2019s talk about the right place to start.",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "original": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            57,
+            57
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "none"
+          }
+        },
+        "restored": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            52,
+            52
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "none"
+          }
+        },
+        "requested_computed_styles_match": true,
+        "actual_button_height_note": "Original renders57px; restored renders52px. Both declare52px minimum. Actual height equality is not claimed; prior approved removal of arrow decoration and targeted viewport sizing retained."
+      },
+      {
+        "coach": "rhylie",
+        "subhead_exact_to_967e407": true,
+        "subhead": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let\u2019s talk about the progress you want and how to work toward it with confidence.",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "original": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            57,
+            57
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "matrix(1.15, 0, 0, 1.15, 0, -40)"
+          }
+        },
+        "restored": {
+          "h1FontSize": "48px",
+          "headerHeight": 72,
+          "logo": {
+            "width": 165,
+            "height": 41
+          },
+          "buttons": [
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            },
+            {
+              "minHeight": "52px",
+              "textAlign": "left",
+              "justifyContent": "space-between",
+              "fontSize": "13px"
+            }
+          ],
+          "actualButtonHeights": [
+            52,
+            52
+          ],
+          "photo": {
+            "objectPosition": "50% 20%",
+            "objectFit": "cover",
+            "transform": "matrix(1.15, 0, 0, 1.15, 0, -40)"
+          }
+        },
+        "requested_computed_styles_match": true,
+        "actual_button_height_note": "Original renders57px; restored renders52px. Both declare52px minimum. Actual height equality is not claimed; prior approved removal of arrow decoration and targeted viewport sizing retained."
+      }
+    ]
+  }
+}

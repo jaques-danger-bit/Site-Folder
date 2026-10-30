@@ -1,6 +1,8 @@
 # Coach landing-page funnel handoff
 
-Updated October 30, 2026 for the user's viewport-fit correction. Both landing and pricing pages must fit one viewport without scrolling, with all three pricing choices visible together. The landing keeps the full-bleed photo, full coach name, approved headline, one short service sentence and two CTAs. Pricing uses compact factual offers. The viewport-fit correction was published as deploy `6ae4ae07bdc610bf593a3f50` on October 30, 2026 at 14:47 UTC. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
+Updated October 30, 2026 after the user explicitly selected the **original screenshot hero, commit `967e407`**, and requested reworking the existing page rather than repeated redesigns. That is the fixed hero reference. Restore the full original paragraphs, header Talk link, specialty label, typography, left-aligned buttons, photo treatment/crops and footer name. Compact pricing and the current intake remain unchanged. The restoration passed local validation and was published as deploy `6ae4b72d98525fce2aaba2af` on October 30, 2026 at 15:26:39 UTC; live verification is recorded separately. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
+
+**Future edits must make the smallest necessary change against the selected original reference.** Do not introduce unsolicited copy, crop, font or layout redesigns. Targeted height adjustments remain permitted to satisfy the existing fit requirement; they do not authorize replacing the design again.
 
 ## Current two-path flow
 
@@ -9,7 +11,7 @@ Each hero has two visible choices:
 - **I’m ready to start training** opens that coach's `/{slug}/start/` directly at the compact dark three-offer comparison, with every option visible in the viewport.
 - **Book a call** opens the dark native mini-intake dialog on the same hero page. After Formspree accepts the form, the visitor can open the coach-specific public booking calendar.
 
-The hero follows the viewport height without a forced 840px minimum. Remove helper/meta copy and decorative lines, along with the former white intro, process, FAQ and sticky sections. Arrow glyphs remain removed. The user's new fit requirement supersedes the earlier screenshots' spacing and dimensions. Direct intake links use `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same dark form and native POST remains available. Name, email, phone and goal remain required.
+The restored hero uses the original 48px mobile headline at normal heights, original gradients and object positions, Justin's 13% desktop photo shift and Rhylie's mobile transform. Height-specific overrides preserve fit. Previously requested exclusions still apply: no arrows, helper/approach filler, white sections, process, FAQ or sticky additions. The footer name is restored. Direct intake links remain `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same dark form and native POST remains available. Name, email, phone and goal remain required.
 
 Keep the selected coach consistent through either path. Local sources use `start-{slug}.html`; the public packager rewrites navigation to clean routes. Builder-hosted blocks need the public destination URLs and permitted top-level iframe navigation.
 
@@ -23,11 +25,13 @@ Read-only booking findings are recorded in `evidence/booking-verification.json`.
 
 ## Separate public site and delivery boundary
 
-Reuse `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. Its seven routes remain `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for landing heroes; and each coach's `/start/` route for pricing. The viewport-fit revision is deploy `6ae4ae07bdc610bf593a3f50`. Its evidence is in the [deployment receipt](evidence/hosting-deploy.json), `evidence/viewport-fit-checks.json`, [live viewport smoke](evidence/viewport-fit-live-smoke.json) and [live-check report](evidence/public-site-live-checks.json). The viewport matrix passed all 54 views: six pages at nine sizes, including 320×568 and 844×390 landscape. Text/CTA geometry and ancestor clipping were checked; overflow was not hidden to manufacture a pass. Prior evidence remains under `evidence/history/`.
+Reuse `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. Its seven routes remain `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for landing heroes; and each coach's `/start/` route for pricing. The restored original hero was published as deploy `6ae4b72d98525fce2aaba2af` at 15:26:39 UTC on October 30, 2026. Its [deployment receipt](evidence/hosting-deploy.json) establishes publication; consult the matching [live-check report](evidence/public-site-live-checks.json) for hosted verification. Deploy `6ae4ae07bdc610bf593a3f50` remains the preceding compact-hero revision.
+
+Local `evidence/restored-hero-checks.json` passed 27 landing views across nine sizes, including 320×568 and 844×390. It also verified 11 unchanged file hashes and nine unchanged pricing style/bounds comparisons. `assets/landing.css` scopes the restoration to landing pages; pricing/shared behavior is preserved. The earlier 54-view compact-hero report and its live smoke remain historical and must not be mistaken for the selected visual baseline. Prior receipts remain under `evidence/history/`.
 
 The user explicitly kept the public booking calendars at `training.strikelinetraining.com/a/booking/`. Keep those destinations, their coach/service identity and the Formspree endpoint intact. Logo/navigation links stay within the selected coach’s landing and pricing flow, and customer navigation contains no internal-portal links. Name, email, phone and goal remain required; phone rejects blank and whitespace-only input.
 
-`scripts/build-public-site.py` packages only seven HTML pages, 15 public assets and a legacy 301 redirect map into ignored `publish/`. It rewrites asset paths and coach/purchase navigation without changing the approved source pages or purchase behavior. Configuration, blocks, documentation, research, evidence, scripts and tests stay outside that 23-file allowlist. Original asset bytes and route/file hashes are recorded in `evidence/public-site-manifest.json`.
+`scripts/build-public-site.py` packages only seven HTML pages, 16 public assets including scoped `landing.css`, and a legacy 301 redirect map into ignored `publish/`. It rewrites asset paths and coach/purchase navigation without changing the approved source pages or purchase behavior. Configuration, blocks, documentation, research, evidence, scripts and tests stay outside that 24-file allowlist. Original asset bytes and route/file hashes are recorded in `evidence/public-site-manifest.json`.
 
 After rebuilding the sources and package, deployment from `coach-pages/` uses:
 
@@ -39,7 +43,7 @@ Never deploy the whole `coach-pages/` directory or repository root. Hosting veri
 
 ## Separate Stripe purchase page
 
-The purchase page uses three compact columns on desktop and three rows on mobile, keeping every choice visible within one viewport. Its simple **Train with {coach}** header is followed by each offer's name, full price/cadence, concise factual description, material terms and **Choose** button. Remove numbers, badges, divider lines, marketing headings and the bottom talk block. Keep only the Talk and legal links in the footer. There is no purchase photo hero or FAQ; the earlier screenshot's oversized dimensions no longer govern the layout.
+The compact purchase page remains unchanged: three columns on desktop and three rows on mobile, with every choice visible within one viewport. Its **Train with {coach}** header is followed by each offer's name, full price/cadence, concise factual description, material terms and **Choose** button. There are no numbers, badges, divider lines, marketing headings, bottom talk block, photo hero or FAQ. The footer keeps Talk and legal links. Restoring the original landing screenshot does not authorize another purchase-page redesign.
 
 A **Choose** button opens a native dialog containing the selected actual Stripe Buy Button. Load only that embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. The footer Talk link returns to the same coach's dark intake dialog on the landing page.
 

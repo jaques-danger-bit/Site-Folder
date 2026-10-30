@@ -21,7 +21,7 @@ PUBLISH = ROOT / "publish"
 COACHES = {"justin":"3017439", "zach":"3017453", "rhylie":"3065290"}
 ASSETS = {"justin.jpg","zach.jpg","rhylie.jpg","strikeline-logo-white.svg","strikeline-badge-white.svg",
           "barlow-condensed-bold.ttf","manrope-regular.ttf","manrope-bold.ttf","barlowcondensed-OFL.txt",
-          "manrope-OFL.txt","fonts.css","coach.css","intake.js","purchase.css","purchase.js"}
+          "manrope-OFL.txt","fonts.css","coach.css","landing.css","intake.js","purchase.css","purchase.js"}
 OFFERS = {"assessment":"buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi", "online":"buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
           "inperson":"buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp"}
 STRIPE_PATHS = {"assessment":"/fZueVf0L480x3sPdAfgQE2z", "online":"/fZucN70L4fsZgfB0NtgQE2A", "inperson":"/dRmcN765o94B5AXao3gQE2B"}
@@ -168,7 +168,7 @@ def static_check():
         if Path(path).suffix in {".html",".js",".css",".svg"} or path == "_redirects":
             assert FORBIDDEN.encode() not in (PUBLISH/path).read_bytes().lower(), path
     return routes, redirects, {"publish_file_count":len(actual),"local_links_checked":link_count,
-                              "original_assets_preserved":15,"required_phone_pages":3,"matching_booking_routes":3,
+                              "source_assets_preserved":len(ASSETS),"required_phone_pages":3,"matching_booking_routes":3,
                               "minimal_landing_shapes":3,"pricing_without_hero":3,
                               "attributed_stripe_options":9,"external_link_hosts":sorted(external),
                               "internal_portal_references":0,"legacy_rules":len(redirects)}

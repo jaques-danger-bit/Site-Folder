@@ -21,7 +21,7 @@ ASSETS = (
     'strikeline-logo-white.svg', 'strikeline-badge-white.svg',
     'barlow-condensed-bold.ttf', 'manrope-regular.ttf', 'manrope-bold.ttf',
     'barlowcondensed-OFL.txt', 'manrope-OFL.txt',
-    'fonts.css', 'coach.css', 'intake.js', 'purchase.css', 'purchase.js',
+    'fonts.css', 'coach.css', 'landing.css', 'intake.js', 'purchase.css', 'purchase.js',
 )
 ROUTES = {f'{slug}.html': f'{slug}/index.html' for slug in COACHES}
 ROUTES.update({f'start-{slug}.html': f'{slug}/start/index.html' for slug in COACHES})

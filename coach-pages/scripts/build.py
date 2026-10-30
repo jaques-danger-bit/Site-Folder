@@ -12,13 +12,14 @@ def markup(c):
     opts = ''.join(f'<option value="{esc(g["value"],quote=True)}">{esc(g["label"])}</option>' for g in c['goals'])
     lines = ''.join(f'<span>{esc(line)}</span>' for line in c['heroLines'])
     photo = f'assets/{slug}.jpg'
-    return f'''<div class="stg-coach-page" data-coach="{name}" style="--photo-position:{c['photoPosition']}">
+    return f'''<div class="stg-coach-page stg-landing-page" data-coach="{name}" style="--photo-position:{c['photoPosition']}">
 <a class="stg-skip" href="#{intake}">Skip to the short form</a>
 <main>
 <section class="stg-hero" aria-labelledby="{slug}-title">
- <img class="stg-hero-photo" src="{photo}" alt="{esc(c['fullName'])} at Strikeline" fetchpriority="high" decoding="async" width="853" height="1280">
- <header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="#{slug}-title" aria-label="Strikeline Training Group"><img class="stg-brand-logo" data-brand-logo src="assets/strikeline-logo-white.svg" alt="Strikeline Training Group" width="200" height="50"></a></div></header>
- <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-coach-name">{esc(c['fullName'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" data-open-intake href="#{intake}">Book a call with {name}</a></div></div></div>
+ <div class="stg-hero-visual"><img class="stg-hero-photo" src="{photo}" alt="{esc(c['fullName'])} at Strikeline" fetchpriority="high" decoding="async" width="853" height="1280"></div>
+ <header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="#{slug}-title" aria-label="Strikeline Training Group"><img class="stg-brand-logo" data-brand-logo src="assets/strikeline-logo-white.svg" alt="Strikeline Training Group" width="200" height="50"></a><a class="stg-nav-call" href="#{intake}">Talk with {name}</a></div></header>
+ <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-kicker">{name} · {esc(c['specialty'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" data-open-intake href="#{intake}">Book a call with {name}</a></div></div></div>
+ <div class="stg-hero-bottom"><div class="stg-shell stg-hero-meta"><strong>{esc(c['fullName'])}</strong></div></div>
 </section>
 </main>
 <dialog class="stg-intake-dialog" data-intake-dialog id="{intake}" aria-labelledby="{slug}-intake-title">
@@ -43,18 +44,19 @@ def markup(c):
 def build():
     coaches = json.loads((ROOT/'coaches.json').read_text())
     css = (ROOT/'assets/coach.css').read_text()
+    landing_css = (ROOT/'assets/landing.css').read_text()
     js = (ROOT/'assets/intake.js').read_text()
     fonts = (ROOT/'assets/fonts.css').read_text()
     embedded_fonts = re.sub(r'url\(([^)]+)\)', lambda m:'url(data:font/ttf;base64,'+base64.b64encode((ROOT/'assets'/m[1]).read_bytes()).decode()+')', fonts)
     for c in coaches:
         body = markup(c)
-        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{esc(c['subhead'],quote=True)}"><meta name="color-scheme" content="dark"><title>Train with {c['name']} | Strikeline</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/coach.css"><style>body{{margin:0;background:#101312}}html{{scroll-behavior:smooth}}@media(prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}</style></head><body>{body}<script src="assets/intake.js" defer></script></body></html>'''
+        page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{esc(c['subhead'],quote=True)}"><meta name="color-scheme" content="dark"><title>Train with {c['name']} | Strikeline</title><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/coach.css"><link rel="stylesheet" href="assets/landing.css"><style>body{{margin:0;background:#101312}}html{{scroll-behavior:smooth}}@media(prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}</style></head><body>{body}<script src="assets/intake.js" defer></script></body></html>'''
         (ROOT/(c['slug']+'.html')).write_text(page)
         image = 'data:image/jpeg;base64,'+base64.b64encode((ROOT/'assets'/(c['slug']+'.jpg')).read_bytes()).decode()
         body = body.replace('assets/'+c['slug']+'.jpg',image)
         for logo in ['strikeline-logo-white.svg','strikeline-badge-white.svg']:
             body = body.replace('assets/'+logo, 'data:image/svg+xml;base64,'+base64.b64encode((ROOT/'assets'/logo).read_bytes()).decode())
-        block = '<!-- Strikeline '+c['name']+' landing page. Paste once into a full-width HTML block. Photos and fonts are embedded. Form submits to the existing live mini-intake endpoint. -->\n<style>'+embedded_fonts+'\n'+css+'</style>\n'+body+'\n<script>'+js+'</script>\n'
+        block = '<!-- Strikeline '+c['name']+' landing page. Paste once into a full-width HTML block. Photos and fonts are embedded. Form submits to the existing live mini-intake endpoint. -->\n<style>'+embedded_fonts+'\n'+css+'\n'+landing_css+'</style>\n'+body+'\n<script>'+js+'</script>\n'
         (ROOT/'blocks'/(c['slug']+'-copy-paste.html')).write_text(block)
     build_purchase_pages(ROOT, coaches, embedded_fonts, css, (ROOT/'assets/strikeline-logo-white.svg').read_text())
     cards = ''.join(f'<a href="{c["slug"]}.html"><img src="assets/{c["slug"]}.jpg" alt="{c["name"]}"><span>{c["name"]}<small>{esc(c["specialty"])}</small></span></a>' for c in coaches)

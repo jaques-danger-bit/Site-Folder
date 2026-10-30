@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-30T14:46:22.267136+00:00",
+  "checked_at_utc": "2026-10-30T15:24:56.397654+00:00",
   "base_url": "http://127.0.0.1:8797",
   "static": {
-    "publish_file_count": 23,
-    "local_links_checked": 70,
-    "original_assets_preserved": 15,
+    "publish_file_count": 24,
+    "local_links_checked": 76,
+    "source_assets_preserved": 16,
     "required_phone_pages": 3,
     "matching_booking_routes": 3,
     "minimal_landing_shapes": 3,
@@ -30,7 +30,7 @@
     {
       "path": "/justin/",
       "status": 200,
-      "sha256": "8af83302414b56b7ce430309349445391d1530e89fe0e9464d606624197bcde6",
+      "sha256": "22fdebffefd191c2c95a99dca8afba854fbdd8d77aacdda65e99cebf08225e78",
       "matches_package": true
     },
     {
@@ -42,7 +42,7 @@
     {
       "path": "/zach/",
       "status": 200,
-      "sha256": "98dad8dc84dec7cf8ef497164d143def31cce82357c7ca16fff540366725647d",
+      "sha256": "03ce653ee7a8ec19a110230b5d4c1ad820db44e259f5e7b804d5f0408b618a28",
       "matches_package": true
     },
     {
@@ -54,7 +54,7 @@
     {
       "path": "/rhylie/",
       "status": 200,
-      "sha256": "873540016a815623e8ba29f07eeeab1b05f37089c85b5599b5e11ee8ae82a528",
+      "sha256": "fe0d00b3f2607c0a4df442df6f471d0434977a72347cef66993328f81e5c6858",
       "matches_package": true
     },
     {
@@ -64,69 +64,15 @@
       "matches_package": true
     },
     {
-      "path": "/assets/justin.jpg",
+      "path": "/assets/purchase.js",
       "status": 200,
-      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4",
+      "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
       "matches_package": true
     },
     {
-      "path": "/assets/strikeline-badge-white.svg",
+      "path": "/assets/barlowcondensed-OFL.txt",
       "status": 200,
-      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/strikeline-logo-white.svg",
-      "status": 200,
-      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/purchase.css",
-      "status": 200,
-      "sha256": "e502680e1b1e1ba87d7393d283470fcac24b19956ae298aacefb621765199ce1",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/barlow-condensed-bold.ttf",
-      "status": 200,
-      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/manrope-bold.ttf",
-      "status": 200,
-      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/zach.jpg",
-      "status": 200,
-      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/manrope-regular.ttf",
-      "status": 200,
-      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/rhylie.jpg",
-      "status": 200,
-      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/coach.css",
-      "status": 200,
-      "sha256": "b63e6856a644dfa6c92e81d545824d4c39eaad4d4dbc8112b8beb207940d7c69",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/manrope-OFL.txt",
-      "status": 200,
-      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
       "matches_package": true
     },
     {
@@ -136,9 +82,27 @@
       "matches_package": true
     },
     {
-      "path": "/assets/purchase.js",
+      "path": "/assets/strikeline-badge-white.svg",
       "status": 200,
-      "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
+      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/manrope-bold.ttf",
+      "status": 200,
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/barlow-condensed-bold.ttf",
+      "status": 200,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/manrope-regular.ttf",
+      "status": 200,
+      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae",
       "matches_package": true
     },
     {
@@ -148,9 +112,51 @@
       "matches_package": true
     },
     {
-      "path": "/assets/barlowcondensed-OFL.txt",
+      "path": "/assets/zach.jpg",
       "status": 200,
-      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
+      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/strikeline-logo-white.svg",
+      "status": 200,
+      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/rhylie.jpg",
+      "status": 200,
+      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/landing.css",
+      "status": 200,
+      "sha256": "c0a4202e1801e8944d287eb3399ea2a2369cab14e7bf9f1c2a61d03ba258fa65",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/coach.css",
+      "status": 200,
+      "sha256": "b63e6856a644dfa6c92e81d545824d4c39eaad4d4dbc8112b8beb207940d7c69",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/justin.jpg",
+      "status": 200,
+      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/manrope-OFL.txt",
+      "status": 200,
+      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/purchase.css",
+      "status": 200,
+      "sha256": "e502680e1b1e1ba87d7393d283470fcac24b19956ae298aacefb621765199ce1",
       "matches_package": true
     }
   ],

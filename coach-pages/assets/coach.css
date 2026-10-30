@@ -103,3 +103,17 @@
 
 .stg-coach-page .stg-nav{background:rgba(9,13,13,.7)}
 @media(max-width:700px){.stg-coach-page[data-coach="Rhylie"] .stg-hero-photo{transform:translateY(-40px) scale(1.15)}}
+
+/* Actual Dropbox brand assets and two clear visitor paths. */
+.stg-coach-page .stg-brand-logo{display:block;width:200px;height:50px;object-fit:contain}
+.stg-coach-page .stg-brand-mark{display:none}
+.stg-coach-page .stg-hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.stg-coach-page .stg-hero-actions .stg-button{gap:18px;padding-inline:20px;font-size:13px}
+.stg-coach-page .stg-button-secondary{background:rgba(16,19,18,.4);border-color:#969e94;color:var(--paper)}
+.stg-coach-page .stg-button-secondary:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+.stg-coach-page .stg-ready-row{margin-top:50px;padding-top:35px;border-top:1px solid rgba(16,19,18,.3);display:flex;gap:30px;align-items:center;justify-content:space-between}
+.stg-coach-page .stg-ready-row h3{font-family:'Barlow Condensed',Impact,sans-serif;font-size:38px;text-transform:uppercase;line-height:1.1;margin-top:12px}
+.stg-coach-page .stg-footer-brand{display:flex;gap:24px;align-items:center}
+.stg-coach-page .stg-footer-badge{display:block;width:90px;height:65px;object-fit:contain}
+.stg-coach-page .stg-sticky-call{display:block;text-align:center;font-size:10px;margin-top:7px;color:var(--paper)}
+@media(max-width:700px){.stg-coach-page .stg-brand-logo{width:165px;height:41px}.stg-coach-page .stg-hero-content{padding-top:310px}.stg-coach-page h1{font-size:48px}.stg-coach-page .stg-hero .stg-kicker{max-width:350px;line-height:1.8}.stg-coach-page .stg-hero-actions{display:grid;grid-template-columns:1fr;gap:10px}.stg-coach-page .stg-hero-actions .stg-button{min-height:52px}.stg-coach-page .stg-helper{max-width:350px}.stg-coach-page .stg-ready-row{display:block;margin-top:35px;padding-top:25px}.stg-coach-page .stg-ready-row .stg-button{margin-top:24px;width:100%;font-size:13px;gap:20px}.stg-coach-page .stg-footer-brand{margin-bottom:25px}.stg-coach-page .stg-footer{padding-bottom:130px}}

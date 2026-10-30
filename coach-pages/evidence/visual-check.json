@@ -15,7 +15,7 @@
     "width": 390,
     "scrollWidth": 390,
     "allImagesLoaded": true,
-    "heroHeight": 843
+    "heroHeight": 867
   },
   {
     "coach": "justin",
@@ -24,7 +24,7 @@
     "width": 320,
     "scrollWidth": 320,
     "allImagesLoaded": true,
-    "heroHeight": 866
+    "heroHeight": 924
   },
   {
     "coach": "zach",
@@ -51,7 +51,7 @@
     "width": 320,
     "scrollWidth": 320,
     "allImagesLoaded": true,
-    "heroHeight": 879
+    "heroHeight": 924
   },
   {
     "coach": "rhylie",
@@ -60,7 +60,7 @@
     "width": 1440,
     "scrollWidth": 1440,
     "allImagesLoaded": true,
-    "heroHeight": 1006
+    "heroHeight": 1000
   },
   {
     "coach": "rhylie",
@@ -69,7 +69,7 @@
     "width": 390,
     "scrollWidth": 390,
     "allImagesLoaded": true,
-    "heroHeight": 893
+    "heroHeight": 884
   },
   {
     "coach": "rhylie",
@@ -78,6 +78,6 @@
     "width": 320,
     "scrollWidth": 320,
     "allImagesLoaded": true,
-    "heroHeight": 929
+    "heroHeight": 924
   }
 ]

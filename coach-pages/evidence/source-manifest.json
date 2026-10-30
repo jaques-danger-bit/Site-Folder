@@ -46,5 +46,15 @@
       "original_bytes_preserved": true
     }
   ],
-  "delivery_status": "Prepared and tested locally; not published or live-submission tested."
+  "delivery_status": "Six pages and six self-contained blocks prepared and browser tested locally; draft PR; not published or live-submission tested.",
+  "redesigned_at_utc": "2026-10-30T12:15:34.781271+00:00",
+  "redesign_direction": {
+    "source": "Latest user message, 2026-10-30",
+    "logos": "Actual Dropbox SVGs; see dropbox-logo-provenance.json",
+    "zach": "Use tactical training instead of firearms instruction in landing-page copy",
+    "justin_and_rhylie": "Include bodybuilding competition prep",
+    "primary_cta": "I\u2019m ready to start training",
+    "destination": "Separate coach-specific purchase page",
+    "payment_state": "Awaiting owner-supplied embed links after redesign; no checkout activated"
+  }
 }

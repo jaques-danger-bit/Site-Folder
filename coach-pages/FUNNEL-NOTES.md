@@ -2,9 +2,16 @@
 
 Prepared October 30, 2026. This records the recommended flow and later integration work; it does not activate payments, messaging, or production form changes.
 
-## Current call-booking flow
+## Current two-path flow
 
-Coach page → mini-intake → successful Formspree acceptance → coach-specific call-booking CTA.
+The user now requires two visible choices on each coach page:
+
+- **I’m ready to start training** → that coach’s separate `start-{slug}.html` purchase page. This path does not require submitting the mini intake.
+- **Book a call** → mini intake → successful Formspree acceptance → coach-specific call-booking CTA.
+
+This supersedes the earlier call-only landing-page recommendation. Keep the selected coach consistent through either path. The purchase-page defaults work for co-located files; builder-hosted blocks need their final published URLs and permitted top-level iframe navigation.
+
+The redesign uses the actual Dropbox SVG files: `strikeline-07.svg` for headers and `strikeline-08.svg` for footers, with provenance in `evidence/dropbox-logo-provenance.json`. Zach’s current landing copy uses tactical training. Justin’s and Rhylie’s pages now explicitly include user-authorized bodybuilding competition prep, alongside their broader strength/physique focus. These categories do not imply additional credentials, outcomes or detailed service terms.
 
 The repository discovery identified `Site-Folder` `main/index.html` as the current short-form source and `https://formspree.io/f/mdajqedj` as its endpoint. The existing downstream path is Formspree → sheet → hourly portal import, with daily email deduplication. Current import code does not persist coach selection or UTM fields. Adding fixed coach/source and campaign fields to the new front end therefore does **not** prove they reach the portal. Verify and extend the sheet/import mapping separately before relying on coach attribution or automated routing there.
 
@@ -14,7 +21,11 @@ Read-only booking findings are recorded in `evidence/booking-verification.json`.
 
 ## Separate Stripe purchase page
 
-Recommendation: retain call booking as the primary next step for custom coaching. A separate purchase link can be useful for a fixed offer whose outcome, deliverables, fit, price, duration/access, billing terms, cancellation/refund terms, and fulfillment are already clear. A defined program or fixed-scope session could fit this model **if it is an actual available offer**. No offer, price, certification, or result is invented here.
+The user has requested a prominent direct-purchase path and will send the embed links after the redesign. Three separate coach purchase pages and their self-contained blocks are prepared for that integration. They currently show an honest pending-enrollment state plus a same-coach call fallback. No product, price, certification, result or functioning payment flow is invented.
+
+The generator reads optional trusted public embed markup from `purchase-embeds/{slug}.html`; missing, empty or comment-only files retain the pending state. After the user supplies links/embeds, match each to the correct coach, actual offer and success destination. Keep API secrets out of HTML.
+
+For cold buyers, a direct-purchase page is most useful when the outcome, deliverables, fit, price, duration/access, billing terms, cancellation/refund terms and fulfillment are clear. Preserve the call route for visitors who want help deciding. This is a conversion hypothesis to test, not evidence of improved sales.
 
 The simplest first integration is an existing Stripe Payment Link with its copy-paste Buy Button/card. Fully embedded Checkout is also available through Checkout Sessions and entails more integration work. Decide from the actual offer and buyer experience; an embed alone is not evidence of better cold-traffic conversion.
 

@@ -1,0 +1,817 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T12:14:06.562839+00:00",
+  "page_view_checks": 36,
+  "standalone_pages": 6,
+  "self_contained_blocks": 6,
+  "purchase_navigations": [
+    {
+      "coach": "Justin",
+      "embedded": false,
+      "destination": "/coach-pages/start-justin.html"
+    },
+    {
+      "coach": "Justin",
+      "embedded": true,
+      "destination": "/coach-pages/start-justin.html"
+    },
+    {
+      "coach": "Zach",
+      "embedded": false,
+      "destination": "/coach-pages/start-zach.html"
+    },
+    {
+      "coach": "Zach",
+      "embedded": true,
+      "destination": "/coach-pages/start-zach.html"
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": false,
+      "destination": "/coach-pages/start-rhylie.html"
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": true,
+      "destination": "/coach-pages/start-rhylie.html"
+    }
+  ],
+  "live_mutations": 0,
+  "external_requests": [],
+  "photo_checks": [
+    {
+      "coach": "Justin",
+      "original_bytes_preserved": true,
+      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4"
+    },
+    {
+      "coach": "Zach",
+      "original_bytes_preserved": true,
+      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b"
+    },
+    {
+      "coach": "Rhylie",
+      "original_bytes_preserved": true,
+      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1"
+    }
+  ],
+  "results": [
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Local rendering and navigation with all external/mutation requests blocked. No actual purchases, intake submissions, bookings, publishing or DM sends."
+}

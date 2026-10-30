@@ -3,18 +3,18 @@
     "slug": "justin",
     "name": "Justin",
     "fullName": "Justin Poole",
-    "specialty": "Strength & Physique Coach",
+    "specialty": "Strength, Physique & Competition Prep",
     "heroLines": [
       "BUILD MUSCLE.",
       "TRAIN WITH",
       "PURPOSE."
     ],
-    "subhead": "You’re ready to take your training seriously. Let’s talk about the strength and physique you want to build, where you are now, and what needs to move forward.",
+    "subhead": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let’s talk about your starting point, your goals, and the work it will take to move forward.",
     "introHeading": "Give your effort a clear direction.",
     "reasons": [
       {
         "title": "A goal worth working toward",
-        "text": "Put words to the muscle, strength, or physique progress you want."
+        "text": "Build muscle, develop your physique, or work toward a bodybuilding competition. Make the goal specific enough to guide your training."
       },
       {
         "title": "A closer look at your training",
@@ -31,8 +31,8 @@
         "answer": "Tell me where you are starting. Your experience, goals, and questions will help shape the conversation."
       },
       {
-        "question": "Can we talk about a plateau?",
-        "answer": "Yes. Bring the details of your current training and what you have noticed, so we can discuss the problem you want help solving."
+        "question": "Can we talk about bodybuilding competition prep?",
+        "answer": "Yes. Bring your training experience, the competition you’re considering, and any timeline you have. We’ll discuss your starting point and what prep would involve."
       },
       {
         "question": "What does coaching include?",
@@ -55,28 +55,33 @@
         "label": "Develop my physique"
       },
       {
+        "value": "Bodybuilding Competition Prep",
+        "label": "Prepare for a bodybuilding competition"
+      },
+      {
         "value": "Not sure yet",
         "label": "Not sure yet — let’s talk"
       }
     ],
     "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017439&serviceId=38920&serviceTag=Strategy%20Call",
-    "photoPosition": "50% 30%"
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-justin.html"
   },
   {
     "slug": "zach",
     "name": "Zach",
     "fullName": "Zach Vazquez",
-    "specialty": "Strength Coach & Firearms Instructor",
+    "specialty": "Strength & Tactical Training Coach",
     "heroLines": [
       "BUILD STRENGTH.",
       "BUILD SKILLS."
     ],
-    "subhead": "Want to build muscle, feel more capable in the gym, or explore firearms instruction? Tell me what you want to learn. Let’s talk about the right place to start.",
+    "subhead": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me what you want to work toward. Let’s talk about the right place to start.",
     "introHeading": "You don’t need every answer before you start.",
     "reasons": [
       {
         "title": "Make your goal specific",
-        "text": "Tell me whether you want strength coaching, firearms instruction, or to learn more about either."
+        "text": "Tell me whether you want strength coaching, tactical training, or to learn more about either."
       },
       {
         "title": "Ask the questions you have",
@@ -89,7 +94,7 @@
     ],
     "faqs": [
       {
-        "question": "Can I ask about strength coaching or firearms instruction?",
+        "question": "Can I ask about strength coaching or tactical training?",
         "answer": "Yes. Tell me which area interests you so our conversation stays focused on what you need."
       },
       {
@@ -109,8 +114,8 @@
         "label": "Build strength and muscle"
       },
       {
-        "value": "Firearms Instruction",
-        "label": "Explore firearms instruction"
+        "value": "Tactical Training",
+        "label": "Explore tactical training"
       },
       {
         "value": "Not sure yet",
@@ -118,25 +123,25 @@
       }
     ],
     "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017453&serviceId=38920&serviceTag=Strategy%20Call",
-    "photoPosition": "50% 30%"
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-zach.html"
   },
   {
     "slug": "rhylie",
     "name": "Rhylie",
     "fullName": "Rhylie Erdmann",
-    "specialty": "Women’s Strength & Physique Coach",
+    "specialty": "Women’s Strength, Physique & Competition Prep",
     "heroLines": [
       "BUILD YOUR",
-      "PHYSIQUE.",
-      "GROW YOUR",
+      "PHYSIQUE &",
       "CONFIDENCE."
     ],
-    "subhead": "Your goal can be about how you look, how strong you feel, or both. Let’s talk about what you want to build and how training can fit into your life.",
+    "subhead": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let’s talk about the progress you want and how to work toward it with confidence.",
     "introHeading": "Your goal deserves a clear next step.",
     "reasons": [
       {
         "title": "Make it your goal",
-        "text": "Talk about the muscle, strength, or physique changes that matter to you."
+        "text": "Your goal might be getting stronger, building muscle, or bodybuilding competition prep. Talk about the progress that matters to you."
       },
       {
         "title": "Start from your real life",
@@ -153,8 +158,8 @@
         "answer": "No. Share your starting point and what you want help understanding. That is useful information for the conversation."
       },
       {
-        "question": "Does my goal have to be about appearance?",
-        "answer": "Your goal can include strength, skill, consistency, physique, or a combination. Tell me what matters to you."
+        "question": "Can I ask about bodybuilding competition prep?",
+        "answer": "Yes. Tell me about your training experience, the competition you have in mind, and your timeline. We can discuss what prep would involve and where to start."
       },
       {
         "question": "What if I’m unsure what coaching would involve?",
@@ -177,11 +182,16 @@
         "label": "Build strength and confidence"
       },
       {
+        "value": "Bodybuilding Competition Prep",
+        "label": "Prepare for a bodybuilding competition"
+      },
+      {
         "value": "Not sure yet",
         "label": "Not sure yet — let’s talk"
       }
     ],
     "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
-    "photoPosition": "50% 30%"
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-rhylie.html"
   }
 ]

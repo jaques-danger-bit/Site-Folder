@@ -1,0 +1,26 @@
+{
+  "origin": "User-requested actual SVG files from Dropbox",
+  "files": [
+    {
+      "name": "strikeline-07.svg",
+      "size": 6817,
+      "dropbox_content_hash": "fd284b5e662fad01f9a4e190cd3de5bfc59367f32ae64f532a6a3f8e076dc8f9",
+      "path_display": "/In Out/Erica sort/Logo/Logo/Source/SVG/strikeline-07.svg",
+      "id": "id:lWDbpwSFwDsAAAAAAAAAAQ",
+      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+      "download_verified": true,
+      "usage": "header"
+    },
+    {
+      "name": "strikeline-08.svg",
+      "size": 10748,
+      "dropbox_content_hash": "7252c15bcbdd0fbca330f3db0164adcf817fb147a3bd8d3b024cc3cdc619c945",
+      "path_display": "/In Out/Erica sort/Logo/Logo/Source/SVG/strikeline-08.svg",
+      "id": "id:FeEvtEOU5gAAAAAAAAAAAQ",
+      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+      "download_verified": true,
+      "usage": "footer"
+    }
+  ],
+  "modifications": "None; original SVG bytes used. Browser CSS sets display size only."
+}

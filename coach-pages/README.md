@@ -1,8 +1,8 @@
 # Coach landing pages
 
-Current corrective scope, October 30, 2026: each coach landing page contains only the approved full-bleed photo hero and two CTAs. **I’m ready to start training** opens `/{coach}/start/` directly at the dark three-offer pricing comparison. **Book a call** opens a dark mini-intake dialog on the same landing page, then provides that coach’s public booking link after acceptance. Phone remains required.
+Latest scope, October 30, 2026: both the landing page and pricing page must fit one viewport without page scrolling, with all three purchase choices visible together. The landing hero contains the coach's full name, approved headline, one short service sentence and two CTAs over the original full-bleed portrait. Its height follows the viewport (`100svh`), without a forced 840px minimum. **I’m ready to start training** opens `/{coach}/start/`; **Book a call** opens the dark same-page intake dialog. Phone remains required.
 
-Approval applies to the hero design, not the former full page. Remove the white intro, process, FAQ and sticky sections from the landing page, and omit the redundant photo hero and FAQ from the purchase page. Buttons and links use text without arrow glyphs. This correction is live on the existing public site as deployment `6ae4abd0bf268214b31794e3` (October 30, 2026). See the deployment and validation receipts below.
+Use compact content and spacing: no helper/meta copy, numbered offers, badges, decorative divider lines or filler headings. The landing has no white sections, process, FAQ or sticky content. Pricing has no second hero, FAQ or bottom sales block. Customer controls remain free of arrow glyphs. This requirement supersedes the earlier screenshots' oversized spacing and dimensions; the approved visual direction remains charcoal, orange and original photography. The viewport-fit correction is live as deploy `6ae4ae07bdc610bf593a3f50` (October 30, 2026 at 14:47 UTC).
 
 ## Review and use
 
@@ -22,7 +22,7 @@ Rebuild the pages and blocks with `python3 coach-pages/scripts/build.py`. The ge
 
 ## Separate public hosting
 
-The public site is **https://strikeline-coaching.netlify.app**, Netlify site ID `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. The minimal-flow correction was published as deploy `6ae4abd0bf268214b31794e3` on October 30, 2026 at 14:38 UTC. [Deployment receipt](evidence/hosting-deploy.json), [focused browser checks](evidence/minimal-flow-checks.json), and [live byte/link checks](evidence/public-site-live-checks.json) record the corresponding evidence. The earlier receipt is preserved in `evidence/history/`. This site remains separate from the original marketing-site and internal-portal deployments.
+Reuse **https://strikeline-coaching.netlify.app**, Netlify site ID `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. The viewport-fit revision is deploy `6ae4ae07bdc610bf593a3f50`, published October 30, 2026 at 14:47 UTC. Its evidence is in the [deployment receipt](evidence/hosting-deploy.json), `evidence/viewport-fit-checks.json`, [live viewport smoke](evidence/viewport-fit-live-smoke.json) and [live byte/link checks](evidence/public-site-live-checks.json). Historical receipts remain in `evidence/history/`. The original marketing-site and internal-portal deployments stay separate.
 
 | Page | Public route |
 |---|---|
@@ -49,7 +49,9 @@ Legacy `/{coach}.html`, `/start-{coach}.html` and matching `/coach-pages/` forms
 
 ## Purchase redesign and supplied Stripe offers
 
-The purchase route opens directly at the dark pricing comparison from the user's selected second screenshot. It has no additional photo hero or FAQ. Each **Choose** button opens a native dialog with the actual Stripe Buy Button, loaded only for the selected offer through one shared loader. Keep the verified direct Stripe link visible as a fallback. The call route returns to the selected coach's intake dialog. The approved full-bleed photo hero belongs on the landing page.
+The purchase route opens at a compact dark comparison: three columns on desktop and three rows on mobile, with all choices visible in one viewport. A simple **Train with {coach}** header leads into each offer's name, price and cadence, concise factual description, material terms and **Choose** button. The footer contains only a Talk link and legal links. Remove offer numbers, badges, divider lines, marketing headings and the former bottom talk block. The newer fit requirement overrides the earlier pricing screenshot's dimensions.
+
+Each **Choose** button opens a native dialog with the actual Stripe Buy Button, loaded only for the selected offer through one shared loader. Keep the verified direct Stripe link visible as a fallback. The Talk link returns to the selected coach's intake dialog. The full-bleed photo hero appears only on the landing page.
 
 Read-only public Stripe responses confirm **Online Coaching — Monthly: $350/month** and **Monthly Coaching — Foundation: $475/month**. Foundation includes full programming and one session/week, with 30-day cancellation notice. The user confirmed **Nutrition + Training Assessment: $175 one-time** as the entry offer. The public website's $175 Standalone Program with $30 updates is a different offer and is excluded from this three-offer checkout set. Do not transfer its update fee or the website contact form's 30-minute description to the paid assessment. Evidence and proposed copy: `evidence/services-20261030/RESEARCH-NOTES.md` and `offer-comparison.json`.
 
@@ -89,9 +91,11 @@ Source snapshots, photo hashes, checks and viewport screenshots are in `evidence
 
 ## Validation
 
-Run the current focused suite with `/home/jaquesdanger/.cache/raptor-browser-venv/bin/python coach-pages/tests/minimal-flow-check.py --base-url http://127.0.0.1:8797 --evidence coach-pages/evidence/minimal-flow-checks.json` while serving `publish/` locally. The source/header documents its browser setup. The older `intake-check.py` and `redesign-check.py` encode the superseded full-page/baseline layout; their saved reports remain historical and are not the current structural acceptance suite.
+Run the current focused suite with `/home/jaquesdanger/.cache/raptor-browser-venv/bin/python coach-pages/tests/viewport-fit-check.py --base-url http://127.0.0.1:8797 --evidence coach-pages/evidence/viewport-fit-checks.json` while serving `publish/` locally. The source/header documents its browser setup. The older `intake-check.py` and `redesign-check.py` encode the superseded full-page/baseline layout; their saved reports remain historical and are not the current structural acceptance suite.
 
-The focused correction checks passed nine responsive coach flows, three synthetic intakes with empty/whitespace phone rejection, three pricing-to-intake hash navigations, three stubbed Stripe dialog smoke checks and three JavaScript-disabled intake fallbacks. Close, Escape, Space, focus restoration, query preservation and absence of overflow, light sections and arrow glyphs were checked. Form submissions and Stripe behavior were intercepted; no real lead, booking or payment was created. See `evidence/minimal-flow-checks.json`.
+The viewport acceptance matrix passed 54 views: all six pages at 320×568, 375×667, 390×844, 430×932, 768×1024, 1280×720, 1366×768, 1440×900 and 844×390. Actual text, CTA and logo bounds fit; all three offer names, prices, buttons and material terms remain visible. Scroll dimensions and ancestor clipping were checked rather than hiding overflow. Three intake required-phone/focus smokes and three attributed Stripe stub smokes also passed. See `evidence/viewport-fit-checks.json`. The live byte audit and `viewport-fit-live-smoke.json` establish the corresponding hosted revision. At browser text enlargement, content may reflow and scroll to remain accessible.
+
+The preceding minimal-flow suite passed nine responsive coach flows, three synthetic intakes with blank-phone rejection, three pricing-to-intake hash navigations, three stubbed Stripe dialog checks and three no-JavaScript intake fallbacks. That dated evidence verifies the earlier revision. Form submissions and Stripe behavior were intercepted; no real lead, booking or payment was created.
 
 Earlier evidence remains historical: `evidence/redesign-tests.json` passed 36 responsive views, 54 checkout dialogs, six landing-to-purchase navigations, 21 loader-failure fallback offers and 18 JavaScript-disabled direct links. Its ten byte-identical landing files and earlier screenshots describe the previous checkout revision, not the newly reduced page structure. Likewise, the six read-only real Stripe renders establish widget rendering, not payment or fulfillment.
 

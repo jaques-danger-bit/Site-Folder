@@ -58,7 +58,7 @@ def _checkout_url(url, reference):
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
 
 
-def _offer_card(offer, coach_slug, index):
+def _offer_card(offer, coach_slug):
     esc = html.escape
     slug = offer['slug']
     ready = offer.get('checkoutReady', False)
@@ -66,14 +66,24 @@ def _offer_card(offer, coach_slug, index):
     checkout = _checkout_url(offer['checkoutUrl'], reference) if ready else f'{coach_slug}.html#{coach_slug}-intake'
     action_attrs = f'data-open-checkout="{slug}" aria-haspopup="dialog"' if ready else 'data-program-conversation'
     featured = ' stg-offer-featured' if offer.get('featured') else ''
-    features = ''.join('<li>' + esc(item) + '</li>' for item in offer['features'])
+    descriptions = {
+        'assessment': 'Nutrition + training review.',
+        'online': 'Custom training, check-ins + nutrition.',
+        'inperson': 'Full programming + 1 session/week in Beaufort.',
+    }
+    terms = {
+        'assessment': 'Ongoing coaching sold separately.',
+        'online': '',
+        'inperson': '30-day cancellation notice required.',
+    }
+    description = descriptions.get(slug, offer['description'])
+    term = terms.get(slug, offer['terms'])
+    term_markup = '<p class="stg-offer-terms">' + esc(term) + '</p>' if term else ''
     return f'''<article class="stg-offer{featured}" data-offer-id="{slug}" aria-labelledby="{coach_slug}-{slug}-title">
-<div class="stg-offer-top"><span class="stg-offer-number">0{index}</span><p class="stg-offer-badge">{esc(offer['badge'])}</p></div>
-<h3 id="{coach_slug}-{slug}-title">{esc(offer['name'])}</h3><p class="stg-offer-fit">{esc(offer['fit'])}</p>
-<p class="stg-offer-price"><strong>{_price(offer['amount'])}</strong><span>{esc(offer['cadence'])}<small>USD · {esc(offer['billing'])}</small></span></p>
-<p class="stg-offer-promise">{esc(offer['promise'])}</p><p class="stg-offer-description">{esc(offer['description'])}</p>
-<ul class="stg-offer-features">{features}</ul>
-<div class="stg-offer-action"><a class="stg-button" {action_attrs} href="{esc(checkout, quote=True)}" target="_top">{esc(offer['cta'])}</a><p class="stg-offer-terms">{esc(offer['terms'])}</p></div>
+<h3 id="{coach_slug}-{slug}-title">{esc(offer['name'])}</h3>
+<p class="stg-offer-price"><strong>{_price(offer['amount'])}</strong><span>USD · {esc(offer['cadence'])}</span></p>
+<p class="stg-offer-description">{esc(description)}</p>{term_markup}
+<a class="stg-button" {action_attrs} href="{esc(checkout, quote=True)}" target="_top" aria-label="Choose {esc(offer['name'], quote=True)}">Choose</a>
 </article>'''
 
 
@@ -83,7 +93,7 @@ def _markup(coach, logo_uri, offers_data, badge_uri):
     back = slug + '.html'
     talk = back + '#' + slug + '-intake'
     offers = offers_data['offers']
-    cards = ''.join(_offer_card(offer, slug, index + 1) for index, offer in enumerate(offers))
+    cards = ''.join(_offer_card(offer, slug) for offer in offers)
     config = {
         'coach': slug, 'publishableKey': offers_data['publishableKey'],
         'offers': [{
@@ -97,18 +107,16 @@ def _markup(coach, logo_uri, offers_data, badge_uri):
     dialog = ''
     if config['offers']:
         first = config['offers'][0]
-        dialog = f'''<dialog class="stg-checkout-dialog" data-checkout-dialog aria-labelledby="{slug}-checkout-title" aria-describedby="{slug}-checkout-details"><button type="button" class="stg-checkout-close" data-checkout-close aria-label="Close checkout">×</button><p class="stg-kicker">Your next step</p><h2 id="{slug}-checkout-title" data-checkout-title>{esc(first['name'])}</h2><p class="stg-checkout-details" id="{slug}-checkout-details" data-checkout-details>{esc(first['price'] + ' ' + first['cadence'])}</p><p class="stg-checkout-terms" data-checkout-terms>{esc(first['terms'])}</p><p class="stg-checkout-status" data-checkout-status role="status" aria-live="polite"></p><div class="stg-stripe-mount" data-purchase-embed="{slug}"></div><a class="stg-checkout-fallback" data-checkout-fallback href="{esc(first['checkoutUrl'], quote=True)}" target="_top">Open secure checkout directly</a><p class="stg-checkout-note">Payments are handled by Stripe.</p></dialog>'''
+        dialog = f'''<dialog class="stg-checkout-dialog" data-checkout-dialog aria-labelledby="{slug}-checkout-title" aria-describedby="{slug}-checkout-details"><button type="button" class="stg-checkout-close" data-checkout-close aria-label="Close checkout">×</button><h2 id="{slug}-checkout-title" data-checkout-title>{esc(first['name'])}</h2><p class="stg-checkout-details" id="{slug}-checkout-details" data-checkout-details>{esc(first['price'] + ' ' + first['cadence'])}</p><p class="stg-checkout-terms" data-checkout-terms>{esc(first['terms'])}</p><p class="stg-checkout-status" data-checkout-status role="status" aria-live="polite"></p><div class="stg-stripe-mount" data-purchase-embed="{slug}"></div><a class="stg-checkout-fallback" data-checkout-fallback href="{esc(first['checkoutUrl'], quote=True)}" target="_top">Open secure checkout directly</a><p class="stg-checkout-note">Payments are handled by Stripe.</p></dialog>'''
     return f'''<div class="stg-coach-page stg-purchase-page" data-coach="{esc(name)}" data-purchase-page="{slug}">
 <a class="stg-skip" href="#{slug}-enrollment">Skip to training options</a>
 <header class="stg-purchase-header"><div class="stg-shell stg-purchase-header-inner"><a class="stg-brand" href="{back}" target="_top" aria-label="Back to {esc(name)}"><img class="stg-brand-logo" data-brand-logo src="{logo_uri}" alt="Strikeline Training Group"></a><nav class="stg-purchase-links" aria-label="Coach navigation"><a href="{back}" target="_top">Back to {esc(name)}</a></nav></div></header>
-<main>
+<main class="stg-purchase-main">
 <section class="stg-enrollment" id="{slug}-enrollment" aria-labelledby="{slug}-enrollment-title"><div class="stg-shell">
-<div class="stg-purchase-section-heading"><p class="stg-kicker">Training with {esc(name)}</p><div><h1 id="{slug}-enrollment-title">Your goal.<br><span>Your way forward.</span></h1><p>Find the option that fits the way you want to train and the support you want along the way.</p></div></div>
+<h1 class="stg-purchase-title" id="{slug}-enrollment-title">Train with {esc(name)}</h1>
 <div class="stg-offers" style="--offer-count:{min(len(offers), 3)}">{cards}</div>
-<noscript><p class="stg-purchase-help">Choose an option above to continue directly to secure Stripe checkout.</p></noscript>
-<div class="stg-purchase-talk"><div><p class="stg-kicker">Let’s find your fit</p><h3>Not sure where to start?</h3><p>Tell {esc(name)} what you want to work toward. Talk through the options before you choose.</p></div><a class="stg-button stg-button-secondary" href="{talk}" target="_top">Talk with {esc(name)}</a></div>
 </div></section>
-</main><footer class="stg-footer"><div class="stg-shell stg-footer-inner"><div class="stg-purchase-footer-brand"><img class="stg-footer-badge" src="{badge_uri}" alt="Strikeline Training Group"><p>BEAUFORT, SOUTH CAROLINA</p></div><div class="stg-footer-links"><a href="https://strikelinetraining.com/privacy-policy" target="_top">Privacy</a><a href="https://strikelinetraining.com/terms-and-conditions" target="_top">Terms</a><a href="mailto:info@strikelinetraining.com">Contact</a></div></div></footer>
+</main><footer class="stg-purchase-footer"><div class="stg-shell stg-purchase-footer-inner"><a class="stg-purchase-talk-link" href="{talk}" target="_top">Talk with {esc(name)}</a><div class="stg-purchase-legal"><a href="https://strikelinetraining.com/privacy-policy" target="_top">Privacy</a><a href="https://strikelinetraining.com/terms-and-conditions" target="_top">Terms</a></div></div></footer>
 {dialog}<script type="application/json" data-purchase-config>{config_json}</script>
 </div>'''
 

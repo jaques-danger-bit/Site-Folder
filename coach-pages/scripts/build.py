@@ -18,12 +18,11 @@ def markup(c):
 <section class="stg-hero" aria-labelledby="{slug}-title">
  <img class="stg-hero-photo" src="{photo}" alt="{esc(c['fullName'])} at Strikeline" fetchpriority="high" decoding="async" width="853" height="1280">
  <header class="stg-nav"><div class="stg-shell stg-nav-inner"><a class="stg-brand" href="#{slug}-title" aria-label="Strikeline Training Group"><img class="stg-brand-logo" data-brand-logo src="assets/strikeline-logo-white.svg" alt="Strikeline Training Group" width="200" height="50"></a></div></header>
- <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-kicker">{name} · {esc(c['specialty'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" data-open-intake href="#{intake}">Book a call with {name}</a></div><p class="stg-helper">Ready to begin? Explore training options. Have questions? Let’s talk first.</p></div></div>
- <div class="stg-hero-bottom"><div class="stg-shell stg-hero-meta"><div><strong>{esc(c['fullName'])}</strong>Your next step starts with a conversation.</div></div></div>
+ <div class="stg-shell stg-hero-content"><div class="stg-hero-copy"><p class="stg-coach-name">{esc(c['fullName'])}</p><h1 id="{slug}-title">{lines}</h1><p class="stg-hero-description">{esc(c['subhead'])}</p><div class="stg-hero-actions"><a class="stg-button" data-purchase-link href="{esc(c['purchaseUrl'],quote=True)}" target="_top">I’m ready to start training</a><a class="stg-button stg-button-secondary" data-open-intake href="#{intake}">Book a call with {name}</a></div></div></div>
 </section>
 </main>
 <dialog class="stg-intake-dialog" data-intake-dialog id="{intake}" aria-labelledby="{slug}-intake-title">
-<div class="stg-intake-dialog-top"><p class="stg-kicker">Let’s talk about your goal</p><a href="#{slug}-title" data-intake-close role="button" aria-label="Close mini intake">Close</a></div>
+<div class="stg-intake-dialog-top"><span></span><a href="#{slug}-title" data-intake-close role="button" aria-label="Close mini intake">Close</a></div>
 <h2 id="{slug}-intake-title" tabindex="-1">Talk with {name}.</h2><p class="stg-intake-dialog-intro">A few details to get started. Then choose a time for your call.</p>
 <div class="stg-form-area"><form data-coach-intake action="https://formspree.io/f/mdajqedj" method="POST" aria-label="Short intake for {name}">
 <input type="hidden" name="_subject" value="{name} — Coach landing page mini intake"><input type="hidden" name="coach" value="{name}"><input type="hidden" name="source" value="coach-landing-{slug}"><div hidden aria-hidden="true"><label>Leave this empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div>

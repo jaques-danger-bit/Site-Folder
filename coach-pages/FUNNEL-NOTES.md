@@ -1,15 +1,15 @@
 # Coach landing-page funnel handoff
 
-Updated October 30, 2026 for the user's minimal-flow correction. The approved full-bleed landing hero and two CTAs are the entire landing page. Pricing opens directly on its own dark page; the mini intake opens in a dark same-page dialog. This correction was published to the existing site as deploy `6ae4abd0bf268214b31794e3` on October 30, 2026 at 14:38 UTC. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
+Updated October 30, 2026 for the user's viewport-fit correction. Both landing and pricing pages must fit one viewport without scrolling, with all three pricing choices visible together. The landing keeps the full-bleed photo, full coach name, approved headline, one short service sentence and two CTAs. Pricing uses compact factual offers. The viewport-fit correction was published as deploy `6ae4ae07bdc610bf593a3f50` on October 30, 2026 at 14:47 UTC. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
 
 ## Current two-path flow
 
 Each hero has two visible choices:
 
-- **I’m ready to start training** opens that coach's `/{slug}/start/` directly at the dark three-offer comparison. No additional photo hero, FAQ or intake step comes before pricing.
+- **I’m ready to start training** opens that coach's `/{slug}/start/` directly at the compact dark three-offer comparison, with every option visible in the viewport.
 - **Book a call** opens the dark native mini-intake dialog on the same hero page. After Formspree accepts the form, the visitor can open the coach-specific public booking calendar.
 
-Remove the former white intro, process, FAQ and sticky sections from the landing pages. Approval of the hero was not approval of all previous page content. Remove arrow glyphs from the customer controls. Direct intake links use `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same form and native POST remains available. Name, email, phone and goal remain required.
+The hero follows the viewport height without a forced 840px minimum. Remove helper/meta copy and decorative lines, along with the former white intro, process, FAQ and sticky sections. Arrow glyphs remain removed. The user's new fit requirement supersedes the earlier screenshots' spacing and dimensions. Direct intake links use `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same dark form and native POST remains available. Name, email, phone and goal remain required.
 
 Keep the selected coach consistent through either path. Local sources use `start-{slug}.html`; the public packager rewrites navigation to clean routes. Builder-hosted blocks need the public destination URLs and permitted top-level iframe navigation.
 
@@ -23,7 +23,7 @@ Read-only booking findings are recorded in `evidence/booking-verification.json`.
 
 ## Separate public site and delivery boundary
 
-Reuse `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. Its seven routes remain `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for hero-only landing pages; and each coach's `/start/` route for pricing. The corrected production deploy is `6ae4abd0bf268214b31794e3`. The [deployment receipt](evidence/hosting-deploy.json), [focused checks](evidence/minimal-flow-checks.json) and [live-check report](evidence/public-site-live-checks.json) record publication and verification separately. Prior deployment evidence remains under `evidence/history/`.
+Reuse `https://strikeline-coaching.netlify.app`, Netlify site `d40f2639-dc6b-4a77-8d46-d297b2cc9b23`. Its seven routes remain `/` for the coach selector; `/justin/`, `/zach/`, `/rhylie/` for landing heroes; and each coach's `/start/` route for pricing. The viewport-fit revision is deploy `6ae4ae07bdc610bf593a3f50`. Its evidence is in the [deployment receipt](evidence/hosting-deploy.json), `evidence/viewport-fit-checks.json`, [live viewport smoke](evidence/viewport-fit-live-smoke.json) and [live-check report](evidence/public-site-live-checks.json). The viewport matrix passed all 54 views: six pages at nine sizes, including 320×568 and 844×390 landscape. Text/CTA geometry and ancestor clipping were checked; overflow was not hidden to manufacture a pass. Prior evidence remains under `evidence/history/`.
 
 The user explicitly kept the public booking calendars at `training.strikelinetraining.com/a/booking/`. Keep those destinations, their coach/service identity and the Formspree endpoint intact. Logo/navigation links stay within the selected coach’s landing and pricing flow, and customer navigation contains no internal-portal links. Name, email, phone and goal remain required; phone rejects blank and whitespace-only input.
 
@@ -39,7 +39,9 @@ Never deploy the whole `coach-pages/` directory or repository root. Hosting veri
 
 ## Separate Stripe purchase page
 
-The purchase page now starts at the dark three-offer pricing design selected in screenshot two. Remove its redundant photo hero and FAQ. A **Choose** button opens a native dialog containing the selected actual Stripe Buy Button. Load only that embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. The call route links to the same coach's dark intake dialog on the landing page.
+The purchase page uses three compact columns on desktop and three rows on mobile, keeping every choice visible within one viewport. Its simple **Train with {coach}** header is followed by each offer's name, full price/cadence, concise factual description, material terms and **Choose** button. Remove numbers, badges, divider lines, marketing headings and the bottom talk block. Keep only the Talk and legal links in the footer. There is no purchase photo hero or FAQ; the earlier screenshot's oversized dimensions no longer govern the layout.
+
+A **Choose** button opens a native dialog containing the selected actual Stripe Buy Button. Load only that embed through one loader and keep a verified direct Stripe checkout link visible as a fallback. The footer Talk link returns to the same coach's dark intake dialog on the landing page.
 
 Public Stripe GETs confirm online coaching at $350/month and Foundation coaching at $475/month. Foundation specifies full programming, one session/week and 30-day cancellation notice. The user confirmed the $175 one-time Nutrition + Training Assessment as the entry offer. This resolves the earlier mismatch by choosing the assessment; the website's separate Standalone Program and its $30 updates are not part of this checkout set. Do not call the assessment a program or assign it the website contact form's 30-minute duration. See `evidence/services-20261030/RESEARCH-NOTES.md` for sources, scope and concise card copy.
 

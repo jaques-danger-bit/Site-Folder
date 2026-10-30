@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-30T14:38:51.580265+00:00",
+  "checked_at_utc": "2026-10-30T14:48:27.898869+00:00",
   "base_url": "https://strikeline-coaching.netlify.app",
   "static": {
     "publish_file_count": 23,
@@ -30,37 +30,43 @@
     {
       "path": "/justin/",
       "status": 200,
-      "sha256": "936918125bc6e6f5f84a7e4cbe980ed9f53d0cf712f13d81a91eccf05ebe1a68",
+      "sha256": "8af83302414b56b7ce430309349445391d1530e89fe0e9464d606624197bcde6",
       "matches_package": true
     },
     {
       "path": "/justin/start/",
       "status": 200,
-      "sha256": "616d2bdbfdf2e8b8a0196899e34b567baa108f04d9c1e23c1212836b093d2a39",
+      "sha256": "24c20a9892a01e9462e5cc4647a809e74e22fc9d644f90f54e71a6db04a26fcb",
       "matches_package": true
     },
     {
       "path": "/zach/",
       "status": 200,
-      "sha256": "5c3e362cfc26d95a659a1b6aab257aa8ddc15a9cb0fd3ff6acdc0728b8adb56f",
+      "sha256": "98dad8dc84dec7cf8ef497164d143def31cce82357c7ca16fff540366725647d",
       "matches_package": true
     },
     {
       "path": "/zach/start/",
       "status": 200,
-      "sha256": "7f485ab5f797fcc33a527410b64e7022a247f7d167b09b0a33e89a82fe04d02c",
+      "sha256": "a15708e2d3e449d3c5ca39cb1186321dc426cd2d31995fc3099133c0bb033f15",
       "matches_package": true
     },
     {
       "path": "/rhylie/",
       "status": 200,
-      "sha256": "df7c62cdc5c5109e5616059bb58ea21e911518dd1bdf5d2202b7dd87fe3aa5fb",
+      "sha256": "873540016a815623e8ba29f07eeeab1b05f37089c85b5599b5e11ee8ae82a528",
       "matches_package": true
     },
     {
       "path": "/rhylie/start/",
       "status": 200,
-      "sha256": "d6a54919c00609e4e79e62bfbe26e03ccefdb6e3680f4ae83a31c3e7b1cd7da2",
+      "sha256": "06e5da4658ea15de8b88071bdbfd879a209833c7a9995dc88ed3e80c6c7b92b6",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/coach.css",
+      "status": 200,
+      "sha256": "b63e6856a644dfa6c92e81d545824d4c39eaad4d4dbc8112b8beb207940d7c69",
       "matches_package": true
     },
     {
@@ -70,45 +76,9 @@
       "matches_package": true
     },
     {
-      "path": "/assets/fonts.css",
-      "status": 200,
-      "sha256": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/barlowcondensed-OFL.txt",
-      "status": 200,
-      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
-      "matches_package": true
-    },
-    {
       "path": "/assets/rhylie.jpg",
       "status": 200,
       "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/strikeline-logo-white.svg",
-      "status": 200,
-      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/strikeline-badge-white.svg",
-      "status": 200,
-      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/purchase.js",
-      "status": 200,
-      "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/manrope-OFL.txt",
-      "status": 200,
-      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
       "matches_package": true
     },
     {
@@ -118,27 +88,15 @@
       "matches_package": true
     },
     {
-      "path": "/assets/coach.css",
+      "path": "/assets/manrope-OFL.txt",
       "status": 200,
-      "sha256": "35741328f14ad8151f11f0dcc1fd42b747174e1d7fb2bcd4b2b1366d3e723358",
+      "sha256": "d6a309fcfb963d329a93baf9df66fa5f3c23a4be2b5f67edf24d6cafecde12ac",
       "matches_package": true
     },
     {
-      "path": "/assets/purchase.css",
+      "path": "/assets/barlowcondensed-OFL.txt",
       "status": 200,
-      "sha256": "a4563340daf87d5ce15ec094f860b178f43165bd4b5da5b1034e4ad06ff29147",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/manrope-bold.ttf",
-      "status": 200,
-      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
-      "matches_package": true
-    },
-    {
-      "path": "/assets/barlow-condensed-bold.ttf",
-      "status": 200,
-      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817",
       "matches_package": true
     },
     {
@@ -151,6 +109,48 @@
       "path": "/assets/manrope-regular.ttf",
       "status": 200,
       "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/barlow-condensed-bold.ttf",
+      "status": 200,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/manrope-bold.ttf",
+      "status": 200,
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/strikeline-badge-white.svg",
+      "status": 200,
+      "sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/purchase.css",
+      "status": 200,
+      "sha256": "e502680e1b1e1ba87d7393d283470fcac24b19956ae298aacefb621765199ce1",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/fonts.css",
+      "status": 200,
+      "sha256": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/purchase.js",
+      "status": 200,
+      "sha256": "d817c3cb86f58b864f506251b158faed8ffab0552b394faf61532cd35f3b601d",
+      "matches_package": true
+    },
+    {
+      "path": "/assets/strikeline-logo-white.svg",
+      "status": 200,
+      "sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
       "matches_package": true
     }
   ],

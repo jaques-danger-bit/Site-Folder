@@ -24,7 +24,7 @@ def markup(c):
 </main>
 <dialog class="stg-intake-dialog" data-intake-dialog id="{intake}" aria-labelledby="{slug}-intake-title">
 <div class="stg-intake-dialog-top"><span></span><a href="#{slug}-title" data-intake-close role="button" aria-label="Close mini intake">Close</a></div>
-<h2 id="{slug}-intake-title" tabindex="-1">Talk with {name}.</h2><p class="stg-intake-dialog-intro">A few details to get started. Then choose a time for your call.</p>
+<h2 id="{slug}-intake-title" tabindex="-1">Talk with {name}.</h2><p class="stg-intake-dialog-intro">Share a few details so we can help you get started.</p>
 <div class="stg-form-area"><form data-coach-intake action="https://formspree.io/f/mdajqedj" method="POST" aria-label="Short intake for {name}">
 <input type="hidden" name="_subject" value="{name} — Coach landing page mini intake"><input type="hidden" name="coach" value="{name}"><input type="hidden" name="source" value="coach-landing-{slug}"><div hidden aria-hidden="true"><label>Leave this empty<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div>
 <div data-form-fields><div class="stg-fields">
@@ -34,10 +34,10 @@ def markup(c):
 <div class="stg-field stg-wide"><label for="{slug}-goal">What would you like help with?</label><select id="{slug}-goal" name="goal" required><option value="" disabled selected>Choose your focus</option>{opts}</select></div>
 <div class="stg-field stg-wide"><label for="{slug}-notes">Anything you’d like me to know? <small>Optional</small></label><textarea id="{slug}-notes" name="goalNotes" maxlength="1200" placeholder="Your goal, experience, or a question you want to ask."></textarea></div></div>
 <p class="stg-form-note">Send these details to Strikeline about working with {name}. <a href="https://strikelinetraining.com/privacy-policy" target="_blank" rel="noopener">Privacy policy</a>.</p>
-<button class="stg-button" type="submit">Continue to book with {name}</button>
-<noscript><p class="stg-form-note">Your browser will open the form’s confirmation page after sending. Then <a href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">book your call with {name}</a>.</p></noscript></div>
+<button class="stg-button" type="submit">Send my details</button>
+<noscript><p class="stg-form-note">Your browser will open the form’s confirmation page after sending. You can also <a href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">choose a time to talk with {name}</a>.</p></noscript></div>
 <p data-form-status role="status" aria-live="polite" aria-atomic="true"></p></form>
-<div class="stg-success" data-intake-success hidden><div class="stg-kicker">Next: choose your time</div><h3 tabindex="-1">Your details are in.<br>Let’s find a time to talk.</h3><p>Finish by choosing a time on {name}’s booking page. Your call is confirmed when you complete that booking.</p><a class="stg-button" data-booking-link href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">Book a call with {name}</a></div></div>
+<div class="stg-success" data-intake-success hidden><h3 tabindex="-1">Thank you!</h3><p>A coach will reach out to you soon. Prefer to choose a time now? Book a call that fits your schedule.</p><a class="stg-button" data-booking-link href="{esc(c['bookingUrl'],quote=True)}" target="_blank" rel="noopener">Book a call with {name}</a></div></div>
 </dialog>
 </div>'''
 

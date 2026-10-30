@@ -159,7 +159,7 @@
         }
 
         if (sent) {
-          announce('success', 'Your details were received. Choose a time to talk with ' + coach + '.');
+          announce('success', 'Your details were received.');
           button.textContent = 'Details received';
           button.hidden = true;
           const fields = form.querySelector('[data-form-fields]');

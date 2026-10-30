@@ -1,5 +1,7 @@
 # Coach landing-page funnel handoff
 
+**Latest update — October 30, 2026:** intake submission now thanks the visitor, says a coach will reach out soon, and offers optional self-booking on the existing public calendar. The form intro and submit label match this choice. Published as deploy `6ae4bd25660341b5e29aa3b6`. The selected hero and compact pricing remain unchanged. Focused evidence: `evidence/intake-confirmation-live-checks.json`; current hosted files: `evidence/public-site-live-checks.json`.
+
 Updated October 30, 2026 after the user explicitly selected the **original screenshot hero, commit `967e407`**, and requested reworking the existing page rather than repeated redesigns. That is the fixed hero reference. Restore the full original paragraphs, header Talk link, specialty label, typography, left-aligned buttons, photo treatment/crops and footer name. Compact pricing and the current intake remain unchanged. The restoration passed local validation and was published as deploy `6ae4b72d98525fce2aaba2af` on October 30, 2026 at 15:26:39 UTC; live verification is recorded separately. No transaction, Stripe dashboard change, messaging activation or gateway configuration change is part of this work.
 
 **Future edits must make the smallest necessary change against the selected original reference.** Do not introduce unsolicited copy, crop, font or layout redesigns. Targeted height adjustments remain permitted to satisfy the existing fit requirement; they do not authorize replacing the design again.
@@ -9,7 +11,7 @@ Updated October 30, 2026 after the user explicitly selected the **original scree
 Each hero has two visible choices:
 
 - **I’m ready to start training** opens that coach's `/{slug}/start/` directly at the compact dark three-offer comparison, with every option visible in the viewport.
-- **Book a call** opens the dark native mini-intake dialog on the same hero page. After Formspree accepts the form, the visitor can open the coach-specific public booking calendar.
+- **Book a call** opens the dark native mini-intake dialog on the same hero page. After Formspree accepts the form, the confirmation thanks the visitor and says a coach will reach out soon. They may optionally choose a time themselves using the coach-specific public booking calendar; there is no automatic redirect. This user-approved copy does not configure a notification or ManyChat flow.
 
 The restored hero uses the original 48px mobile headline at normal heights, original gradients and object positions, Justin's 13% desktop photo shift and Rhylie's mobile transform. Height-specific overrides preserve fit. Previously requested exclusions still apply: no arrows, helper/approach filler, white sections, process, FAQ or sticky additions. The footer name is restored. Direct intake links remain `/{coach}/#{coach}-intake`; with JavaScript disabled, CSS `:target` reveals the same dark form and native POST remains available. Name, email, phone and goal remain required.
 

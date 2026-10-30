@@ -1,0 +1,14 @@
+{
+  "site_id": "d40f2639-dc6b-4a77-8d46-d297b2cc9b23",
+  "site_name": "strikeline-coaching",
+  "deploy_id": "6ae4b72d98525fce2aaba2af",
+  "deploy_url": "https://6ae4b72d98525fce2aaba2af--strikeline-coaching.netlify.app",
+  "logs": "https://app.netlify.com/projects/strikeline-coaching/deploys/6ae4b72d98525fce2aaba2af",
+  "function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/functions",
+  "edge_function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/edge-functions",
+  "url": "https://strikeline-coaching.netlify.app",
+  "recorded_at_utc": "2026-10-30T15:26:39.164657+00:00",
+  "source_base_commit": "4817d4f49685f929c8c6006d112733b91c3f39b6",
+  "package_manifest": "public-site-manifest.json",
+  "publication_scope": "Restore original967e407 screenshot hero with targeted viewport sizing. Current purchase files unchanged. Exact artifact hashes in manifest; changes uncommitted at publication."
+}

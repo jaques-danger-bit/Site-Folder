@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-10-30T12:52:45.698159+00:00",
+  "verification_method": "Real Stripe Buy Button rendered in Chromium on localhost; only GET/HEAD/OPTIONS allowed. No button clicked, customer data supplied, session creation or payment attempted.",
+  "stripe_connector": "Reauthentication required; public embed inspection used instead.",
+  "source": "Owner-supplied Buy Button IDs and publishable key; merchant-ui-api.stripe.com responses produced by Stripe.js",
+  "offers": [
+    {
+      "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "active": true,
+      "livemode": true,
+      "checkout_url": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "product_id": "prod_UJJ0hDmbmQbnIl",
+      "name": "Monthly Coaching \u2014 Foundation",
+      "description": "Full programming + 1 session/week. 30-day cancellation notice required.",
+      "price_id": "price_1TKgOFRzFn0Z1SgZU109G81m",
+      "currency": "usd",
+      "unit_amount": 47500,
+      "type": "recurring",
+      "recurring": {
+        "interval": "month",
+        "interval_count": 1,
+        "meter": null,
+        "trial_period_days": null,
+        "usage_type": "licensed"
+      },
+      "layout": "card"
+    },
+    {
+      "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "active": true,
+      "livemode": true,
+      "checkout_url": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "product_id": "prod_UJJ0ogY9ztiHEo",
+      "name": "Online Coaching \u2014 Monthly",
+      "description": "Strikeline online coaching. Custom programming, check-ins, nutrition protocol.",
+      "price_id": "price_1TKgO0RzFn0Z1SgZpNWJAYhF",
+      "currency": "usd",
+      "unit_amount": 35000,
+      "type": "recurring",
+      "recurring": {
+        "interval": "month",
+        "interval_count": 1,
+        "meter": null,
+        "trial_period_days": null,
+        "usage_type": "licensed"
+      },
+      "layout": "card"
+    },
+    {
+      "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "active": true,
+      "livemode": true,
+      "checkout_url": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "product_id": "prod_UJJ0mfHkDuEol1",
+      "name": "Nutrition + Training Assessment",
+      "description": "One-time comprehensive nutrition and training assessment.",
+      "price_id": "price_1TKgOPRzFn0Z1SgZTbYwmL6Z",
+      "currency": "usd",
+      "unit_amount": 17500,
+      "type": "one_time",
+      "recurring": null,
+      "layout": "card"
+    }
+  ],
+  "attribution_docs": "https://docs.stripe.com/payment-links/buy-button",
+  "attribution_scope": "client-reference-id travels to Checkout Session; does not itself verify automatic coach assignment or fulfillment."
+}

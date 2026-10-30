@@ -1,0 +1,14 @@
+{
+  "site_id": "d40f2639-dc6b-4a77-8d46-d297b2cc9b23",
+  "site_name": "strikeline-coaching",
+  "deploy_id": "6ae4abd0bf268214b31794e3",
+  "deploy_url": "https://6ae4abd0bf268214b31794e3--strikeline-coaching.netlify.app",
+  "logs": "https://app.netlify.com/projects/strikeline-coaching/deploys/6ae4abd0bf268214b31794e3",
+  "function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/functions",
+  "edge_function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/edge-functions",
+  "url": "https://strikeline-coaching.netlify.app",
+  "recorded_at_utc": "2026-10-30T14:38:10.609453+00:00",
+  "source_base_commit": "050ab99298f036605654d8c40550dc361c446586",
+  "package_manifest": "public-site-manifest.json",
+  "publication_scope": "User-requested minimal-flow correction on existing separate coaching site. Exact deployed bytes recorded in manifest; changes were uncommitted at publication."
+}

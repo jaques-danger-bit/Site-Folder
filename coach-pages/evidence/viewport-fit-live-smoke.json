@@ -1,0 +1,609 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T14:48:25.194559+00:00",
+  "base_url": "https://strikeline-coaching.netlify.app",
+  "deploy_id": "6ae4ae07bdc610bf593a3f50",
+  "coach": "Justin",
+  "viewport": {
+    "width": 320,
+    "height": 568
+  },
+  "landing": {
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "problems": [],
+    "textBoxes": [
+      {
+        "text": "Justin Poole",
+        "rect": {
+          "x": 20,
+          "y": 227.515625,
+          "width": 77.421875,
+          "height": 18,
+          "right": 97.421875,
+          "bottom": 245.515625
+        }
+      },
+      {
+        "text": "BUILD MUSCLE.",
+        "rect": {
+          "x": 20,
+          "y": 252.3125,
+          "width": 203.046875,
+          "height": 48,
+          "right": 223.046875,
+          "bottom": 300.3125
+        }
+      },
+      {
+        "text": "TRAIN WITH",
+        "rect": {
+          "x": 20,
+          "y": 290.875,
+          "width": 162.46875,
+          "height": 48,
+          "right": 182.46875,
+          "bottom": 338.875
+        }
+      },
+      {
+        "text": "PURPOSE.",
+        "rect": {
+          "x": 20,
+          "y": 329.4375,
+          "width": 132.578125,
+          "height": 48,
+          "right": 152.578125,
+          "bottom": 377.4375
+        }
+      },
+      {
+        "text": "Strength, physique and bodybuilding competition prep.",
+        "rect": {
+          "x": 20,
+          "y": 387,
+          "width": 220.140625,
+          "height": 18,
+          "right": 240.140625,
+          "bottom": 405
+        }
+      },
+      {
+        "text": "Strength, physique and bodybuilding competition prep.",
+        "rect": {
+          "x": 20,
+          "y": 406.5,
+          "width": 105.90625,
+          "height": 18,
+          "right": 125.90625,
+          "bottom": 424.5
+        }
+      },
+      {
+        "text": "I\u2019m ready to start training",
+        "rect": {
+          "x": 80.515625,
+          "y": 457.90625,
+          "width": 158.953125,
+          "height": 18,
+          "right": 239.46875,
+          "bottom": 475.90625
+        }
+      },
+      {
+        "text": "Book a call with Justin",
+        "rect": {
+          "x": 90.875,
+          "y": 511.90625,
+          "width": 138.234375,
+          "height": 18,
+          "right": 229.109375,
+          "bottom": 529.90625
+        }
+      }
+    ],
+    "controls": [
+      {
+        "node": "a.stg-brand",
+        "text": "",
+        "rect": {
+          "x": 20,
+          "y": 12,
+          "width": 162,
+          "height": 40,
+          "right": 182,
+          "bottom": 52
+        }
+      },
+      {
+        "node": "img.stg-brand-logo",
+        "text": "",
+        "rect": {
+          "x": 20,
+          "y": 12,
+          "width": 162,
+          "height": 40,
+          "right": 182,
+          "bottom": 52
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "I\u2019m ready to start training",
+        "rect": {
+          "x": 20,
+          "y": 444,
+          "width": 280,
+          "height": 46,
+          "right": 300,
+          "bottom": 490
+        }
+      },
+      {
+        "node": "a.stg-button.stg-button-secondary",
+        "text": "Book a call with Justin",
+        "rect": {
+          "x": 20,
+          "y": 498,
+          "width": 280,
+          "height": 46,
+          "right": 300,
+          "bottom": 544
+        }
+      }
+    ]
+  },
+  "pricing": {
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "problems": [],
+    "textBoxes": [
+      {
+        "text": "Back to Justin",
+        "rect": {
+          "x": 233.734375,
+          "y": 20.296875,
+          "width": 74.265625,
+          "height": 15,
+          "right": 308,
+          "bottom": 35.296875
+        }
+      },
+      {
+        "text": "Train with Justin",
+        "rect": {
+          "x": 12,
+          "y": 81.03125,
+          "width": 210.546875,
+          "height": 36,
+          "right": 222.546875,
+          "bottom": 117.03125
+        }
+      },
+      {
+        "text": "Nutrition + Training Assessment",
+        "rect": {
+          "x": 23,
+          "y": 136.53125,
+          "width": 161.328125,
+          "height": 24,
+          "right": 184.328125,
+          "bottom": 160.53125
+        }
+      },
+      {
+        "text": "Nutrition + Training Assessment",
+        "rect": {
+          "x": 23,
+          "y": 157.53125,
+          "width": 92.734375,
+          "height": 24,
+          "right": 115.734375,
+          "bottom": 181.53125
+        }
+      },
+      {
+        "text": "$175",
+        "rect": {
+          "x": 249.765625,
+          "y": 135.53125,
+          "width": 47.234375,
+          "height": 36,
+          "right": 297,
+          "bottom": 171.53125
+        }
+      },
+      {
+        "text": "USD \u00b7 one time",
+        "rect": {
+          "x": 237.453125,
+          "y": 170.53125,
+          "width": 59.546875,
+          "height": 13,
+          "right": 297,
+          "bottom": 183.53125
+        }
+      },
+      {
+        "text": "Nutrition + training review.",
+        "rect": {
+          "x": 23,
+          "y": 186.21875,
+          "width": 143.703125,
+          "height": 17,
+          "right": 166.703125,
+          "bottom": 203.21875
+        }
+      },
+      {
+        "text": "Ongoing coaching sold separately.",
+        "rect": {
+          "x": 23,
+          "y": 211.8125,
+          "width": 157.546875,
+          "height": 14,
+          "right": 180.546875,
+          "bottom": 225.8125
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 241.46875,
+          "y": 201.0625,
+          "width": 41.046875,
+          "height": 15,
+          "right": 282.515625,
+          "bottom": 216.0625
+        }
+      },
+      {
+        "text": "Online Coaching",
+        "rect": {
+          "x": 23,
+          "y": 259.21875,
+          "width": 126.8125,
+          "height": 24,
+          "right": 149.8125,
+          "bottom": 283.21875
+        }
+      },
+      {
+        "text": "$350",
+        "rect": {
+          "x": 243.828125,
+          "y": 258.21875,
+          "width": 53.171875,
+          "height": 36,
+          "right": 297,
+          "bottom": 294.21875
+        }
+      },
+      {
+        "text": "USD \u00b7 per month",
+        "rect": {
+          "x": 230.859375,
+          "y": 293.21875,
+          "width": 66.140625,
+          "height": 13,
+          "right": 297,
+          "bottom": 306.21875
+        }
+      },
+      {
+        "text": "Custom training, check-ins + nutrition.",
+        "rect": {
+          "x": 23,
+          "y": 308.90625,
+          "width": 157.984375,
+          "height": 17,
+          "right": 180.984375,
+          "bottom": 325.90625
+        }
+      },
+      {
+        "text": "Custom training, check-ins + nutrition.",
+        "rect": {
+          "x": 23,
+          "y": 325.09375,
+          "width": 51.078125,
+          "height": 17,
+          "right": 74.078125,
+          "bottom": 342.09375
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 241.46875,
+          "y": 323.75,
+          "width": 41.046875,
+          "height": 15,
+          "right": 282.515625,
+          "bottom": 338.75
+        }
+      },
+      {
+        "text": "In-Person Coaching",
+        "rect": {
+          "x": 23,
+          "y": 381.90625,
+          "width": 152.5625,
+          "height": 24,
+          "right": 175.5625,
+          "bottom": 405.90625
+        }
+      },
+      {
+        "text": "$475",
+        "rect": {
+          "x": 245.453125,
+          "y": 380.90625,
+          "width": 51.546875,
+          "height": 36,
+          "right": 297,
+          "bottom": 416.90625
+        }
+      },
+      {
+        "text": "USD \u00b7 per month",
+        "rect": {
+          "x": 230.859375,
+          "y": 415.90625,
+          "width": 66.140625,
+          "height": 13,
+          "right": 297,
+          "bottom": 428.90625
+        }
+      },
+      {
+        "text": "Full programming + 1 session/week in Beaufort.",
+        "rect": {
+          "x": 23,
+          "y": 431.59375,
+          "width": 190.171875,
+          "height": 17,
+          "right": 213.171875,
+          "bottom": 448.59375
+        }
+      },
+      {
+        "text": "Full programming + 1 session/week in Beaufort.",
+        "rect": {
+          "x": 23,
+          "y": 447.78125,
+          "width": 63.671875,
+          "height": 17,
+          "right": 86.671875,
+          "bottom": 464.78125
+        }
+      },
+      {
+        "text": "30-day cancellation notice required.",
+        "rect": {
+          "x": 23,
+          "y": 467.96875,
+          "width": 165.65625,
+          "height": 14,
+          "right": 188.65625,
+          "bottom": 481.96875
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 241.46875,
+          "y": 451.8125,
+          "width": 41.046875,
+          "height": 15,
+          "right": 282.515625,
+          "bottom": 466.8125
+        }
+      },
+      {
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 12,
+          "y": 536,
+          "width": 74.796875,
+          "height": 14,
+          "right": 86.796875,
+          "bottom": 550
+        }
+      },
+      {
+        "text": "Privacy",
+        "rect": {
+          "x": 232.703125,
+          "y": 536,
+          "width": 32.9375,
+          "height": 14,
+          "right": 265.640625,
+          "bottom": 550
+        }
+      },
+      {
+        "text": "Terms",
+        "rect": {
+          "x": 279.640625,
+          "y": 536,
+          "width": 28.359375,
+          "height": 14,
+          "right": 308,
+          "bottom": 550
+        }
+      }
+    ],
+    "controls": [
+      {
+        "node": "a.stg-brand",
+        "text": "",
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "width": 145,
+          "height": 36,
+          "right": 157,
+          "bottom": 46
+        }
+      },
+      {
+        "node": "img.stg-brand-logo",
+        "text": "",
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "width": 145,
+          "height": 36,
+          "right": 157,
+          "bottom": 46
+        }
+      },
+      {
+        "node": "a",
+        "text": "Back to Justin",
+        "rect": {
+          "x": 233.734375,
+          "y": 10.296875,
+          "width": 74.265625,
+          "height": 35.390625,
+          "right": 308,
+          "bottom": 45.6875
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 227,
+          "y": 187.21875,
+          "width": 70,
+          "height": 44,
+          "right": 297,
+          "bottom": 231.21875
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 227,
+          "y": 309.90625,
+          "width": 70,
+          "height": 44,
+          "right": 297,
+          "bottom": 353.90625
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 227,
+          "y": 437.96875,
+          "width": 70,
+          "height": 44,
+          "right": 297,
+          "bottom": 481.96875
+        }
+      },
+      {
+        "node": "a.stg-purchase-talk-link",
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 12,
+          "y": 531,
+          "width": 74.796875,
+          "height": 25,
+          "right": 86.796875,
+          "bottom": 556
+        }
+      },
+      {
+        "node": "a",
+        "text": "Privacy",
+        "rect": {
+          "x": 232.703125,
+          "y": 531,
+          "width": 32.9375,
+          "height": 25,
+          "right": 265.640625,
+          "bottom": 556
+        }
+      },
+      {
+        "node": "a",
+        "text": "Terms",
+        "rect": {
+          "x": 279.640625,
+          "y": 531,
+          "width": 28.359375,
+          "height": 25,
+          "right": 308,
+          "bottom": 556
+        }
+      }
+    ]
+  },
+  "three_visible_pricing_tiles": [
+    {
+      "service": "assessment",
+      "card_bounds": {
+        "x": 12,
+        "y": 127.53125,
+        "width": 296,
+        "height": 114.6875
+      },
+      "cta_bounds": {
+        "x": 227,
+        "y": 187.21875,
+        "width": 70,
+        "height": 44
+      },
+      "full_content_visible": true
+    },
+    {
+      "service": "online",
+      "card_bounds": {
+        "x": 12,
+        "y": 250.21875,
+        "width": 296,
+        "height": 114.6875
+      },
+      "cta_bounds": {
+        "x": 227,
+        "y": 309.90625,
+        "width": 70,
+        "height": 44
+      },
+      "full_content_visible": true
+    },
+    {
+      "service": "inperson",
+      "card_bounds": {
+        "x": 12,
+        "y": 372.90625,
+        "width": 296,
+        "height": 120.0625
+      },
+      "cta_bounds": {
+        "x": 227,
+        "y": 437.96875,
+        "width": 70,
+        "height": 44
+      },
+      "full_content_visible": true
+    }
+  ],
+  "intake_open_close": true,
+  "focus_restored": true,
+  "phone_required": true,
+  "blocked_requests": [],
+  "javascript_errors": [],
+  "live_mutations": 0,
+  "scope": "Two live320x568 page views with real text/control bounds, clipping-ancestor and scroll-dimension checks. Mini intake opened and closed without submission; Stripe and booking never opened. All external and non-GET/HEAD requests blocked."
+}

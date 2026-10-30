@@ -1,0 +1,14 @@
+{
+  "site_id": "d40f2639-dc6b-4a77-8d46-d297b2cc9b23",
+  "site_name": "strikeline-coaching",
+  "deploy_id": "6ae4ae07bdc610bf593a3f50",
+  "deploy_url": "https://6ae4ae07bdc610bf593a3f50--strikeline-coaching.netlify.app",
+  "logs": "https://app.netlify.com/projects/strikeline-coaching/deploys/6ae4ae07bdc610bf593a3f50",
+  "function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/functions",
+  "edge_function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/edge-functions",
+  "url": "https://strikeline-coaching.netlify.app",
+  "recorded_at_utc": "2026-10-30T14:47:37.745787+00:00",
+  "source_base_commit": "75a5f5b96e14741477d74d0141274c57df14fc78",
+  "package_manifest": "public-site-manifest.json",
+  "publication_scope": "Compact viewport-fit correction on existing coach site. Exact published bytes recorded in manifest; source changes uncommitted at publication."
+}

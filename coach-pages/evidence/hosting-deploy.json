@@ -1,0 +1,14 @@
+{
+  "site_id": "d40f2639-dc6b-4a77-8d46-d297b2cc9b23",
+  "site_name": "strikeline-coaching",
+  "deploy_id": "6ae4bd25660341b5e29aa3b6",
+  "deploy_url": "https://6ae4bd25660341b5e29aa3b6--strikeline-coaching.netlify.app",
+  "logs": "https://app.netlify.com/projects/strikeline-coaching/deploys/6ae4bd25660341b5e29aa3b6",
+  "function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/functions",
+  "edge_function_logs": "https://app.netlify.com/projects/strikeline-coaching/logs/edge-functions",
+  "url": "https://strikeline-coaching.netlify.app",
+  "recorded_at_utc": "2026-10-30T15:52:07.278312+00:00",
+  "source_base_commit": "f967f609d38b927fd270b525db8f5dcc17dcb670",
+  "package_manifest": "public-site-manifest.json",
+  "publication_scope": "Intake copy only: thank-you, coach outreach and optional self-booking, with aligned intro and submit labels. Hero/pricing preserved. Exact artifact hashes in manifest; changes uncommitted at publication."
+}

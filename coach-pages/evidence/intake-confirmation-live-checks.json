@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T15:52:17.962768+00:00",
+  "base_url": "https://strikeline-coaching.netlify.app",
+  "checks": [
+    {
+      "coach": "Justin",
+      "mode": "success",
+      "thank_you": true,
+      "coach_outreach_copy": true,
+      "self_booking_optional": true,
+      "booking_url": "https://training.strikelinetraining.com/a/booking/?staffId=3017439&serviceId=38920&serviceTag=Strategy%20Call",
+      "no_automatic_navigation": true,
+      "mocked_posts": 1
+    },
+    {
+      "coach": "Zach",
+      "mode": "success",
+      "thank_you": true,
+      "coach_outreach_copy": true,
+      "self_booking_optional": true,
+      "booking_url": "https://training.strikelinetraining.com/a/booking/?staffId=3017453&serviceId=38920&serviceTag=Strategy%20Call",
+      "no_automatic_navigation": true,
+      "mocked_posts": 1
+    },
+    {
+      "coach": "Rhylie",
+      "mode": "success",
+      "thank_you": true,
+      "coach_outreach_copy": true,
+      "self_booking_optional": true,
+      "booking_url": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
+      "no_automatic_navigation": true,
+      "mocked_posts": 1
+    },
+    {
+      "coach": "Justin",
+      "mode": "error",
+      "no_false_confirmation": true,
+      "answers_retained": true,
+      "retry_available": true,
+      "mocked_posts": 1
+    }
+  ],
+  "screenshot": "coach-pages/evidence/screenshots/intake-confirmation-live-justin-390.png",
+  "live_submissions": 0,
+  "scope": "Three successful Formspree receipts and one422 error fulfilled locally by request interception. All other external or mutation requests blocked. Booking links inspected only; no real leads, bookings, messages, payments or checkout sessions."
+}

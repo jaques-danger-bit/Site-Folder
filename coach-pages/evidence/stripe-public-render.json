@@ -1,0 +1,136 @@
+{
+  "checked_at_utc": "2026-10-30T12:58:23.874621+00:00",
+  "method": "Open local chooser dialogs and render real Stripe widgets. Allow GET/HEAD/OPTIONS only; block checkout navigation and all other methods.",
+  "payments_attempted": 0,
+  "results": [
+    {
+      "offer": "assessment",
+      "viewport": 1440,
+      "text": "Nutrition + Training Assessment\n$175\nBuy\nSupported payment methods:",
+      "dialog": {
+        "width": 498,
+        "scrollWidth": 498,
+        "height": 627,
+        "scrollHeight": 627
+      },
+      "client_reference_id": "stg_justin_assessment",
+      "screenshot": "screenshots/stripe-assessment-1440.png"
+    },
+    {
+      "offer": "online",
+      "viewport": 1440,
+      "text": "Online Coaching \u2014 Monthly\n$350\nper\nmonth\nSubscribe\nSupported payment methods:",
+      "dialog": {
+        "width": 498,
+        "scrollWidth": 498,
+        "height": 721,
+        "scrollHeight": 721
+      },
+      "client_reference_id": "stg_justin_online",
+      "screenshot": "screenshots/stripe-online-1440.png"
+    },
+    {
+      "offer": "inperson",
+      "viewport": 1440,
+      "text": "Monthly Coaching \u2014 Foundation\n$475\nper\nmonth\nSubscribe\nSupported payment methods:",
+      "dialog": {
+        "width": 498,
+        "scrollWidth": 498,
+        "height": 585,
+        "scrollHeight": 585
+      },
+      "client_reference_id": "stg_justin_inperson",
+      "screenshot": "screenshots/stripe-inperson-1440.png"
+    },
+    {
+      "offer": "assessment",
+      "viewport": 320,
+      "text": "Nutrition + Training Assessment\n$175\nBuy\nSupported payment methods:",
+      "dialog": {
+        "width": 310,
+        "scrollWidth": 310,
+        "height": 634,
+        "scrollHeight": 634
+      },
+      "client_reference_id": "stg_justin_assessment",
+      "screenshot": "screenshots/stripe-assessment-320.png"
+    },
+    {
+      "offer": "online",
+      "viewport": 320,
+      "text": "Online Coaching \u2014 Monthly\n$350\nper\nmonth\nSubscribe\nSupported payment methods:",
+      "dialog": {
+        "width": 310,
+        "scrollWidth": 310,
+        "height": 717,
+        "scrollHeight": 717
+      },
+      "client_reference_id": "stg_justin_online",
+      "screenshot": "screenshots/stripe-online-320.png"
+    },
+    {
+      "offer": "inperson",
+      "viewport": 320,
+      "text": "Monthly Coaching \u2014 Foundation\n$475\nper\nmonth\nSubscribe\nSupported payment methods:",
+      "dialog": {
+        "width": 310,
+        "scrollWidth": 310,
+        "height": 402,
+        "scrollHeight": 402
+      },
+      "client_reference_id": "stg_justin_inperson",
+      "screenshot": "screenshots/stripe-inperson-320.png"
+    }
+  ],
+  "blocked_requests": [
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "errors.stripe.com",
+      "method": "POST"
+    },
+    {
+      "host": "r.stripe.com",
+      "method": "POST"
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "justin",
+    "name": "Justin",
+    "fullName": "Justin Poole",
+    "specialty": "Strength, Physique & Competition Prep",
+    "heroLines": [
+      "BUILD MUSCLE.",
+      "TRAIN WITH",
+      "PURPOSE."
+    ],
+    "subhead": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let’s talk about your starting point, your goals, and the work it will take to move forward.",
+    "introHeading": "Give your effort a clear direction.",
+    "reasons": [
+      {
+        "title": "A goal worth working toward",
+        "text": "Build muscle, develop your physique, or work toward a bodybuilding competition. Make the goal specific enough to guide your training."
+      },
+      {
+        "title": "A closer look at your training",
+        "text": "Bring your training history, what is going well, and where you feel stuck."
+      },
+      {
+        "title": "A next step you understand",
+        "text": "Discuss what coaching would involve and whether it fits the way you want to train."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need to be an experienced lifter?",
+        "answer": "Tell me where you are starting. Your experience, goals, and questions will help shape the conversation."
+      },
+      {
+        "question": "Can we talk about bodybuilding competition prep?",
+        "answer": "Yes. Bring your training experience, the competition you’re considering, and any timeline you have. We’ll discuss your starting point and what prep would involve."
+      },
+      {
+        "question": "What does coaching include?",
+        "answer": "Use the call to discuss the coaching options, support, and cost before deciding whether to begin."
+      }
+    ],
+    "closingHeading": "Let’s see how strong you can get.",
+    "closingText": "Start with your goal. We’ll take the conversation from there.",
+    "goals": [
+      {
+        "value": "Muscle Building",
+        "label": "Build muscle"
+      },
+      {
+        "value": "Strength",
+        "label": "Get stronger"
+      },
+      {
+        "value": "Aesthetics & Physique Development",
+        "label": "Develop my physique"
+      },
+      {
+        "value": "Bodybuilding Competition Prep",
+        "label": "Prepare for a bodybuilding competition"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017439&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-justin.html"
+  },
+  {
+    "slug": "zach",
+    "name": "Zach",
+    "fullName": "Zach Vazquez",
+    "specialty": "Strength & Tactical Training Coach",
+    "heroLines": [
+      "BUILD STRENGTH.",
+      "BUILD SKILLS."
+    ],
+    "subhead": "Want to build muscle, feel more capable in the gym, or explore tactical training? Tell me what you want to work toward. Let’s talk about the right place to start.",
+    "introHeading": "You don’t need every answer before you start.",
+    "reasons": [
+      {
+        "title": "Make your goal specific",
+        "text": "Tell me whether you want strength coaching, tactical training, or to learn more about either."
+      },
+      {
+        "title": "Ask the questions you have",
+        "text": "Bring your experience, uncertainties, and the skills you want to develop."
+      },
+      {
+        "title": "Understand the next step",
+        "text": "Discuss the relevant training options and what working together would involve."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I ask about strength coaching or tactical training?",
+        "answer": "Yes. Tell me which area interests you so our conversation stays focused on what you need."
+      },
+      {
+        "question": "What if I’m new to training?",
+        "answer": "Start with your experience and your questions. You do not need to know all the terminology to explain what you want to learn."
+      },
+      {
+        "question": "Do I need to choose a program before the call?",
+        "answer": "No. Use the conversation to discuss your goal, the available options, and their costs before choosing a next step."
+      }
+    ],
+    "closingHeading": "Come train with me.",
+    "closingText": "Bring your goals and your questions. Let’s work out where to start.",
+    "goals": [
+      {
+        "value": "Strength & Muscle Building",
+        "label": "Build strength and muscle"
+      },
+      {
+        "value": "Tactical Training",
+        "label": "Explore tactical training"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3017453&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-zach.html"
+  },
+  {
+    "slug": "rhylie",
+    "name": "Rhylie",
+    "fullName": "Rhylie Erdmann",
+    "specialty": "Women’s Strength, Physique & Competition Prep",
+    "heroLines": [
+      "BUILD YOUR",
+      "PHYSIQUE &",
+      "CONFIDENCE."
+    ],
+    "subhead": "Build strength, shape your physique, or prepare for a bodybuilding competition. Let’s talk about the progress you want and how to work toward it with confidence.",
+    "introHeading": "Your goal deserves a clear next step.",
+    "reasons": [
+      {
+        "title": "Make it your goal",
+        "text": "Your goal might be getting stronger, building muscle, or bodybuilding competition prep. Talk about the progress that matters to you."
+      },
+      {
+        "title": "Start from your real life",
+        "text": "Bring your training experience, available time, and what has made consistency difficult."
+      },
+      {
+        "title": "Know what progress means to you",
+        "text": "Discuss the milestones and coaching support that would help you move forward."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need to feel confident in the gym already?",
+        "answer": "No. Share your starting point and what you want help understanding. That is useful information for the conversation."
+      },
+      {
+        "question": "Can I ask about bodybuilding competition prep?",
+        "answer": "Yes. Tell me about your training experience, the competition you have in mind, and your timeline. We can discuss what prep would involve and where to start."
+      },
+      {
+        "question": "What if I’m unsure what coaching would involve?",
+        "answer": "That is a good reason to talk. Use the call to discuss the options, support, and cost before deciding whether to begin."
+      }
+    ],
+    "closingHeading": "Let’s build something you feel good about.",
+    "closingText": "Start with what you want for yourself. We’ll talk about the next step.",
+    "goals": [
+      {
+        "value": "Muscle Building",
+        "label": "Build muscle"
+      },
+      {
+        "value": "Aesthetics & Physique Development",
+        "label": "Develop my physique"
+      },
+      {
+        "value": "Strength & Confidence",
+        "label": "Build strength and confidence"
+      },
+      {
+        "value": "Bodybuilding Competition Prep",
+        "label": "Prepare for a bodybuilding competition"
+      },
+      {
+        "value": "Not sure yet",
+        "label": "Not sure yet — let’s talk"
+      }
+    ],
+    "bookingUrl": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
+    "photoPosition": "50% 30%",
+    "purchaseUrl": "start-rhylie.html"
+  }
+]

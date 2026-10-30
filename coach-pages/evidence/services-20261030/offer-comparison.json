@@ -1,0 +1,84 @@
+{
+  "public_website_url": "https://strikelinetraining.com/services#menu",
+  "website_offers": [
+    {
+      "name": "Standalone Program",
+      "displayed_price": "$175",
+      "updates": "$30 each",
+      "cadence": "No recurrence is printed; site does not explicitly say one-time."
+    },
+    {
+      "name": "Online Coaching",
+      "displayed_price": "$350/month"
+    },
+    {
+      "name": "In-Person Coaching",
+      "displayed_price": "$475/month"
+    }
+  ],
+  "stripe_offers": [
+    {
+      "public_get_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "checkout_url": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "buy_button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "product_name": "Monthly Coaching \u2014 Foundation",
+      "product_description": "Full programming + 1 session/week. 30-day cancellation notice required.",
+      "amount": 475.0,
+      "currency": "usd",
+      "price_type": "recurring",
+      "recurring": {
+        "interval": "month",
+        "interval_count": 1,
+        "meter": null,
+        "trial_period_days": null,
+        "usage_type": "licensed"
+      },
+      "tax_behavior": "unspecified",
+      "trial_period_days": null
+    },
+    {
+      "public_get_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "checkout_url": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "buy_button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "product_name": "Online Coaching \u2014 Monthly",
+      "product_description": "Strikeline online coaching. Custom programming, check-ins, nutrition protocol.",
+      "amount": 350.0,
+      "currency": "usd",
+      "price_type": "recurring",
+      "recurring": {
+        "interval": "month",
+        "interval_count": 1,
+        "meter": null,
+        "trial_period_days": null,
+        "usage_type": "licensed"
+      },
+      "tax_behavior": "unspecified",
+      "trial_period_days": null
+    },
+    {
+      "public_get_url": "https://merchant-ui-api.stripe.com/buy-button/buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "checkout_url": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "buy_button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "product_name": "Nutrition + Training Assessment",
+      "product_description": "One-time comprehensive nutrition and training assessment.",
+      "amount": 175.0,
+      "currency": "usd",
+      "price_type": "one_time",
+      "recurring": null,
+      "tax_behavior": "unspecified",
+      "trial_period_days": null
+    }
+  ],
+  "assessment_mismatch": "The button supplied as standalone is Nutrition + Training Assessment, not Standalone Program. Same $175 amount does not establish equivalent fulfillment.",
+  "owner_resolution": {
+    "decision": "Use the $175 assessment.",
+    "status": "resolved",
+    "active_offer_order": [
+      "Nutrition + Training Assessment",
+      "Online Coaching \u2014 Monthly",
+      "Monthly Coaching \u2014 Foundation"
+    ],
+    "excluded_offer": "Standalone Program",
+    "limits": "Do not transfer the standalone program update fee or website contact-form assessment duration to the paid Nutrition + Training Assessment."
+  }
+}

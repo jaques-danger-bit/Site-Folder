@@ -1,0 +1,83 @@
+[
+  {
+    "coach": "justin",
+    "viewport": "desktop",
+    "jsErrors": [],
+    "width": 1440,
+    "scrollWidth": 1440,
+    "allImagesLoaded": true,
+    "heroHeight": 1000
+  },
+  {
+    "coach": "justin",
+    "viewport": "mobile",
+    "jsErrors": [],
+    "width": 390,
+    "scrollWidth": 390,
+    "allImagesLoaded": true,
+    "heroHeight": 867
+  },
+  {
+    "coach": "justin",
+    "viewport": "small-mobile",
+    "jsErrors": [],
+    "width": 320,
+    "scrollWidth": 320,
+    "allImagesLoaded": true,
+    "heroHeight": 924
+  },
+  {
+    "coach": "zach",
+    "viewport": "desktop",
+    "jsErrors": [],
+    "width": 1440,
+    "scrollWidth": 1440,
+    "allImagesLoaded": true,
+    "heroHeight": 1000
+  },
+  {
+    "coach": "zach",
+    "viewport": "mobile",
+    "jsErrors": [],
+    "width": 390,
+    "scrollWidth": 390,
+    "allImagesLoaded": true,
+    "heroHeight": 840
+  },
+  {
+    "coach": "zach",
+    "viewport": "small-mobile",
+    "jsErrors": [],
+    "width": 320,
+    "scrollWidth": 320,
+    "allImagesLoaded": true,
+    "heroHeight": 924
+  },
+  {
+    "coach": "rhylie",
+    "viewport": "desktop",
+    "jsErrors": [],
+    "width": 1440,
+    "scrollWidth": 1440,
+    "allImagesLoaded": true,
+    "heroHeight": 1000
+  },
+  {
+    "coach": "rhylie",
+    "viewport": "mobile",
+    "jsErrors": [],
+    "width": 390,
+    "scrollWidth": 390,
+    "allImagesLoaded": true,
+    "heroHeight": 884
+  },
+  {
+    "coach": "rhylie",
+    "viewport": "small-mobile",
+    "jsErrors": [],
+    "width": 320,
+    "scrollWidth": 320,
+    "allImagesLoaded": true,
+    "heroHeight": 924
+  }
+]

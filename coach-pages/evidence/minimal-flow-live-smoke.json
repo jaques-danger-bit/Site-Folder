@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T14:38:49.017116+00:00",
+  "base_url": "https://strikeline-coaching.netlify.app",
+  "deploy_id": "6ae4abd0bf268214b31794e3",
+  "coach": "Justin",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "two_hero_actions": true,
+  "intake_open_and_close": true,
+  "escape_and_focus_restore": true,
+  "phone_required": true,
+  "pricing_navigation": "https://strikeline-coaching.netlify.app/justin/start/",
+  "three_pricing_options": true,
+  "pricing_without_hero": true,
+  "visual_checks": {
+    "landing": {
+      "width": 390,
+      "scrollWidth": 390,
+      "arrowNodes": [],
+      "lightBlocks": []
+    },
+    "intake": {
+      "width": 390,
+      "scrollWidth": 390,
+      "arrowNodes": [],
+      "lightBlocks": []
+    },
+    "pricing": {
+      "width": 390,
+      "scrollWidth": 390,
+      "arrowNodes": [],
+      "lightBlocks": []
+    }
+  },
+  "blocked_requests": [],
+  "javascript_errors": [],
+  "live_mutations": 0,
+  "scope": "Live mobile GET/render smoke only. Every external request and every non-GET/HEAD request blocked. Intake opened and closed; no form submitted, no Stripe widget opened, no booking or checkout session."
+}

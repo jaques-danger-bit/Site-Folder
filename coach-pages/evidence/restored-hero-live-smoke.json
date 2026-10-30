@@ -1,0 +1,607 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T15:28:31.714157+00:00",
+  "base_url": "https://strikeline-coaching.netlify.app",
+  "deploy_id": "6ae4b72d98525fce2aaba2af",
+  "coach": "Justin",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "exact_original_subhead": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about your starting point, your goals, and the work it will take to move forward.",
+  "restored_hero_properties": {
+    "h1FontSize": "48px",
+    "headerHeight": 72,
+    "logo": {
+      "width": 165,
+      "height": 41
+    },
+    "buttonMinHeight": "52px",
+    "buttonAlign": "left",
+    "photoPosition": "50% 20%"
+  },
+  "hero_measurement": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "scrollHeight": 844,
+    "problems": [],
+    "textBoxes": [
+      {
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 295.203125,
+          "y": 29,
+          "width": 74.796875,
+          "height": 14,
+          "right": 370,
+          "bottom": 43
+        }
+      },
+      {
+        "text": "Justin \u00b7 Strength, Physique & Competition Prep",
+        "rect": {
+          "x": 20,
+          "y": 377.546875,
+          "width": 270.203125,
+          "height": 13,
+          "right": 290.203125,
+          "bottom": 390.546875
+        }
+      },
+      {
+        "text": "BUILD MUSCLE.",
+        "rect": {
+          "x": 20,
+          "y": 403.734375,
+          "width": 245.1875,
+          "height": 58,
+          "right": 265.1875,
+          "bottom": 461.734375
+        }
+      },
+      {
+        "text": "TRAIN WITH",
+        "rect": {
+          "x": 20,
+          "y": 450.765625,
+          "width": 196.1875,
+          "height": 58,
+          "right": 216.1875,
+          "bottom": 508.765625
+        }
+      },
+      {
+        "text": "PURPOSE.",
+        "rect": {
+          "x": 20,
+          "y": 497.796875,
+          "width": 160.09375,
+          "height": 58,
+          "right": 180.09375,
+          "bottom": 555.796875
+        }
+      },
+      {
+        "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+        "rect": {
+          "x": 20,
+          "y": 572.828125,
+          "width": 332.203125,
+          "height": 18,
+          "right": 352.203125,
+          "bottom": 590.828125
+        }
+      },
+      {
+        "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+        "rect": {
+          "x": 20,
+          "y": 596.21875,
+          "width": 315.75,
+          "height": 18,
+          "right": 335.75,
+          "bottom": 614.21875
+        }
+      },
+      {
+        "text": "Build muscle, get stronger, or prepare for a bodybuilding competition. Let\u2019s talk about yo",
+        "rect": {
+          "x": 20,
+          "y": 619.609375,
+          "width": 278.734375,
+          "height": 18,
+          "right": 298.734375,
+          "bottom": 637.609375
+        }
+      },
+      {
+        "text": "I\u2019m ready to start training",
+        "rect": {
+          "x": 41,
+          "y": 681.90625,
+          "width": 158.953125,
+          "height": 18,
+          "right": 199.953125,
+          "bottom": 699.90625
+        }
+      },
+      {
+        "text": "Book a call with Justin",
+        "rect": {
+          "x": 41,
+          "y": 743.90625,
+          "width": 138.234375,
+          "height": 18,
+          "right": 179.234375,
+          "bottom": 761.90625
+        }
+      },
+      {
+        "text": "Justin Poole",
+        "rect": {
+          "x": 20,
+          "y": 799,
+          "width": 101.125,
+          "height": 24,
+          "right": 121.125,
+          "bottom": 823
+        }
+      }
+    ],
+    "controls": [
+      {
+        "node": "a.stg-brand",
+        "text": "",
+        "rect": {
+          "x": 20,
+          "y": 15.5,
+          "width": 165,
+          "height": 41,
+          "right": 185,
+          "bottom": 56.5
+        }
+      },
+      {
+        "node": "img.stg-brand-logo",
+        "text": "",
+        "rect": {
+          "x": 20,
+          "y": 15.5,
+          "width": 165,
+          "height": 41,
+          "right": 185,
+          "bottom": 56.5
+        }
+      },
+      {
+        "node": "a.stg-nav-call",
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 295.203125,
+          "y": 18,
+          "width": 74.796875,
+          "height": 36,
+          "right": 370,
+          "bottom": 54
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "I\u2019m ready to start training",
+        "rect": {
+          "x": 20,
+          "y": 665,
+          "width": 350,
+          "height": 52,
+          "right": 370,
+          "bottom": 717
+        }
+      },
+      {
+        "node": "a.stg-button.stg-button-secondary",
+        "text": "Book a call with Justin",
+        "rect": {
+          "x": 20,
+          "y": 727,
+          "width": 350,
+          "height": 52,
+          "right": 370,
+          "bottom": 779
+        }
+      }
+    ]
+  },
+  "header_talk_opens_intake": true,
+  "required_phone": true,
+  "escape_restores_header_focus": true,
+  "pricing_navigation": true,
+  "pricing_matches_pre_restoration_styles": true,
+  "pricing_measurement": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "scrollHeight": 844,
+    "problems": [],
+    "textBoxes": [
+      {
+        "text": "Back to Justin",
+        "rect": {
+          "x": 301.734375,
+          "y": 20.296875,
+          "width": 74.265625,
+          "height": 15,
+          "right": 376,
+          "bottom": 35.296875
+        }
+      },
+      {
+        "text": "Train with Justin",
+        "rect": {
+          "x": 14,
+          "y": 203.984375,
+          "width": 224.578125,
+          "height": 38,
+          "right": 238.578125,
+          "bottom": 241.984375
+        }
+      },
+      {
+        "text": "Nutrition + Training Assessment",
+        "rect": {
+          "x": 27,
+          "y": 265.578125,
+          "width": 169.390625,
+          "height": 25,
+          "right": 196.390625,
+          "bottom": 290.578125
+        }
+      },
+      {
+        "text": "Nutrition + Training Assessment",
+        "rect": {
+          "x": 27,
+          "y": 287.625,
+          "width": 97.359375,
+          "height": 25,
+          "right": 124.359375,
+          "bottom": 312.625
+        }
+      },
+      {
+        "text": "$175",
+        "rect": {
+          "x": 312.625,
+          "y": 264.578125,
+          "width": 50.375,
+          "height": 38,
+          "right": 363,
+          "bottom": 302.578125
+        }
+      },
+      {
+        "text": "USD \u00b7 one time",
+        "rect": {
+          "x": 303.453125,
+          "y": 301.578125,
+          "width": 59.546875,
+          "height": 13,
+          "right": 363,
+          "bottom": 314.578125
+        }
+      },
+      {
+        "text": "Nutrition + training review.",
+        "rect": {
+          "x": 27,
+          "y": 318.265625,
+          "width": 143.703125,
+          "height": 17,
+          "right": 170.703125,
+          "bottom": 335.265625
+        }
+      },
+      {
+        "text": "Ongoing coaching sold separately.",
+        "rect": {
+          "x": 27,
+          "y": 344.359375,
+          "width": 157.546875,
+          "height": 14,
+          "right": 184.546875,
+          "bottom": 358.359375
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 304.46875,
+          "y": 333.109375,
+          "width": 41.046875,
+          "height": 15,
+          "right": 345.515625,
+          "bottom": 348.109375
+        }
+      },
+      {
+        "text": "Online Coaching",
+        "rect": {
+          "x": 27,
+          "y": 397.265625,
+          "width": 133.140625,
+          "height": 25,
+          "right": 160.140625,
+          "bottom": 422.265625
+        }
+      },
+      {
+        "text": "$350",
+        "rect": {
+          "x": 306.28125,
+          "y": 396.265625,
+          "width": 56.71875,
+          "height": 38,
+          "right": 363,
+          "bottom": 434.265625
+        }
+      },
+      {
+        "text": "USD \u00b7 per month",
+        "rect": {
+          "x": 296.859375,
+          "y": 433.265625,
+          "width": 66.140625,
+          "height": 13,
+          "right": 363,
+          "bottom": 446.265625
+        }
+      },
+      {
+        "text": "Custom training, check-ins + nutrition.",
+        "rect": {
+          "x": 27,
+          "y": 449.953125,
+          "width": 211.4375,
+          "height": 17,
+          "right": 238.4375,
+          "bottom": 466.953125
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 304.46875,
+          "y": 464.796875,
+          "width": 41.046875,
+          "height": 15,
+          "right": 345.515625,
+          "bottom": 479.796875
+        }
+      },
+      {
+        "text": "In-Person Coaching",
+        "rect": {
+          "x": 27,
+          "y": 528.953125,
+          "width": 160.1875,
+          "height": 25,
+          "right": 187.1875,
+          "bottom": 553.953125
+        }
+      },
+      {
+        "text": "$475",
+        "rect": {
+          "x": 308.015625,
+          "y": 527.953125,
+          "width": 54.984375,
+          "height": 38,
+          "right": 363,
+          "bottom": 565.953125
+        }
+      },
+      {
+        "text": "USD \u00b7 per month",
+        "rect": {
+          "x": 296.859375,
+          "y": 564.953125,
+          "width": 66.140625,
+          "height": 13,
+          "right": 363,
+          "bottom": 577.953125
+        }
+      },
+      {
+        "text": "Full programming + 1 session/week in Beaufort.",
+        "rect": {
+          "x": 27,
+          "y": 581.640625,
+          "width": 202.5,
+          "height": 17,
+          "right": 229.5,
+          "bottom": 598.640625
+        }
+      },
+      {
+        "text": "Full programming + 1 session/week in Beaufort.",
+        "rect": {
+          "x": 27,
+          "y": 597.828125,
+          "width": 51.34375,
+          "height": 17,
+          "right": 78.34375,
+          "bottom": 614.828125
+        }
+      },
+      {
+        "text": "30-day cancellation notice required.",
+        "rect": {
+          "x": 27,
+          "y": 619.015625,
+          "width": 165.65625,
+          "height": 14,
+          "right": 192.65625,
+          "bottom": 633.015625
+        }
+      },
+      {
+        "text": "Choose",
+        "rect": {
+          "x": 304.46875,
+          "y": 602.859375,
+          "width": 41.046875,
+          "height": 15,
+          "right": 345.515625,
+          "bottom": 617.859375
+        }
+      },
+      {
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 14,
+          "y": 812,
+          "width": 74.796875,
+          "height": 14,
+          "right": 88.796875,
+          "bottom": 826
+        }
+      },
+      {
+        "text": "Privacy",
+        "rect": {
+          "x": 300.703125,
+          "y": 812,
+          "width": 32.9375,
+          "height": 14,
+          "right": 333.640625,
+          "bottom": 826
+        }
+      },
+      {
+        "text": "Terms",
+        "rect": {
+          "x": 347.640625,
+          "y": 812,
+          "width": 28.359375,
+          "height": 14,
+          "right": 376,
+          "bottom": 826
+        }
+      }
+    ],
+    "controls": [
+      {
+        "node": "a.stg-brand",
+        "text": "",
+        "rect": {
+          "x": 14,
+          "y": 10,
+          "width": 145,
+          "height": 36,
+          "right": 159,
+          "bottom": 46
+        }
+      },
+      {
+        "node": "img.stg-brand-logo",
+        "text": "",
+        "rect": {
+          "x": 14,
+          "y": 10,
+          "width": 145,
+          "height": 36,
+          "right": 159,
+          "bottom": 46
+        }
+      },
+      {
+        "node": "a",
+        "text": "Back to Justin",
+        "rect": {
+          "x": 301.734375,
+          "y": 10.296875,
+          "width": 74.265625,
+          "height": 35.390625,
+          "right": 376,
+          "bottom": 45.6875
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 287,
+          "y": 319.265625,
+          "width": 76,
+          "height": 44,
+          "right": 363,
+          "bottom": 363.265625
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 287,
+          "y": 450.953125,
+          "width": 76,
+          "height": 44,
+          "right": 363,
+          "bottom": 494.953125
+        }
+      },
+      {
+        "node": "a.stg-button",
+        "text": "Choose",
+        "rect": {
+          "x": 287,
+          "y": 589.015625,
+          "width": 76,
+          "height": 44,
+          "right": 363,
+          "bottom": 633.015625
+        }
+      },
+      {
+        "node": "a.stg-purchase-talk-link",
+        "text": "Talk with Justin",
+        "rect": {
+          "x": 14,
+          "y": 807,
+          "width": 74.796875,
+          "height": 25,
+          "right": 88.796875,
+          "bottom": 832
+        }
+      },
+      {
+        "node": "a",
+        "text": "Privacy",
+        "rect": {
+          "x": 300.703125,
+          "y": 807,
+          "width": 32.9375,
+          "height": 25,
+          "right": 333.640625,
+          "bottom": 832
+        }
+      },
+      {
+        "node": "a",
+        "text": "Terms",
+        "rect": {
+          "x": 347.640625,
+          "y": 807,
+          "width": 28.359375,
+          "height": 25,
+          "right": 376,
+          "bottom": 832
+        }
+      }
+    ]
+  },
+  "blocked_requests": [],
+  "javascript_errors": [],
+  "live_mutations": 0,
+  "scope": "Two live GET/render views; header Talk opens and closes intake without submitting. Pricing read only and compared with preserved pre-restoration styles. External and mutation requests blocked; no Stripe widget, booking or checkout opened."
+}

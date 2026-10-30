@@ -1,0 +1,199 @@
+{
+  "checked_at_utc": "2026-10-30T11:48:46.795379+00:00",
+  "method": "Fresh unauthenticated Chromium contexts; navigation and opening Filters only. No changes to filters or bookings.",
+  "results": [
+    {
+      "coach": "Justin",
+      "staff_id": "3017439",
+      "service_id": "38920",
+      "requested_url": "https://training.strikelinetraining.com/a/booking/?staffId=3017439&serviceId=38920&serviceTag=Strategy%20Call",
+      "actions": "Navigate only; no login, selections, submissions, appointments or personal data.",
+      "http_status": 200,
+      "final_url": "https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3017439",
+      "title": "Booking | Strikeline Training Group",
+      "public_ui_findings": [
+        "Free Intro Call"
+      ],
+      "button_labels": [
+        "",
+        "",
+        "Today",
+        "",
+        "",
+        ""
+      ],
+      "select_controls": [],
+      "coach_name_visible": false,
+      "service_name_visible": true,
+      "public_booking_calendar_visible": true,
+      "booking_completed": false,
+      "scope_limit": "Available slots, final staff assignment, and completed booking were not tested.",
+      "filter_inspection": {
+        "checked_at_utc": "2026-10-30T11:48:27.004649+00:00",
+        "actions": "Navigate, then open Filters only. No service/staff changes, slot selections or booking actions.",
+        "public_filter_text": [
+          "Free Intro Call",
+          "Filters",
+          "Strategy Call",
+          "Staff",
+          "Justin Poole",
+          "Service",
+          "Reset filters",
+          "Filters dialog, Category: Strategy Call"
+        ],
+        "native_select_controls": [],
+        "custom_comboboxes": [],
+        "visible_input_values": []
+      },
+      "verified_staff_filter_label": "Justin Poole",
+      "verified_service_filter_label": "Free Intro Call",
+      "verified_category_filter_label": "Strategy Call",
+      "final_verification": "Staff and service visible in read-only Filters inspection; public booking calendar rendered. No slot selected or booking made."
+    },
+    {
+      "coach": "Zach",
+      "staff_id": "3017453",
+      "service_id": "38920",
+      "requested_url": "https://training.strikelinetraining.com/a/booking/?staffId=3017453&serviceId=38920&serviceTag=Strategy%20Call",
+      "actions": "Navigate only; no login, selections, submissions, appointments or personal data.",
+      "http_status": 200,
+      "final_url": "https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3017453",
+      "title": "Booking | Strikeline Training Group",
+      "public_ui_findings": [
+        "Free Intro Call"
+      ],
+      "button_labels": [
+        "",
+        "",
+        "Today",
+        "",
+        "",
+        ""
+      ],
+      "select_controls": [],
+      "coach_name_visible": false,
+      "service_name_visible": true,
+      "public_booking_calendar_visible": true,
+      "booking_completed": false,
+      "scope_limit": "Available slots, final staff assignment, and completed booking were not tested.",
+      "filter_inspection": {
+        "checked_at_utc": "2026-10-30T11:48:29.391695+00:00",
+        "actions": "Navigate, then open Filters only. No service/staff changes, slot selections or booking actions.",
+        "public_filter_text": [
+          "Free Intro Call",
+          "Filters",
+          "Strategy Call",
+          "Staff",
+          "Zach Vazquez",
+          "Service",
+          "Reset filters",
+          "Filters dialog, Category: Strategy Call"
+        ],
+        "native_select_controls": [],
+        "custom_comboboxes": [],
+        "visible_input_values": []
+      },
+      "verified_staff_filter_label": "Zach Vazquez",
+      "verified_service_filter_label": "Free Intro Call",
+      "verified_category_filter_label": "Strategy Call",
+      "final_verification": "Staff and service visible in read-only Filters inspection; public booking calendar rendered. No slot selected or booking made."
+    },
+    {
+      "coach": "Rhylie",
+      "staff_id": "3065290",
+      "service_id": "38920",
+      "requested_url": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
+      "actions": "Navigate only; no login, selections, submissions, appointments or personal data.",
+      "http_status": 200,
+      "final_url": "https://training.strikelinetraining.com/a/booking/?staffId=3065290&serviceId=38920&serviceTag=Strategy%20Call",
+      "title": "Loading",
+      "public_ui_findings": [
+        "There was an error when loading this page. Please try again."
+      ],
+      "button_labels": [
+        "",
+        "Try Again"
+      ],
+      "select_controls": [],
+      "coach_name_visible": false,
+      "service_name_visible": false,
+      "public_booking_calendar_visible": false,
+      "booking_completed": false,
+      "scope_limit": "Available slots, final staff assignment, and completed booking were not tested.",
+      "independent_retry": {
+        "checked_at_utc": "2026-10-30T11:48:06.363389+00:00",
+        "http_status": 200,
+        "title": "Booking | Strikeline Training Group",
+        "final_url": "https://training.strikelinetraining.com/a/booking/?serviceId=38920&serviceTag=Strategy%20Call&staffId=3065290",
+        "calendar_visible": true,
+        "intro_call_visible": true,
+        "coach_name_visible": false,
+        "error_visible": false,
+        "failed_public_resource_requests": [],
+        "interactive_labels": [
+          {
+            "tag": "BUTTON",
+            "label": "My Bag",
+            "title": "",
+            "text": ""
+          },
+          {
+            "tag": "BUTTON",
+            "label": "Previous month",
+            "title": "",
+            "text": ""
+          },
+          {
+            "tag": "BUTTON",
+            "label": null,
+            "title": "",
+            "text": "Today"
+          },
+          {
+            "tag": "BUTTON",
+            "label": "Next month",
+            "title": "",
+            "text": ""
+          },
+          {
+            "tag": "BUTTON",
+            "label": "Filters",
+            "title": "",
+            "text": ""
+          },
+          {
+            "tag": "DIV",
+            "label": null,
+            "title": "",
+            "text": ""
+          }
+        ],
+        "performed_actions": "Navigation only"
+      },
+      "filter_inspection": {
+        "checked_at_utc": "2026-10-30T11:48:31.647446+00:00",
+        "actions": "Navigate, then open Filters only. No service/staff changes, slot selections or booking actions.",
+        "public_filter_text": [
+          "Free Intro Call",
+          "Filters",
+          "Strategy Call",
+          "Staff",
+          "Rhylie Erdmann",
+          "Service",
+          "Reset filters",
+          "Filters dialog, Category: Strategy Call"
+        ],
+        "native_select_controls": [],
+        "custom_comboboxes": [],
+        "visible_input_values": []
+      },
+      "verified_staff_filter_label": "Rhylie Erdmann",
+      "verified_service_filter_label": "Free Intro Call",
+      "verified_category_filter_label": "Strategy Call",
+      "final_verification": "Staff and service visible in read-only Filters inspection; public booking calendar rendered. No slot selected or booking made."
+    }
+  ],
+  "initial_attempt": "Initial simultaneous navigations failed with transient ERR_NETWORK_CHANGED; subsequent sequential browser checks performed.",
+  "scope": "Public coach/service routing inspection only. No booking, login, contact form submission or private appointment data.",
+  "summary": "All three destinations rendered the public Free Intro Call calendar, and opening Filters showed the expected named staff member and Strategy Call category. Rhylie initial loading error resolved on independent retry."
+}

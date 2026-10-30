@@ -1,0 +1,72 @@
+/* Original approved hero from967e407. Scoped to landing pages; pricing is unchanged. */
+.stg-landing-page .stg-hero{min-height:100svh;background:#151a1b}
+.stg-landing-page .stg-hero .stg-shell{width:min(1240px,calc(100% - 112px))}
+.stg-landing-page .stg-hero-visual{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.stg-landing-page .stg-hero-photo{object-position:var(--photo-position,50% 30%)}
+.stg-landing-page .stg-hero:after{background:linear-gradient(90deg,rgba(9,13,13,.96) 0%,rgba(9,13,13,.88) 21%,rgba(9,13,13,.65) 43%,rgba(9,13,13,.04) 73%),linear-gradient(0deg,#101312 0%,transparent 30%)}
+.stg-landing-page .stg-nav{background:rgba(9,13,13,.7)}
+.stg-landing-page .stg-nav-inner{height:92px;justify-content:space-between;gap:20px}
+.stg-landing-page .stg-brand-logo{width:200px;height:50px}
+.stg-landing-page .stg-nav-call{font-size:12px;font-weight:700;padding:10px 0}
+.stg-landing-page .stg-hero-content{padding-top:158px;padding-bottom:100px}
+.stg-landing-page .stg-hero-copy{width:min(620px,54%)}
+.stg-landing-page .stg-hero .stg-kicker{font-size:11px;letter-spacing:.19em;text-transform:uppercase;font-weight:700;line-height:1.5;color:#e4e2da;max-width:500px;margin-bottom:26px}
+.stg-landing-page .stg-hero h1{font-size:clamp(72px,7.8vw,112px);line-height:.98;letter-spacing:-.015em;margin-bottom:26px;max-width:650px;text-wrap:balance}
+.stg-landing-page .stg-hero-description{color:#d7d8d0;max-width:450px;font-size:15px;line-height:1.8;margin-bottom:30px}
+.stg-landing-page .stg-hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.stg-landing-page .stg-hero-actions .stg-button{justify-content:space-between;text-align:left;min-height:58px;padding:16px 20px;font-size:13px;line-height:1.4}
+.stg-landing-page .stg-hero-actions .stg-button-secondary{background:rgba(16,19,18,.4);border-color:#969e94}
+.stg-landing-page .stg-hero-bottom{position:absolute;bottom:30px;left:0;width:100%;z-index:1}
+.stg-landing-page .stg-hero-meta strong{display:block;font-family:'Barlow Condensed',Impact,sans-serif;color:var(--paper);font-size:26px;line-height:1.1;font-weight:700;text-transform:uppercase}
+@media(min-width:1600px){.stg-landing-page .stg-hero-photo{object-position:50% 32%}.stg-landing-page .stg-hero-copy{width:53%}}
+@media(min-width:701px){.stg-landing-page[data-coach="Justin"] .stg-hero-photo{transform:translateX(13%)}}
+@media(max-width:1024px) and (min-width:701px){.stg-landing-page .stg-hero .stg-shell{width:calc(100% - 64px)}.stg-landing-page .stg-hero-copy{width:59%}.stg-landing-page .stg-hero h1{font-size:78px}}
+@media(max-width:700px){
+.stg-landing-page .stg-hero .stg-shell{width:calc(100% - 40px)}
+.stg-landing-page .stg-nav-inner{height:72px}
+.stg-landing-page .stg-brand-logo{width:165px;height:41px}
+.stg-landing-page .stg-nav-call{font-size:10px}
+.stg-landing-page .stg-hero{align-items:flex-end}
+.stg-landing-page .stg-hero-photo{object-position:50% 20%}
+.stg-landing-page[data-coach="Rhylie"] .stg-hero-photo{transform:translateY(-40px) scale(1.15)}
+.stg-landing-page .stg-hero:after{background:linear-gradient(0deg,#101312 0%,rgba(9,13,13,.95) 31%,rgba(9,13,13,.35) 65%,rgba(9,13,13,.04) 85%),linear-gradient(180deg,rgba(9,13,13,.65),transparent 22%)}
+.stg-landing-page .stg-hero-content{padding-top:clamp(72px,calc(100svh - 590px),310px);padding-bottom:65px}
+.stg-landing-page .stg-hero-copy{width:100%;max-width:480px}
+.stg-landing-page .stg-hero .stg-kicker{font-size:9px;letter-spacing:.1em;line-height:1.8;max-width:350px;margin-bottom:17px}
+.stg-landing-page .stg-hero h1{font-size:48px;line-height:.98;max-width:370px;margin-bottom:20px;text-wrap:initial}
+.stg-landing-page .stg-hero-description{font-size:13px;line-height:1.8;max-width:370px;margin-bottom:24px}
+.stg-landing-page .stg-hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+.stg-landing-page .stg-hero-actions .stg-button{width:100%;min-height:52px;padding:14px 20px}
+.stg-landing-page .stg-hero-bottom{bottom:22px}
+.stg-landing-page .stg-hero-meta strong{font-size:20px}
+}
+/* Fit the same composition to shorter screens without changing its content. */
+@media(max-height:850px) and (min-width:701px){
+.stg-landing-page .stg-hero-content{padding-top:110px;padding-bottom:75px}
+.stg-landing-page .stg-hero h1{font-size:clamp(54px,9svh,76px);margin-bottom:20px}
+.stg-landing-page .stg-hero .stg-kicker{margin-bottom:18px}
+.stg-landing-page .stg-hero-description{margin-bottom:22px}
+}
+@media(max-height:700px) and (max-width:700px){
+.stg-landing-page .stg-nav-inner{height:62px}
+.stg-landing-page .stg-brand-logo{width:150px;height:38px}
+.stg-landing-page .stg-hero-content{padding-top:72px;padding-bottom:52px}
+.stg-landing-page .stg-hero .stg-kicker{font-size:8.5px;line-height:1.6;margin-bottom:10px}
+.stg-landing-page .stg-hero h1{font-size:clamp(34px,6.4svh,42px);margin-bottom:14px}
+.stg-landing-page .stg-hero-description{font-size:12px;line-height:1.55;margin-bottom:16px}
+.stg-landing-page .stg-hero-actions{gap:8px}
+.stg-landing-page .stg-hero-actions .stg-button{min-height:44px;padding:11px 16px;font-size:12px}
+.stg-landing-page .stg-hero-meta strong{font-size:18px}
+.stg-landing-page .stg-hero-bottom{bottom:18px}
+}
+@media(max-height:500px) and (min-width:701px){
+.stg-landing-page .stg-nav-inner{height:58px}
+.stg-landing-page .stg-brand-logo{width:150px;height:38px}
+.stg-landing-page .stg-hero-content{padding-top:68px;padding-bottom:46px}
+.stg-landing-page .stg-hero h1{font-size:36px;margin-bottom:12px}
+.stg-landing-page .stg-hero .stg-kicker{font-size:8px;line-height:1.4;margin-bottom:8px}
+.stg-landing-page .stg-hero-description{font-size:12px;line-height:1.5;margin-bottom:12px}
+.stg-landing-page .stg-hero-actions .stg-button{min-height:40px;padding:9px 14px;font-size:11px}
+.stg-landing-page .stg-hero-bottom{bottom:12px}
+.stg-landing-page .stg-hero-meta strong{font-size:18px}
+}

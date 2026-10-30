@@ -1,0 +1,9 @@
+{
+  "request": "OPTIONS only, no form body or lead submitted",
+  "origin": "https://strikeline-coaching.netlify.app",
+  "endpoint": "https://formspree.io/f/mdajqedj",
+  "status": 200,
+  "access_control_allow_origin": "https://strikeline-coaching.netlify.app",
+  "access_control_allow_methods": "DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT",
+  "scope": "Checks CORS preflight only; not gateway acceptance, notification, or portal import."
+}

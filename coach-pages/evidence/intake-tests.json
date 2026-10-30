@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T13:32:24.402662+00:00",
+  "check_count": 13,
+  "live_submissions": 0,
+  "checks": [
+    "Justin: required phone blocks empty/whitespace, formatted phone payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "Zach: required phone blocks empty/whitespace, formatted phone payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "Rhylie: required phone blocks empty/whitespace, formatted phone payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA",
+    "422: preserve answers, no false success, explicit retry keeps ID",
+    "429: preserve answers, no false success, explicit retry keeps ID",
+    "malformed: preserve answers, no false success, explicit retry keeps ID",
+    "false-ok: preserve answers, no false success, explicit retry keeps ID",
+    "network: preserve answers, no false success, explicit retry keeps ID",
+    "timeout: preserve answers, no false success, explicit retry keeps ID",
+    "Native required-field and email validation blocks network",
+    "Justin paste block: required phone blocks empty/whitespace, formatted phone payload, wrapped-host receipt, correct coach booking, embedded assets",
+    "Zach paste block: required phone blocks empty/whitespace, formatted phone payload, wrapped-host receipt, correct coach booking, embedded assets",
+    "Rhylie paste block: required phone blocks empty/whitespace, formatted phone payload, wrapped-host receipt, correct coach booking, embedded assets"
+  ],
+  "required_phone": {
+    "standalone_pages": 3,
+    "wrapped_blocks": 3,
+    "blocked_values": [
+      "",
+      "   "
+    ],
+    "submission_paths_checked": [
+      "native submit",
+      "scripted submit"
+    ],
+    "successful_phone_payload": "+1 (202) 555-0100"
+  },
+  "scope": "Local browser contract checks. Formspree responses are synthetic; other external requests are aborted. No live intake submissions, bookings, payments, or messages."
+}

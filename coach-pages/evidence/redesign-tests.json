@@ -1,0 +1,1669 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T13:00:51.802436+00:00",
+  "page_view_checks": 36,
+  "standalone_pages": 6,
+  "self_contained_blocks": 6,
+  "purchase_navigations": [
+    {
+      "coach": "Justin",
+      "embedded": false,
+      "destination": "/coach-pages/start-justin.html"
+    },
+    {
+      "coach": "Justin",
+      "embedded": true,
+      "destination": "/coach-pages/start-justin.html"
+    },
+    {
+      "coach": "Zach",
+      "embedded": false,
+      "destination": "/coach-pages/start-zach.html"
+    },
+    {
+      "coach": "Zach",
+      "embedded": true,
+      "destination": "/coach-pages/start-zach.html"
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": false,
+      "destination": "/coach-pages/start-rhylie.html"
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": true,
+      "destination": "/coach-pages/start-rhylie.html"
+    }
+  ],
+  "live_mutations": 0,
+  "external_requests": [],
+  "approved_landing_commit": "967e407",
+  "approved_landing_unchanged": [
+    {
+      "path": "justin.html",
+      "sha256": "1f39b78956d894ece33b4fbb110f18894e127dc6daa97ebae7d76b50a815c1b8"
+    },
+    {
+      "path": "zach.html",
+      "sha256": "a840ed8e1b55ef662e64d0a2ac3cbfef9ac57888ccfcc3194bd77c781426c31b"
+    },
+    {
+      "path": "rhylie.html",
+      "sha256": "82c725fb85893e6b07b6cbba6c11ec1bff93e969cb9916d6a34de5af3196291f"
+    },
+    {
+      "path": "blocks/justin-copy-paste.html",
+      "sha256": "4cc2c8e69730cc1b09165c6dd43e93512e0cd57638f69f1e8b039c6edf7c3dbf"
+    },
+    {
+      "path": "blocks/zach-copy-paste.html",
+      "sha256": "a36b83c0e0eb4a6213cc87f3a4d9f5819c3daa59c422723a1ac39065f11d0a54"
+    },
+    {
+      "path": "blocks/rhylie-copy-paste.html",
+      "sha256": "37c71797564a36639e8288087b4888f79ebda7d733cc36fad222e1e23319d262"
+    },
+    {
+      "path": "assets/coach.css",
+      "sha256": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb"
+    },
+    {
+      "path": "assets/intake.js",
+      "sha256": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4"
+    },
+    {
+      "path": "assets/fonts.css",
+      "sha256": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a"
+    },
+    {
+      "path": "assets/fonts-remote.css",
+      "sha256": "4731e3495a74161228438c8d314bc7625842ced9241655d2d1c3736e1097bd57"
+    }
+  ],
+  "source_checks": [
+    {
+      "service": "assessment",
+      "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "product": "Nutrition + Training Assessment",
+      "amount_usd": 175,
+      "cadence": "one time",
+      "public_get_status": 200
+    },
+    {
+      "service": "online",
+      "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "product": "Online Coaching \u2014 Monthly",
+      "amount_usd": 350,
+      "cadence": "per month",
+      "public_get_status": 200
+    },
+    {
+      "service": "inperson",
+      "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "product": "Monthly Coaching \u2014 Foundation",
+      "amount_usd": 475,
+      "cadence": "per month",
+      "public_get_status": 200
+    }
+  ],
+  "source_receipt_sha256": "12ba8047380c9c577c0f652838d2ea08b7c637c317e9e38cae6a4834aa9818e7",
+  "photo_checks": [
+    {
+      "coach": "Justin",
+      "original_bytes_preserved": true,
+      "sha256": "1491b1b20a932fe73287dfa11b47360bb1e3219d0683005f0a7429297d3fd5d4"
+    },
+    {
+      "coach": "Zach",
+      "original_bytes_preserved": true,
+      "sha256": "e82db7b3b68cec0059ab4b40e07254a8abc32843baa457728e234cb8a869212b"
+    },
+    {
+      "coach": "Rhylie",
+      "original_bytes_preserved": true,
+      "sha256": "223db8598bfdf5bec92239fc898a97022a9ace044f7ed86119c42c65f2c2fdf1"
+    }
+  ],
+  "loader_failure_checks": [
+    {
+      "coach": "Justin",
+      "embedded": false,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Justin",
+      "embedded": true,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Zach",
+      "embedded": false,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Zach",
+      "embedded": true,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": false,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": true,
+      "width": 320,
+      "failure": "loader_aborted",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "failed"
+        }
+      ]
+    },
+    {
+      "coach": "Justin",
+      "embedded": false,
+      "width": 320,
+      "failure": "custom_element_timeout",
+      "checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "timeout"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "timeout"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "timeout"
+        }
+      ]
+    }
+  ],
+  "javascript_disabled_checks": [
+    {
+      "coach": "Justin",
+      "embedded": false,
+      "three_attributed_fallback_links": true
+    },
+    {
+      "coach": "Justin",
+      "embedded": true,
+      "three_attributed_fallback_links": true
+    },
+    {
+      "coach": "Zach",
+      "embedded": false,
+      "three_attributed_fallback_links": true
+    },
+    {
+      "coach": "Zach",
+      "embedded": true,
+      "three_attributed_fallback_links": true
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": false,
+      "three_attributed_fallback_links": true
+    },
+    {
+      "coach": "Rhylie",
+      "embedded": true,
+      "three_attributed_fallback_links": true
+    }
+  ],
+  "results": [
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Justin",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_justin_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_justin_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_justin_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Zach",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_zach_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_zach_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_zach_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": false
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": false
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "landing",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [],
+      "stubbed_loader_requests": 0
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": false,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "desktop",
+      "width": 1440,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "mobile",
+      "width": 390,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    },
+    {
+      "coach": "Rhylie",
+      "page": "purchase",
+      "embedded": true,
+      "viewport": "small-mobile",
+      "width": 320,
+      "no_overflow": true,
+      "javascript_errors": [],
+      "brand": {
+        "logos": [
+          {
+            "svg_sha256": "98dcd4a09c49f5d2040ec709c5a8eefa8b2fce086ade2d62ac4c81cdbc1ae212",
+            "embedded": true
+          },
+          {
+            "svg_sha256": "ddd49927c9b1aa7bc1b41840fe7b37bf3f4683808802349434af42714f78a7fd",
+            "embedded": true
+          }
+        ]
+      },
+      "checkout_checks": [
+        {
+          "service": "assessment",
+          "button_id": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+          "reference": "stg_rhylie_assessment",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "online",
+          "button_id": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+          "reference": "stg_rhylie_online",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        },
+        {
+          "service": "inperson",
+          "button_id": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+          "reference": "stg_rhylie_inperson",
+          "verified_fallback": true,
+          "focus_restored": true,
+          "mode": "render"
+        }
+      ],
+      "stubbed_loader_requests": 1
+    }
+  ],
+  "stripe_rendering": "Deterministic local custom-element stub. Actual Stripe iframe appearance and availability are outside this suite.",
+  "source_scope": "Product name, amount, cadence and fallback URL cross-checked with the separate saved public Stripe GET receipt. No live Stripe requests performed by this suite.",
+  "scope": "Local rendering and navigation. Stripe loader fulfilled locally or deliberately failed; all other external and mutation requests blocked. Checkout links inspected but never followed. No sessions, payments, subscriptions, intake submissions, bookings, publishing or DMs."
+}

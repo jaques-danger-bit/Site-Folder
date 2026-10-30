@@ -1,0 +1,78 @@
+{
+  "currency": "USD",
+  "publishableKey": "pk_live_51T4NiuRzFn0Z1SgZjYhD2FLKIHus5LC03ExlYq7V22sr4YIbczT0biQIAKmeqvw9DvZV64CRwyfVNZ3fYMFKKTXK00ypQDZ3Xo",
+  "sourceUrl": "https://strikelinetraining.com/services",
+  "offers": [
+    {
+      "slug": "assessment",
+      "name": "Nutrition + Training Assessment",
+      "badge": "Start with clarity",
+      "amount": 175,
+      "cadence": "one time",
+      "billing": "One-time assessment",
+      "featured": false,
+      "fit": "You want to understand your starting point before choosing ongoing coaching.",
+      "promise": "Get a clearer view of where you are now.",
+      "description": "A comprehensive, one-time assessment of your nutrition and training. Start with a focused review before deciding on your next level of support.",
+      "features": [
+        "Nutrition and training assessed together",
+        "One-time service with no monthly subscription"
+      ],
+      "terms": "One-time payment. Ongoing coaching is purchased separately.",
+      "buttonId": "buy_btn_1UWFCARzFn0Z1SgZqB6Sx8fi",
+      "checkoutUrl": "https://buy.stripe.com/fZueVf0L480x3sPdAfgQE2z",
+      "stripeProductName": "Nutrition + Training Assessment",
+      "cta": "Choose my assessment",
+      "checkoutReady": true
+    },
+    {
+      "slug": "online",
+      "name": "Online Coaching",
+      "badge": "Ongoing guidance",
+      "amount": 350,
+      "cadence": "per month",
+      "billing": "Monthly subscription",
+      "featured": true,
+      "fit": "You want a coach in your corner, wherever you train.",
+      "promise": "Turn your effort into a plan you can follow\u2014and keep refining.",
+      "description": "Custom programming, check-ins and a nutrition protocol, with remote guidance built around your goals and training setup.",
+      "features": [
+        "Custom training programming",
+        "Check-ins and remote coaching support",
+        "Nutrition protocol for your goals",
+        "Train at your own gym or training setup"
+      ],
+      "terms": "Billed monthly. Review the subscription terms at checkout.",
+      "buttonId": "buy_btn_1UWFDHRzFn0Z1SgZci4LXSUf",
+      "cta": "Choose online coaching",
+      "checkoutUrl": "https://buy.stripe.com/fZucN70L4fsZgfB0NtgQE2A",
+      "stripeProductName": "Online Coaching \u2014 Monthly",
+      "checkoutReady": true
+    },
+    {
+      "slug": "inperson",
+      "name": "In-Person Coaching",
+      "badge": "Hands-on coaching",
+      "amount": 475,
+      "cadence": "per month",
+      "billing": "Foundation monthly subscription",
+      "featured": false,
+      "fit": "You want a coach beside you on the gym floor.",
+      "promise": "Learn the movement. Build the skill. Train with direction.",
+      "description": "Full programming plus one coaching session each week at Strikeline in Beaufort, with hands-on technique and exercise guidance.",
+      "features": [
+        "Full training programming",
+        "One coaching session per week",
+        "Hands-on technique and exercise guidance",
+        "Train at Strikeline in Beaufort, SC"
+      ],
+      "terms": "Billed monthly. A 30-day cancellation notice is required.",
+      "buttonId": "buy_btn_1UWFE2RzFn0Z1SgZvpUqdxYp",
+      "cta": "Choose in-person coaching",
+      "checkoutUrl": "https://buy.stripe.com/dRmcN765o94B5AXao3gQE2B",
+      "stripeProductName": "Monthly Coaching \u2014 Foundation",
+      "checkoutReady": true
+    }
+  ],
+  "ownerDecision": "User confirmed: Use the $175 assessment. The standalone training program is not included in this three-offer checkout set."
+}

@@ -3,6 +3,7 @@
 import argparse
 import asyncio
 import json
+from datetime import datetime, timezone
 from email import policy
 from email.parser import BytesParser
 from pathlib import Path
@@ -13,6 +14,7 @@ from playwright.async_api import async_playwright
 ENDPOINT = "https://formspree.io/f/mdajqedj"
 CHROME = "/home/jaquesdanger/.cache/puppeteer/chrome/linux-149.0.7827.22/chrome-linux64/chrome"
 STAFF = {"Justin": "3017439", "Zach": "3017453", "Rhylie": "3065290"}
+PHONE = "+1 (202) 555-0100"
 
 
 def fields_from_request(request):
@@ -92,7 +94,7 @@ async def fixture(browser, base, coach="Justin", mode="success", timeout=False, 
 async def fill_form(page):
     await page.locator('form [name="firstName"]').fill("Preview Visitor")
     await page.locator('form [name="email"]').fill("preview@example.invalid")
-    await page.locator('form [name="phone"]').fill("2025550100")
+    await page.locator('form [name="phone"]').fill(PHONE)
     goal = page.locator('form [name="goal"]')
     if await goal.evaluate("el => el.tagName") == "SELECT":
         value = await goal.evaluate("el => [...el.options].find(option => option.value && !option.disabled).value")
@@ -106,6 +108,29 @@ async def wait_state(page, state):
     await page.wait_for_function("state => document.querySelector('[data-form-status]').dataset.state === state", arg=state)
 
 
+async def required_phone_check(page, state):
+    phone = page.locator('form [name="phone"]')
+    assert await phone.get_attribute("required") is not None
+    assert await phone.get_attribute("pattern") == r".*\S.*"
+    assert await phone.get_attribute("type") == "tel"
+    assert await phone.get_attribute("autocomplete") == "tel"
+    assert await phone.get_attribute("maxlength") == "40"
+    phone_id = await phone.get_attribute("id")
+    label = await page.locator('label[for="'+phone_id+'"]').inner_text()
+    assert "required" in label.lower() and "optional" not in label.lower()
+    for invalid in ("", "   "):
+        await phone.fill(invalid)
+        assert not await phone.evaluate("el=>el.checkValidity()")
+        # Both native submission and a scripted submit must respect validity.
+        await page.locator('form button[type="submit"]').click()
+        await page.locator('form[data-coach-intake]').evaluate("form=>form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}))")
+        await page.wait_for_timeout(80)
+        assert not state["requests"], "Empty or whitespace-only phone reached intake endpoint"
+        assert not await page.locator('[data-intake-success]').is_visible()
+    await phone.fill(PHONE)
+    assert await phone.evaluate("el=>el.checkValidity()"), "Formatted phone was rejected"
+
+
 async def run(base, chrome):
     checks = []
     async with async_playwright() as playwright:
@@ -114,6 +139,7 @@ async def run(base, chrome):
             context, page, state = await fixture(browser, base, coach, "slow-success")
             await page.wait_for_function("document.querySelector('[data-sticky-cta]').hidden")
             await fill_form(page)
+            await required_phone_check(page, state)
             await page.wait_for_function("document.querySelector('[data-sticky-cta]').hidden")
             await page.locator('form button[type="submit"]').click()
             await page.locator('form[data-coach-intake]').evaluate("form => form.dispatchEvent(new Event('submit', {bubbles: true, cancelable: true}))")
@@ -124,6 +150,7 @@ async def run(base, chrome):
                 assert sent.get(key), (coach, key)
             assert sent["coach"] == coach and sent["source"] == state["source"]
             assert sent["email"] == "preview@example.invalid"
+            assert sent["phone"] == PHONE
             assert sent["utm_source"] == "instagram" and sent["utm_medium"] == "social"
             assert len(sent["utm_campaign"]) == 120
             assert not {"redirect", "arbitrary", "referrer", "query"}.intersection(sent)
@@ -138,7 +165,7 @@ async def run(base, chrome):
             assert await page.evaluate("window.intakeEvents") == [{"coach": coach, "submission_id": sent["submission_id"]}]
             assert await page.evaluate("JSON.stringify([Object.entries(localStorage), Object.entries(sessionStorage)])") == state["storage"]
             assert not any(urlparse(url).path.startswith('/a/booking') for url in state["unexpected"])
-            checks.append(coach + ": payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA")
+            checks.append(coach + ": required phone blocks empty/whitespace, formatted phone payload, attribution, duplicate lock, booking route, no PII storage/event, contextual sticky CTA")
             await context.close()
 
         for mode in ["422", "429", "malformed", "false-ok", "network", "timeout"]:
@@ -174,21 +201,27 @@ async def run(base, chrome):
         for coach, staff in STAFF.items():
             context, page, state = await fixture(browser, base, coach, embed=True)
             await fill_form(page)
-            await page.locator('form [name="phone"]').fill("")
+            await required_phone_check(page, state)
             await page.locator('form button[type="submit"]').click()
             await wait_state(page, "success")
             assert len(state["requests"]) == 1
             sent = state["requests"][0]
             assert sent["coach"] == coach and sent["source"] == state["source"]
-            assert sent["phone"] == "", "Optional phone should remain optional"
+            assert sent["phone"] == PHONE, "Required phone omitted from payload"
             booking = urlparse(await page.locator('[data-intake-success] [data-booking-link]').get_attribute("href"))
             assert parse_qs(booking.query)["staffId"] == [staff]
             assert not state["unexpected"], "Self-contained block requested an external asset"
             assert await page.locator('[data-intake-success]').is_visible()
-            checks.append(coach + " paste block: wrapped-host receipt, correct coach booking, optional phone, embedded assets")
+            checks.append(coach + " paste block: required phone blocks empty/whitespace, formatted phone payload, wrapped-host receipt, correct coach booking, embedded assets")
             await context.close()
         await browser.close()
-    print(json.dumps({"status": "passed", "live_submissions": 0, "checks": checks}, indent=2))
+    receipt = {"status":"passed", "checked_at_utc":datetime.now(timezone.utc).isoformat(),
+               "check_count":len(checks), "live_submissions":0, "checks":checks,
+               "required_phone":{"standalone_pages":3,"wrapped_blocks":3,"blocked_values":["","   "],
+                                 "submission_paths_checked":["native submit","scripted submit"],"successful_phone_payload":PHONE},
+               "scope":"Local browser contract checks. Formspree responses are synthetic; other external requests are aborted. No live intake submissions, bookings, payments, or messages."}
+    (Path(__file__).resolve().parents[1]/"evidence/intake-tests.json").write_text(json.dumps(receipt,indent=2)+"\n")
+    print(json.dumps(receipt,indent=2))
 
 
 if __name__ == "__main__":

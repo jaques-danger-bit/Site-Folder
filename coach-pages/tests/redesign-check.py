@@ -54,8 +54,20 @@ def source_and_baseline_check():
     for name in pinned:
         approved = subprocess.check_output(["git", "show", f"{APPROVED_COMMIT}:coach-pages/{name}"], cwd=ROOT.parent)
         current = (ROOT/name).read_bytes()
-        assert approved == current, f"Approved landing asset changed: {name}"
-        baseline.append({"path":name,"sha256":hashlib.sha256(current).hexdigest()})
+        allowed_change = None
+        if name.endswith(".html"):
+            slug = Path(name).name.split("-copy-paste")[0].removesuffix(".html")
+            original_phone = (f'Phone <small>Optional</small></label><input id="{slug}-phone" '
+                              'name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="Your phone number">').encode()
+            required_phone = (f'Phone <small>Required</small></label><input id="{slug}-phone" '
+                              'name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="Your phone number" '
+                              r'pattern=".*\S.*" title="Enter your phone number." required>').encode()
+            assert approved.count(original_phone) == 1, f"Approved phone field not found exactly once: {name}"
+            assert current.count(required_phone) == 1, f"Exact authorized required-phone field missing: {name}"
+            approved = approved.replace(original_phone,required_phone,1)
+            allowed_change = "Phone label Required; input required with whitespace-rejecting pattern and title"
+        assert approved == current, f"Approved landing changed beyond the exact authorized phone field: {name}"
+        baseline.append({"path":name,"sha256":hashlib.sha256(current).hexdigest(),"allowed_change":allowed_change})
     receipt_path = ROOT / "evidence/services-20261030/stripe-public-read.json"
     receipt = json.loads(receipt_path.read_text())
     public = {response["data"]["id"]:response for response in receipt["responses"]}
@@ -354,7 +366,7 @@ def run(base, chrome):
         photo_checks.append({"coach":coach,"original_bytes_preserved":True,"sha256":hashlib.sha256(current.read_bytes()).hexdigest()})
     evidence = {"status":"passed","checked_at_utc":datetime.now(timezone.utc).isoformat(),"page_view_checks":len(results),
                 "standalone_pages":6,"self_contained_blocks":6,"purchase_navigations":navigations,"live_mutations":0,
-                "external_requests":all_blocked,"approved_landing_commit":APPROVED_COMMIT,"approved_landing_unchanged":baseline,
+                "external_requests":all_blocked,"approved_landing_commit":APPROVED_COMMIT,"approved_landing_preservation_checks":baseline,
                 "source_checks":source_checks,"source_receipt_sha256":source_hash,"photo_checks":photo_checks,
                 "loader_failure_checks":failures,"javascript_disabled_checks":no_javascript,"results":results,
                 "stripe_rendering":"Deterministic local custom-element stub. Actual Stripe iframe appearance and availability are outside this suite.",
@@ -364,7 +376,7 @@ def run(base, chrome):
     print(json.dumps({"status":"passed","page_view_checks":len(results),"navigation_checks":len(navigations),
                       "checkout_dialog_checks":sum(len(item["checkout_checks"]) for item in results),
                       "loader_failure_views":len(failures),"javascript_disabled_views":len(no_javascript),
-                      "unchanged_landing_files":len(baseline),"photo_checks":len(photo_checks),"live_mutations":0}))
+                      "landing_preservation_checks":len(baseline),"photo_checks":len(photo_checks),"live_mutations":0}))
 
 
 if __name__ == '__main__':

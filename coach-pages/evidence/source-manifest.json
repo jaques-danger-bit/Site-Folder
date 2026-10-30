@@ -61,5 +61,12 @@
   "selected_design": "User approved v2 landing full-bleed photo design and rejected previous cream purchase-card design. Landing pages retained unchanged.",
   "offer_evidence": "services-20261030/stripe-offers-verified.json and services-20261030/RESEARCH-NOTES.md",
   "offer_selection": "User confirmed Use the $175 assessment; assessment one-time, online coaching $350/month, Foundation in-person $475/month.",
-  "payment_integration": "All three owner-supplied Buy Buttons configured on three coach-specific pages with client_reference_id. No payment transaction or backend fulfillment verified; draft not published."
+  "payment_integration": "All three owner-supplied Buy Buttons configured on three coach-specific pages with client_reference_id. No payment transaction or backend fulfillment verified; draft not published.",
+  "phone_requirement": {
+    "confirmed_at_utc": "2026-10-30T13:31:39.561709+00:00",
+    "source": "User: Make sure phone number is required on that mini intake submission",
+    "scope": "All three standalone mini intakes and copy-paste blocks",
+    "validation": "HTML required plus non-whitespace pattern; existing form.reportValidity() also gates scripted submissions. No country-specific format imposed.",
+    "server_configuration_changed": false
+  }
 }

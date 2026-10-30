@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-30T13:32:14.790861+00:00",
+  "approved_commit": "967e407",
+  "checked_files": 10,
+  "authorized_phone_edits": 6,
+  "checks": [
+    {
+      "path": "justin.html",
+      "sha256": "ee98ac4918dec11551f99ead17f1ba733d080643acb3efcd66fc3247fb5d2565",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "zach.html",
+      "sha256": "328a84f11a17cbfffbd22700ae6bdfbe9910511d3c8d972cb9b7bee21199f73c",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "rhylie.html",
+      "sha256": "476c529af246021df626dff07d4645b95a4d672a2fd89398b0f71b1ba68596a7",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "blocks/justin-copy-paste.html",
+      "sha256": "5b00e8b59eef4213752d48db089898f77df5ac96fda6ab32bce4fe5cc61f9dc3",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "blocks/zach-copy-paste.html",
+      "sha256": "23521666f62afa550384d53e375f9bb5d01a7a108d626c82dc5173c5fc920856",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "blocks/rhylie-copy-paste.html",
+      "sha256": "7e69e4e7a9cc96b55a02874d02499f0a4c80b41aaca1a3de5466ea299d301d25",
+      "allowed_change": "Phone label Required; input required with whitespace-rejecting pattern and title"
+    },
+    {
+      "path": "assets/coach.css",
+      "sha256": "8f72c17a7a9830a23645a85c1ae754e62d7bada4710069cb2933e227bdfdc2fb",
+      "allowed_change": null
+    },
+    {
+      "path": "assets/intake.js",
+      "sha256": "b7b1280037d4797ec3e752fa28b82e4e906893a67cff63ba859882e77e7466c4",
+      "allowed_change": null
+    },
+    {
+      "path": "assets/fonts.css",
+      "sha256": "4b2d64dfda4c8612c9e362519fcd70e852efd17f23566718b431097b5265555a",
+      "allowed_change": null
+    },
+    {
+      "path": "assets/fonts-remote.css",
+      "sha256": "4731e3495a74161228438c8d314bc7625842ced9241655d2d1c3736e1097bd57",
+      "allowed_change": null
+    }
+  ],
+  "scope": "Static byte comparison. Exactly the authorized phone label/input replacement is allowed in three landing pages and three HTML blocks. All other landing bytes and four shared assets match the approved commit. No browser or external requests; unrelated checkout suite not rerun."
+}
